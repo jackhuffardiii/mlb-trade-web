@@ -20,9 +20,16 @@ Three linked views over one dataset:
      (free agency, waivers). The career view ignores the season and club filters by design.
 3. **Team Flows** — one club's ledger inside the filters: acquired on the left, sent away on the
    right, grouped by trade, over a summary strip (trades, players in, players out, top partner).
+   The club title is itself the selector — click it for a keyboard-navigable list of all 30 clubs.
 
 A season-range filter and a club filter apply across the league views, and the search box
 (`/` to focus) deep-links a player into the Chain Explorer or a club into Team Flows.
+
+The ‹ › controls in the masthead walk your in-app navigation history (Alt+← / Alt+→). Every
+destination is a stack entry — the view you're on, the club whose ledger or player web is open, the
+player and mode in the Chain Explorer — so going back restores what you were looking at, not just
+which tab was lit. Navigating somewhere new after going back truncates the forward stack, as you'd
+expect. Season-range scrubbing is deliberately not recorded: a filter isn't a destination.
 
 The layout is desktop-first: the graph is a full-bleed workspace, the controls sit in a compact top
 bar, and the detail panel docks as a right-hand sidebar the workspace makes room for. Below 900px

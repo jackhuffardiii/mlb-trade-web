@@ -43,17 +43,42 @@
             </p>
           </div>
 
-          <nav class="sections" role="tablist" aria-label="Views">
-            <button class="tab" role="tab" data-tab="web" aria-selected="true">
-              <span class="numeral">I</span>Trade Web
-            </button>
-            <button class="tab" role="tab" data-tab="chain" aria-selected="false">
-              <span class="numeral">II</span>Chain Explorer
-            </button>
-            <button class="tab" role="tab" data-tab="flows" aria-selected="false">
-              <span class="numeral">III</span>Team Flows
-            </button>
-          </nav>
+          <div class="nav-cluster">
+            <div class="history" role="group" aria-label="Navigation history">
+              <button
+                class="hist-btn"
+                id="hist-back"
+                type="button"
+                aria-label="Back"
+                title="Back (Alt+←)"
+                disabled
+              >
+                ‹
+              </button>
+              <button
+                class="hist-btn"
+                id="hist-fwd"
+                type="button"
+                aria-label="Forward"
+                title="Forward (Alt+→)"
+                disabled
+              >
+                ›
+              </button>
+            </div>
+
+            <nav class="sections" role="tablist" aria-label="Views">
+              <button class="tab" role="tab" data-tab="web" aria-selected="true">
+                <span class="numeral">I</span>Trade Web
+              </button>
+              <button class="tab" role="tab" data-tab="chain" aria-selected="false">
+                <span class="numeral">II</span>Chain Explorer
+              </button>
+              <button class="tab" role="tab" data-tab="flows" aria-selected="false">
+                <span class="numeral">III</span>Team Flows
+              </button>
+            </nav>
+          </div>
         </div>
 
         <div class="strip">

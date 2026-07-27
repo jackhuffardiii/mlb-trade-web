@@ -3,6 +3,7 @@ import './style.css';
 import { formatDateLong, loadData } from './data.js';
 import { legible, teamColor } from './teams.js';
 import { setState, state, subscribe } from './state.js';
+import * as history from './history.js';
 import {
   buildSearchIndex,
   clear,
@@ -49,9 +50,12 @@ async function boot() {
 
   mountChrome(index);
   mountSearch(index);
+  mountHistory();
   trackHeaderHeight();
+  history.init(state);
 
   subscribe((changed) => {
+    history.record(state);
     if (changed.has('view')) applyView(views);
     if (
       changed.has('yearMin') ||
@@ -97,6 +101,14 @@ async function boot() {
       event.preventDefault();
       document.getElementById('search').focus();
     }
+    if (event.altKey && event.key === 'ArrowLeft') {
+      event.preventDefault();
+      travel(history.back());
+    }
+    if (event.altKey && event.key === 'ArrowRight') {
+      event.preventDefault();
+      travel(history.forward());
+    }
   });
 
   for (const tab of document.querySelectorAll('.tab')) {
@@ -112,6 +124,37 @@ async function boot() {
       bootEl.dataset.done = 'true';
     }, 90);
   });
+
+  /* ------------------------------------------------------------- history */
+
+  function mountHistory() {
+    const backBtn = document.getElementById('hist-back');
+    const fwdBtn = document.getElementById('hist-fwd');
+    backBtn.addEventListener('click', () => travel(history.back()));
+    fwdBtn.addEventListener('click', () => travel(history.forward()));
+    history.onChange(({ back, forward }) => {
+      backBtn.disabled = !back;
+      fwdBtn.disabled = !forward;
+    });
+  }
+
+  /** Apply a snapshot from the history stack without recording it as new. */
+  function travel(snap) {
+    if (!snap) return;
+    const patch = { ...snap };
+    // Reuse the live chain object when it's equivalent, so restoring a state
+    // that only differed elsewhere doesn't force a chain rebuild.
+    if (
+      patch.chain &&
+      state.chain &&
+      patch.chain.personId === state.chain.personId &&
+      patch.chain.tradeId === state.chain.tradeId
+    ) {
+      patch.chain = state.chain;
+    }
+    closePanel();
+    history.withRestore(() => setState(patch));
+  }
 
   /* ------------------------------------------------------------ view mgmt */
 

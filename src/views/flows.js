@@ -12,6 +12,7 @@ export function createFlowsView(host, index) {
   clear(host);
   const shell = el('div', { class: 'flows-shell' });
   host.append(shell);
+  let renderedTeam = null;
 
   function teamsSorted() {
     return index.teams;
@@ -38,6 +39,10 @@ export function createFlowsView(host, index) {
 
     const team = index.teamsById.get(teamId);
     const lit = legible(teamColor(teamId));
+
+    // A new club starts at the top of its own ledger.
+    if (renderedTeam !== teamId) host.scrollTop = 0;
+    renderedTeam = teamId;
 
     // The club filter narrows the league, not this club's own ledger: if another
     // club is pinned, show only trades between the two.
@@ -73,12 +78,8 @@ export function createFlowsView(host, index) {
     /* -------------------------------------------------------------- header */
 
     const head = el('header', { class: 'flows-head', style: { '--club-lit': lit } }, [
-      el('h2', { class: 'flows-team', style: { '--club-lit': lit } }, [
-        el('span', { class: 'mark' }, team.abbreviation),
-        team.name,
-      ]),
+      titlePicker(teamId, lit),
       el('div', { class: 'asset-row', style: { marginBottom: '18px' } }, [
-        selector(teamId),
         el(
           'button',
           {
@@ -128,22 +129,170 @@ export function createFlowsView(host, index) {
     ]);
   }
 
-  function selector(teamId) {
-    const select = el('select', {
-      class: 'ghost-btn',
-      'aria-label': 'Choose a club',
-      onChange: (event) => {
-        const next = Number(event.target.value);
-        setState({ flowsTeam: next, team: state.team == null ? null : next });
-        if (state.team == null) update();
+  function choose(nextId) {
+    // A pinned club filter follows the ledger; an unpinned one stays unpinned.
+    setState({ flowsTeam: nextId, team: state.team == null ? null : nextId });
+  }
+
+  /**
+   * The club title is the selector. Clicking it drops a keyboard-navigable
+   * listbox of all 30 clubs; the caret and hover underline are the affordance.
+   */
+  function titlePicker(teamId, lit) {
+    const team = index.teamsById.get(teamId);
+    const wrap = el('div', { class: 'club-picker' });
+
+    const trigger = el(
+      'button',
+      {
+        class: 'flows-team-btn',
+        type: 'button',
+        'aria-haspopup': 'listbox',
+        'aria-expanded': 'false',
+        title: 'Choose a club',
       },
+      [
+        el('span', { class: 'mark' }, team.abbreviation),
+        el('span', { class: 'club-name' }, team.name),
+        el('span', { class: 'caret', 'aria-hidden': 'true' }, '▾'),
+      ]
+    );
+
+    const menu = el('div', {
+      class: 'club-menu',
+      role: 'listbox',
+      tabindex: '-1',
+      'aria-label': 'Clubs',
     });
-    for (const team of teamsSorted()) {
-      const option = el('option', { value: team.id }, `${team.abbreviation} · ${team.name}`);
-      if (team.id === teamId) option.selected = true;
-      select.append(option);
+
+    const options = teamsSorted().map((option) => {
+      const optionLit = legible(teamColor(option.id));
+      return el(
+        'button',
+        {
+          class: 'club-option',
+          type: 'button',
+          role: 'option',
+          'aria-selected': String(option.id === teamId),
+          dataset: { team: String(option.id) },
+          style: { '--club-lit': optionLit },
+          onClick: () => {
+            close();
+            choose(option.id);
+          },
+        },
+        [
+          el('span', { class: 'dot', style: { background: optionLit } }),
+          el('span', { class: 'abbr' }, option.abbreviation),
+          el('span', { class: 'club-option-name' }, option.name),
+        ]
+      );
+    });
+    menu.append(...options);
+
+    let open = false;
+    let active = Math.max(
+      0,
+      options.findIndex((o) => Number(o.dataset.team) === teamId)
+    );
+
+    const mark = () => {
+      options.forEach((option, i) => {
+        option.dataset.active = String(i === active);
+      });
+      // Scroll the menu itself rather than calling scrollIntoView, which would
+      // also scroll the ledger behind it and drag the title under the chrome.
+      const option = options[active];
+      if (!option) return;
+      const top = option.offsetTop;
+      const bottom = top + option.offsetHeight;
+      if (top < menu.scrollTop) menu.scrollTop = top;
+      else if (bottom > menu.scrollTop + menu.clientHeight) {
+        menu.scrollTop = bottom - menu.clientHeight;
+      }
+    };
+
+    function close() {
+      if (!open) return;
+      open = false;
+      delete wrap.dataset.open;
+      trigger.setAttribute('aria-expanded', 'false');
+      document.removeEventListener('click', onOutside, true);
     }
-    return select;
+
+    function onOutside(event) {
+      if (!wrap.contains(event.target)) close();
+    }
+
+    function show() {
+      if (open) return;
+      // The ledger scrolls under the floating chrome; snap the title back into
+      // the open before dropping a menu off it.
+      host.scrollTop = 0;
+      open = true;
+      wrap.dataset.open = 'true';
+      trigger.setAttribute('aria-expanded', 'true');
+      mark();
+      document.addEventListener('click', onOutside, true);
+    }
+
+    trigger.addEventListener('click', (event) => {
+      event.stopPropagation();
+      if (open) close();
+      else show();
+    });
+
+    wrap.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && open) {
+        event.stopPropagation();
+        close();
+        trigger.focus();
+        return;
+      }
+      if (!open && (event.key === 'ArrowDown' || event.key === 'Enter' || event.key === ' ')) {
+        if (document.activeElement === trigger && event.key === 'ArrowDown') {
+          event.preventDefault();
+          show();
+          menu.focus();
+        }
+        return;
+      }
+      if (!open) return;
+
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        active = (active + 1) % options.length;
+        mark();
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        active = (active - 1 + options.length) % options.length;
+        mark();
+      } else if (event.key === 'Home') {
+        event.preventDefault();
+        active = 0;
+        mark();
+      } else if (event.key === 'End') {
+        event.preventDefault();
+        active = options.length - 1;
+        mark();
+      } else if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        const picked = options[active];
+        close();
+        if (picked) choose(Number(picked.dataset.team));
+      }
+    });
+
+    for (const [i, option] of options.entries()) {
+      option.addEventListener('mouseenter', () => {
+        active = i;
+        mark();
+      });
+    }
+
+    wrap.style.setProperty('--club-lit', lit);
+    wrap.append(el('h2', { class: 'flows-team' }, [trigger]), menu);
+    return wrap;
   }
 
   function column(title, rows, teamId, direction) {
@@ -160,10 +309,7 @@ export function createFlowsView(host, index) {
               ...counterparts.map((id) =>
                 clubChip(index, id, {
                   button: true,
-                  onClick: () => {
-                    setState({ flowsTeam: id, team: null });
-                    update();
-                  },
+                  onClick: () => setState({ flowsTeam: id, team: null }),
                 })
               ),
             ]),
