@@ -37,6 +37,7 @@ import {
   svgEl,
 } from '../ui.js';
 import { setState, state } from '../state.js';
+import { renderTimeline } from './timeline.js';
 
 const COLUMN = 250;
 const ROW = 76;
@@ -58,6 +59,7 @@ export function createChainView(host, index) {
   let sim = null;
   const collapsed = new Set();
   const posCache = new Map(); // node id -> {x,y}: collapsing a branch shouldn't teleport the rest
+  let careerRefit = null; // re-frame the timeline without redrawing it
 
   canvas.svg.addEventListener('click', (event) => {
     if (event.target === canvas.svg) setFocus(canvas, {});
@@ -242,6 +244,7 @@ export function createChainView(host, index) {
   }
 
   function build() {
+    careerRefit = null;
     if (sim) sim.stop();
     for (const model of nodes) {
       if (Number.isFinite(model.x)) posCache.set(model.id, { x: model.x, y: model.y });
@@ -379,10 +382,34 @@ export function createChainView(host, index) {
 
   /* ---------------------------------------------------------------- chrome */
 
+  /** The two-state control shared by both modes. */
+  function modeToggle() {
+    const wrap = el('div', { class: 'mode-toggle', role: 'group', 'aria-label': 'Player view' });
+    for (const [key, label] of [
+      ['trade', 'This trade'],
+      ['career', 'All trades'],
+    ]) {
+      wrap.append(
+        el(
+          'button',
+          {
+            class: 'mode-btn',
+            type: 'button',
+            'aria-pressed': String(state.chainMode === key),
+            onClick: () => setState({ chainMode: key }),
+          },
+          [label]
+        )
+      );
+    }
+    return wrap;
+  }
+
   function renderChrome() {
     clear(breadcrumb);
     clear(note);
     if (!root) return;
+    breadcrumb.append(modeToggle());
 
     const player = index.playerIndex.get(root.personId);
     const pivotTrade = index.tradesById.get(root.pivot.tradeId);
@@ -464,9 +491,72 @@ export function createChainView(host, index) {
     );
   }
 
+  /* ------------------------------------------------- career timeline mode */
+
+  function renderCareer(personId) {
+    if (sim) sim.stop();
+    sim = null;
+    nodes = [];
+    links = [];
+    posCache.clear();
+    clear(canvas.linkLayer);
+    clear(canvas.nodeLayer);
+    clear(breadcrumb);
+    clear(note);
+    canvas.svg.classList.remove('dense');
+    setFocus(canvas, {});
+
+    careerRefit = null;
+    const player = index.playerIndex.get(personId);
+    if (!player) {
+      renderEmpty();
+      return;
+    }
+    emptyState.style.display = 'none';
+
+    const summary = renderTimeline(canvas, index, personId, {
+      // Following someone else out of this timeline keeps you in timeline mode.
+      onPlayer: (nextId, tradeId) => {
+        if (nextId == null) return;
+        setState({ chain: { personId: nextId, tradeId }, chainMode: 'career' });
+      },
+    });
+    careerRefit = summary.refit;
+
+    breadcrumb.append(
+      modeToggle(),
+      el('span', { class: 'crumb' }, [
+        el('span', { class: 'crumb-label' }, player.name),
+        `${summary.trades} trade${summary.trades === 1 ? '' : 's'} · ${summary.clubs} clubs`,
+      ])
+    );
+
+    const filtered =
+      state.team != null || state.yearMin !== index.minYear || state.yearMax !== index.maxYear;
+    const lines = [
+      el('div', {}, [
+        el('b', {}, player.name),
+        ` · ${formatDate(summary.first)} → ${formatDate(summary.last)}`,
+      ]),
+      el('div', {}, 'Above the spine moved with him · below came back the other way'),
+      el(
+        'div',
+        {},
+        summary.scrolls
+          ? 'Drag to pan the timeline · tap a stop for the trade'
+          : 'Tap a stop for the trade'
+      ),
+    ];
+    if (filtered) {
+      lines.push(el('div', {}, 'Career view — season and club filters do not apply here'));
+    }
+    note.append(...lines);
+  }
+
   /* ------------------------------------------------------------ empty state */
 
   function renderEmpty() {
+    careerRefit = null;
     clear(breadcrumb);
     clear(note);
     clear(canvas.linkLayer);
@@ -552,13 +642,50 @@ export function createChainView(host, index) {
 
   /* ------------------------------------------------------------------- api */
 
+  // Resizing (docking the detail panel, mostly) re-frames the graph rather than
+  // rebuilding it -- a rebuild would tear down every headshot and re-fetch it.
   canvas.onResize = () => {
-    if (root) build();
+    if (!state.chain) return;
+    if (state.chainMode === 'career') {
+      if (careerRefit) careerRefit(320);
+      else renderCareer(state.chain.personId);
+    } else if (root) {
+      reflow();
+    }
   };
+
+  /** Recompute layout targets for the existing nodes and let the sim settle. */
+  function reflow() {
+    if (!nodes.length || !sim) {
+      build();
+      return;
+    }
+    const inset =
+      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130;
+    const rows = nodes.map((n) => n.row);
+    const midRow = (Math.max(...rows) + Math.min(...rows)) / 2;
+    const originX = canvas.size.width * 0.22;
+    const originY = inset + (canvas.size.height - inset) * 0.52;
+    for (const model of nodes) {
+      model.tx = originX + model.depth * COLUMN;
+      model.ty = originY + (model.row - midRow) * ROW;
+    }
+    sim.alpha(0.6).restart();
+  }
 
   function update() {
     const target = state.chain;
-    if (!target || target.personId == null || target.tradeId == null) {
+    if (!target || target.personId == null) {
+      root = null;
+      renderEmpty();
+      return;
+    }
+    if (state.chainMode === 'career') {
+      root = null;
+      renderCareer(target.personId);
+      return;
+    }
+    if (target.tradeId == null) {
       root = null;
       renderEmpty();
       return;

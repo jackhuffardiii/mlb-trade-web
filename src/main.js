@@ -64,18 +64,24 @@ async function boot() {
       views.flows.dirty = true;
     }
     if (changed.has('flowsTeam')) views.flows.dirty = true;
-    if (changed.has('chain')) views.chain.dirty = true;
+    if (changed.has('chain') || changed.has('chainMode')) views.chain.dirty = true;
     if (changed.has('team') || changed.has('yearMin') || changed.has('yearMax')) syncChrome(index);
     applyView(views);
   });
 
   document.addEventListener('jump:chain', (event) => {
-    const { personId, tradeId } = event.detail;
+    const { personId, tradeId, mode } = event.detail;
     if (personId == null) return;
     const resolved = tradeId ?? index.playerIndex.get(personId)?.trades[0];
     if (resolved == null) return;
     closePanel();
-    setState({ chain: { personId, tradeId: resolved }, view: 'chain' });
+    // Arriving from a specific trade lands on that deal's chain unless the
+    // caller explicitly asked to stay in the career timeline.
+    setState({
+      chain: { personId, tradeId: resolved },
+      chainMode: mode || 'trade',
+      view: 'chain',
+    });
   });
 
   document.addEventListener('jump:flows', (event) => {

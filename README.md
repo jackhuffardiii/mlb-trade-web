@@ -9,15 +9,25 @@ Three linked views over one dataset:
    between a pair inside the active filters. Tap a line for that pairing's ledger, tap a club for
    its own. Tapping through to a club's **player web** replaces the league graph with that club's
    incoming and outgoing players as headshot nodes.
-2. **Chain Explorer** — "what did he become." Pick a player and a trade; the graph follows the
-   return package forward: who came back, who each of them later became, and where the thread goes
-   cold. An "acquired via" breadcrumb sits above the root, and truncated branches can be expanded
-   another four hops at a time.
+2. **Chain Explorer** — two views of a player, switched by a toggle:
+   - *This trade* — "what did he become." The graph follows the return package forward: who came
+     back, who each of them later became, and where the thread goes cold. An "acquired via"
+     breadcrumb sits above the root, and truncated branches expand another four hops at a time.
+   - *All trades* — the whole career as a left-to-right flow chart. The player is the spine, a
+     glowing line segmented and labelled by the club he was on during each span; every trade is a
+     stop, with what moved alongside him stacked above and what came back stacked below. Spacing is
+     ordinal, not to scale, and a dashed segment marks a club change the trade data doesn't explain
+     (free agency, waivers). The career view ignores the season and club filters by design.
 3. **Team Flows** — one club's ledger inside the filters: acquired on the left, sent away on the
    right, grouped by trade, over a summary strip (trades, players in, players out, top partner).
 
-A season-range filter and a club filter apply across all three views, and the search box
+A season-range filter and a club filter apply across the league views, and the search box
 (`/` to focus) deep-links a player into the Chain Explorer or a club into Team Flows.
+
+The layout is desktop-first: the graph is a full-bleed workspace, the controls sit in a compact top
+bar, and the detail panel docks as a right-hand sidebar the workspace makes room for. Below 900px
+it degrades — the panel becomes a bottom sheet and the ledger stacks — but the browser is the
+intended home.
 
 ## Screenshot
 

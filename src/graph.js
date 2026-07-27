@@ -50,12 +50,13 @@ export function makeCanvas(host) {
     resetZoom(duration = 500) {
       sel.transition().duration(duration).call(zoomBehavior.transform, zoomIdentity);
     },
-    zoomTo(x, y, scale = 1.4, duration = 600) {
-      const t = zoomIdentity
-        .translate(size.width / 2, size.height / 2)
-        .scale(scale)
-        .translate(-x, -y);
+    /** Put the content point (x,y) at the given screen point. */
+    zoomToPoint(x, y, scale, screenX, screenY, duration = 600) {
+      const t = zoomIdentity.translate(screenX, screenY).scale(scale).translate(-x, -y);
       sel.transition().duration(duration).call(zoomBehavior.transform, t);
+    },
+    zoomTo(x, y, scale = 1.4, duration = 600) {
+      handle.zoomToPoint(x, y, scale, size.width / 2, size.height / 2, duration);
     },
     destroy() {
       observer.disconnect();

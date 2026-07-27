@@ -10,6 +10,7 @@ export const state = {
   yearMax: 2026,
   team: null, // teamId or null for "all clubs"
   chain: null, // {personId, tradeId}
+  chainMode: 'trade', // 'trade' = this deal's forward chain | 'career' = every trade, chronological
   flowsTeam: null, // teamId shown in the ledger view
   webMode: 'league', // 'league' | 'team' (the per-club player web)
   webTeam: null, // teamId whose player web is open

@@ -173,11 +173,15 @@ export function openPanel({ kicker, title, sub, render }) {
   const body = clear(document.getElementById('panel-body'));
   if (render) render(body);
   panel.dataset.open = 'true';
+  // Lets the workspace dock away from the panel on desktop instead of hiding
+  // under it; the canvas ResizeObserver picks up the new width.
+  document.querySelector('.app')?.setAttribute('data-panel', 'open');
 }
 
 export function closePanel() {
   const panel = panelEl();
   if (panel) delete panel.dataset.open;
+  document.querySelector('.app')?.removeAttribute('data-panel');
   document.dispatchEvent(new CustomEvent('panel:closed'));
 }
 
