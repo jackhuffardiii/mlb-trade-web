@@ -1,7 +1,7 @@
 // Shared UI primitives: DOM helpers, headshots, club chips, the detail panel,
 // the graph tooltip, trade rendering and the search index.
 
-import { assetLabel, formatDate } from './data.js';
+import { assetLabel, formatDate, KIND_GLYPH } from './data.js';
 import { tradeSentence } from './chain.js';
 import { legible, rgba, teamColor } from './teams.js';
 
@@ -81,8 +81,6 @@ export function clubChip(index, teamId, { button = false, onClick } = {}) {
   }
   return el('span', props, team ? team.abbreviation : String(teamId));
 }
-
-const KIND_GLYPH = { cash: '$', ptbnl: 'PT', other: '≈' };
 
 /** One asset as a pill: headshot (players only), name, destination club. */
 export function assetPill(index, asset, { onPlayer } = {}) {
@@ -182,11 +180,6 @@ export function closePanel() {
   const panel = panelEl();
   if (panel) delete panel.dataset.open;
   document.querySelector('.app')?.removeAttribute('data-panel');
-  document.dispatchEvent(new CustomEvent('panel:closed'));
-}
-
-export function panelIsOpen() {
-  return panelEl()?.dataset.open === 'true';
 }
 
 /* ------------------------------------------------------------------ tooltip */

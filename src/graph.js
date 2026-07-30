@@ -3,9 +3,16 @@
 // under a thin bright core, luminous club-colored node rings, and a focus mode
 // that dims everything except the touched node and its neighbours.
 
-import { select, zoom, zoomIdentity } from 'd3';
+import { drag as d3drag, select, zoom, zoomIdentity } from 'd3';
 import { headshotURL, initials, svgEl } from './ui.js';
 import { legible, mix, rgba, teamColor } from './teams.js';
+
+/** Height of the floating chrome, so a graph settles below it and not under it. */
+export function headerInset() {
+  return (
+    parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130
+  );
+}
 
 export function makeCanvas(host) {
   const svg = svgEl('svg', { class: 'canvas graph' });
@@ -67,6 +74,55 @@ export function makeCanvas(host) {
   return handle;
 }
 
+/**
+ * Frame the whole node set. `max` caps the zoom-in on a small graph, `min` stops
+ * a sprawling one shrinking to dust.
+ */
+export function fitToNodes(canvas, nodes, { pad = 90, max = 1.15, min = 0.3, duration = 700 } = {}) {
+  if (!nodes.length) return;
+  const xs = nodes.map((n) => n.x);
+  const ys = nodes.map((n) => n.y);
+  const minX = Math.min(...xs);
+  const maxX = Math.max(...xs);
+  const minY = Math.min(...ys);
+  const maxY = Math.max(...ys);
+  const scale = Math.min(
+    canvas.size.width / (maxX - minX + pad * 2),
+    canvas.size.height / (maxY - minY + pad * 2),
+    max
+  );
+  canvas.zoomTo((maxX + minX) / 2, (maxY + minY) / 2, Math.max(scale, min), duration);
+}
+
+/**
+ * Make the nodes draggable. `getSim` is a getter, not the simulation, because
+ * every view rebuilds its simulation and the binding has to follow.
+ */
+export function attachDrag(canvas, nodes, getSim, { heat = 0.2 } = {}) {
+  select(canvas.nodeLayer)
+    .selectAll('.node')
+    .data(nodes)
+    .call(
+      d3drag()
+        .on('start', (event, d) => {
+          const sim = getSim();
+          if (!event.active && sim) sim.alphaTarget(heat).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        })
+        .on('drag', (event, d) => {
+          d.fx = event.x;
+          d.fy = event.y;
+        })
+        .on('end', (event, d) => {
+          const sim = getSim();
+          if (!event.active && sim) sim.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        })
+    );
+}
+
 /* ---------------------------------------------------------------- clip defs */
 
 const clipIds = new WeakMap();
@@ -91,7 +147,7 @@ function ensureCircleClip(defs, r) {
  * abbreviation set in mono. Dark navies/browns stay visible because the ring
  * and glow use the lightened variant.
  */
-export function clubNode(defs, { teamId, abbreviation, r = 24 }) {
+export function clubNode({ teamId, abbreviation, r = 24 }) {
   const base = teamColor(teamId);
   const lit = legible(base);
   const g = svgEl('g', { class: 'node club' });
@@ -195,7 +251,7 @@ export function playerNode(defs, { personId, name, teamId, r = 20, caption }) {
 }
 
 /** A labelled disc for cash / PTBNL / other considerations -- never an image. */
-export function assetNode(defs, { glyph, teamId, r = 15, caption }) {
+export function assetNode({ glyph, teamId, r = 15, caption }) {
   const lit = legible(teamColor(teamId));
   const g = svgEl('g', { class: 'node asset-node' });
   g.append(
@@ -298,8 +354,4 @@ export function setFocus(canvas, { hotNodes = [], nearNodes = [], nearLinks = []
   for (const node of nearNodes) node?.classList.add('near');
   for (const link of nearLinks) link?.classList.add('near');
   svg.dataset.focused = 'true';
-}
-
-export function clearFocus(canvas) {
-  setFocus(canvas, {});
 }

@@ -11,14 +11,15 @@ import {
   forceSimulation,
   forceX,
   forceY,
-  drag as d3drag,
-  select,
 } from 'd3';
 import { buildChain, expandNode, tradeSentence, DEFAULT_DEPTH } from '../chain.js';
-import { formatDate } from '../data.js';
+import { formatDate, KIND_GLYPH, KIND_LABEL } from '../data.js';
 import { legible, teamColor } from '../teams.js';
 import {
   assetNode,
+  attachDrag,
+  fitToNodes,
+  headerInset,
   linkGroup,
   makeCanvas,
   playerNode,
@@ -41,8 +42,6 @@ import { renderTimeline } from './timeline.js';
 
 const COLUMN = 250;
 const ROW = 76;
-const KIND_GLYPH = { cash: '$', ptbnl: 'PT', other: '≈' };
-const KIND_CAPTION = { cash: 'cash', ptbnl: 'PTBNL', other: 'considerations' };
 
 export function createChainView(host, index) {
   clear(host);
@@ -157,11 +156,11 @@ export function createChainView(host, index) {
           caption: c.name,
         });
       } else {
-        model.el = assetNode(canvas.defs, {
+        model.el = assetNode({
           glyph: KIND_GLYPH[c.kind] || '·',
           teamId: receiving,
           r: model.r,
-          caption: KIND_CAPTION[c.kind] || c.kind,
+          caption: KIND_LABEL[c.kind] || c.kind,
         });
       }
 
@@ -191,28 +190,7 @@ export function createChainView(host, index) {
       canvas.nodeLayer.append(model.el);
     }
 
-    select(canvas.nodeLayer)
-      .selectAll('.node')
-      .data(nodes)
-      .call(
-        d3drag()
-          .on('start', (event, d) => {
-            if (!event.active && sim) sim.alphaTarget(0.2).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-          })
-          .on('drag', (event, d) => {
-            d.fx = event.x;
-            d.fy = event.y;
-          })
-          .on('end', (event, d) => {
-            if (!event.active && sim) sim.alphaTarget(0);
-            if (!d.pinned) {
-              d.fx = null;
-              d.fy = null;
-            }
-          })
-      );
+    attachDrag(canvas, nodes, () => sim);
   }
 
   function tick() {
@@ -228,19 +206,20 @@ export function createChainView(host, index) {
   }
 
   function fit() {
-    if (!nodes.length) return;
-    const xs = nodes.map((n) => n.x);
-    const ys = nodes.map((n) => n.y);
-    const pad = 90;
-    const bw = Math.max(...xs) - Math.min(...xs) + pad * 2;
-    const bh = Math.max(...ys) - Math.min(...ys) + pad * 2;
-    const scale = Math.min(canvas.size.width / bw, canvas.size.height / bh, 1.15);
-    canvas.zoomTo(
-      (Math.max(...xs) + Math.min(...xs)) / 2,
-      (Math.max(...ys) + Math.min(...ys)) / 2,
-      Math.max(scale, 0.3),
-      700
-    );
+    fitToNodes(canvas, nodes, { pad: 90, max: 1.15, min: 0.3 });
+  }
+
+  /** Column/row targets for the current node set. Shared by build() and reflow(). */
+  function seatNodes() {
+    const rows = nodes.map((n) => n.row);
+    const midRow = (Math.max(...rows) + Math.min(...rows)) / 2;
+    const inset = headerInset();
+    const originX = canvas.size.width * 0.22;
+    const originY = inset + (canvas.size.height - inset) * 0.52;
+    for (const model of nodes) {
+      model.tx = originX + model.depth * COLUMN;
+      model.ty = originY + (model.row - midRow) * ROW;
+    }
   }
 
   function build() {
@@ -250,17 +229,9 @@ export function createChainView(host, index) {
       if (Number.isFinite(model.x)) posCache.set(model.id, { x: model.x, y: model.y });
     }
     flatten();
-
-    const rows = nodes.map((n) => n.row);
-    const midRow = (Math.max(...rows) + Math.min(...rows)) / 2;
-    const inset =
-      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130;
-    const originX = canvas.size.width * 0.22;
-    const originY = inset + (canvas.size.height - inset) * 0.52;
+    seatNodes();
 
     for (const model of nodes) {
-      model.tx = originX + model.depth * COLUMN;
-      model.ty = originY + (model.row - midRow) * ROW;
       const saved = posCache.get(model.id);
       model.x = saved ? saved.x : model.tx;
       model.y = saved ? saved.y : model.ty;
@@ -660,16 +631,7 @@ export function createChainView(host, index) {
       build();
       return;
     }
-    const inset =
-      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130;
-    const rows = nodes.map((n) => n.row);
-    const midRow = (Math.max(...rows) + Math.min(...rows)) / 2;
-    const originX = canvas.size.width * 0.22;
-    const originY = inset + (canvas.size.height - inset) * 0.52;
-    for (const model of nodes) {
-      model.tx = originX + model.depth * COLUMN;
-      model.ty = originY + (model.row - midRow) * ROW;
-    }
+    seatNodes();
     sim.alpha(0.6).restart();
   }
 
@@ -708,11 +670,5 @@ export function createChainView(host, index) {
     build();
   }
 
-  return {
-    update,
-    destroy() {
-      if (sim) sim.stop();
-      canvas.destroy();
-    },
-  };
+  return { update };
 }

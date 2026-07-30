@@ -8,6 +8,9 @@ export const KIND_LABEL = {
   other: 'considerations',
 };
 
+/** The glyph standing in for a non-player asset on a graph node or a pill. */
+export const KIND_GLYPH = { cash: '$', ptbnl: 'PT', other: '≈' };
+
 export function pairKey(a, b) {
   return a < b ? `${a}-${b}` : `${b}-${a}`;
 }
@@ -107,10 +110,6 @@ export function formatDateLong(iso) {
     'August', 'September', 'October', 'November', 'December'];
   const [y, m, d] = iso.split('-');
   return `${LONG[Number(m) - 1]} ${Number(d)}, ${y}`;
-}
-
-export function tradeYear(trade) {
-  return Number(trade.date.slice(0, 4));
 }
 
 export function assetLabel(asset) {

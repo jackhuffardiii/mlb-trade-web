@@ -53,7 +53,3 @@ export function inTeamFilter(trade, s = state) {
 export function passes(trade, s = state) {
   return inYears(trade, s) && inTeamFilter(trade, s);
 }
-
-export function filteredTrades(index, s = state) {
-  return index.trades.filter((t) => passes(t, s));
-}

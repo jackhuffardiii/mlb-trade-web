@@ -61,7 +61,6 @@ async function boot() {
       if (views[state.view]) views[state.view].dirty = true;
       closePanel();
       hideTip();
-      applyView(views);
     }
     if (
       changed.has('yearMin') ||

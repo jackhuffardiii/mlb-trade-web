@@ -81,11 +81,6 @@ export function legible(hex) {
   return out;
 }
 
-/** Ink that stays readable when sitting *on* the club color. */
-export function inkOn(hex) {
-  return luminance(hex) > 0.42 ? '#0B0C0E' : '#F4EFE6';
-}
-
 export function rgba(hex, alpha) {
   const [r, g, b] = parse(hex);
   return `rgba(${r},${g},${b},${alpha})`;

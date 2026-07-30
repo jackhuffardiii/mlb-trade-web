@@ -12,14 +12,14 @@ import {
   forceX,
   forceY,
   scaleSqrt,
-  drag as d3drag,
-  select,
 } from 'd3';
 import { formatDate } from '../data.js';
 import { legible, mix, teamColor } from '../teams.js';
 import {
   arc,
+  attachDrag,
   clubNode,
+  headerInset,
   linkGroup,
   makeCanvas,
   playerNode,
@@ -57,8 +57,6 @@ export function createNetworkView(host, index) {
   let selected = null;
 
   // The chrome floats over the canvas, so the graph has to settle below it.
-  const headerInset = () =>
-    parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130;
   const midY = () => headerInset() + (canvas.size.height - headerInset()) / 2;
 
   canvas.onResize = () => {
@@ -99,29 +97,6 @@ export function createNetworkView(host, index) {
     const radius = Math.min(canvas.size.width, canvas.size.height - headerInset()) * 0.34;
     node.x = canvas.size.width / 2 + Math.cos(angle) * radius;
     node.y = midY() + Math.sin(angle) * radius;
-  }
-
-  function attachDrag() {
-    select(canvas.nodeLayer)
-      .selectAll('.node')
-      .data(nodes)
-      .call(
-        d3drag()
-          .on('start', (event, d) => {
-            if (!event.active && sim) sim.alphaTarget(0.22).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-          })
-          .on('drag', (event, d) => {
-            d.fx = event.x;
-            d.fy = event.y;
-          })
-          .on('end', (event, d) => {
-            if (!event.active && sim) sim.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-          })
-      );
   }
 
   function tick() {
@@ -393,7 +368,7 @@ export function createNetworkView(host, index) {
     nodes.forEach((node, i) => {
       node.el =
         node.type === 'club'
-          ? clubNode(canvas.defs, { teamId: node.teamId, abbreviation: node.abbrev, r: node.r })
+          ? clubNode({ teamId: node.teamId, abbreviation: node.abbrev, r: node.r })
           : playerNode(canvas.defs, {
               personId: node.personId,
               name: node.name,
@@ -415,7 +390,7 @@ export function createNetworkView(host, index) {
     });
 
     canvas.svg.classList.toggle('dense', nodes.length > 40);
-    attachDrag();
+    attachDrag(canvas, nodes, () => sim, { heat: 0.22 });
     refreshSelection();
   }
 
@@ -616,11 +591,5 @@ export function createNetworkView(host, index) {
     else buildLeague();
   }
 
-  return {
-    update,
-    destroy() {
-      stopSim();
-      canvas.destroy();
-    },
-  };
+  return { update };
 }

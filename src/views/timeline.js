@@ -6,10 +6,10 @@
 // line, with what moved alongside him stacked above and what came back stacked
 // below. Ordinal spacing, not to scale: the gaps are equal, the dates are printed.
 
-import { formatDate } from '../data.js';
+import { formatDate, KIND_GLYPH, KIND_LABEL } from '../data.js';
 import { tradeSentence } from '../chain.js';
 import { legible, rgba, teamColor } from '../teams.js';
-import { assetNode, playerNode, setFocus } from '../graph.js';
+import { assetNode, headerInset, playerNode, setFocus } from '../graph.js';
 import { hideTip, moveTip, openPanel, showTip, svgEl, tradeBlock } from '../ui.js';
 
 const COL = 270; // horizontal distance between trades (ordinal, not to scale)
@@ -20,8 +20,6 @@ const STACK_STEP = 46;
 const STACK_START = { '-1': 66, 1: 104 };
 const CONNECT_START = { '-1': 26, 1: 72 };
 const MAX_PER_SIDE = 4;
-const KIND_GLYPH = { cash: '$', ptbnl: 'PT', other: '≈' };
-const KIND_CAPTION = { cash: 'cash', ptbnl: 'PTBNL', other: 'considerations' };
 
 function truncate(text, max = 18) {
   if (!text) return '';
@@ -185,11 +183,11 @@ export function renderTimeline(canvas, index, personId, { onPlayer } = {}) {
               r: 15,
               caption: truncate(asset.name),
             })
-          : assetNode(canvas.defs, {
+          : assetNode({
               glyph: KIND_GLYPH[asset.kind] || '·',
               teamId: asset.toTeamId,
               r: 12,
-              caption: KIND_CAPTION[asset.kind] || asset.kind,
+              caption: KIND_LABEL[asset.kind] || asset.kind,
             });
         node.setAttribute('transform', `translate(${x},${y})`);
         node.classList.add('timeline-side');
@@ -205,7 +203,7 @@ export function renderTimeline(canvas, index, personId, { onPlayer } = {}) {
         const dest = index.teamsById.get(asset.toTeamId);
         attach(node, column, {
           tip: {
-            title: asset.kind === 'player' ? asset.name : KIND_CAPTION[asset.kind],
+            title: asset.kind === 'player' ? asset.name : KIND_LABEL[asset.kind],
             body: `${direction < 0 ? 'Moved with' : 'Came back for'} ${player.name} · to ${dest ? dest.name : '?'}`,
           },
           onClick: () => {
@@ -296,8 +294,7 @@ export function renderTimeline(canvas, index, personId, { onPlayer } = {}) {
    * width) so the headshots aren't torn down and re-fetched.
    */
   function refit(duration = 620) {
-    const inset =
-      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130;
+    const inset = headerInset();
     const centerY = inset + (canvas.size.height - inset) / 2;
     // Fit to width where it fits, but never shrink below a readable node size --
     // a long career pans instead.

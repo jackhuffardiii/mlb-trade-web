@@ -16,11 +16,6 @@ export function returnPackage(trade, teamId) {
   return trade.assets.filter((a) => a.toTeamId === teamId);
 }
 
-/** Every asset the given team gave up in this trade. */
-export function sentPackage(trade, teamId) {
-  return trade.assets.filter((a) => a.fromTeamId === teamId);
-}
-
 /**
  * The row describing this person moving *out* of a club in this trade.
  * Prefers the row leaving `preferFrom` when the player somehow appears twice.
@@ -219,12 +214,6 @@ export function expandNode(index, root, node, extraDepth = DEFAULT_DEPTH) {
   node.children = packageNodes(ctx, next, node.pivot.fromTeamId, node.depth + 1);
   node.expandable = false;
   return true;
-}
-
-/** Flatten for counting / debugging. */
-export function walkChain(node, visit, depth = 0) {
-  visit(node, depth);
-  for (const child of node.children || []) walkChain(child, visit, depth + 1);
 }
 
 export { KIND_LABEL };

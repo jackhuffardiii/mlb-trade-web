@@ -18,17 +18,18 @@ import {
   forceSimulation,
   forceX,
   forceY,
-  drag as d3drag,
-  select,
 } from 'd3';
 
-import { formatDate } from '../data.js';
+import { formatDate, KIND_GLYPH, KIND_LABEL } from '../data.js';
 import { tradeSentence } from '../chain.js';
 import { buildLineages, openNote, sortLineages } from '../lineage.js';
 import { legible, rgba, teamColor } from '../teams.js';
 import {
   assetNode,
+  attachDrag,
   clubNode,
+  fitToNodes,
+  headerInset,
   linkGroup,
   makeCanvas,
   playerNode,
@@ -54,8 +55,6 @@ import { inYears, setState, state } from '../state.js';
 const GRID_LIMIT = 12;
 const COLUMN = 150; // half a generation: trades sit on odd columns, assets on even
 const ROW = 78;
-const KIND_GLYPH = { cash: '$', ptbnl: 'PT', other: '≈' };
-const KIND_CAPTION = { cash: 'cash', ptbnl: 'PTBNL', other: 'considerations' };
 const SORT_LABEL = { composite: 'Composite', size: 'Biggest', depth: 'Deepest' };
 
 export function createFlowsView(host, index) {
@@ -86,10 +85,6 @@ export function createFlowsView(host, index) {
   }
 
   /* ----------------------------------------------------------- club choice */
-
-  function teamsSorted() {
-    return index.teams;
-  }
 
   // Resolved once and kept local. Writing the fallback back into state from
   // inside a render would either recurse through setState or (as it did) skip
@@ -740,13 +735,8 @@ export function createFlowsView(host, index) {
         color: l.flow === 'in' ? clubLit : legible(teamColor(l.teamId)),
       }));
 
-    const inset =
-      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130;
-    const originX = canvas.size.width * 0.16;
-    const originY = inset + (canvas.size.height - inset) * 0.5;
+    seatNodes();
     for (const node of nodes) {
-      node.tx = originX + node.col * COLUMN;
-      node.ty = originY + node.row * ROW;
       node.x = node.tx;
       node.y = node.ty;
     }
@@ -763,8 +753,6 @@ export function createFlowsView(host, index) {
       .alphaDecay(0.045)
       .on('tick', tick)
       .on('end', fit);
-
-    renderTreeChrome(teamId, component);
   }
 
   function renderNodes(teamId, component) {
@@ -779,7 +767,7 @@ export function createFlowsView(host, index) {
     for (const node of nodes) {
       if (node.type === 'trade') {
         const other = index.teamsById.get(node.trade.primaryCounterparty);
-        node.el = clubNode(canvas.defs, {
+        node.el = clubNode({
           teamId: node.trade.primaryCounterparty,
           abbreviation: other ? other.abbreviation : '??',
           r: node.r,
@@ -814,11 +802,11 @@ export function createFlowsView(host, index) {
           node.el.querySelector('.ring')?.setAttribute('stroke-dasharray', '4 4');
         }
       } else {
-        node.el = assetNode(canvas.defs, {
+        node.el = assetNode({
           glyph: KIND_GLYPH[node.asset.kind] || '·',
           teamId: node.asset.direction === 'in' ? teamId : node.asset.counterpartyTeamId,
           r: node.r,
-          caption: KIND_CAPTION[node.asset.kind] || node.asset.kind,
+          caption: KIND_LABEL[node.asset.kind] || node.asset.kind,
         });
       }
 
@@ -832,26 +820,7 @@ export function createFlowsView(host, index) {
       canvas.nodeLayer.append(node.el);
     }
 
-    select(canvas.nodeLayer)
-      .selectAll('.node')
-      .data(nodes)
-      .call(
-        d3drag()
-          .on('start', (event, d) => {
-            if (!event.active && sim) sim.alphaTarget(0.2).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-          })
-          .on('drag', (event, d) => {
-            d.fx = event.x;
-            d.fy = event.y;
-          })
-          .on('end', (event, d) => {
-            if (!event.active && sim) sim.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-          })
-      );
+    attachDrag(canvas, nodes, () => sim);
   }
 
   function tick() {
@@ -867,30 +836,22 @@ export function createFlowsView(host, index) {
   }
 
   function fit() {
-    if (!nodes.length) return;
-    const xs = nodes.map((n) => n.x);
-    const ys = nodes.map((n) => n.y);
-    const pad = 100;
-    const bw = Math.max(...xs) - Math.min(...xs) + pad * 2;
-    const bh = Math.max(...ys) - Math.min(...ys) + pad * 2;
-    const scale = Math.min(canvas.size.width / bw, canvas.size.height / bh, 1.1);
-    canvas.zoomTo(
-      (Math.max(...xs) + Math.min(...xs)) / 2,
-      (Math.max(...ys) + Math.min(...ys)) / 2,
-      Math.max(scale, 0.25),
-      700
-    );
+    fitToNodes(canvas, nodes, { pad: 100, max: 1.1, min: 0.25 });
   }
 
-  function reflow() {
-    const inset =
-      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--head-h')) || 130;
+  /** Column/row targets for the current node set. Shared by renderTree() and reflow(). */
+  function seatNodes() {
+    const inset = headerInset();
     const originX = canvas.size.width * 0.16;
     const originY = inset + (canvas.size.height - inset) * 0.5;
     for (const node of nodes) {
       node.tx = originX + node.col * COLUMN;
       node.ty = originY + node.row * ROW;
     }
+  }
+
+  function reflow() {
+    seatNodes();
     sim.alpha(0.6).restart();
   }
 
@@ -909,7 +870,6 @@ export function createFlowsView(host, index) {
     setFocus(canvas, { hotNodes: [node.el], nearNodes: [...near], nearLinks });
 
     if (node.type === 'trade') {
-      const trade = index.tradesById.get(node.trade.id);
       const clubs = node.trade.counterparties
         .map((id) => index.teamsById.get(id)?.name || `Team ${id}`)
         .join(' · ');
@@ -922,7 +882,6 @@ export function createFlowsView(host, index) {
         event.clientY,
         formatDate(node.trade.date)
       );
-      void trade;
       return;
     }
 
@@ -950,7 +909,7 @@ export function createFlowsView(host, index) {
       ]),
       event.clientX,
       event.clientY,
-      asset.name || KIND_CAPTION[asset.kind] || asset.kind
+      asset.name || KIND_LABEL[asset.kind] || asset.kind
     );
   }
 
@@ -984,7 +943,7 @@ export function createFlowsView(host, index) {
       const trade = index.tradesById.get(asset.tradeId);
       openPanel({
         kicker: 'Consideration',
-        title: KIND_CAPTION[asset.kind] || asset.kind,
+        title: KIND_LABEL[asset.kind] || asset.kind,
         sub: formatDate(asset.date),
         render: (body) => {
           const list = el('div');
@@ -1097,7 +1056,7 @@ export function createFlowsView(host, index) {
       'aria-label': 'Clubs',
     });
 
-    const options = teamsSorted().map((option) => {
+    const options = index.teams.map((option) => {
       const optionLit = legible(teamColor(option.id));
       return el(
         'button',
@@ -1229,12 +1188,5 @@ export function createFlowsView(host, index) {
 
   /* ------------------------------------------------------------------- api */
 
-  return {
-    update,
-    destroy() {
-      if (sim) sim.stop();
-      if (canvas) canvas.destroy();
-      openKey = null;
-    },
-  };
+  return { update };
 }
