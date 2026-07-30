@@ -67,7 +67,14 @@ async function boot() {
       views.web.dirty = true;
       views.flows.dirty = true;
     }
-    if (changed.has('flowsTeam')) views.flows.dirty = true;
+    if (
+      changed.has('flowsTeam') ||
+      changed.has('flowsTree') ||
+      changed.has('flowsMode') ||
+      changed.has('flowsSort')
+    ) {
+      views.flows.dirty = true;
+    }
     if (changed.has('chain') || changed.has('chainMode')) views.chain.dirty = true;
     if (changed.has('team') || changed.has('yearMin') || changed.has('yearMax')) syncChrome(index);
     applyView(views);
