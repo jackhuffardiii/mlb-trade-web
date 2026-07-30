@@ -60,6 +60,19 @@ To refresh:
 node scripts/fetch-trades.mjs
 ```
 
+### Automated refresh
+
+A scheduled GitHub Actions workflow (`.github/workflows/refresh-trades.yml`) runs
+`scripts/fetch-trades.mjs` daily at 11:00 UTC (~7am ET, so it picks up the previous day's
+transactions) and diffs the result against the committed dataset with `scripts/diff-trades.mjs`.
+A commit lands on `main` only when trades were actually added, removed, or modified — the
+`generated` timestamp and `range.end` don't count, so no-op days push nothing and trigger no
+redeploy. If Vercel is connected to this repo, a real commit triggers a normal redeploy same as
+any other push to `main`.
+
+Trigger a run manually from the repo's **Actions** tab: select "Refresh trade data" →
+**Run workflow**.
+
 ## Chain algorithm
 
 Forward chain for a player *P* leaving club *A* in trade *T*:

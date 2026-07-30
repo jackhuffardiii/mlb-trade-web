@@ -1,0 +1,56 @@
+name: Refresh trade data
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-trades
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Snapshot current dataset
+        run: cp public/data/trades.json "$RUNNER_TEMP/trades-before.json"
+
+      - name: Fetch latest trades
+        run: node scripts/fetch-trades.mjs
+
+      - name: Diff against previous snapshot
+        id: diff
+        run: node scripts/diff-trades.mjs "$RUNNER_TEMP/trades-before.json" public/data/trades.json
+
+      - name: Write job summary
+        if: always()
+        run: |
+          echo "### Trade data refresh" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "${{ steps.diff.outputs.summary }}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Discard timestamp-only churn
+        if: steps.diff.outputs.changed != 'true'
+        run: git checkout -- public/data/trades.json
+
+      - name: Commit and push updated dataset
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/trades.json
+          git commit -m "Refresh trade data: ${{ steps.diff.outputs.summary }}"
+          git push origin main
