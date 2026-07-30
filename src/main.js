@@ -9,6 +9,7 @@ import {
   clear,
   closePanel,
   el,
+  hideTip,
   searchEntries,
 } from './ui.js';
 import { createNetworkView } from './views/network.js';
@@ -56,7 +57,12 @@ async function boot() {
 
   subscribe((changed) => {
     history.record(state);
-    if (changed.has('view')) applyView(views);
+    if (changed.has('view')) {
+      if (views[state.view]) views[state.view].dirty = true;
+      closePanel();
+      hideTip();
+      applyView(views);
+    }
     if (
       changed.has('yearMin') ||
       changed.has('yearMax') ||
@@ -119,7 +125,11 @@ async function boot() {
   });
 
   for (const tab of document.querySelectorAll('.tab')) {
-    tab.addEventListener('click', () => setState({ view: tab.dataset.tab }));
+    tab.addEventListener('click', () => {
+      closePanel();
+      hideTip();
+      setState({ view: tab.dataset.tab });
+    });
   }
 
   applyView(views);

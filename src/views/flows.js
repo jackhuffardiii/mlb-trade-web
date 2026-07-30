@@ -702,7 +702,13 @@ export function createFlowsView(host, index) {
     host.scrollTop = 0;
     shell.style.display = 'none';
 
-    if (openKey === component.key) return;
+    renderTreeChrome(teamId, component);
+
+    if (openKey === component.key) {
+      if (sim) sim.alpha(0.3).restart();
+      fit();
+      return;
+    }
     openKey = component.key;
     if (sim) sim.stop();
     clear(canvas.linkLayer);
@@ -1220,6 +1226,7 @@ export function createFlowsView(host, index) {
     destroy() {
       if (sim) sim.stop();
       if (canvas) canvas.destroy();
+      openKey = null;
     },
   };
 }
