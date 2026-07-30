@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-26",
+  "generated": "2026-07-30",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-07-26"
+    "end": "2026-07-30"
   },
   "teams": [
     {
@@ -1457,17 +1457,10 @@
       ],
       "assets": [
         {
-          "personId": 444436,
-          "name": "Ryan Webb",
-          "fromTeamId": 110,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 503424,
-          "name": "Brian Ward",
-          "fromTeamId": 110,
-          "toTeamId": 119,
+          "personId": 594985,
+          "name": "Ben Rowen",
+          "fromTeamId": 119,
+          "toTeamId": 110,
           "kind": "player"
         },
         {
@@ -1478,10 +1471,17 @@
           "kind": "player"
         },
         {
-          "personId": 594985,
-          "name": "Ben Rowen",
-          "fromTeamId": 119,
-          "toTeamId": 110,
+          "personId": 503424,
+          "name": "Brian Ward",
+          "fromTeamId": 110,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 444436,
+          "name": "Ryan Webb",
+          "fromTeamId": 110,
+          "toTeamId": 119,
           "kind": "player"
         }
       ]
@@ -1860,17 +1860,17 @@
       ],
       "assets": [
         {
-          "personId": 474668,
-          "name": "Eric Surkamp",
-          "fromTeamId": 145,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
           "personId": 544930,
           "name": "Blake Smith",
           "fromTeamId": 119,
           "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 474668,
+          "name": "Eric Surkamp",
+          "fromTeamId": 145,
+          "toTeamId": 119,
           "kind": "player"
         }
       ]
@@ -2077,6 +2077,13 @@
           "kind": "player"
         },
         {
+          "personId": 602115,
+          "name": "Gabriel Guerrero",
+          "fromTeamId": 136,
+          "toTeamId": 109,
+          "kind": "player"
+        },
+        {
           "personId": 573064,
           "name": "Vidal Nuño",
           "fromTeamId": 109,
@@ -2093,13 +2100,6 @@
         {
           "personId": 608678,
           "name": "Dominic Leone",
-          "fromTeamId": 136,
-          "toTeamId": 109,
-          "kind": "player"
-        },
-        {
-          "personId": 602115,
-          "name": "Gabriel Guerrero",
           "fromTeamId": 136,
           "toTeamId": 109,
           "kind": "player"
@@ -2234,10 +2234,10 @@
       ],
       "assets": [
         {
-          "personId": 594838,
-          "name": "Phil Gosselin",
-          "fromTeamId": 144,
-          "toTeamId": 109,
+          "personId": 276520,
+          "name": "Bronson Arroyo",
+          "fromTeamId": 109,
+          "toTeamId": 144,
           "kind": "player"
         },
         {
@@ -2248,10 +2248,10 @@
           "kind": "player"
         },
         {
-          "personId": 276520,
-          "name": "Bronson Arroyo",
-          "fromTeamId": 109,
-          "toTeamId": 144,
+          "personId": 594838,
+          "name": "Phil Gosselin",
+          "fromTeamId": 144,
+          "toTeamId": 109,
           "kind": "player"
         }
       ]
@@ -2398,17 +2398,17 @@
       ],
       "assets": [
         {
-          "personId": 642396,
-          "name": "Manuel Rondon",
-          "fromTeamId": 108,
-          "toTeamId": 112,
-          "kind": "player"
-        },
-        {
           "personId": 607257,
           "name": "Raffy Lopez",
           "fromTeamId": 112,
           "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 642396,
+          "name": "Manuel Rondon",
+          "fromTeamId": 108,
+          "toTeamId": 112,
           "kind": "player"
         },
         {
@@ -2782,17 +2782,17 @@
       ],
       "assets": [
         {
-          "personId": 641861,
-          "name": "Casey Meisner",
-          "fromTeamId": 121,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
           "personId": 461325,
           "name": "Tyler Clippard",
           "fromTeamId": 133,
           "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 641861,
+          "name": "Casey Meisner",
+          "fromTeamId": 121,
+          "toTeamId": 133,
           "kind": "player"
         },
         {
@@ -2814,29 +2814,8 @@
       ],
       "assets": [
         {
-          "personId": 453064,
-          "name": "Troy Tulowitzki",
-          "fromTeamId": 115,
-          "toTeamId": 141,
-          "kind": "player"
-        },
-        {
-          "personId": 115629,
-          "name": "LaTroy Hawkins",
-          "fromTeamId": 115,
-          "toTeamId": 141,
-          "kind": "player"
-        },
-        {
-          "personId": 408314,
-          "name": "José Reyes",
-          "fromTeamId": 141,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
-          "personId": 612434,
-          "name": "Miguel Castro",
+          "personId": 622786,
+          "name": "Jesus Tinoco",
           "fromTeamId": 141,
           "toTeamId": 115,
           "kind": "player"
@@ -2849,10 +2828,31 @@
           "kind": "player"
         },
         {
-          "personId": 622786,
-          "name": "Jesus Tinoco",
+          "personId": 612434,
+          "name": "Miguel Castro",
           "fromTeamId": 141,
           "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 408314,
+          "name": "José Reyes",
+          "fromTeamId": 141,
+          "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 115629,
+          "name": "LaTroy Hawkins",
+          "fromTeamId": 115,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 453064,
+          "name": "Troy Tulowitzki",
+          "fromTeamId": 115,
+          "toTeamId": 141,
           "kind": "player"
         }
       ]
@@ -2867,6 +2867,13 @@
       ],
       "assets": [
         {
+          "personId": 450314,
+          "name": "Ben Zobrist",
+          "fromTeamId": 133,
+          "toTeamId": 118,
+          "kind": "player"
+        },
+        {
           "personId": 640455,
           "name": "Sean Manaea",
           "fromTeamId": 118,
@@ -2878,13 +2885,6 @@
           "name": "Aaron Brooks",
           "fromTeamId": 118,
           "toTeamId": 133,
-          "kind": "player"
-        },
-        {
-          "personId": 450314,
-          "name": "Ben Zobrist",
-          "fromTeamId": 133,
-          "toTeamId": 118,
           "kind": "player"
         },
         {
@@ -2906,17 +2906,17 @@
       ],
       "assets": [
         {
-          "personId": 622333,
-          "name": "Eduar Lopez",
-          "fromTeamId": 108,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": 430203,
           "name": "David DeJesus",
           "fromTeamId": 139,
           "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 622333,
+          "name": "Eduar Lopez",
+          "fromTeamId": 108,
+          "toTeamId": 139,
           "kind": "player"
         }
       ]
@@ -2963,17 +2963,17 @@
       ],
       "assets": [
         {
-          "personId": 461815,
-          "name": "David Murphy",
-          "fromTeamId": 114,
-          "toTeamId": 108,
-          "kind": "player"
-        },
-        {
           "personId": 608715,
           "name": "Eric Stamets",
           "fromTeamId": 108,
           "toTeamId": 114,
+          "kind": "player"
+        },
+        {
+          "personId": 461815,
+          "name": "David Murphy",
+          "fromTeamId": 114,
+          "toTeamId": 108,
           "kind": "player"
         }
       ]
@@ -3063,20 +3063,6 @@
       ],
       "assets": [
         {
-          "personId": 596057,
-          "name": "Daniel Norris",
-          "fromTeamId": 141,
-          "toTeamId": 116,
-          "kind": "player"
-        },
-        {
-          "personId": 571510,
-          "name": "Matthew Boyd",
-          "fromTeamId": 141,
-          "toTeamId": 116,
-          "kind": "player"
-        },
-        {
           "personId": 456034,
           "name": "David Price",
           "fromTeamId": 116,
@@ -3086,6 +3072,20 @@
         {
           "personId": 607951,
           "name": "Jairo Labourt",
+          "fromTeamId": 141,
+          "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 596057,
+          "name": "Daniel Norris",
+          "fromTeamId": 141,
+          "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 571510,
+          "name": "Matthew Boyd",
           "fromTeamId": 141,
           "toTeamId": 116,
           "kind": "player"
@@ -3155,15 +3155,15 @@
       ],
       "assets": [
         {
-          "personId": 570717,
-          "name": "Ramón Flores",
+          "personId": 542432,
+          "name": "José Ramírez",
           "fromTeamId": 147,
           "toTeamId": 136,
           "kind": "player"
         },
         {
-          "personId": 542432,
-          "name": "José Ramírez",
+          "personId": 570717,
+          "name": "Ramón Flores",
           "fromTeamId": 147,
           "toTeamId": 136,
           "kind": "player"
@@ -3187,29 +3187,8 @@
       ],
       "assets": [
         {
-          "personId": 462382,
-          "name": "Jim Johnson",
-          "fromTeamId": 144,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 622072,
-          "name": "Alex Wood",
-          "fromTeamId": 144,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 276520,
-          "name": "Bronson Arroyo",
-          "fromTeamId": 144,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 621064,
-          "name": "Zack Bird",
+          "personId": 493343,
+          "name": "Héctor Olivera",
           "fromTeamId": 119,
           "toTeamId": 144,
           "kind": "player"
@@ -3222,15 +3201,29 @@
           "kind": "player"
         },
         {
-          "personId": 493343,
-          "name": "Héctor Olivera",
+          "personId": 621064,
+          "name": "Zack Bird",
           "fromTeamId": 119,
           "toTeamId": 144,
           "kind": "player"
         },
         {
-          "personId": 606299,
-          "name": "José Peraza",
+          "personId": 276520,
+          "name": "Bronson Arroyo",
+          "fromTeamId": 144,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 622072,
+          "name": "Alex Wood",
+          "fromTeamId": 144,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 462382,
+          "name": "Jim Johnson",
           "fromTeamId": 144,
           "toTeamId": 119,
           "kind": "player"
@@ -3238,6 +3231,13 @@
         {
           "personId": 501593,
           "name": "Luis Avilán",
+          "fromTeamId": 144,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 606299,
+          "name": "José Peraza",
           "fromTeamId": 144,
           "toTeamId": 119,
           "kind": "player"
@@ -3279,17 +3279,17 @@
       ],
       "assets": [
         {
-          "personId": 465657,
-          "name": "Joakim Soria",
-          "fromTeamId": 116,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 592444,
           "name": "JaCoby Jones",
           "fromTeamId": 134,
           "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 465657,
+          "name": "Joakim Soria",
+          "fromTeamId": 116,
+          "toTeamId": 134,
           "kind": "player"
         }
       ]
@@ -3304,31 +3304,10 @@
       ],
       "assets": [
         {
-          "personId": 605288,
-          "name": "Adrian Houser",
+          "personId": 621433,
+          "name": "Brett Phillips",
           "fromTeamId": 117,
           "toTeamId": 158,
-          "kind": "player"
-        },
-        {
-          "personId": 570267,
-          "name": "Domingo Santana",
-          "fromTeamId": 117,
-          "toTeamId": 158,
-          "kind": "player"
-        },
-        {
-          "personId": 571666,
-          "name": "Mike Fiers",
-          "fromTeamId": 158,
-          "toTeamId": 117,
-          "kind": "player"
-        },
-        {
-          "personId": 460576,
-          "name": "Carlos Gómez",
-          "fromTeamId": 158,
-          "toTeamId": 117,
           "kind": "player"
         },
         {
@@ -3339,8 +3318,29 @@
           "kind": "player"
         },
         {
-          "personId": 621433,
-          "name": "Brett Phillips",
+          "personId": 460576,
+          "name": "Carlos Gómez",
+          "fromTeamId": 158,
+          "toTeamId": 117,
+          "kind": "player"
+        },
+        {
+          "personId": 571666,
+          "name": "Mike Fiers",
+          "fromTeamId": 158,
+          "toTeamId": 117,
+          "kind": "player"
+        },
+        {
+          "personId": 570267,
+          "name": "Domingo Santana",
+          "fromTeamId": 117,
+          "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 605288,
+          "name": "Adrian Houser",
           "fromTeamId": 117,
           "toTeamId": 158,
           "kind": "player"
@@ -3364,10 +3364,10 @@
       ],
       "assets": [
         {
-          "personId": 502190,
-          "name": "Mike Leake",
-          "fromTeamId": 113,
-          "toTeamId": 137,
+          "personId": 594807,
+          "name": "Adam Duvall",
+          "fromTeamId": 137,
+          "toTeamId": 113,
           "kind": "player"
         },
         {
@@ -3378,10 +3378,10 @@
           "kind": "player"
         },
         {
-          "personId": 594807,
-          "name": "Adam Duvall",
-          "fromTeamId": 137,
-          "toTeamId": 113,
+          "personId": 502190,
+          "name": "Mike Leake",
+          "fromTeamId": 113,
+          "toTeamId": 137,
           "kind": "player"
         }
       ]
@@ -3396,43 +3396,8 @@
       ],
       "assets": [
         {
-          "personId": 430935,
-          "name": "Cole Hamels",
-          "fromTeamId": 143,
-          "toTeamId": 140,
-          "kind": "player"
-        },
-        {
-          "personId": 518617,
-          "name": "Jake Diekman",
-          "fromTeamId": 143,
-          "toTeamId": 140,
-          "kind": "player"
-        },
-        {
-          "personId": 457448,
-          "name": "Matt Harrison",
-          "fromTeamId": 140,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
-          "personId": 595751,
-          "name": "Jorge Alfaro",
-          "fromTeamId": 140,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
-          "personId": 595191,
-          "name": "Jerad Eickhoff",
-          "fromTeamId": 140,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
-          "personId": 608384,
-          "name": "Nick Williams",
+          "personId": 622097,
+          "name": "Jake Thompson",
           "fromTeamId": 140,
           "toTeamId": 143,
           "kind": "player"
@@ -3445,10 +3410,45 @@
           "kind": "player"
         },
         {
-          "personId": 622097,
-          "name": "Jake Thompson",
+          "personId": 608384,
+          "name": "Nick Williams",
           "fromTeamId": 140,
           "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 595191,
+          "name": "Jerad Eickhoff",
+          "fromTeamId": 140,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 595751,
+          "name": "Jorge Alfaro",
+          "fromTeamId": 140,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 457448,
+          "name": "Matt Harrison",
+          "fromTeamId": 140,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 518617,
+          "name": "Jake Diekman",
+          "fromTeamId": 143,
+          "toTeamId": 140,
+          "kind": "player"
+        },
+        {
+          "personId": 430935,
+          "name": "Cole Hamels",
+          "fromTeamId": 143,
+          "toTeamId": 140,
           "kind": "player"
         },
         {
@@ -3502,17 +3502,17 @@
       ],
       "assets": [
         {
-          "personId": 467827,
-          "name": "Gerardo Parra",
-          "fromTeamId": 158,
-          "toTeamId": 110,
-          "kind": "player"
-        },
-        {
           "personId": 605200,
           "name": "Zach Davies",
           "fromTeamId": 110,
           "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 467827,
+          "name": "Gerardo Parra",
+          "fromTeamId": 158,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
@@ -3623,8 +3623,8 @@
       ],
       "assets": [
         {
-          "personId": 610143,
-          "name": "Alberto Tirado",
+          "personId": 622772,
+          "name": "Jimmy Cordero",
           "fromTeamId": 141,
           "toTeamId": 143,
           "kind": "player"
@@ -3637,8 +3637,8 @@
           "kind": "player"
         },
         {
-          "personId": 622772,
-          "name": "Jimmy Cordero",
+          "personId": 610143,
+          "name": "Alberto Tirado",
           "fromTeamId": 141,
           "toTeamId": 143,
           "kind": "player"
@@ -3662,10 +3662,10 @@
       ],
       "assets": [
         {
-          "personId": 429717,
-          "name": "Dan Haren",
-          "fromTeamId": 146,
-          "toTeamId": 112,
+          "personId": 519303,
+          "name": "Elliot Soto",
+          "fromTeamId": 112,
+          "toTeamId": 146,
           "kind": "player"
         },
         {
@@ -3676,10 +3676,10 @@
           "kind": "player"
         },
         {
-          "personId": 519303,
-          "name": "Elliot Soto",
-          "fromTeamId": 112,
-          "toTeamId": 146,
+          "personId": 429717,
+          "name": "Dan Haren",
+          "fromTeamId": 146,
+          "toTeamId": 112,
           "kind": "player"
         },
         {
@@ -3726,17 +3726,17 @@
       ],
       "assets": [
         {
-          "personId": 516809,
-          "name": "Junior Lake",
-          "fromTeamId": 112,
-          "toTeamId": 110,
-          "kind": "player"
-        },
-        {
           "personId": 488984,
           "name": "Tommy Hunter",
           "fromTeamId": 110,
           "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 516809,
+          "name": "Junior Lake",
+          "fromTeamId": 112,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
@@ -3751,10 +3751,10 @@
       ],
       "assets": [
         {
-          "personId": 643297,
-          "name": "Cody Ege",
-          "fromTeamId": 140,
-          "toTeamId": 146,
+          "personId": 473879,
+          "name": "Sam Dyson",
+          "fromTeamId": 146,
+          "toTeamId": 140,
           "kind": "player"
         },
         {
@@ -3765,10 +3765,10 @@
           "kind": "player"
         },
         {
-          "personId": 473879,
-          "name": "Sam Dyson",
-          "fromTeamId": 146,
-          "toTeamId": 140,
+          "personId": 643297,
+          "name": "Cody Ege",
+          "fromTeamId": 140,
+          "toTeamId": 146,
           "kind": "player"
         }
       ]
@@ -3783,13 +3783,6 @@
       ],
       "assets": [
         {
-          "personId": 605242,
-          "name": "Michael Fulmer",
-          "fromTeamId": 121,
-          "toTeamId": 116,
-          "kind": "player"
-        },
-        {
           "personId": 570666,
           "name": "Luis Cessa",
           "fromTeamId": 121,
@@ -3801,6 +3794,13 @@
           "name": "Yoenis Cespedes",
           "fromTeamId": 116,
           "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 605242,
+          "name": "Michael Fulmer",
+          "fromTeamId": 121,
+          "toTeamId": 116,
           "kind": "player"
         }
       ]
@@ -3815,17 +3815,17 @@
       ],
       "assets": [
         {
-          "personId": 519240,
-          "name": "Marc Rzepczynski",
-          "fromTeamId": 114,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
           "personId": 501659,
           "name": "Abraham Almonte",
           "fromTeamId": 135,
           "toTeamId": 114,
+          "kind": "player"
+        },
+        {
+          "personId": 519240,
+          "name": "Marc Rzepczynski",
+          "fromTeamId": 114,
+          "toTeamId": 135,
           "kind": "player"
         }
       ]
@@ -3947,6 +3947,13 @@
       ],
       "assets": [
         {
+          "personId": 430897,
+          "name": "Nick Swisher",
+          "fromTeamId": 114,
+          "toTeamId": 144,
+          "kind": "player"
+        },
+        {
           "personId": 453400,
           "name": "Chris Johnson",
           "fromTeamId": 144,
@@ -3956,13 +3963,6 @@
         {
           "personId": 456422,
           "name": "Michael Bourn",
-          "fromTeamId": 114,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
-          "personId": 430897,
-          "name": "Nick Swisher",
           "fromTeamId": 114,
           "toTeamId": 144,
           "kind": "player"
@@ -4143,17 +4143,17 @@
       ],
       "assets": [
         {
-          "personId": 461416,
-          "name": "Will Venable",
-          "fromTeamId": 135,
-          "toTeamId": 140,
-          "kind": "player"
-        },
-        {
           "personId": 621522,
           "name": "Marcus Greene Jr.",
           "fromTeamId": 140,
           "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 461416,
+          "name": "Will Venable",
+          "fromTeamId": 135,
+          "toTeamId": 140,
           "kind": "player"
         },
         {
@@ -4692,17 +4692,17 @@
       ],
       "assets": [
         {
-          "personId": 543302,
-          "name": "Chris Herrmann",
-          "fromTeamId": 142,
-          "toTeamId": 109,
-          "kind": "player"
-        },
-        {
           "personId": 594953,
           "name": "Daniel Palka",
           "fromTeamId": 109,
           "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 543302,
+          "name": "Chris Herrmann",
+          "fromTeamId": 142,
+          "toTeamId": 109,
           "kind": "player"
         }
       ]
@@ -4799,24 +4799,10 @@
       ],
       "assets": [
         {
-          "personId": 656794,
-          "name": "Sean Newcomb",
+          "personId": 595939,
+          "name": "Chris Ellis",
           "fromTeamId": 108,
           "toTeamId": 144,
-          "kind": "player"
-        },
-        {
-          "personId": 430947,
-          "name": "Erick Aybar",
-          "fromTeamId": 108,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
-          "personId": 593993,
-          "name": "José Briceño",
-          "fromTeamId": 144,
-          "toTeamId": 108,
           "kind": "player"
         },
         {
@@ -4827,8 +4813,22 @@
           "kind": "player"
         },
         {
-          "personId": 595939,
-          "name": "Chris Ellis",
+          "personId": 593993,
+          "name": "José Briceño",
+          "fromTeamId": 144,
+          "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 430947,
+          "name": "Erick Aybar",
+          "fromTeamId": 108,
+          "toTeamId": 144,
+          "kind": "player"
+        },
+        {
+          "personId": 656794,
+          "name": "Sean Newcomb",
           "fromTeamId": 108,
           "toTeamId": 144,
           "kind": "player"
@@ -4930,13 +4930,6 @@
           "kind": "player"
         },
         {
-          "personId": 452666,
-          "name": "Tom Wilhelmsen",
-          "fromTeamId": 136,
-          "toTeamId": 140,
-          "kind": "player"
-        },
-        {
           "personId": 547982,
           "name": "Leonys Martin",
           "fromTeamId": 140,
@@ -4948,6 +4941,13 @@
           "name": "Anthony Bass",
           "fromTeamId": 140,
           "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 452666,
+          "name": "Tom Wilhelmsen",
+          "fromTeamId": 136,
+          "toTeamId": 140,
           "kind": "player"
         },
         {
@@ -5012,17 +5012,17 @@
       ],
       "assets": [
         {
-          "personId": 596143,
-          "name": "Luis Sardinas",
-          "fromTeamId": 158,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
           "personId": 570717,
           "name": "Ramón Flores",
           "fromTeamId": 136,
           "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 596143,
+          "name": "Luis Sardinas",
+          "fromTeamId": 158,
+          "toTeamId": 136,
           "kind": "player"
         }
       ]
@@ -5037,10 +5037,10 @@
       ],
       "assets": [
         {
-          "personId": 457727,
-          "name": "Cameron Maybin",
-          "fromTeamId": 144,
-          "toTeamId": 116,
+          "personId": 642100,
+          "name": "Gabe Speier",
+          "fromTeamId": 116,
+          "toTeamId": 144,
           "kind": "player"
         },
         {
@@ -5051,10 +5051,10 @@
           "kind": "player"
         },
         {
-          "personId": 642100,
-          "name": "Gabe Speier",
-          "fromTeamId": 116,
-          "toTeamId": 144,
+          "personId": 457727,
+          "name": "Cameron Maybin",
+          "fromTeamId": 144,
+          "toTeamId": 116,
           "kind": "player"
         }
       ]
@@ -5069,17 +5069,17 @@
       ],
       "assets": [
         {
-          "personId": 607359,
-          "name": "Spencer Patton",
-          "fromTeamId": 140,
-          "toTeamId": 112,
-          "kind": "player"
-        },
-        {
           "personId": 620447,
           "name": "Frandy De La Rosa",
           "fromTeamId": 112,
           "toTeamId": 140,
+          "kind": "player"
+        },
+        {
+          "personId": 607359,
+          "name": "Spencer Patton",
+          "fromTeamId": 140,
+          "toTeamId": 112,
           "kind": "player"
         }
       ]
@@ -5244,17 +5244,17 @@
       ],
       "assets": [
         {
-          "personId": 660640,
-          "name": "Wander Cabrera",
-          "fromTeamId": 112,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
           "personId": 571521,
           "name": "Rex Brothers",
           "fromTeamId": 115,
           "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 660640,
+          "name": "Wander Cabrera",
+          "fromTeamId": 112,
+          "toTeamId": 115,
           "kind": "player"
         }
       ]
@@ -5618,6 +5618,13 @@
       ],
       "assets": [
         {
+          "personId": 621020,
+          "name": "Dansby Swanson",
+          "fromTeamId": 109,
+          "toTeamId": 144,
+          "kind": "player"
+        },
+        {
           "personId": 571946,
           "name": "Shelby Miller",
           "fromTeamId": 144,
@@ -5644,13 +5651,6 @@
           "fromTeamId": 109,
           "toTeamId": 144,
           "kind": "player"
-        },
-        {
-          "personId": 621020,
-          "name": "Dansby Swanson",
-          "fromTeamId": 109,
-          "toTeamId": 144,
-          "kind": "player"
         }
       ]
     },
@@ -5663,13 +5663,6 @@
         158
       ],
       "assets": [
-        {
-          "personId": 642547,
-          "name": "Freddy Peralta",
-          "fromTeamId": 136,
-          "toTeamId": 158,
-          "kind": "player"
-        },
         {
           "personId": 627392,
           "name": "Daniel Missaki",
@@ -5689,6 +5682,13 @@
           "name": "Adam Lind",
           "fromTeamId": 158,
           "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 642547,
+          "name": "Freddy Peralta",
+          "fromTeamId": 136,
+          "toTeamId": 158,
           "kind": "player"
         }
       ]
@@ -5735,15 +5735,15 @@
           "kind": "player"
         },
         {
-          "personId": 643338,
-          "name": "Chad Green",
+          "personId": 570666,
+          "name": "Luis Cessa",
           "fromTeamId": 116,
           "toTeamId": 147,
           "kind": "player"
         },
         {
-          "personId": 570666,
-          "name": "Luis Cessa",
+          "personId": 643338,
+          "name": "Chad Green",
           "fromTeamId": 116,
           "toTeamId": 147,
           "kind": "player"
@@ -5760,8 +5760,8 @@
       ],
       "assets": [
         {
-          "personId": 664116,
-          "name": "Zack Erwin",
+          "personId": 605525,
+          "name": "J.B. Wendelken",
           "fromTeamId": 145,
           "toTeamId": 133,
           "kind": "player"
@@ -5774,8 +5774,8 @@
           "kind": "player"
         },
         {
-          "personId": 605525,
-          "name": "J.B. Wendelken",
+          "personId": 664116,
+          "name": "Zack Erwin",
           "fromTeamId": 145,
           "toTeamId": 133,
           "kind": "player"
@@ -6961,10 +6961,10 @@
       ],
       "assets": [
         {
-          "personId": 592407,
-          "name": "Bryan Holaday",
-          "fromTeamId": 116,
-          "toTeamId": 140,
+          "personId": 594867,
+          "name": "Myles Jaye",
+          "fromTeamId": 140,
+          "toTeamId": 116,
           "kind": "player"
         },
         {
@@ -6975,10 +6975,10 @@
           "kind": "player"
         },
         {
-          "personId": 594867,
-          "name": "Myles Jaye",
-          "fromTeamId": 140,
-          "toTeamId": 116,
+          "personId": 592407,
+          "name": "Bryan Holaday",
+          "fromTeamId": 116,
+          "toTeamId": 140,
           "kind": "player"
         }
       ]
@@ -6993,10 +6993,10 @@
       ],
       "assets": [
         {
-          "personId": 627892,
-          "name": "Natanael Delgado",
-          "fromTeamId": 108,
-          "toTeamId": 110,
+          "personId": 518854,
+          "name": "Chris Jones",
+          "fromTeamId": 110,
+          "toTeamId": 108,
           "kind": "player"
         },
         {
@@ -7007,10 +7007,10 @@
           "kind": "player"
         },
         {
-          "personId": 518854,
-          "name": "Chris Jones",
-          "fromTeamId": 110,
-          "toTeamId": 108,
+          "personId": 627892,
+          "name": "Natanael Delgado",
+          "fromTeamId": 108,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
@@ -8480,17 +8480,17 @@
       ],
       "assets": [
         {
-          "personId": 519322,
-          "name": "Drew Storen",
-          "fromTeamId": 141,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
           "personId": 276542,
           "name": "Joaquín Benoit",
           "fromTeamId": 136,
           "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 519322,
+          "name": "Drew Storen",
+          "fromTeamId": 141,
+          "toTeamId": 136,
           "kind": "player"
         },
         {
@@ -21524,17 +21524,17 @@
       ],
       "assets": [
         {
-          "personId": 588751,
-          "name": "Adeiny Hechavarría",
-          "fromTeamId": 139,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 676910,
           "name": "Matt Seelinger",
           "fromTeamId": 134,
           "toTeamId": 139,
+          "kind": "player"
+        },
+        {
+          "personId": 588751,
+          "name": "Adeiny Hechavarría",
+          "fromTeamId": 139,
+          "toTeamId": 134,
           "kind": "player"
         },
         {
@@ -21606,17 +21606,17 @@
       ],
       "assets": [
         {
-          "personId": 663793,
-          "name": "Dakota Chalmers",
-          "fromTeamId": 133,
-          "toTeamId": 142,
-          "kind": "player"
-        },
-        {
           "personId": 407845,
           "name": "Fernando Rodney",
           "fromTeamId": 142,
           "toTeamId": 133,
+          "kind": "player"
+        },
+        {
+          "personId": 663793,
+          "name": "Dakota Chalmers",
+          "fromTeamId": 133,
+          "toTeamId": 142,
           "kind": "player"
         }
       ]
@@ -22865,17 +22865,17 @@
       ],
       "assets": [
         {
-          "personId": 606019,
-          "name": "Esteban Quiroz",
-          "fromTeamId": 111,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
           "personId": 605155,
           "name": "Colten Brewer",
           "fromTeamId": 135,
           "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": 606019,
+          "name": "Esteban Quiroz",
+          "fromTeamId": 111,
+          "toTeamId": 135,
           "kind": "player"
         }
       ]
@@ -23015,17 +23015,17 @@
       ],
       "assets": [
         {
-          "personId": 663927,
-          "name": "Drew Finley",
-          "fromTeamId": 147,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
           "personId": 641796,
           "name": "Tim Locastro",
           "fromTeamId": 119,
           "toTeamId": 147,
+          "kind": "player"
+        },
+        {
+          "personId": 663927,
+          "name": "Drew Finley",
+          "fromTeamId": 147,
+          "toTeamId": 119,
           "kind": "player"
         },
         {
@@ -23047,17 +23047,17 @@
       ],
       "assets": [
         {
-          "personId": 596071,
-          "name": "Dillon Peters",
-          "fromTeamId": 146,
-          "toTeamId": 108,
-          "kind": "player"
-        },
-        {
           "personId": 676744,
           "name": "Tyler Stevens",
           "fromTeamId": 108,
           "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 596071,
+          "name": "Dillon Peters",
+          "fromTeamId": 146,
+          "toTeamId": 108,
           "kind": "player"
         }
       ]
@@ -23197,10 +23197,10 @@
       ],
       "assets": [
         {
-          "personId": 622446,
-          "name": "Jefry Rodriguez",
-          "fromTeamId": 120,
-          "toTeamId": 114,
+          "personId": 543228,
+          "name": "Yan Gomes",
+          "fromTeamId": 114,
+          "toTeamId": 120,
           "kind": "player"
         },
         {
@@ -23211,10 +23211,10 @@
           "kind": "player"
         },
         {
-          "personId": 543228,
-          "name": "Yan Gomes",
-          "fromTeamId": 114,
-          "toTeamId": 120,
+          "personId": 622446,
+          "name": "Jefry Rodriguez",
+          "fromTeamId": 120,
+          "toTeamId": 114,
           "kind": "player"
         },
         {
@@ -23261,13 +23261,6 @@
           "kind": "player"
         },
         {
-          "personId": 457803,
-          "name": "Jay Bruce",
-          "fromTeamId": 121,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
           "personId": 429664,
           "name": "Robinson Canó",
           "fromTeamId": 136,
@@ -23282,13 +23275,6 @@
           "kind": "player"
         },
         {
-          "personId": 639373,
-          "name": "Gerson Bautista",
-          "fromTeamId": 121,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
           "personId": 643290,
           "name": "Justin Dunn",
           "fromTeamId": 121,
@@ -23298,6 +23284,20 @@
         {
           "personId": 672284,
           "name": "Jarred Kelenic",
+          "fromTeamId": 121,
+          "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 639373,
+          "name": "Gerson Bautista",
+          "fromTeamId": 121,
+          "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 457803,
+          "name": "Jay Bruce",
           "fromTeamId": 121,
           "toTeamId": 136,
           "kind": "player"
@@ -23321,15 +23321,15 @@
       ],
       "assets": [
         {
-          "personId": 504379,
-          "name": "Juan Nicasio",
+          "personId": 516416,
+          "name": "Jean Segura",
           "fromTeamId": 136,
           "toTeamId": 143,
           "kind": "player"
         },
         {
-          "personId": 641487,
-          "name": "J.P. Crawford",
+          "personId": 467793,
+          "name": "Carlos Santana",
           "fromTeamId": 143,
           "toTeamId": 136,
           "kind": "player"
@@ -23342,15 +23342,15 @@
           "kind": "player"
         },
         {
-          "personId": 516416,
-          "name": "Jean Segura",
+          "personId": 504379,
+          "name": "Juan Nicasio",
           "fromTeamId": 136,
           "toTeamId": 143,
           "kind": "player"
         },
         {
-          "personId": 467793,
-          "name": "Carlos Santana",
+          "personId": 641487,
+          "name": "J.P. Crawford",
           "fromTeamId": 143,
           "toTeamId": 136,
           "kind": "player"
@@ -23367,8 +23367,8 @@
       ],
       "assets": [
         {
-          "personId": 670370,
-          "name": "Andrew Young",
+          "personId": 596133,
+          "name": "Luke Weaver",
           "fromTeamId": 138,
           "toTeamId": 109,
           "kind": "player"
@@ -23381,17 +23381,17 @@
           "kind": "player"
         },
         {
-          "personId": 596133,
-          "name": "Luke Weaver",
-          "fromTeamId": 138,
-          "toTeamId": 109,
-          "kind": "player"
-        },
-        {
           "personId": 502671,
           "name": "Paul Goldschmidt",
           "fromTeamId": 109,
           "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 670370,
+          "name": "Andrew Young",
+          "fromTeamId": 138,
+          "toTeamId": 109,
           "kind": "player"
         },
         {
@@ -23438,17 +23438,17 @@
       ],
       "assets": [
         {
-          "personId": 667640,
-          "name": "Yordi Rosario",
-          "fromTeamId": 145,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 467100,
           "name": "Iván Nova",
           "fromTeamId": 134,
           "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 667640,
+          "name": "Yordi Rosario",
+          "fromTeamId": 145,
+          "toTeamId": 134,
           "kind": "player"
         },
         {
@@ -23470,17 +23470,17 @@
       ],
       "assets": [
         {
-          "personId": 621550,
-          "name": "Patrick Wisdom",
-          "fromTeamId": 138,
-          "toTeamId": 140,
-          "kind": "player"
-        },
-        {
           "personId": 592685,
           "name": "Drew Robinson",
           "fromTeamId": 140,
           "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 621550,
+          "name": "Patrick Wisdom",
+          "fromTeamId": 138,
+          "toTeamId": 140,
           "kind": "player"
         }
       ]
@@ -23546,10 +23546,10 @@
       ],
       "assets": [
         {
-          "personId": 642121,
-          "name": "Cole Sulser",
-          "fromTeamId": 114,
-          "toTeamId": 139,
+          "personId": 641343,
+          "name": "Jake Bauers",
+          "fromTeamId": 139,
+          "toTeamId": 114,
           "kind": "player"
         },
         {
@@ -23560,17 +23560,10 @@
           "kind": "player"
         },
         {
-          "personId": 641343,
-          "name": "Jake Bauers",
-          "fromTeamId": 139,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
-          "personId": 467793,
-          "name": "Carlos Santana",
-          "fromTeamId": 136,
-          "toTeamId": 114,
+          "personId": 642121,
+          "name": "Cole Sulser",
+          "fromTeamId": 114,
+          "toTeamId": 139,
           "kind": "player"
         },
         {
@@ -23578,6 +23571,13 @@
           "name": "Edwin Encarnación",
           "fromTeamId": 114,
           "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 467793,
+          "name": "Carlos Santana",
+          "fromTeamId": 136,
+          "toTeamId": 114,
           "kind": "player"
         },
         {
@@ -23793,10 +23793,10 @@
       ],
       "assets": [
         {
-          "personId": 606227,
-          "name": "Yoel Espinal",
-          "fromTeamId": 139,
-          "toTeamId": 140,
+          "personId": 676669,
+          "name": "Rollie Lacy",
+          "fromTeamId": 140,
+          "toTeamId": 139,
           "kind": "player"
         },
         {
@@ -23814,10 +23814,10 @@
           "kind": "player"
         },
         {
-          "personId": 641941,
-          "name": "Emilio Pagán",
-          "fromTeamId": 133,
-          "toTeamId": 139,
+          "personId": 595777,
+          "name": "Jurickson Profar",
+          "fromTeamId": 140,
+          "toTeamId": 133,
           "kind": "player"
         },
         {
@@ -23828,31 +23828,31 @@
           "kind": "player"
         },
         {
-          "personId": 595777,
-          "name": "Jurickson Profar",
-          "fromTeamId": 140,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
-          "personId": 676669,
-          "name": "Rollie Lacy",
-          "fromTeamId": 140,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
-          "personId": null,
-          "name": null,
+          "personId": 641941,
+          "name": "Emilio Pagán",
           "fromTeamId": 133,
           "toTeamId": 139,
-          "kind": "other"
+          "kind": "player"
+        },
+        {
+          "personId": 606227,
+          "name": "Yoel Espinal",
+          "fromTeamId": 139,
+          "toTeamId": 140,
+          "kind": "player"
         },
         {
           "personId": null,
           "name": null,
           "fromTeamId": 133,
           "toTeamId": 140,
+          "kind": "other"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 133,
+          "toTeamId": 139,
           "kind": "other"
         }
       ]
@@ -23867,36 +23867,8 @@
       ],
       "assets": [
         {
-          "personId": 680686,
-          "name": "Josiah Gray",
-          "fromTeamId": 113,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 669023,
-          "name": "Jeter Downs",
-          "fromTeamId": 113,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 456701,
-          "name": "Homer Bailey",
-          "fromTeamId": 113,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 571657,
-          "name": "Kyle Farmer",
-          "fromTeamId": 119,
-          "toTeamId": 113,
-          "kind": "player"
-        },
-        {
-          "personId": 461314,
-          "name": "Matt Kemp",
+          "personId": 622072,
+          "name": "Alex Wood",
           "fromTeamId": 119,
           "toTeamId": 113,
           "kind": "player"
@@ -23909,10 +23881,38 @@
           "kind": "player"
         },
         {
-          "personId": 622072,
-          "name": "Alex Wood",
+          "personId": 461314,
+          "name": "Matt Kemp",
           "fromTeamId": 119,
           "toTeamId": 113,
+          "kind": "player"
+        },
+        {
+          "personId": 571657,
+          "name": "Kyle Farmer",
+          "fromTeamId": 119,
+          "toTeamId": 113,
+          "kind": "player"
+        },
+        {
+          "personId": 456701,
+          "name": "Homer Bailey",
+          "fromTeamId": 113,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 669023,
+          "name": "Jeter Downs",
+          "fromTeamId": 113,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 680686,
+          "name": "Josiah Gray",
+          "fromTeamId": 113,
+          "toTeamId": 119,
           "kind": "player"
         },
         {
@@ -23941,15 +23941,15 @@
           "kind": "player"
         },
         {
-          "personId": 592325,
-          "name": "Ben Gamel",
+          "personId": 681928,
+          "name": "Noah Zavolas",
           "fromTeamId": 136,
           "toTeamId": 158,
           "kind": "player"
         },
         {
-          "personId": 681928,
-          "name": "Noah Zavolas",
+          "personId": 592325,
+          "name": "Ben Gamel",
           "fromTeamId": 136,
           "toTeamId": 158,
           "kind": "player"
@@ -25692,8 +25692,8 @@
       ],
       "assets": [
         {
-          "personId": 527055,
-          "name": "Arodys Vizcaíno",
+          "personId": 592145,
+          "name": "Jesse Biddle",
           "fromTeamId": 144,
           "toTeamId": 136,
           "kind": "player"
@@ -25706,8 +25706,8 @@
           "kind": "player"
         },
         {
-          "personId": 592145,
-          "name": "Jesse Biddle",
+          "personId": 527055,
+          "name": "Arodys Vizcaíno",
           "fromTeamId": 144,
           "toTeamId": 136,
           "kind": "player"
@@ -25985,17 +25985,17 @@
       ],
       "assets": [
         {
-          "personId": 543105,
-          "name": "Alex Dickerson",
-          "fromTeamId": 135,
-          "toTeamId": 137,
-          "kind": "player"
-        },
-        {
           "personId": 676875,
           "name": "Franklin Van Gurp",
           "fromTeamId": 137,
           "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 543105,
+          "name": "Alex Dickerson",
+          "fromTeamId": 135,
+          "toTeamId": 137,
           "kind": "player"
         }
       ]
@@ -28686,13 +28686,6 @@
       ],
       "assets": [
         {
-          "personId": 663757,
-          "name": "Trent Grisham",
-          "fromTeamId": 158,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
           "personId": 649966,
           "name": "Luis Urías",
           "fromTeamId": 135,
@@ -28700,10 +28693,10 @@
           "kind": "player"
         },
         {
-          "personId": 641778,
-          "name": "Eric Lauer",
-          "fromTeamId": 135,
-          "toTeamId": 158,
+          "personId": 663757,
+          "name": "Trent Grisham",
+          "fromTeamId": 158,
+          "toTeamId": 135,
           "kind": "player"
         },
         {
@@ -28711,6 +28704,13 @@
           "name": "Zach Davies",
           "fromTeamId": 158,
           "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 641778,
+          "name": "Eric Lauer",
+          "fromTeamId": 135,
+          "toTeamId": 158,
           "kind": "player"
         },
         {
@@ -28732,17 +28732,17 @@
       ],
       "assets": [
         {
-          "personId": 506702,
-          "name": "Sandy León",
-          "fromTeamId": 111,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
           "personId": 681723,
           "name": "Adenys Bautista",
           "fromTeamId": 114,
           "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": 506702,
+          "name": "Sandy León",
+          "fromTeamId": 111,
+          "toTeamId": 114,
           "kind": "player"
         }
       ]
@@ -28757,17 +28757,17 @@
       ],
       "assets": [
         {
-          "personId": 664119,
-          "name": "Austin Allen",
-          "fromTeamId": 135,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
           "personId": 595777,
           "name": "Jurickson Profar",
           "fromTeamId": 133,
           "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 664119,
+          "name": "Austin Allen",
+          "fromTeamId": 135,
+          "toTeamId": 133,
           "kind": "player"
         },
         {
@@ -28814,22 +28814,8 @@
       ],
       "assets": [
         {
-          "personId": 686599,
-          "name": "Kyle Brnovich",
-          "fromTeamId": 108,
-          "toTeamId": 110,
-          "kind": "player"
-        },
-        {
-          "personId": 605164,
-          "name": "Dylan Bundy",
-          "fromTeamId": 110,
-          "toTeamId": 108,
-          "kind": "player"
-        },
-        {
-          "personId": 686745,
-          "name": "Zach Peek",
+          "personId": 676755,
+          "name": "Isaac Mattson",
           "fromTeamId": 108,
           "toTeamId": 110,
           "kind": "player"
@@ -28842,8 +28828,22 @@
           "kind": "player"
         },
         {
-          "personId": 676755,
-          "name": "Isaac Mattson",
+          "personId": 686745,
+          "name": "Zach Peek",
+          "fromTeamId": 108,
+          "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 605164,
+          "name": "Dylan Bundy",
+          "fromTeamId": 110,
+          "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 686599,
+          "name": "Kyle Brnovich",
           "fromTeamId": 108,
           "toTeamId": 110,
           "kind": "player"
@@ -28860,10 +28860,10 @@
       ],
       "assets": [
         {
-          "personId": 685744,
-          "name": "Kenedy Corona",
-          "fromTeamId": 121,
-          "toTeamId": 117,
+          "personId": 545350,
+          "name": "Jake Marisnick",
+          "fromTeamId": 117,
+          "toTeamId": 121,
           "kind": "player"
         },
         {
@@ -28874,10 +28874,10 @@
           "kind": "player"
         },
         {
-          "personId": 545350,
-          "name": "Jake Marisnick",
-          "fromTeamId": 117,
-          "toTeamId": 121,
+          "personId": 685744,
+          "name": "Kenedy Corona",
+          "fromTeamId": 121,
+          "toTeamId": 117,
           "kind": "player"
         }
       ]
@@ -28924,10 +28924,10 @@
       ],
       "assets": [
         {
-          "personId": 502054,
-          "name": "Tommy Pham",
-          "fromTeamId": 139,
-          "toTeamId": 135,
+          "personId": 669364,
+          "name": "Xavier Edwards",
+          "fromTeamId": 135,
+          "toTeamId": 139,
           "kind": "player"
         },
         {
@@ -28938,10 +28938,10 @@
           "kind": "player"
         },
         {
-          "personId": 669364,
-          "name": "Xavier Edwards",
-          "fromTeamId": 135,
-          "toTeamId": 139,
+          "personId": 502054,
+          "name": "Tommy Pham",
+          "fromTeamId": 139,
+          "toTeamId": 135,
           "kind": "player"
         },
         {
@@ -28970,15 +28970,15 @@
       ],
       "assets": [
         {
-          "personId": 446359,
-          "name": "Zack Cozart",
+          "personId": 669717,
+          "name": "Will Wilson",
           "fromTeamId": 108,
           "toTeamId": 137,
           "kind": "player"
         },
         {
-          "personId": 669717,
-          "name": "Will Wilson",
+          "personId": 446359,
+          "name": "Zack Cozart",
           "fromTeamId": 108,
           "toTeamId": 137,
           "kind": "player"
@@ -29088,6 +29088,13 @@
       ],
       "assets": [
         {
+          "personId": 446372,
+          "name": "Corey Kluber",
+          "fromTeamId": 114,
+          "toTeamId": 140,
+          "kind": "player"
+        },
+        {
           "personId": 661403,
           "name": "Emmanuel Clase",
           "fromTeamId": 140,
@@ -29099,13 +29106,6 @@
           "name": "Delino DeShields",
           "fromTeamId": 140,
           "toTeamId": 114,
-          "kind": "player"
-        },
-        {
-          "personId": 446372,
-          "name": "Corey Kluber",
-          "fromTeamId": 114,
-          "toTeamId": 140,
           "kind": "player"
         },
         {
@@ -29177,17 +29177,17 @@
       ],
       "assets": [
         {
-          "personId": 664918,
-          "name": "Kyle Keller",
-          "fromTeamId": 146,
-          "toTeamId": 108,
-          "kind": "player"
-        },
-        {
           "personId": 684260,
           "name": "José  Estrada",
           "fromTeamId": 108,
           "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 664918,
+          "name": "Kyle Keller",
+          "fromTeamId": 146,
+          "toTeamId": 108,
           "kind": "player"
         }
       ]
@@ -29257,15 +29257,15 @@
         {
           "personId": null,
           "name": null,
-          "fromTeamId": 139,
-          "toTeamId": 138,
+          "fromTeamId": 138,
+          "toTeamId": 139,
           "kind": "other"
         },
         {
           "personId": null,
           "name": null,
-          "fromTeamId": 138,
-          "toTeamId": 139,
+          "fromTeamId": 139,
+          "toTeamId": 138,
           "kind": "other"
         }
       ]
@@ -29608,13 +29608,6 @@
       ],
       "assets": [
         {
-          "personId": 641941,
-          "name": "Emilio Pagán",
-          "fromTeamId": 139,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
           "personId": 686482,
           "name": "Logan Driscoll",
           "fromTeamId": 135,
@@ -29626,6 +29619,13 @@
           "name": "Manuel Margot",
           "fromTeamId": 135,
           "toTeamId": 139,
+          "kind": "player"
+        },
+        {
+          "personId": 641941,
+          "name": "Emilio Pagán",
+          "fromTeamId": 139,
+          "toTeamId": 135,
           "kind": "player"
         }
       ]
@@ -29640,8 +29640,22 @@
       ],
       "assets": [
         {
-          "personId": 657077,
-          "name": "Alex Verdugo",
+          "personId": 605141,
+          "name": "Mookie Betts",
+          "fromTeamId": 111,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 456034,
+          "name": "David Price",
+          "fromTeamId": 111,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 669023,
+          "name": "Jeter Downs",
           "fromTeamId": 119,
           "toTeamId": 111,
           "kind": "player"
@@ -29654,24 +29668,10 @@
           "kind": "player"
         },
         {
-          "personId": 669023,
-          "name": "Jeter Downs",
+          "personId": 657077,
+          "name": "Alex Verdugo",
           "fromTeamId": 119,
           "toTeamId": 111,
-          "kind": "player"
-        },
-        {
-          "personId": 456034,
-          "name": "David Price",
-          "fromTeamId": 111,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 605141,
-          "name": "Mookie Betts",
-          "fromTeamId": 111,
-          "toTeamId": 119,
           "kind": "player"
         },
         {
@@ -29693,15 +29693,8 @@
       ],
       "assets": [
         {
-          "personId": 670042,
-          "name": "Luke Raley",
-          "fromTeamId": 142,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 628317,
-          "name": "Kenta Maeda",
+          "personId": 665856,
+          "name": "Jair Camargo",
           "fromTeamId": 119,
           "toTeamId": 142,
           "kind": "player"
@@ -29714,10 +29707,17 @@
           "kind": "player"
         },
         {
-          "personId": 665856,
-          "name": "Jair Camargo",
+          "personId": 628317,
+          "name": "Kenta Maeda",
           "fromTeamId": 119,
           "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 670042,
+          "name": "Luke Raley",
+          "fromTeamId": 142,
+          "toTeamId": 119,
           "kind": "player"
         },
         {
@@ -31963,17 +31963,17 @@
       ],
       "assets": [
         {
-          "personId": 596112,
-          "name": "Robert Stephenson",
-          "fromTeamId": 113,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
           "personId": 695406,
           "name": "Case Williams",
           "fromTeamId": 115,
           "toTeamId": 113,
+          "kind": "player"
+        },
+        {
+          "personId": 596112,
+          "name": "Robert Stephenson",
+          "fromTeamId": 113,
+          "toTeamId": 115,
           "kind": "player"
         },
         {
@@ -32027,13 +32027,6 @@
       ],
       "assets": [
         {
-          "personId": 668831,
-          "name": "Garrett Stallings",
-          "fromTeamId": 108,
-          "toTeamId": 110,
-          "kind": "player"
-        },
-        {
           "personId": 686645,
           "name": "Jean Pinto",
           "fromTeamId": 108,
@@ -32045,6 +32038,13 @@
           "name": "Jose Iglesias",
           "fromTeamId": 110,
           "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 668831,
+          "name": "Garrett Stallings",
+          "fromTeamId": 108,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
@@ -32084,17 +32084,17 @@
       ],
       "assets": [
         {
-          "personId": 683766,
-          "name": "Christian Koss",
-          "fromTeamId": 115,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
           "personId": 646243,
           "name": "Yoan Aybar",
           "fromTeamId": 111,
           "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 683766,
+          "name": "Christian Koss",
+          "fromTeamId": 115,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
@@ -32597,17 +32597,17 @@
       ],
       "assets": [
         {
-          "personId": 656885,
-          "name": "James Reeves",
-          "fromTeamId": 147,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
           "personId": 656185,
           "name": "Greg Allen",
           "fromTeamId": 135,
           "toTeamId": 147,
+          "kind": "player"
+        },
+        {
+          "personId": 656885,
+          "name": "James Reeves",
+          "fromTeamId": 147,
+          "toTeamId": 135,
           "kind": "player"
         }
       ]
@@ -32723,6 +32723,20 @@
       ],
       "assets": [
         {
+          "personId": 664192,
+          "name": "Joey Lucchesi",
+          "fromTeamId": 135,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 682848,
+          "name": "Endy Rodríguez",
+          "fromTeamId": 121,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
           "personId": 670280,
           "name": "David Bednar",
           "fromTeamId": 135,
@@ -32754,20 +32768,6 @@
           "personId": 666148,
           "name": "Drake Fellows",
           "fromTeamId": 135,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
-          "personId": 664192,
-          "name": "Joey Lucchesi",
-          "fromTeamId": 135,
-          "toTeamId": 121,
-          "kind": "player"
-        },
-        {
-          "personId": 682848,
-          "name": "Endy Rodríguez",
-          "fromTeamId": 121,
           "toTeamId": 134,
           "kind": "player"
         }
@@ -32808,17 +32808,17 @@
       ],
       "assets": [
         {
-          "personId": 672335,
-          "name": "Cionel Pérez",
-          "fromTeamId": 117,
-          "toTeamId": 113,
-          "kind": "player"
-        },
-        {
           "personId": 666124,
           "name": "Luke Berryhill",
           "fromTeamId": 113,
           "toTeamId": 117,
+          "kind": "player"
+        },
+        {
+          "personId": 672335,
+          "name": "Cionel Pérez",
+          "fromTeamId": 117,
+          "toTeamId": 113,
           "kind": "player"
         }
       ]
@@ -32840,8 +32840,15 @@
           "kind": "player"
         },
         {
-          "personId": 683500,
-          "name": "Maikol Escotto",
+          "personId": 675986,
+          "name": "Canaan Smith-Njigba",
+          "fromTeamId": 147,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 664337,
+          "name": "Miguel Yajure",
           "fromTeamId": 147,
           "toTeamId": 134,
           "kind": "player"
@@ -32854,15 +32861,8 @@
           "kind": "player"
         },
         {
-          "personId": 664337,
-          "name": "Miguel Yajure",
-          "fromTeamId": 147,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
-          "personId": 675986,
-          "name": "Canaan Smith-Njigba",
+          "personId": 683500,
+          "name": "Maikol Escotto",
           "fromTeamId": 147,
           "toTeamId": 134,
           "kind": "player"
@@ -32879,15 +32879,15 @@
       ],
       "assets": [
         {
-          "personId": 681464,
-          "name": "Frank German",
+          "personId": 493603,
+          "name": "Adam Ottavino",
           "fromTeamId": 147,
           "toTeamId": 111,
           "kind": "player"
         },
         {
-          "personId": 493603,
-          "name": "Adam Ottavino",
+          "personId": 681464,
+          "name": "Frank German",
           "fromTeamId": 147,
           "toTeamId": 111,
           "kind": "player"
@@ -33025,29 +33025,8 @@
       ],
       "assets": [
         {
-          "personId": 667563,
-          "name": "Jake Sommers",
-          "fromTeamId": 138,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
-          "personId": 596295,
-          "name": "Austin Gomber",
-          "fromTeamId": 138,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
-          "personId": 571448,
-          "name": "Nolan Arenado",
-          "fromTeamId": 115,
-          "toTeamId": 138,
-          "kind": "player"
-        },
-        {
-          "personId": 680771,
-          "name": "Mateo Gil",
+          "personId": 660707,
+          "name": "Elehuris Montero",
           "fromTeamId": 138,
           "toTeamId": 115,
           "kind": "player"
@@ -33060,8 +33039,29 @@
           "kind": "player"
         },
         {
-          "personId": 660707,
-          "name": "Elehuris Montero",
+          "personId": 680771,
+          "name": "Mateo Gil",
+          "fromTeamId": 138,
+          "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 571448,
+          "name": "Nolan Arenado",
+          "fromTeamId": 115,
+          "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 596295,
+          "name": "Austin Gomber",
+          "fromTeamId": 138,
+          "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 667563,
+          "name": "Jake Sommers",
           "fromTeamId": 138,
           "toTeamId": 115,
           "kind": "player"
@@ -33142,17 +33142,17 @@
       ],
       "assets": [
         {
-          "personId": 664774,
-          "name": "LaMonte Wade Jr.",
-          "fromTeamId": 142,
-          "toTeamId": 137,
-          "kind": "player"
-        },
-        {
           "personId": 641312,
           "name": "Shaun Anderson",
           "fromTeamId": 137,
           "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 664774,
+          "name": "LaMonte Wade Jr.",
+          "fromTeamId": 142,
+          "toTeamId": 137,
           "kind": "player"
         }
       ]
@@ -33166,6 +33166,20 @@
         140
       ],
       "assets": [
+        {
+          "personId": 605244,
+          "name": "Aramis Garcia",
+          "fromTeamId": 140,
+          "toTeamId": 133,
+          "kind": "player"
+        },
+        {
+          "personId": 462101,
+          "name": "Elvis Andrus",
+          "fromTeamId": 140,
+          "toTeamId": 133,
+          "kind": "player"
+        },
         {
           "personId": 686769,
           "name": "Dane Acker",
@@ -33185,20 +33199,6 @@
           "name": "Khris Davis",
           "fromTeamId": 133,
           "toTeamId": 140,
-          "kind": "player"
-        },
-        {
-          "personId": 462101,
-          "name": "Elvis Andrus",
-          "fromTeamId": 140,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
-          "personId": 605244,
-          "name": "Aramis Garcia",
-          "fromTeamId": 140,
-          "toTeamId": 133,
           "kind": "player"
         },
         {
@@ -33477,15 +33477,15 @@
       ],
       "assets": [
         {
-          "personId": 607391,
-          "name": "Chris Mazza",
+          "personId": 605488,
+          "name": "Jeffrey Springs",
           "fromTeamId": 111,
           "toTeamId": 139,
           "kind": "player"
         },
         {
-          "personId": 605488,
-          "name": "Jeffrey Springs",
+          "personId": 607391,
+          "name": "Chris Mazza",
           "fromTeamId": 111,
           "toTeamId": 139,
           "kind": "player"
@@ -33659,17 +33659,17 @@
       ],
       "assets": [
         {
-          "personId": 621249,
-          "name": "Duane Underwood Jr.",
-          "fromTeamId": 112,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 678486,
           "name": "Shendrik Apostel",
           "fromTeamId": 134,
           "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 621249,
+          "name": "Duane Underwood Jr.",
+          "fromTeamId": 112,
+          "toTeamId": 134,
           "kind": "player"
         }
       ]
@@ -33930,17 +33930,17 @@
       ],
       "assets": [
         {
-          "personId": 672620,
-          "name": "Eduardo Herrera",
-          "fromTeamId": 109,
-          "toTeamId": 118,
-          "kind": "player"
-        },
-        {
           "personId": 670084,
           "name": "Nick Heath",
           "fromTeamId": 118,
           "toTeamId": 109,
+          "kind": "player"
+        },
+        {
+          "personId": 672620,
+          "name": "Eduardo Herrera",
+          "fromTeamId": 109,
+          "toTeamId": 118,
           "kind": "player"
         }
       ]
@@ -35091,17 +35091,17 @@
       ],
       "assets": [
         {
-          "personId": 686993,
-          "name": "Justin Sterner",
-          "fromTeamId": 146,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": 605276,
           "name": "David Hess",
           "fromTeamId": 139,
           "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 686993,
+          "name": "Justin Sterner",
+          "fromTeamId": 146,
+          "toTeamId": 139,
           "kind": "player"
         },
         {
@@ -35209,17 +35209,17 @@
           "kind": "player"
         },
         {
-          "personId": 670950,
-          "name": "Trevor Richards",
-          "fromTeamId": 158,
-          "toTeamId": 141,
-          "kind": "player"
-        },
-        {
           "personId": 642133,
           "name": "Rowdy Tellez",
           "fromTeamId": 141,
           "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 670950,
+          "name": "Trevor Richards",
+          "fromTeamId": 158,
+          "toTeamId": 141,
           "kind": "player"
         }
       ]
@@ -35399,17 +35399,17 @@
       ],
       "assets": [
         {
-          "personId": 519390,
-          "name": "Stephen Vogt",
-          "fromTeamId": 109,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": 676048,
           "name": "Mason Berne",
           "fromTeamId": 144,
           "toTeamId": 109,
+          "kind": "player"
+        },
+        {
+          "personId": 519390,
+          "name": "Stephen Vogt",
+          "fromTeamId": 109,
+          "toTeamId": 144,
           "kind": "player"
         }
       ]
@@ -35492,17 +35492,17 @@
       ],
       "assets": [
         {
-          "personId": 641856,
-          "name": "Billy McKinney",
-          "fromTeamId": 121,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
           "personId": 665779,
           "name": "Carlos Rincon",
           "fromTeamId": 119,
           "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 641856,
+          "name": "Billy McKinney",
+          "fromTeamId": 121,
+          "toTeamId": 119,
           "kind": "player"
         }
       ]
@@ -35517,20 +35517,6 @@
       ],
       "assets": [
         {
-          "personId": 657746,
-          "name": "Joe Ryan",
-          "fromTeamId": 139,
-          "toTeamId": 142,
-          "kind": "player"
-        },
-        {
-          "personId": 443558,
-          "name": "Nelson Cruz",
-          "fromTeamId": 142,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": 675977,
           "name": "Drew Strotman",
           "fromTeamId": 139,
@@ -35540,6 +35526,20 @@
         {
           "personId": 676534,
           "name": "Calvin Faucher",
+          "fromTeamId": 142,
+          "toTeamId": 139,
+          "kind": "player"
+        },
+        {
+          "personId": 657746,
+          "name": "Joe Ryan",
+          "fromTeamId": 139,
+          "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 443558,
+          "name": "Nelson Cruz",
           "fromTeamId": 142,
           "toTeamId": 139,
           "kind": "player"
@@ -35638,6 +35638,13 @@
       ],
       "assets": [
         {
+          "personId": 672353,
+          "name": "Michell Miliano",
+          "fromTeamId": 135,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
           "personId": 669261,
           "name": "Jack Suwinski",
           "fromTeamId": 135,
@@ -35654,13 +35661,6 @@
         {
           "personId": 672779,
           "name": "Tucupita Marcano",
-          "fromTeamId": 135,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
-          "personId": 672353,
-          "name": "Michell Miliano",
           "fromTeamId": 135,
           "toTeamId": 134,
           "kind": "player"
@@ -35684,13 +35684,6 @@
       ],
       "assets": [
         {
-          "personId": 605280,
-          "name": "Clay Holmes",
-          "fromTeamId": 134,
-          "toTeamId": 147,
-          "kind": "player"
-        },
-        {
           "personId": 660636,
           "name": "Diego Castillo",
           "fromTeamId": 147,
@@ -35702,6 +35695,13 @@
           "name": "Hoy Park",
           "fromTeamId": 147,
           "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 605280,
+          "name": "Clay Holmes",
+          "fromTeamId": 134,
+          "toTeamId": 147,
           "kind": "player"
         }
       ]
@@ -35716,6 +35716,13 @@
       ],
       "assets": [
         {
+          "personId": 605177,
+          "name": "Andrew Chafin",
+          "fromTeamId": 112,
+          "toTeamId": 133,
+          "kind": "player"
+        },
+        {
           "personId": 656364,
           "name": "Greg Deichmann",
           "fromTeamId": 133,
@@ -35727,13 +35734,6 @@
           "name": "Daniel Palencia",
           "fromTeamId": 133,
           "toTeamId": 112,
-          "kind": "player"
-        },
-        {
-          "personId": 605177,
-          "name": "Andrew Chafin",
-          "fromTeamId": 112,
-          "toTeamId": 133,
           "kind": "player"
         }
       ]
@@ -35748,10 +35748,10 @@
       ],
       "assets": [
         {
-          "personId": 606160,
-          "name": "Rafael Montero",
-          "fromTeamId": 136,
-          "toTeamId": 117,
+          "personId": 647351,
+          "name": "Abraham Toro",
+          "fromTeamId": 117,
+          "toTeamId": 136,
           "kind": "player"
         },
         {
@@ -35762,10 +35762,10 @@
           "kind": "player"
         },
         {
-          "personId": 647351,
-          "name": "Abraham Toro",
-          "fromTeamId": 117,
-          "toTeamId": 136,
+          "personId": 606160,
+          "name": "Rafael Montero",
+          "fromTeamId": 136,
+          "toTeamId": 117,
           "kind": "player"
         },
         {
@@ -35794,17 +35794,17 @@
           "kind": "player"
         },
         {
-          "personId": 670190,
-          "name": "Carter Bins",
-          "fromTeamId": 136,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 542881,
           "name": "Tyler Anderson",
           "fromTeamId": 134,
           "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 670190,
+          "name": "Carter Bins",
+          "fromTeamId": 136,
+          "toTeamId": 134,
           "kind": "player"
         }
       ]
@@ -35819,15 +35819,15 @@
       ],
       "assets": [
         {
-          "personId": 458677,
-          "name": "Justin Wilson",
+          "personId": 570666,
+          "name": "Luis Cessa",
           "fromTeamId": 147,
           "toTeamId": 113,
           "kind": "player"
         },
         {
-          "personId": 570666,
-          "name": "Luis Cessa",
+          "personId": 458677,
+          "name": "Justin Wilson",
           "fromTeamId": 147,
           "toTeamId": 113,
           "kind": "player"
@@ -35851,13 +35851,6 @@
       ],
       "assets": [
         {
-          "personId": 695406,
-          "name": "Case Williams",
-          "fromTeamId": 113,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
           "personId": 663562,
           "name": "Noah Davis",
           "fromTeamId": 113,
@@ -35869,6 +35862,13 @@
           "name": "Mychal Givens",
           "fromTeamId": 115,
           "toTeamId": 113,
+          "kind": "player"
+        },
+        {
+          "personId": 695406,
+          "name": "Case Williams",
+          "fromTeamId": 113,
+          "toTeamId": 115,
           "kind": "player"
         }
       ]
@@ -35883,17 +35883,17 @@
       ],
       "assets": [
         {
-          "personId": 666200,
-          "name": "Jesús Luzardo",
-          "fromTeamId": 133,
-          "toTeamId": 146,
-          "kind": "player"
-        },
-        {
           "personId": 516782,
           "name": "Starling Marte",
           "fromTeamId": 146,
           "toTeamId": 133,
+          "kind": "player"
+        },
+        {
+          "personId": 666200,
+          "name": "Jesús Luzardo",
+          "fromTeamId": 133,
+          "toTeamId": 146,
           "kind": "player"
         }
       ]
@@ -35908,10 +35908,10 @@
       ],
       "assets": [
         {
-          "personId": 650559,
-          "name": "Bryan De La Cruz",
-          "fromTeamId": 117,
-          "toTeamId": 146,
+          "personId": 554340,
+          "name": "Yimi García",
+          "fromTeamId": 146,
+          "toTeamId": 117,
           "kind": "player"
         },
         {
@@ -35922,10 +35922,10 @@
           "kind": "player"
         },
         {
-          "personId": 554340,
-          "name": "Yimi García",
-          "fromTeamId": 146,
-          "toTeamId": 117,
+          "personId": 650559,
+          "name": "Bryan De La Cruz",
+          "fromTeamId": 117,
+          "toTeamId": 146,
           "kind": "player"
         }
       ]
@@ -35972,17 +35972,17 @@
       ],
       "assets": [
         {
-          "personId": 656180,
-          "name": "Riley Adams",
-          "fromTeamId": 141,
-          "toTeamId": 120,
-          "kind": "player"
-        },
-        {
           "personId": 543272,
           "name": "Brad Hand",
           "fromTeamId": 120,
           "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 656180,
+          "name": "Riley Adams",
+          "fromTeamId": 141,
+          "toTeamId": 120,
           "kind": "player"
         }
       ]
@@ -36022,17 +36022,10 @@
       ],
       "assets": [
         {
-          "personId": 669701,
-          "name": "Josh Smith",
+          "personId": 657248,
+          "name": "Glenn Otto Jr.",
           "fromTeamId": 147,
           "toTeamId": 140,
-          "kind": "player"
-        },
-        {
-          "personId": 570257,
-          "name": "Joely Rodríguez",
-          "fromTeamId": 140,
-          "toTeamId": 147,
           "kind": "player"
         },
         {
@@ -36043,8 +36036,8 @@
           "kind": "player"
         },
         {
-          "personId": 657248,
-          "name": "Glenn Otto Jr.",
+          "personId": 669701,
+          "name": "Josh Smith",
           "fromTeamId": 147,
           "toTeamId": 140,
           "kind": "player"
@@ -36061,6 +36054,13 @@
           "name": "Ezequiel Duran",
           "fromTeamId": 147,
           "toTeamId": 140,
+          "kind": "player"
+        },
+        {
+          "personId": 570257,
+          "name": "Joely Rodríguez",
+          "fromTeamId": 140,
+          "toTeamId": 147,
           "kind": "player"
         },
         {
@@ -36132,10 +36132,10 @@
       ],
       "assets": [
         {
-          "personId": 608638,
-          "name": "JT Chargois",
-          "fromTeamId": 136,
-          "toTeamId": 139,
+          "personId": 650895,
+          "name": "Diego Castillo",
+          "fromTeamId": 139,
+          "toTeamId": 136,
           "kind": "player"
         },
         {
@@ -36146,10 +36146,10 @@
           "kind": "player"
         },
         {
-          "personId": 650895,
-          "name": "Diego Castillo",
-          "fromTeamId": 139,
-          "toTeamId": 136,
+          "personId": 608638,
+          "name": "JT Chargois",
+          "fromTeamId": 136,
+          "toTeamId": 139,
           "kind": "player"
         }
       ]
@@ -36196,6 +36196,13 @@
       ],
       "assets": [
         {
+          "personId": 682634,
+          "name": "Kevin Alcántara",
+          "fromTeamId": 147,
+          "toTeamId": 112,
+          "kind": "player"
+        },
+        {
           "personId": 669805,
           "name": "Alexander Vizcaíno",
           "fromTeamId": 147,
@@ -36207,13 +36214,6 @@
           "name": "Anthony Rizzo",
           "fromTeamId": 112,
           "toTeamId": 147,
-          "kind": "player"
-        },
-        {
-          "personId": 682634,
-          "name": "Kevin Alcántara",
-          "fromTeamId": 147,
-          "toTeamId": 112,
           "kind": "player"
         },
         {
@@ -36235,17 +36235,17 @@
       ],
       "assets": [
         {
-          "personId": 656941,
-          "name": "Kyle Schwarber",
-          "fromTeamId": 120,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
           "personId": 680048,
           "name": "Aldo Ramirez",
           "fromTeamId": 111,
           "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 656941,
+          "name": "Kyle Schwarber",
+          "fromTeamId": 120,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
@@ -36335,17 +36335,17 @@
       ],
       "assets": [
         {
-          "personId": 621244,
-          "name": "José Berríos",
-          "fromTeamId": 142,
-          "toTeamId": 141,
-          "kind": "player"
-        },
-        {
           "personId": 680573,
           "name": "Simeon Woods Richardson",
           "fromTeamId": 141,
           "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 621244,
+          "name": "José Berríos",
+          "fromTeamId": 142,
+          "toTeamId": 141,
           "kind": "player"
         },
         {
@@ -36399,17 +36399,17 @@
       ],
       "assets": [
         {
-          "personId": 594807,
-          "name": "Adam Duvall",
-          "fromTeamId": 146,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": 656577,
           "name": "Alex Jackson",
           "fromTeamId": 144,
           "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 594807,
+          "name": "Adam Duvall",
+          "fromTeamId": 146,
+          "toTeamId": 144,
           "kind": "player"
         }
       ]
@@ -36424,17 +36424,17 @@
       ],
       "assets": [
         {
-          "personId": 596057,
-          "name": "Daniel Norris",
-          "fromTeamId": 116,
-          "toTeamId": 158,
-          "kind": "player"
-        },
-        {
           "personId": 681857,
           "name": "Reese Olson",
           "fromTeamId": 158,
           "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 596057,
+          "name": "Daniel Norris",
+          "fromTeamId": 116,
+          "toTeamId": 158,
           "kind": "player"
         }
       ]
@@ -36481,13 +36481,6 @@
       ],
       "assets": [
         {
-          "personId": 681895,
-          "name": "Evan Sisk",
-          "fromTeamId": 138,
-          "toTeamId": 142,
-          "kind": "player"
-        },
-        {
           "personId": 457918,
           "name": "J.A. Happ",
           "fromTeamId": 142,
@@ -36497,6 +36490,13 @@
         {
           "personId": 607231,
           "name": "John Gant",
+          "fromTeamId": 138,
+          "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 681895,
+          "name": "Evan Sisk",
           "fromTeamId": 138,
           "toTeamId": 142,
           "kind": "player"
@@ -36520,15 +36520,29 @@
       ],
       "assets": [
         {
-          "personId": 672629,
-          "name": "Gerardo Carrillo",
-          "fromTeamId": 119,
-          "toTeamId": 120,
+          "personId": 453286,
+          "name": "Max Scherzer",
+          "fromTeamId": 120,
+          "toTeamId": 119,
           "kind": "player"
         },
         {
           "personId": 661541,
           "name": "Donovan Casey",
+          "fromTeamId": 119,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 607208,
+          "name": "Trea Turner",
+          "fromTeamId": 120,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 672629,
+          "name": "Gerardo Carrillo",
           "fromTeamId": 119,
           "toTeamId": 120,
           "kind": "player"
@@ -36541,24 +36555,10 @@
           "kind": "player"
         },
         {
-          "personId": 453286,
-          "name": "Max Scherzer",
-          "fromTeamId": 120,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
           "personId": 660688,
           "name": "Keibert Ruiz",
           "fromTeamId": 119,
           "toTeamId": 120,
-          "kind": "player"
-        },
-        {
-          "personId": 607208,
-          "name": "Trea Turner",
-          "fromTeamId": 120,
-          "toTeamId": 119,
           "kind": "player"
         }
       ]
@@ -36626,13 +36626,6 @@
       ],
       "assets": [
         {
-          "personId": 664702,
-          "name": "Myles Straw",
-          "fromTeamId": 117,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
           "personId": 664208,
           "name": "Phil Maton",
           "fromTeamId": 114,
@@ -36644,6 +36637,13 @@
           "name": "Yainer Diaz",
           "fromTeamId": 114,
           "toTeamId": 117,
+          "kind": "player"
+        },
+        {
+          "personId": 664702,
+          "name": "Myles Straw",
+          "fromTeamId": 117,
+          "toTeamId": 114,
           "kind": "player"
         }
       ]
@@ -36683,10 +36683,10 @@
       ],
       "assets": [
         {
-          "personId": 691718,
-          "name": "Pete Crow-Armstrong",
-          "fromTeamId": 121,
-          "toTeamId": 112,
+          "personId": 592866,
+          "name": "Trevor Williams",
+          "fromTeamId": 112,
+          "toTeamId": 121,
           "kind": "player"
         },
         {
@@ -36697,10 +36697,10 @@
           "kind": "player"
         },
         {
-          "personId": 592866,
-          "name": "Trevor Williams",
-          "fromTeamId": 112,
-          "toTeamId": 121,
+          "personId": 691718,
+          "name": "Pete Crow-Armstrong",
+          "fromTeamId": 121,
+          "toTeamId": 112,
           "kind": "player"
         },
         {
@@ -36722,17 +36722,17 @@
       ],
       "assets": [
         {
-          "personId": 657041,
-          "name": "Lane Thomas",
-          "fromTeamId": 138,
-          "toTeamId": 120,
-          "kind": "player"
-        },
-        {
           "personId": 452657,
           "name": "Jon Lester",
           "fromTeamId": 120,
           "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 657041,
+          "name": "Lane Thomas",
+          "fromTeamId": 138,
+          "toTeamId": 120,
           "kind": "player"
         }
       ]
@@ -36747,17 +36747,17 @@
       ],
       "assets": [
         {
-          "personId": 624585,
-          "name": "Jorge Soler",
-          "fromTeamId": 118,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": 685008,
           "name": "Kasey Kalich",
           "fromTeamId": 144,
           "toTeamId": 118,
+          "kind": "player"
+        },
+        {
+          "personId": 624585,
+          "name": "Jorge Soler",
+          "fromTeamId": 118,
+          "toTeamId": 144,
           "kind": "player"
         }
       ]
@@ -36772,17 +36772,17 @@
       ],
       "assets": [
         {
-          "personId": 593144,
-          "name": "Richard Rodríguez",
-          "fromTeamId": 134,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": 669060,
           "name": "Bryse Wilson",
           "fromTeamId": 144,
           "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 593144,
+          "name": "Richard Rodríguez",
+          "fromTeamId": 134,
+          "toTeamId": 144,
           "kind": "player"
         },
         {
@@ -36854,17 +36854,17 @@
       ],
       "assets": [
         {
-          "personId": 656354,
-          "name": "Austin Davis",
-          "fromTeamId": 134,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
           "personId": 656308,
           "name": "Michael Chavis",
           "fromTeamId": 111,
           "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 656354,
+          "name": "Austin Davis",
+          "fromTeamId": 134,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
@@ -36918,10 +36918,17 @@
           "kind": "player"
         },
         {
-          "personId": 678622,
-          "name": "Josh Gessner",
-          "fromTeamId": 143,
-          "toTeamId": 140,
+          "personId": 502043,
+          "name": "Kyle Gibson",
+          "fromTeamId": 140,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 453178,
+          "name": "Ian Kennedy",
+          "fromTeamId": 140,
+          "toTeamId": 143,
           "kind": "player"
         },
         {
@@ -36939,17 +36946,10 @@
           "kind": "player"
         },
         {
-          "personId": 502043,
-          "name": "Kyle Gibson",
-          "fromTeamId": 140,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
-          "personId": 453178,
-          "name": "Ian Kennedy",
-          "fromTeamId": 140,
-          "toTeamId": 143,
+          "personId": 678622,
+          "name": "Josh Gessner",
+          "fromTeamId": 143,
+          "toTeamId": 140,
           "kind": "player"
         },
         {
@@ -36971,17 +36971,17 @@
       ],
       "assets": [
         {
-          "personId": 688889,
-          "name": "Tyler Burch",
-          "fromTeamId": 143,
-          "toTeamId": 110,
-          "kind": "player"
-        },
-        {
           "personId": 520471,
           "name": "Freddy Galvis",
           "fromTeamId": 110,
           "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 688889,
+          "name": "Tyler Burch",
+          "fromTeamId": 143,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
@@ -37021,6 +37021,13 @@
       ],
       "assets": [
         {
+          "personId": 592178,
+          "name": "Kris Bryant",
+          "fromTeamId": 112,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
           "personId": 672744,
           "name": "Alexander Canario",
           "fromTeamId": 137,
@@ -37032,13 +37039,6 @@
           "name": "Caleb Kilian",
           "fromTeamId": 137,
           "toTeamId": 112,
-          "kind": "player"
-        },
-        {
-          "personId": 592178,
-          "name": "Kris Bryant",
-          "fromTeamId": 112,
-          "toTeamId": 137,
           "kind": "player"
         }
       ]
@@ -37092,10 +37092,10 @@
       ],
       "assets": [
         {
-          "personId": 676083,
-          "name": "Janson Junk",
-          "fromTeamId": 147,
-          "toTeamId": 108,
+          "personId": 571760,
+          "name": "Andrew Heaney",
+          "fromTeamId": 108,
+          "toTeamId": 147,
           "kind": "player"
         },
         {
@@ -37106,10 +37106,10 @@
           "kind": "player"
         },
         {
-          "personId": 571760,
-          "name": "Andrew Heaney",
-          "fromTeamId": 108,
-          "toTeamId": 147,
+          "personId": 676083,
+          "name": "Janson Junk",
+          "fromTeamId": 147,
+          "toTeamId": 108,
           "kind": "player"
         },
         {
@@ -37614,18 +37614,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 158,
-          "toTeamId": 114,
-          "kind": "ptbnl"
-        },
-        {
           "personId": 650496,
           "name": "J.C. Mejía",
           "fromTeamId": 114,
           "toTeamId": 158,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 158,
+          "toTeamId": 114,
+          "kind": "ptbnl"
         }
       ]
     },
@@ -37664,18 +37664,18 @@
       ],
       "assets": [
         {
-          "personId": 623912,
-          "name": "Harold Ramírez",
-          "fromTeamId": 114,
-          "toTeamId": 112,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 112,
           "toTeamId": 114,
           "kind": "cash"
+        },
+        {
+          "personId": 623912,
+          "name": "Harold Ramírez",
+          "fromTeamId": 114,
+          "toTeamId": 112,
+          "kind": "player"
         }
       ]
     },
@@ -37689,18 +37689,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 144,
-          "toTeamId": 137,
-          "kind": "ptbnl"
-        },
-        {
           "personId": 543351,
           "name": "Jay Jackson",
           "fromTeamId": 137,
           "toTeamId": 144,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 144,
+          "toTeamId": 137,
+          "kind": "ptbnl"
         }
       ]
     },
@@ -37746,17 +37746,17 @@
       ],
       "assets": [
         {
-          "personId": 656669,
-          "name": "Jordan Luplow",
-          "fromTeamId": 139,
-          "toTeamId": 109,
-          "kind": "player"
-        },
-        {
           "personId": 682927,
           "name": "Ronny Simon",
           "fromTeamId": 109,
           "toTeamId": 139,
+          "kind": "player"
+        },
+        {
+          "personId": 656669,
+          "name": "Jordan Luplow",
+          "fromTeamId": 139,
+          "toTeamId": 109,
           "kind": "player"
         }
       ]
@@ -37803,13 +37803,6 @@
       ],
       "assets": [
         {
-          "personId": 669002,
-          "name": "Connor Scott",
-          "fromTeamId": 146,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 607732,
           "name": "Jacob Stallings",
           "fromTeamId": 134,
@@ -37826,6 +37819,13 @@
         {
           "personId": 693312,
           "name": "Kyle Nicolas",
+          "fromTeamId": 146,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 669002,
+          "name": "Connor Scott",
           "fromTeamId": 146,
           "toTeamId": 134,
           "kind": "player"
@@ -37885,13 +37885,6 @@
       ],
       "assets": [
         {
-          "personId": 681323,
-          "name": "Alex Binelas",
-          "fromTeamId": 158,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
           "personId": 598265,
           "name": "Jackie Bradley Jr.",
           "fromTeamId": 158,
@@ -37908,6 +37901,13 @@
         {
           "personId": 666152,
           "name": "David Hamilton",
+          "fromTeamId": 158,
+          "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": 681323,
+          "name": "Alex Binelas",
           "fromTeamId": 158,
           "toTeamId": 111,
           "kind": "player"
@@ -39099,13 +39099,6 @@
       ],
       "assets": [
         {
-          "personId": 445926,
-          "name": "Jesse Chavez",
-          "fromTeamId": 112,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 112,
@@ -39117,6 +39110,13 @@
           "name": "Sean Newcomb",
           "fromTeamId": 144,
           "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 445926,
+          "name": "Jesse Chavez",
+          "fromTeamId": 112,
+          "toTeamId": 144,
           "kind": "player"
         }
       ]
@@ -40134,18 +40134,18 @@
       ],
       "assets": [
         {
-          "personId": 544365,
-          "name": "Manny Banuelos",
-          "fromTeamId": 147,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 134,
           "toTeamId": 147,
           "kind": "cash"
+        },
+        {
+          "personId": 544365,
+          "name": "Manny Banuelos",
+          "fromTeamId": 147,
+          "toTeamId": 134,
+          "kind": "player"
         }
       ]
     },
@@ -40256,6 +40256,13 @@
       ],
       "assets": [
         {
+          "personId": 668595,
+          "name": "Christian Fernandez",
+          "fromTeamId": 139,
+          "toTeamId": 133,
+          "kind": "player"
+        },
+        {
           "personId": 670276,
           "name": "Cal Stevenson",
           "fromTeamId": 139,
@@ -40267,13 +40274,6 @@
           "name": "Christian Bethancourt",
           "fromTeamId": 133,
           "toTeamId": 139,
-          "kind": "player"
-        },
-        {
-          "personId": 668595,
-          "name": "Christian Fernandez",
-          "fromTeamId": 139,
-          "toTeamId": 133,
           "kind": "player"
         }
       ]
@@ -40485,18 +40485,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 121,
-          "toTeamId": 134,
-          "kind": "cash"
-        },
-        {
           "personId": 605421,
           "name": "Michael Pérez",
           "fromTeamId": 134,
           "toTeamId": 121,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 121,
+          "toTeamId": 134,
+          "kind": "cash"
         }
       ]
     },
@@ -40560,8 +40560,8 @@
           "kind": "player"
         },
         {
-          "personId": 674674,
-          "name": "T.J. Sikkema",
+          "personId": 669441,
+          "name": "Chandler Champlain",
           "fromTeamId": 147,
           "toTeamId": 118,
           "kind": "player"
@@ -40574,8 +40574,8 @@
           "kind": "player"
         },
         {
-          "personId": 669441,
-          "name": "Chandler Champlain",
+          "personId": 674674,
+          "name": "T.J. Sikkema",
           "fromTeamId": 147,
           "toTeamId": 118,
           "kind": "player"
@@ -40827,17 +40827,17 @@
       ],
       "assets": [
         {
-          "personId": 664076,
-          "name": "Garrett Cleavinger",
-          "fromTeamId": 119,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": 700272,
           "name": "German Tapia",
           "fromTeamId": 139,
           "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 664076,
+          "name": "Garrett Cleavinger",
+          "fromTeamId": 119,
+          "toTeamId": 139,
           "kind": "player"
         }
       ]
@@ -40852,18 +40852,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 118,
-          "toTeamId": 136,
-          "kind": "cash"
-        },
-        {
           "personId": 664948,
           "name": "Anthony Misiewicz",
           "fromTeamId": 136,
           "toTeamId": 118,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 118,
+          "toTeamId": 136,
+          "kind": "cash"
         }
       ]
     },
@@ -40877,22 +40877,8 @@
       ],
       "assets": [
         {
-          "personId": 623352,
-          "name": "Josh Hader",
-          "fromTeamId": 158,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
-          "personId": 573124,
-          "name": "Taylor Rogers",
-          "fromTeamId": 135,
-          "toTeamId": 158,
-          "kind": "player"
-        },
-        {
-          "personId": 665923,
-          "name": "Esteury Ruiz",
+          "personId": 659275,
+          "name": "Dinelson Lamet",
           "fromTeamId": 135,
           "toTeamId": 158,
           "kind": "player"
@@ -40905,10 +40891,24 @@
           "kind": "player"
         },
         {
-          "personId": 659275,
-          "name": "Dinelson Lamet",
+          "personId": 665923,
+          "name": "Esteury Ruiz",
           "fromTeamId": 135,
           "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 573124,
+          "name": "Taylor Rogers",
+          "fromTeamId": 135,
+          "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 623352,
+          "name": "Josh Hader",
+          "fromTeamId": 158,
+          "toTeamId": 135,
           "kind": "player"
         }
       ]
@@ -41066,17 +41066,17 @@
       ],
       "assets": [
         {
-          "personId": 656896,
-          "name": "Emmanuel Rivera",
-          "fromTeamId": 118,
-          "toTeamId": 109,
-          "kind": "player"
-        },
-        {
           "personId": 596133,
           "name": "Luke Weaver",
           "fromTeamId": 109,
           "toTeamId": 118,
+          "kind": "player"
+        },
+        {
+          "personId": 656896,
+          "name": "Emmanuel Rivera",
+          "fromTeamId": 118,
+          "toTeamId": 109,
           "kind": "player"
         }
       ]
@@ -41116,10 +41116,10 @@
       ],
       "assets": [
         {
-          "personId": 665839,
-          "name": "Enmanuel Valdez",
-          "fromTeamId": 117,
-          "toTeamId": 111,
+          "personId": 543877,
+          "name": "Christian Vázquez",
+          "fromTeamId": 111,
+          "toTeamId": 117,
           "kind": "player"
         },
         {
@@ -41130,10 +41130,10 @@
           "kind": "player"
         },
         {
-          "personId": 543877,
-          "name": "Christian Vázquez",
-          "fromTeamId": 111,
-          "toTeamId": 117,
+          "personId": 665839,
+          "name": "Enmanuel Valdez",
+          "fromTeamId": 117,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
@@ -41173,17 +41173,10 @@
       ],
       "assets": [
         {
-          "personId": 670912,
-          "name": "Johan Oviedo",
-          "fromTeamId": 138,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
-          "personId": 682650,
-          "name": "Malcom Nuñez",
-          "fromTeamId": 138,
-          "toTeamId": 134,
+          "personId": 608717,
+          "name": "Chris Stratton",
+          "fromTeamId": 134,
+          "toTeamId": 138,
           "kind": "player"
         },
         {
@@ -41194,10 +41187,17 @@
           "kind": "player"
         },
         {
-          "personId": 608717,
-          "name": "Chris Stratton",
-          "fromTeamId": 134,
-          "toTeamId": 138,
+          "personId": 682650,
+          "name": "Malcom Nuñez",
+          "fromTeamId": 138,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 670912,
+          "name": "Johan Oviedo",
+          "fromTeamId": 138,
+          "toTeamId": 134,
           "kind": "player"
         }
       ]
@@ -41294,17 +41294,17 @@
       ],
       "assets": [
         {
-          "personId": 519293,
-          "name": "Will Smith",
-          "fromTeamId": 144,
-          "toTeamId": 117,
-          "kind": "player"
-        },
-        {
           "personId": 543606,
           "name": "Jake Odorizzi",
           "fromTeamId": 117,
           "toTeamId": 144,
+          "kind": "player"
+        },
+        {
+          "personId": 519293,
+          "name": "Will Smith",
+          "fromTeamId": 144,
+          "toTeamId": 117,
           "kind": "player"
         }
       ]
@@ -41617,17 +41617,17 @@
       ],
       "assets": [
         {
-          "personId": 694193,
-          "name": "Victor Acosta",
-          "fromTeamId": 135,
-          "toTeamId": 113,
-          "kind": "player"
-        },
-        {
           "personId": 592273,
           "name": "Brandon Drury",
           "fromTeamId": 113,
           "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 694193,
+          "name": "Victor Acosta",
+          "fromTeamId": 135,
+          "toTeamId": 113,
           "kind": "player"
         }
       ]
@@ -41759,18 +41759,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 136,
-          "toTeamId": 119,
-          "kind": "ptbnl"
-        },
-        {
           "personId": 571875,
           "name": "Jake Lamb",
           "fromTeamId": 119,
           "toTeamId": 136,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 136,
+          "toTeamId": 119,
+          "kind": "ptbnl"
         }
       ]
     },
@@ -41809,6 +41809,13 @@
       ],
       "assets": [
         {
+          "personId": 669952,
+          "name": "Mitch White",
+          "fromTeamId": 119,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
           "personId": 804975,
           "name": "Moises Brito",
           "fromTeamId": 141,
@@ -41827,13 +41834,6 @@
           "name": "Nick Frasso",
           "fromTeamId": 141,
           "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 669952,
-          "name": "Mitch White",
-          "fromTeamId": 119,
-          "toTeamId": 141,
           "kind": "player"
         }
       ]
@@ -41912,17 +41912,17 @@
       ],
       "assets": [
         {
-          "personId": 656756,
-          "name": "Jordan Montgomery",
-          "fromTeamId": 147,
-          "toTeamId": 138,
-          "kind": "player"
-        },
-        {
           "personId": 664056,
           "name": "Harrison Bader",
           "fromTeamId": 138,
           "toTeamId": 147,
+          "kind": "player"
+        },
+        {
+          "personId": 656756,
+          "name": "Jordan Montgomery",
+          "fromTeamId": 147,
+          "toTeamId": 138,
           "kind": "player"
         }
       ]
@@ -42101,13 +42101,6 @@
       ],
       "assets": [
         {
-          "personId": 445926,
-          "name": "Jesse Chavez",
-          "fromTeamId": 144,
-          "toTeamId": 108,
-          "kind": "player"
-        },
-        {
           "personId": 656353,
           "name": "Tucker Davidson",
           "fromTeamId": 144,
@@ -42119,6 +42112,13 @@
           "name": "Raisel Iglesias",
           "fromTeamId": 108,
           "toTeamId": 144,
+          "kind": "player"
+        },
+        {
+          "personId": 445926,
+          "name": "Jesse Chavez",
+          "fromTeamId": 144,
+          "toTeamId": 108,
           "kind": "player"
         }
       ]
@@ -42133,17 +42133,17 @@
       ],
       "assets": [
         {
-          "personId": 678672,
-          "name": "Carlos Guarate",
-          "fromTeamId": 138,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
           "personId": 664119,
           "name": "Austin Allen",
           "fromTeamId": 133,
           "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 678672,
+          "name": "Carlos Guarate",
+          "fromTeamId": 138,
+          "toTeamId": 133,
           "kind": "player"
         }
       ]
@@ -42226,18 +42226,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 144,
-          "toTeamId": 158,
-          "kind": "cash"
-        },
-        {
           "personId": 643603,
           "name": "Tyler White",
           "fromTeamId": 158,
           "toTeamId": 144,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 144,
+          "toTeamId": 158,
+          "kind": "cash"
         }
       ]
     },
@@ -43397,18 +43397,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 144,
-          "toTeamId": 111,
-          "kind": "ptbnl"
-        },
-        {
           "personId": 660829,
           "name": "Hoy Park",
           "fromTeamId": 111,
           "toTeamId": 144,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 144,
+          "toTeamId": 111,
+          "kind": "ptbnl"
         }
       ]
     },
@@ -43422,17 +43422,17 @@
       ],
       "assets": [
         {
-          "personId": 670090,
-          "name": "Wyatt Mills",
-          "fromTeamId": 118,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
           "personId": 686608,
           "name": "Jacob Wallace",
           "fromTeamId": 111,
           "toTeamId": 118,
+          "kind": "player"
+        },
+        {
+          "personId": 670090,
+          "name": "Wyatt Mills",
+          "fromTeamId": 118,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
@@ -44171,17 +44171,17 @@
       ],
       "assets": [
         {
-          "personId": 690281,
-          "name": "Theo Denlinger",
-          "fromTeamId": 145,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
           "personId": 681464,
           "name": "Frank German",
           "fromTeamId": 111,
           "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 690281,
+          "name": "Theo Denlinger",
+          "fromTeamId": 145,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
@@ -44318,18 +44318,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 143,
-          "toTeamId": 139,
-          "kind": "cash"
-        },
-        {
           "personId": 682040,
           "name": "Jordan Qsar",
           "fromTeamId": 139,
           "toTeamId": 143,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 143,
+          "toTeamId": 139,
+          "kind": "cash"
         }
       ]
     },
@@ -44343,18 +44343,18 @@
       ],
       "assets": [
         {
-          "personId": 606019,
-          "name": "Esteban Quiroz",
-          "fromTeamId": 112,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 143,
           "toTeamId": 112,
           "kind": "cash"
+        },
+        {
+          "personId": 606019,
+          "name": "Esteban Quiroz",
+          "fromTeamId": 112,
+          "toTeamId": 143,
+          "kind": "player"
         }
       ]
     },
@@ -44723,18 +44723,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 136,
-          "toTeamId": 113,
-          "kind": "cash"
-        },
-        {
           "personId": 669256,
           "name": "Nick Solak",
           "fromTeamId": 113,
           "toTeamId": 136,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 136,
+          "toTeamId": 113,
+          "kind": "cash"
         }
       ]
     },
@@ -44816,18 +44816,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 113,
-          "toTeamId": 114,
-          "kind": "cash"
-        },
-        {
           "personId": 666181,
           "name": "Will Benson",
           "fromTeamId": 114,
           "toTeamId": 113,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 113,
+          "toTeamId": 114,
+          "kind": "cash"
         },
         {
           "personId": 687628,
@@ -44934,18 +44934,18 @@
       ],
       "assets": [
         {
-          "personId": 642770,
-          "name": "Javy Guerra",
-          "fromTeamId": 158,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 139,
           "toTeamId": 158,
           "kind": "ptbnl"
+        },
+        {
+          "personId": 642770,
+          "name": "Javy Guerra",
+          "fromTeamId": 158,
+          "toTeamId": 139,
+          "kind": "player"
         }
       ]
     },
@@ -44959,18 +44959,18 @@
       ],
       "assets": [
         {
-          "personId": 642770,
-          "name": "Javy Guerra",
-          "fromTeamId": 158,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 139,
           "toTeamId": 158,
           "kind": "ptbnl"
+        },
+        {
+          "personId": 642770,
+          "name": "Javy Guerra",
+          "fromTeamId": 158,
+          "toTeamId": 139,
+          "kind": "player"
         }
       ]
     },
@@ -45309,17 +45309,17 @@
       ],
       "assets": [
         {
-          "personId": 800545,
-          "name": "Diego Hernandez",
-          "fromTeamId": 147,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
           "personId": 656185,
           "name": "Greg Allen",
           "fromTeamId": 111,
           "toTeamId": 147,
+          "kind": "player"
+        },
+        {
+          "personId": 800545,
+          "name": "Diego Hernandez",
+          "fromTeamId": 147,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
@@ -45481,17 +45481,17 @@
       ],
       "assets": [
         {
-          "personId": 596112,
-          "name": "Robert Stephenson",
-          "fromTeamId": 134,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": 675961,
           "name": "Alika Williams",
           "fromTeamId": 139,
           "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 596112,
+          "name": "Robert Stephenson",
+          "fromTeamId": 134,
+          "toTeamId": 139,
           "kind": "player"
         }
       ]
@@ -45685,18 +45685,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 116,
-          "toTeamId": 115,
-          "kind": "cash"
-        },
-        {
           "personId": 663971,
           "name": "Blair Calvo",
           "fromTeamId": 115,
           "toTeamId": 116,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 116,
+          "toTeamId": 115,
+          "kind": "cash"
         }
       ]
     },
@@ -46017,18 +46017,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 145,
-          "toTeamId": 118,
-          "kind": "cash"
-        },
-        {
           "personId": 594577,
           "name": "Mike Mayers",
           "fromTeamId": 118,
           "toTeamId": 145,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 145,
+          "toTeamId": 118,
+          "kind": "cash"
         }
       ]
     },
@@ -46348,18 +46348,18 @@
           "kind": "player"
         },
         {
-          "personId": 592789,
-          "name": "Noah Syndergaard",
-          "fromTeamId": 119,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 119,
           "toTeamId": 114,
           "kind": "cash"
+        },
+        {
+          "personId": 592789,
+          "name": "Noah Syndergaard",
+          "fromTeamId": 119,
+          "toTeamId": 114,
+          "kind": "player"
         }
       ]
     },
@@ -46494,13 +46494,6 @@
       ],
       "assets": [
         {
-          "personId": 523260,
-          "name": "Joe Kelly",
-          "fromTeamId": 145,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
           "personId": 458681,
           "name": "Lance Lynn",
           "fromTeamId": 145,
@@ -46527,6 +46520,13 @@
           "fromTeamId": 119,
           "toTeamId": 145,
           "kind": "player"
+        },
+        {
+          "personId": 523260,
+          "name": "Joe Kelly",
+          "fromTeamId": 145,
+          "toTeamId": 119,
+          "kind": "player"
         }
       ]
     },
@@ -46540,18 +46540,18 @@
       ],
       "assets": [
         {
-          "personId": 608700,
-          "name": "Kevin Plawecki",
-          "fromTeamId": 135,
-          "toTeamId": 140,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 140,
           "toTeamId": 135,
           "kind": "cash"
+        },
+        {
+          "personId": 608700,
+          "name": "Kevin Plawecki",
+          "fromTeamId": 135,
+          "toTeamId": 140,
+          "kind": "player"
         }
       ]
     },
@@ -46675,17 +46675,17 @@
       ],
       "assets": [
         {
-          "personId": 670032,
-          "name": "Nicky Lopez",
-          "fromTeamId": 118,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": 621368,
           "name": "Taylor Hearn",
           "fromTeamId": 144,
           "toTeamId": 118,
+          "kind": "player"
+        },
+        {
+          "personId": 670032,
+          "name": "Nicky Lopez",
+          "fromTeamId": 118,
+          "toTeamId": 144,
           "kind": "player"
         }
       ]
@@ -46771,10 +46771,10 @@
       ],
       "assets": [
         {
-          "personId": 600869,
-          "name": "Jeimer Candelario",
-          "fromTeamId": 120,
-          "toTeamId": 112,
+          "personId": 687792,
+          "name": "DJ Herz",
+          "fromTeamId": 112,
+          "toTeamId": 120,
           "kind": "player"
         },
         {
@@ -46785,17 +46785,17 @@
           "kind": "cash"
         },
         {
-          "personId": 687792,
-          "name": "DJ Herz",
+          "personId": 691183,
+          "name": "Kevin Made",
           "fromTeamId": 112,
           "toTeamId": 120,
           "kind": "player"
         },
         {
-          "personId": 691183,
-          "name": "Kevin Made",
-          "fromTeamId": 112,
-          "toTeamId": 120,
+          "personId": 600869,
+          "name": "Jeimer Candelario",
+          "fromTeamId": 120,
+          "toTeamId": 112,
           "kind": "player"
         }
       ]
@@ -46977,18 +46977,18 @@
       ],
       "assets": [
         {
-          "personId": 607054,
-          "name": "Jace Peterson",
-          "fromTeamId": 133,
-          "toTeamId": 109,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 133,
           "toTeamId": 109,
           "kind": "cash"
+        },
+        {
+          "personId": 607054,
+          "name": "Jace Peterson",
+          "fromTeamId": 133,
+          "toTeamId": 109,
+          "kind": "player"
         },
         {
           "personId": 694477,
@@ -47009,18 +47009,18 @@
       ],
       "assets": [
         {
-          "personId": 656353,
-          "name": "Tucker Davidson",
-          "fromTeamId": 108,
-          "toTeamId": 118,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 118,
           "toTeamId": 108,
           "kind": "cash"
+        },
+        {
+          "personId": 656353,
+          "name": "Tucker Davidson",
+          "fromTeamId": 108,
+          "toTeamId": 118,
+          "kind": "player"
         }
       ]
     },
@@ -47098,11 +47098,11 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
+          "personId": 657557,
+          "name": "Paul DeJong",
           "fromTeamId": 138,
           "toTeamId": 141,
-          "kind": "cash"
+          "kind": "player"
         },
         {
           "personId": 694335,
@@ -47112,11 +47112,11 @@
           "kind": "player"
         },
         {
-          "personId": 657557,
-          "name": "Paul DeJong",
+          "personId": null,
+          "name": null,
           "fromTeamId": 138,
           "toTeamId": 141,
-          "kind": "player"
+          "kind": "cash"
         }
       ]
     },
@@ -47130,18 +47130,18 @@
       ],
       "assets": [
         {
-          "personId": 677865,
-          "name": "Justin Bruihl",
-          "fromTeamId": 119,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 115,
           "toTeamId": 119,
           "kind": "cash"
+        },
+        {
+          "personId": 677865,
+          "name": "Justin Bruihl",
+          "fromTeamId": 119,
+          "toTeamId": 115,
+          "kind": "player"
         }
       ]
     },
@@ -47155,17 +47155,17 @@
       ],
       "assets": [
         {
-          "personId": 660825,
-          "name": "Eduard Bazardo",
-          "fromTeamId": 110,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
           "personId": 686827,
           "name": "Logan Rinehart",
           "fromTeamId": 136,
           "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 660825,
+          "name": "Eduard Bazardo",
+          "fromTeamId": 110,
+          "toTeamId": 136,
           "kind": "player"
         }
       ]
@@ -47408,17 +47408,17 @@
       ],
       "assets": [
         {
-          "personId": 641871,
-          "name": "Keynan Middleton",
-          "fromTeamId": 145,
-          "toTeamId": 147,
-          "kind": "player"
-        },
-        {
           "personId": 683636,
           "name": "Juan Carela",
           "fromTeamId": 147,
           "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 641871,
+          "name": "Keynan Middleton",
+          "fromTeamId": 145,
+          "toTeamId": 147,
           "kind": "player"
         }
       ]
@@ -47465,15 +47465,8 @@
       ],
       "assets": [
         {
-          "personId": 656427,
-          "name": "Jack Flaherty",
-          "fromTeamId": 138,
-          "toTeamId": 110,
-          "kind": "player"
-        },
-        {
-          "personId": 701374,
-          "name": "Zack Showalter",
+          "personId": 693409,
+          "name": "César Prieto",
           "fromTeamId": 110,
           "toTeamId": 138,
           "kind": "player"
@@ -47486,10 +47479,17 @@
           "kind": "player"
         },
         {
-          "personId": 693409,
-          "name": "César Prieto",
+          "personId": 701374,
+          "name": "Zack Showalter",
           "fromTeamId": 110,
           "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 656427,
+          "name": "Jack Flaherty",
+          "fromTeamId": 138,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
@@ -47707,13 +47707,6 @@
       ],
       "assets": [
         {
-          "personId": 605130,
-          "name": "Scott Barlow",
-          "fromTeamId": 118,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
           "personId": 689275,
           "name": "Henry Williams",
           "fromTeamId": 135,
@@ -47725,6 +47718,13 @@
           "name": "Jesus Rios",
           "fromTeamId": 135,
           "toTeamId": 118,
+          "kind": "player"
+        },
+        {
+          "personId": 605130,
+          "name": "Scott Barlow",
+          "fromTeamId": 118,
+          "toTeamId": 135,
           "kind": "player"
         }
       ]
@@ -47953,18 +47953,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 158,
-          "toTeamId": 114,
-          "kind": "cash"
-        },
-        {
           "personId": 676896,
           "name": "Chris Roller",
           "fromTeamId": 114,
           "toTeamId": 158,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 158,
+          "toTeamId": 114,
+          "kind": "cash"
         }
       ]
     },
@@ -47978,18 +47978,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 141,
-          "toTeamId": 143,
-          "kind": "cash"
-        },
-        {
           "personId": 664120,
           "name": "Max McDowell",
           "fromTeamId": 143,
           "toTeamId": 141,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 141,
+          "toTeamId": 143,
+          "kind": "cash"
         }
       ]
     },
@@ -48160,10 +48160,10 @@
       ],
       "assets": [
         {
-          "personId": 691001,
-          "name": "Robert Moore",
-          "fromTeamId": 158,
-          "toTeamId": 143,
+          "personId": 686554,
+          "name": "Oliver Dunn",
+          "fromTeamId": 143,
+          "toTeamId": 158,
           "kind": "player"
         },
         {
@@ -48174,10 +48174,10 @@
           "kind": "player"
         },
         {
-          "personId": 686554,
-          "name": "Oliver Dunn",
-          "fromTeamId": 143,
-          "toTeamId": 158,
+          "personId": 691001,
+          "name": "Robert Moore",
+          "fromTeamId": 158,
+          "toTeamId": 143,
           "kind": "player"
         }
       ]
@@ -48217,13 +48217,6 @@
       ],
       "assets": [
         {
-          "personId": 607481,
-          "name": "Aaron Bummer",
-          "fromTeamId": 145,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": 647336,
           "name": "Michael Soroka",
           "fromTeamId": 144,
@@ -48231,15 +48224,15 @@
           "kind": "player"
         },
         {
-          "personId": 694363,
-          "name": "Jared Shuster",
-          "fromTeamId": 144,
-          "toTeamId": 145,
+          "personId": 607481,
+          "name": "Aaron Bummer",
+          "fromTeamId": 145,
+          "toTeamId": 144,
           "kind": "player"
         },
         {
-          "personId": 803035,
-          "name": "Riley Gowens",
+          "personId": 670032,
+          "name": "Nicky Lopez",
           "fromTeamId": 144,
           "toTeamId": 145,
           "kind": "player"
@@ -48252,8 +48245,15 @@
           "kind": "player"
         },
         {
-          "personId": 670032,
-          "name": "Nicky Lopez",
+          "personId": 803035,
+          "name": "Riley Gowens",
+          "fromTeamId": 144,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 694363,
+          "name": "Jared Shuster",
           "fromTeamId": 144,
           "toTeamId": 145,
           "kind": "player"
@@ -48473,6 +48473,13 @@
       ],
       "assets": [
         {
+          "personId": 672841,
+          "name": "Carlos Vargas",
+          "fromTeamId": 109,
+          "toTeamId": 136,
+          "kind": "player"
+        },
+        {
           "personId": 553993,
           "name": "Eugenio Suárez",
           "fromTeamId": 136,
@@ -48482,13 +48489,6 @@
         {
           "personId": 664874,
           "name": "Seby Zavala",
-          "fromTeamId": 109,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
-          "personId": 672841,
-          "name": "Carlos Vargas",
           "fromTeamId": 109,
           "toTeamId": 136,
           "kind": "player"
@@ -48504,6 +48504,20 @@
         144
       ],
       "assets": [
+        {
+          "personId": 702551,
+          "name": "Cole Phillips",
+          "fromTeamId": 144,
+          "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 594835,
+          "name": "Marco Gonzales",
+          "fromTeamId": 136,
+          "toTeamId": 144,
+          "kind": "player"
+        },
         {
           "personId": 672284,
           "name": "Jarred Kelenic",
@@ -48521,20 +48535,6 @@
         {
           "personId": 657108,
           "name": "Evan White",
-          "fromTeamId": 136,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
-          "personId": 702551,
-          "name": "Cole Phillips",
-          "fromTeamId": 144,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
-          "personId": 594835,
-          "name": "Marco Gonzales",
           "fromTeamId": 136,
           "toTeamId": 144,
           "kind": "player"
@@ -48910,10 +48910,10 @@
       ],
       "assets": [
         {
-          "personId": 664199,
-          "name": "Taylor Clarke",
-          "fromTeamId": 118,
-          "toTeamId": 158,
+          "personId": 687478,
+          "name": "Cam Devanney",
+          "fromTeamId": 158,
+          "toTeamId": 118,
           "kind": "player"
         },
         {
@@ -48924,10 +48924,10 @@
           "kind": "player"
         },
         {
-          "personId": 687478,
-          "name": "Cam Devanney",
-          "fromTeamId": 158,
-          "toTeamId": 118,
+          "personId": 664199,
+          "name": "Taylor Clarke",
+          "fromTeamId": 118,
+          "toTeamId": 158,
           "kind": "player"
         }
       ]
@@ -48967,17 +48967,17 @@
       ],
       "assets": [
         {
-          "personId": 658668,
-          "name": "Edward Olivares",
-          "fromTeamId": 118,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 683504,
           "name": "Deivis Nadal",
           "fromTeamId": 134,
           "toTeamId": 118,
+          "kind": "player"
+        },
+        {
+          "personId": 658668,
+          "name": "Edward Olivares",
+          "fromTeamId": 118,
+          "toTeamId": 134,
           "kind": "player"
         }
       ]
@@ -48999,11 +48999,11 @@
           "kind": "player"
         },
         {
-          "personId": 572761,
-          "name": "Matt Carpenter",
+          "personId": null,
+          "name": null,
           "fromTeamId": 135,
           "toTeamId": 144,
-          "kind": "player"
+          "kind": "cash"
         },
         {
           "personId": 686601,
@@ -49013,11 +49013,11 @@
           "kind": "player"
         },
         {
-          "personId": null,
-          "name": null,
+          "personId": 572761,
+          "name": "Matt Carpenter",
           "fromTeamId": 135,
           "toTeamId": 144,
-          "kind": "cash"
+          "kind": "player"
         }
       ]
     },
@@ -49077,18 +49077,18 @@
       ],
       "assets": [
         {
-          "personId": 670990,
-          "name": "Yohan Ramírez",
-          "fromTeamId": 145,
-          "toTeamId": 121,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 121,
           "toTeamId": 145,
           "kind": "cash"
+        },
+        {
+          "personId": 670990,
+          "name": "Yohan Ramírez",
+          "fromTeamId": 145,
+          "toTeamId": 121,
+          "kind": "player"
         }
       ]
     },
@@ -49102,17 +49102,17 @@
       ],
       "assets": [
         {
-          "personId": 805238,
-          "name": "Cesar Espinal",
-          "fromTeamId": 110,
-          "toTeamId": 118,
-          "kind": "player"
-        },
-        {
           "personId": 669169,
           "name": "Jonathan Heasley",
           "fromTeamId": 118,
           "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 805238,
+          "name": "Cesar Espinal",
+          "fromTeamId": 110,
+          "toTeamId": 118,
           "kind": "player"
         }
       ]
@@ -49291,13 +49291,6 @@
       ],
       "assets": [
         {
-          "personId": 592662,
-          "name": "Robbie Ray",
-          "fromTeamId": 136,
-          "toTeamId": 137,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 137,
@@ -49316,6 +49309,13 @@
           "name": "Mitch Haniger",
           "fromTeamId": 137,
           "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 592662,
+          "name": "Robbie Ray",
+          "fromTeamId": 136,
+          "toTeamId": 137,
           "kind": "player"
         }
       ]
@@ -49526,13 +49526,6 @@
           "kind": "player"
         },
         {
-          "personId": 623437,
-          "name": "Justin Topa",
-          "fromTeamId": 136,
-          "toTeamId": 142,
-          "kind": "player"
-        },
-        {
           "personId": 694224,
           "name": "Gabriel Gonzalez",
           "fromTeamId": 136,
@@ -49556,6 +49549,13 @@
         {
           "personId": 543101,
           "name": "Anthony DeSclafani",
+          "fromTeamId": 136,
+          "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 623437,
+          "name": "Justin Topa",
           "fromTeamId": 136,
           "toTeamId": 142,
           "kind": "player"
@@ -49693,18 +49693,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 111,
-          "toTeamId": 121,
-          "kind": "cash"
-        },
-        {
           "personId": 623168,
           "name": "Tyler Heineman",
           "fromTeamId": 121,
           "toTeamId": 111,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 111,
+          "toTeamId": 121,
+          "kind": "cash"
         }
       ]
     },
@@ -49743,6 +49743,20 @@
       ],
       "assets": [
         {
+          "personId": 666619,
+          "name": "Gregory Santos",
+          "fromTeamId": 145,
+          "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 672860,
+          "name": "Prelander Berroa",
+          "fromTeamId": 136,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
           "personId": 676113,
           "name": "Zach DeLoach",
           "fromTeamId": 136,
@@ -49755,20 +49769,6 @@
           "fromTeamId": 136,
           "toTeamId": 145,
           "kind": "other"
-        },
-        {
-          "personId": 672860,
-          "name": "Prelander Berroa",
-          "fromTeamId": 136,
-          "toTeamId": 145,
-          "kind": "player"
-        },
-        {
-          "personId": 666619,
-          "name": "Gregory Santos",
-          "fromTeamId": 145,
-          "toTeamId": 136,
-          "kind": "player"
         }
       ]
     },
@@ -49782,6 +49782,13 @@
       ],
       "assets": [
         {
+          "personId": 657571,
+          "name": "Caleb Ferguson",
+          "fromTeamId": 119,
+          "toTeamId": 147,
+          "kind": "player"
+        },
+        {
           "personId": 657424,
           "name": "Matt Gage",
           "fromTeamId": 147,
@@ -49793,13 +49800,6 @@
           "name": "Christian Zazueta",
           "fromTeamId": 147,
           "toTeamId": 119,
-          "kind": "player"
-        },
-        {
-          "personId": 657571,
-          "name": "Caleb Ferguson",
-          "fromTeamId": 119,
-          "toTeamId": 147,
           "kind": "player"
         }
       ]
@@ -49814,18 +49814,18 @@
       ],
       "assets": [
         {
-          "personId": 621074,
-          "name": "Michael Rucker",
-          "fromTeamId": 112,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 143,
           "toTeamId": 112,
           "kind": "cash"
+        },
+        {
+          "personId": 621074,
+          "name": "Michael Rucker",
+          "fromTeamId": 112,
+          "toTeamId": 143,
+          "kind": "player"
         }
       ]
     },
@@ -49839,18 +49839,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 137,
-          "toTeamId": 158,
-          "kind": "cash"
-        },
-        {
           "personId": 663629,
           "name": "Ethan Small",
           "fromTeamId": 158,
           "toTeamId": 137,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 137,
+          "toTeamId": 158,
+          "kind": "cash"
         }
       ]
     },
@@ -49864,18 +49864,18 @@
       ],
       "assets": [
         {
-          "personId": 670871,
-          "name": "Guillo Zuñiga",
-          "fromTeamId": 138,
-          "toTeamId": 108,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 108,
           "toTeamId": 138,
           "kind": "cash"
+        },
+        {
+          "personId": 670871,
+          "name": "Guillo Zuñiga",
+          "fromTeamId": 138,
+          "toTeamId": 108,
+          "kind": "player"
         }
       ]
     },
@@ -49939,17 +49939,17 @@
       ],
       "assets": [
         {
-          "personId": 624503,
-          "name": "Nick Gordon",
-          "fromTeamId": 142,
-          "toTeamId": 146,
-          "kind": "player"
-        },
-        {
           "personId": 595345,
           "name": "Steven Okert",
           "fromTeamId": 146,
           "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 624503,
+          "name": "Nick Gordon",
+          "fromTeamId": 142,
+          "toTeamId": 146,
           "kind": "player"
         }
       ]
@@ -50007,18 +50007,18 @@
       ],
       "assets": [
         {
-          "personId": 701324,
-          "name": "Oliver Carrillo",
-          "fromTeamId": 135,
-          "toTeamId": 117,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 117,
           "toTeamId": 135,
           "kind": "other"
+        },
+        {
+          "personId": 701324,
+          "name": "Oliver Carrillo",
+          "fromTeamId": 135,
+          "toTeamId": 117,
+          "kind": "player"
         }
       ]
     },
@@ -50057,17 +50057,17 @@
       ],
       "assets": [
         {
-          "personId": 808350,
-          "name": "Joshua Quezada",
-          "fromTeamId": 147,
-          "toTeamId": 158,
-          "kind": "player"
-        },
-        {
           "personId": 677076,
           "name": "Clayton Andrews",
           "fromTeamId": 158,
           "toTeamId": 147,
+          "kind": "player"
+        },
+        {
+          "personId": 808350,
+          "name": "Joshua Quezada",
+          "fromTeamId": 147,
+          "toTeamId": 158,
           "kind": "player"
         }
       ]
@@ -50257,24 +50257,24 @@
       ],
       "assets": [
         {
-          "personId": 656302,
-          "name": "Dylan Cease",
-          "fromTeamId": 145,
-          "toTeamId": 135,
-          "kind": "player"
-        },
-        {
-          "personId": 621051,
-          "name": "Steven Wilson",
-          "fromTeamId": 135,
-          "toTeamId": 145,
-          "kind": "player"
-        },
-        {
           "personId": 694214,
           "name": "Samuel Zavala",
           "fromTeamId": 135,
           "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 689672,
+          "name": "Drew Thorpe",
+          "fromTeamId": 135,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 656302,
+          "name": "Dylan Cease",
+          "fromTeamId": 145,
+          "toTeamId": 135,
           "kind": "player"
         },
         {
@@ -50285,8 +50285,8 @@
           "kind": "player"
         },
         {
-          "personId": 689672,
-          "name": "Drew Thorpe",
+          "personId": 621051,
+          "name": "Steven Wilson",
           "fromTeamId": 135,
           "toTeamId": 145,
           "kind": "player"
@@ -50929,18 +50929,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 143,
-          "toTeamId": 145,
-          "kind": "cash"
-        },
-        {
           "personId": 679563,
           "name": "José Rodríguez",
           "fromTeamId": 145,
           "toTeamId": 143,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 143,
+          "toTeamId": 145,
+          "kind": "cash"
         }
       ]
     },
@@ -51397,18 +51397,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 144,
-          "toTeamId": 108,
-          "kind": "cash"
-        },
-        {
           "personId": 623474,
           "name": "Jimmy Herget",
           "fromTeamId": 108,
           "toTeamId": 144,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 144,
+          "toTeamId": 108,
+          "kind": "cash"
         }
       ]
     },
@@ -51518,17 +51518,17 @@
       ],
       "assets": [
         {
-          "personId": 543257,
-          "name": "Robbie Grossman",
-          "fromTeamId": 145,
-          "toTeamId": 140,
-          "kind": "player"
-        },
-        {
           "personId": 681896,
           "name": "Anthony Hoopii-Tuionetoa",
           "fromTeamId": 140,
           "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 543257,
+          "name": "Robbie Grossman",
+          "fromTeamId": 145,
+          "toTeamId": 140,
           "kind": "player"
         }
       ]
@@ -51568,18 +51568,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 144,
-          "toTeamId": 111,
-          "kind": "cash"
-        },
-        {
           "personId": 670097,
           "name": "Zack Short",
           "fromTeamId": 111,
           "toTeamId": 144,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 144,
+          "toTeamId": 111,
+          "kind": "cash"
         }
       ]
     },
@@ -51593,18 +51593,18 @@
       ],
       "assets": [
         {
-          "personId": 670766,
-          "name": "Darren McCaughan",
-          "fromTeamId": 146,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 114,
           "toTeamId": 146,
           "kind": "cash"
+        },
+        {
+          "personId": 670766,
+          "name": "Darren McCaughan",
+          "fromTeamId": 146,
+          "toTeamId": 114,
+          "kind": "player"
         }
       ]
     },
@@ -51636,17 +51636,17 @@
       ],
       "assets": [
         {
-          "personId": 641726,
-          "name": "Daulton Jefferies",
-          "fromTeamId": 137,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 683616,
           "name": "Rodolfo Nolasco",
           "fromTeamId": 134,
           "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 641726,
+          "name": "Daulton Jefferies",
+          "fromTeamId": 137,
+          "toTeamId": 134,
           "kind": "player"
         }
       ]
@@ -51743,18 +51743,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 108,
-          "toTeamId": 134,
-          "kind": "cash"
-        },
-        {
           "personId": 672710,
           "name": "Roansy Contreras",
           "fromTeamId": 134,
           "toTeamId": 108,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 108,
+          "toTeamId": 134,
+          "kind": "cash"
         }
       ]
     },
@@ -51786,17 +51786,17 @@
       ],
       "assets": [
         {
-          "personId": 663992,
-          "name": "Richard Lovelady",
-          "fromTeamId": 112,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": 666122,
           "name": "Jeff Belge",
           "fromTeamId": 139,
           "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 663992,
+          "name": "Richard Lovelady",
+          "fromTeamId": 112,
+          "toTeamId": 139,
           "kind": "player"
         }
       ]
@@ -51811,18 +51811,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 119,
-          "toTeamId": 121,
-          "kind": "cash"
-        },
-        {
           "personId": 670990,
           "name": "Yohan Ramírez",
           "fromTeamId": 121,
           "toTeamId": 119,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 119,
+          "toTeamId": 121,
+          "kind": "cash"
         }
       ]
     },
@@ -51836,15 +51836,15 @@
       ],
       "assets": [
         {
-          "personId": 657508,
-          "name": "Mike Baumann",
+          "personId": 605421,
+          "name": "Michael Pérez",
           "fromTeamId": 110,
           "toTeamId": 136,
           "kind": "player"
         },
         {
-          "personId": 605421,
-          "name": "Michael Pérez",
+          "personId": 657508,
+          "name": "Mike Baumann",
           "fromTeamId": 110,
           "toTeamId": 136,
           "kind": "player"
@@ -52000,18 +52000,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 121,
-          "toTeamId": 147,
-          "kind": "cash"
-        },
-        {
           "personId": 620443,
           "name": "Luis Torrens",
           "fromTeamId": 147,
           "toTeamId": 121,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 121,
+          "toTeamId": 147,
+          "kind": "cash"
         }
       ]
     },
@@ -52125,18 +52125,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 143,
-          "toTeamId": 116,
-          "kind": "cash"
-        },
-        {
           "personId": 671083,
           "name": "Buddy Kennedy",
           "fromTeamId": 116,
           "toTeamId": 143,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 143,
+          "toTeamId": 116,
+          "kind": "cash"
         }
       ]
     },
@@ -52307,18 +52307,18 @@
           "kind": "player"
         },
         {
-          "personId": 677954,
-          "name": "Jordan Groshans",
-          "fromTeamId": 147,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 133,
           "toTeamId": 147,
           "kind": "cash"
+        },
+        {
+          "personId": 677954,
+          "name": "Jordan Groshans",
+          "fromTeamId": 147,
+          "toTeamId": 133,
+          "kind": "player"
         }
       ]
     },
@@ -52357,18 +52357,18 @@
       ],
       "assets": [
         {
-          "personId": 692640,
-          "name": "Jorge Mendez",
-          "fromTeamId": 143,
-          "toTeamId": 115,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 115,
           "toTeamId": 143,
           "kind": "cash"
+        },
+        {
+          "personId": 692640,
+          "name": "Jorge Mendez",
+          "fromTeamId": 143,
+          "toTeamId": 115,
+          "kind": "player"
         }
       ]
     },
@@ -52457,18 +52457,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 114,
-          "toTeamId": 137,
-          "kind": "cash"
-        },
-        {
           "personId": 675921,
           "name": "Spencer Howard",
           "fromTeamId": 137,
           "toTeamId": 114,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 114,
+          "toTeamId": 137,
+          "kind": "cash"
         }
       ]
     },
@@ -52786,20 +52786,6 @@
       ],
       "assets": [
         {
-          "personId": 668227,
-          "name": "Randy Arozarena",
-          "fromTeamId": 139,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
-          "personId": 811315,
-          "name": "Brody Hopkins",
-          "fromTeamId": 136,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": 806223,
           "name": "Aidan Smith",
           "fromTeamId": 136,
@@ -52812,6 +52798,20 @@
           "fromTeamId": 136,
           "toTeamId": 139,
           "kind": "ptbnl"
+        },
+        {
+          "personId": 668227,
+          "name": "Randy Arozarena",
+          "fromTeamId": 139,
+          "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 811315,
+          "name": "Brody Hopkins",
+          "fromTeamId": 136,
+          "toTeamId": 139,
+          "kind": "player"
         }
       ]
     },
@@ -53394,18 +53394,18 @@
       ],
       "assets": [
         {
-          "personId": 676568,
-          "name": "Ricky Vanasco",
-          "fromTeamId": 119,
-          "toTeamId": 116,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 116,
           "toTeamId": 119,
           "kind": "cash"
+        },
+        {
+          "personId": 676568,
+          "name": "Ricky Vanasco",
+          "fromTeamId": 119,
+          "toTeamId": 116,
+          "kind": "player"
         }
       ]
     },
@@ -54081,18 +54081,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 109,
-          "toTeamId": 146,
-          "kind": "ptbnl"
-        },
-        {
           "personId": 605137,
           "name": "Josh Bell",
           "fromTeamId": 146,
           "toTeamId": 109,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 109,
+          "toTeamId": 146,
+          "kind": "ptbnl"
         }
       ]
     },
@@ -55133,17 +55133,17 @@
       ],
       "assets": [
         {
-          "personId": 687991,
-          "name": "Jared Johnson",
-          "fromTeamId": 144,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
           "personId": 669397,
           "name": "Nick Allen",
           "fromTeamId": 133,
           "toTeamId": 144,
+          "kind": "player"
+        },
+        {
+          "personId": 687991,
+          "name": "Jared Johnson",
+          "fromTeamId": 144,
+          "toTeamId": 133,
           "kind": "player"
         }
       ]
@@ -55347,17 +55347,17 @@
           "kind": "player"
         },
         {
-          "personId": 814455,
-          "name": "Nick Mitchell",
-          "fromTeamId": 141,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
           "personId": 680704,
           "name": "Nick Sandlin",
           "fromTeamId": 114,
           "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 814455,
+          "name": "Nick Mitchell",
+          "fromTeamId": 141,
+          "toTeamId": 114,
           "kind": "player"
         },
         {
@@ -55386,6 +55386,13 @@
           "kind": "player"
         },
         {
+          "personId": 682847,
+          "name": "Luis Ortiz",
+          "fromTeamId": 134,
+          "toTeamId": 114,
+          "kind": "player"
+        },
+        {
           "personId": 687462,
           "name": "Spencer Horwitz",
           "fromTeamId": 114,
@@ -55395,13 +55402,6 @@
         {
           "personId": 691776,
           "name": "Josh Hartle",
-          "fromTeamId": 134,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
-          "personId": 682847,
-          "name": "Luis Ortiz",
           "fromTeamId": 134,
           "toTeamId": 114,
           "kind": "player"
@@ -55457,22 +55457,8 @@
       ],
       "assets": [
         {
-          "personId": 691019,
-          "name": "Kyle Teel",
-          "fromTeamId": 111,
-          "toTeamId": 145,
-          "kind": "player"
-        },
-        {
-          "personId": 676979,
-          "name": "Garrett Crochet",
-          "fromTeamId": 145,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
-          "personId": 695731,
-          "name": "Braden Montgomery",
+          "personId": 682790,
+          "name": "Wikelman González",
           "fromTeamId": 111,
           "toTeamId": 145,
           "kind": "player"
@@ -55485,8 +55471,22 @@
           "kind": "player"
         },
         {
-          "personId": 682790,
-          "name": "Wikelman González",
+          "personId": 695731,
+          "name": "Braden Montgomery",
+          "fromTeamId": 111,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 676979,
+          "name": "Garrett Crochet",
+          "fromTeamId": 145,
+          "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": 691019,
+          "name": "Kyle Teel",
           "fromTeamId": 111,
           "toTeamId": 145,
           "kind": "player"
@@ -55528,13 +55528,6 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 111,
-          "toTeamId": 147,
-          "kind": "other"
-        },
-        {
           "personId": 665966,
           "name": "Carlos Narváez",
           "fromTeamId": 147,
@@ -55547,6 +55540,13 @@
           "fromTeamId": 111,
           "toTeamId": 147,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 111,
+          "toTeamId": 147,
+          "kind": "other"
         }
       ]
     },
@@ -55592,20 +55592,6 @@
       ],
       "assets": [
         {
-          "personId": 669713,
-          "name": "Hayden Wesneski",
-          "fromTeamId": 112,
-          "toTeamId": 117,
-          "kind": "player"
-        },
-        {
-          "personId": 701358,
-          "name": "Cam Smith",
-          "fromTeamId": 112,
-          "toTeamId": 117,
-          "kind": "player"
-        },
-        {
           "personId": 670623,
           "name": "Isaac Paredes",
           "fromTeamId": 112,
@@ -55617,6 +55603,20 @@
           "name": "Kyle Tucker",
           "fromTeamId": 117,
           "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 669713,
+          "name": "Hayden Wesneski",
+          "fromTeamId": 112,
+          "toTeamId": 117,
+          "kind": "player"
+        },
+        {
+          "personId": 701358,
+          "name": "Cam Smith",
+          "fromTeamId": 112,
+          "toTeamId": 117,
           "kind": "player"
         }
       ]
@@ -55638,15 +55638,15 @@
           "kind": "player"
         },
         {
-          "personId": 682052,
-          "name": "Jacob Lopez",
-          "fromTeamId": 139,
-          "toTeamId": 133,
+          "personId": 671212,
+          "name": "Joe Boyle",
+          "fromTeamId": 133,
+          "toTeamId": 139,
           "kind": "player"
         },
         {
-          "personId": 671212,
-          "name": "Joe Boyle",
+          "personId": 802138,
+          "name": "Jacob Watters",
           "fromTeamId": 133,
           "toTeamId": 139,
           "kind": "player"
@@ -55659,18 +55659,18 @@
           "kind": "player"
         },
         {
-          "personId": 802138,
-          "name": "Jacob Watters",
-          "fromTeamId": 133,
-          "toTeamId": 139,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 133,
           "toTeamId": 139,
           "kind": "other"
+        },
+        {
+          "personId": 682052,
+          "name": "Jacob Lopez",
+          "fromTeamId": 139,
+          "toTeamId": 133,
+          "kind": "player"
         }
       ]
     },
@@ -55716,17 +55716,17 @@
           "kind": "cash"
         },
         {
-          "personId": 641355,
-          "name": "Cody Bellinger",
-          "fromTeamId": 112,
-          "toTeamId": 147,
-          "kind": "player"
-        },
-        {
           "personId": 547001,
           "name": "Cody Poteet",
           "fromTeamId": 147,
           "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 641355,
+          "name": "Cody Bellinger",
+          "fromTeamId": 112,
+          "toTeamId": 147,
           "kind": "player"
         }
       ]
@@ -55741,18 +55741,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 145,
-          "toTeamId": 112,
-          "kind": "cash"
-        },
-        {
           "personId": 642136,
           "name": "Matt Thaiss",
           "fromTeamId": 112,
           "toTeamId": 145,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 145,
+          "toTeamId": 112,
+          "kind": "cash"
         }
       ]
     },
@@ -55848,17 +55848,17 @@
       ],
       "assets": [
         {
-          "personId": 677944,
-          "name": "Slade Cecconi",
-          "fromTeamId": 109,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
           "personId": 647304,
           "name": "Josh Naylor",
           "fromTeamId": 114,
           "toTeamId": 109,
+          "kind": "player"
+        },
+        {
+          "personId": 677944,
+          "name": "Slade Cecconi",
+          "fromTeamId": 109,
+          "toTeamId": 114,
           "kind": "player"
         }
       ]
@@ -55898,13 +55898,6 @@
       ],
       "assets": [
         {
-          "personId": 666200,
-          "name": "Jesús Luzardo",
-          "fromTeamId": 146,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
           "personId": 702708,
           "name": "Emaarion Boyd",
           "fromTeamId": 143,
@@ -55924,6 +55917,13 @@
           "fromTeamId": 146,
           "toTeamId": 143,
           "kind": "player"
+        },
+        {
+          "personId": 666200,
+          "name": "Jesús Luzardo",
+          "fromTeamId": 146,
+          "toTeamId": 143,
+          "kind": "player"
         }
       ]
     },
@@ -55937,17 +55937,17 @@
       ],
       "assets": [
         {
-          "personId": 663993,
-          "name": "Nathaniel Lowe",
-          "fromTeamId": 140,
-          "toTeamId": 120,
-          "kind": "player"
-        },
-        {
           "personId": 676395,
           "name": "Robert Garcia",
           "fromTeamId": 120,
           "toTeamId": 140,
+          "kind": "player"
+        },
+        {
+          "personId": 663993,
+          "name": "Nathaniel Lowe",
+          "fromTeamId": 140,
+          "toTeamId": 120,
           "kind": "player"
         }
       ]
@@ -55987,11 +55987,11 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 112,
-          "toTeamId": 146,
-          "kind": "cash"
+          "personId": 660644,
+          "name": "Vidal Bruján",
+          "fromTeamId": 146,
+          "toTeamId": 112,
+          "kind": "player"
         },
         {
           "personId": 670223,
@@ -56001,11 +56001,11 @@
           "kind": "player"
         },
         {
-          "personId": 660644,
-          "name": "Vidal Bruján",
-          "fromTeamId": 146,
-          "toTeamId": 112,
-          "kind": "player"
+          "personId": null,
+          "name": null,
+          "fromTeamId": 112,
+          "toTeamId": 146,
+          "kind": "cash"
         }
       ]
     },
@@ -56094,13 +56094,6 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 113,
-          "toTeamId": 119,
-          "kind": "other"
-        },
-        {
           "personId": 666158,
           "name": "Gavin Lux",
           "fromTeamId": 119,
@@ -56113,6 +56106,13 @@
           "fromTeamId": 113,
           "toTeamId": 119,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 113,
+          "toTeamId": 119,
+          "kind": "other"
         }
       ]
     },
@@ -56151,17 +56151,17 @@
       ],
       "assets": [
         {
-          "personId": 682616,
-          "name": "Diego Cartaya",
-          "fromTeamId": 119,
-          "toTeamId": 142,
-          "kind": "player"
-        },
-        {
           "personId": 807833,
           "name": "Jose Vasquez",
           "fromTeamId": 142,
           "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 682616,
+          "name": "Diego Cartaya",
+          "fromTeamId": 119,
+          "toTeamId": 142,
           "kind": "player"
         }
       ]
@@ -56176,18 +56176,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 112,
-          "toTeamId": 140,
-          "kind": "cash"
-        },
-        {
           "personId": 670036,
           "name": "Matt Festa",
           "fromTeamId": 140,
           "toTeamId": 112,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 112,
+          "toTeamId": 140,
+          "kind": "cash"
         }
       ]
     },
@@ -56301,18 +56301,18 @@
       ],
       "assets": [
         {
-          "personId": 683522,
-          "name": "Michael Arias",
-          "fromTeamId": 112,
-          "toTeamId": 147,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 147,
           "toTeamId": 112,
           "kind": "cash"
+        },
+        {
+          "personId": 683522,
+          "name": "Michael Arias",
+          "fromTeamId": 112,
+          "toTeamId": 147,
+          "kind": "player"
         }
       ]
     },
@@ -56708,18 +56708,18 @@
       ],
       "assets": [
         {
-          "personId": 680737,
-          "name": "Michael Helman",
-          "fromTeamId": 142,
-          "toTeamId": 138,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 138,
           "toTeamId": 142,
           "kind": "cash"
+        },
+        {
+          "personId": 680737,
+          "name": "Michael Helman",
+          "fromTeamId": 142,
+          "toTeamId": 138,
+          "kind": "player"
         }
       ]
     },
@@ -56751,18 +56751,18 @@
       ],
       "assets": [
         {
-          "personId": 672744,
-          "name": "Alexander Canario",
-          "fromTeamId": 112,
-          "toTeamId": 121,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 121,
           "toTeamId": 112,
           "kind": "other"
+        },
+        {
+          "personId": 672744,
+          "name": "Alexander Canario",
+          "fromTeamId": 112,
+          "toTeamId": 121,
+          "kind": "player"
         }
       ]
     },
@@ -57452,18 +57452,18 @@
       ],
       "assets": [
         {
-          "personId": 681146,
-          "name": "Jonah Bride",
-          "fromTeamId": 146,
-          "toTeamId": 142,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 142,
           "toTeamId": 146,
           "kind": "cash"
+        },
+        {
+          "personId": 681146,
+          "name": "Jonah Bride",
+          "fromTeamId": 146,
+          "toTeamId": 142,
+          "kind": "player"
         }
       ]
     },
@@ -57928,18 +57928,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 121,
-          "toTeamId": 109,
-          "kind": "cash"
-        },
-        {
           "personId": 620454,
           "name": "José Castillo",
           "fromTeamId": 109,
           "toTeamId": 121,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 121,
+          "toTeamId": 109,
+          "kind": "cash"
         }
       ]
     },
@@ -57978,18 +57978,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 111,
-          "toTeamId": 108,
-          "kind": "cash"
-        },
-        {
           "personId": 676116,
           "name": "Ryan Noda",
           "fromTeamId": 108,
           "toTeamId": 111,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 111,
+          "toTeamId": 108,
+          "kind": "cash"
         }
       ]
     },
@@ -58164,18 +58164,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 110,
-          "toTeamId": 144,
-          "kind": "cash"
-        },
-        {
           "personId": 656240,
           "name": "Scott Blewett",
           "fromTeamId": 144,
           "toTeamId": 110,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 110,
+          "toTeamId": 144,
+          "kind": "cash"
         }
       ]
     },
@@ -58449,18 +58449,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 143,
-          "toTeamId": 140,
-          "kind": "cash"
-        },
-        {
           "personId": 676510,
           "name": "Nolan Hoffman",
           "fromTeamId": 140,
           "toTeamId": 143,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 143,
+          "toTeamId": 140,
+          "kind": "cash"
         }
       ]
     },
@@ -58499,18 +58499,18 @@
       ],
       "assets": [
         {
-          "personId": 683068,
-          "name": "Zach Penrod",
-          "fromTeamId": 111,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 119,
           "toTeamId": 111,
           "kind": "cash"
+        },
+        {
+          "personId": 683068,
+          "name": "Zach Penrod",
+          "fromTeamId": 111,
+          "toTeamId": 119,
+          "kind": "player"
         }
       ]
     },
@@ -58567,13 +58567,6 @@
       ],
       "assets": [
         {
-          "personId": 676702,
-          "name": "Hunter Stratton",
-          "fromTeamId": 134,
-          "toTeamId": 144,
-          "kind": "player"
-        },
-        {
           "personId": 828335,
           "name": "Titus Dumitru",
           "fromTeamId": 144,
@@ -58586,6 +58579,13 @@
           "fromTeamId": 144,
           "toTeamId": 134,
           "kind": "cash"
+        },
+        {
+          "personId": 676702,
+          "name": "Hunter Stratton",
+          "fromTeamId": 134,
+          "toTeamId": 144,
+          "kind": "player"
         }
       ]
     },
@@ -59483,17 +59483,17 @@
       ],
       "assets": [
         {
-          "personId": 807002,
-          "name": "Jeter Martinez",
-          "fromTeamId": 136,
-          "toTeamId": 134,
-          "kind": "player"
-        },
-        {
           "personId": 657571,
           "name": "Caleb Ferguson",
           "fromTeamId": 134,
           "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 807002,
+          "name": "Jeter Martinez",
+          "fromTeamId": 136,
+          "toTeamId": 134,
           "kind": "player"
         }
       ]
@@ -59507,13 +59507,6 @@
         138
       ],
       "assets": [
-        {
-          "personId": 800305,
-          "name": "Jesús  Báez",
-          "fromTeamId": 121,
-          "toTeamId": 138,
-          "kind": "player"
-        },
         {
           "personId": 664854,
           "name": "Ryan Helsley",
@@ -59534,6 +59527,13 @@
           "fromTeamId": 121,
           "toTeamId": 138,
           "kind": "player"
+        },
+        {
+          "personId": 800305,
+          "name": "Jesús  Báez",
+          "fromTeamId": 121,
+          "toTeamId": 138,
+          "kind": "player"
         }
       ]
     },
@@ -59547,13 +59547,6 @@
       ],
       "assets": [
         {
-          "personId": 690953,
-          "name": "Mick Abel",
-          "fromTeamId": 143,
-          "toTeamId": 142,
-          "kind": "player"
-        },
-        {
           "personId": 661395,
           "name": "Jhoan Duran",
           "fromTeamId": 142,
@@ -59563,6 +59556,13 @@
         {
           "personId": 806953,
           "name": "Eduardo Tait",
+          "fromTeamId": 143,
+          "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 690953,
+          "name": "Mick Abel",
           "fromTeamId": 143,
           "toTeamId": 142,
           "kind": "player"
@@ -61033,18 +61033,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 117,
-          "toTeamId": 146,
-          "kind": "cash"
-        },
-        {
           "personId": 680701,
           "name": "John Rooney",
           "fromTeamId": 146,
           "toTeamId": 117,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 117,
+          "toTeamId": 146,
+          "kind": "cash"
         }
       ]
     },
@@ -61187,18 +61187,18 @@
       ],
       "assets": [
         {
-          "personId": 552640,
-          "name": "Andrew Kittredge",
-          "fromTeamId": 112,
-          "toTeamId": 110,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 110,
           "toTeamId": 112,
           "kind": "cash"
+        },
+        {
+          "personId": 552640,
+          "name": "Andrew Kittredge",
+          "fromTeamId": 112,
+          "toTeamId": 110,
+          "kind": "player"
         }
       ]
     },
@@ -62452,13 +62452,6 @@
       ],
       "assets": [
         {
-          "personId": 821279,
-          "name": "Edgardo De Leon",
-          "fromTeamId": 112,
-          "toTeamId": 146,
-          "kind": "player"
-        },
-        {
           "personId": 665795,
           "name": "Edward Cabrera",
           "fromTeamId": 146,
@@ -62475,6 +62468,13 @@
         {
           "personId": 694183,
           "name": "Cristian Hernández",
+          "fromTeamId": 112,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 821279,
+          "name": "Edgardo De Leon",
           "fromTeamId": 112,
           "toTeamId": 146,
           "kind": "player"
@@ -62605,6 +62605,20 @@
       ],
       "assets": [
         {
+          "personId": 800957,
+          "name": "Brendan Jones",
+          "fromTeamId": 147,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 801276,
+          "name": "Juan Matheus",
+          "fromTeamId": 147,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
           "personId": 827665,
           "name": "Dillon Lewis",
           "fromTeamId": 147,
@@ -62621,20 +62635,6 @@
         {
           "personId": 815734,
           "name": "Dylan Jasso",
-          "fromTeamId": 147,
-          "toTeamId": 146,
-          "kind": "player"
-        },
-        {
-          "personId": 800957,
-          "name": "Brendan Jones",
-          "fromTeamId": 147,
-          "toTeamId": 146,
-          "kind": "player"
-        },
-        {
-          "personId": 801276,
-          "name": "Juan Matheus",
           "fromTeamId": 147,
           "toTeamId": 146,
           "kind": "player"
@@ -62766,6 +62766,13 @@
       ],
       "assets": [
         {
+          "personId": 831912,
+          "name": "Truman Pauley",
+          "fromTeamId": 121,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
           "personId": 682668,
           "name": "Luisangel Acuña",
           "fromTeamId": 121,
@@ -62777,13 +62784,6 @@
           "name": "Luis Robert Jr.",
           "fromTeamId": 145,
           "toTeamId": 121,
-          "kind": "player"
-        },
-        {
-          "personId": 831912,
-          "name": "Truman Pauley",
-          "fromTeamId": 121,
-          "toTeamId": 145,
           "kind": "player"
         }
       ]
@@ -62887,6 +62887,20 @@
       ],
       "assets": [
         {
+          "personId": 691730,
+          "name": "Alejandro Rosario",
+          "fromTeamId": 140,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 669022,
+          "name": "MacKenzie Gore",
+          "fromTeamId": 120,
+          "toTeamId": 140,
+          "kind": "player"
+        },
+        {
           "personId": 815818,
           "name": "Gavin Fien",
           "fromTeamId": 140,
@@ -62912,20 +62926,6 @@
           "name": "Yeremy Cabrera",
           "fromTeamId": 140,
           "toTeamId": 120,
-          "kind": "player"
-        },
-        {
-          "personId": 691730,
-          "name": "Alejandro Rosario",
-          "fromTeamId": 140,
-          "toTeamId": 120,
-          "kind": "player"
-        },
-        {
-          "personId": 669022,
-          "name": "MacKenzie Gore",
-          "fromTeamId": 120,
-          "toTeamId": 140,
           "kind": "player"
         }
       ]
@@ -62965,18 +62965,18 @@
       ],
       "assets": [
         {
-          "personId": 681867,
-          "name": "Cooper Criswell",
-          "fromTeamId": 121,
-          "toTeamId": 136,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 136,
           "toTeamId": 121,
           "kind": "cash"
+        },
+        {
+          "personId": 681867,
+          "name": "Cooper Criswell",
+          "fromTeamId": 121,
+          "toTeamId": 136,
+          "kind": "player"
         }
       ]
     },
@@ -63332,6 +63332,27 @@
       ],
       "assets": [
         {
+          "personId": 655316,
+          "name": "Andruw Monasterio",
+          "fromTeamId": 158,
+          "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": 690986,
+          "name": "Kyle Harrison",
+          "fromTeamId": 111,
+          "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 158,
+          "toTeamId": 111,
+          "kind": "other"
+        },
+        {
           "personId": 675660,
           "name": "Shane Drohan",
           "fromTeamId": 111,
@@ -63358,27 +63379,6 @@
           "fromTeamId": 158,
           "toTeamId": 111,
           "kind": "player"
-        },
-        {
-          "personId": 655316,
-          "name": "Andruw Monasterio",
-          "fromTeamId": 158,
-          "toTeamId": 111,
-          "kind": "player"
-        },
-        {
-          "personId": 690986,
-          "name": "Kyle Harrison",
-          "fromTeamId": 111,
-          "toTeamId": 158,
-          "kind": "player"
-        },
-        {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 158,
-          "toTeamId": 111,
-          "kind": "other"
         }
       ]
     },
@@ -63660,17 +63660,17 @@
       ],
       "assets": [
         {
-          "personId": 800344,
-          "name": "Sean Paul Liñan",
-          "fromTeamId": 120,
-          "toTeamId": 147,
-          "kind": "player"
-        },
-        {
           "personId": 678391,
           "name": "Jorbit Vivas",
           "fromTeamId": 147,
           "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 800344,
+          "name": "Sean Paul Liñan",
+          "fromTeamId": 120,
+          "toTeamId": 147,
           "kind": "player"
         }
       ]
@@ -64135,13 +64135,6 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 141,
-          "toTeamId": 145,
-          "kind": "other"
-        },
-        {
           "personId": 672820,
           "name": "Lenyn Sosa",
           "fromTeamId": 145,
@@ -64154,6 +64147,13 @@
           "fromTeamId": 141,
           "toTeamId": 145,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 141,
+          "toTeamId": 145,
+          "kind": "other"
         }
       ]
     },
@@ -64260,17 +64260,17 @@
       ],
       "assets": [
         {
-          "personId": 694646,
-          "name": "Chayce McDermott",
-          "fromTeamId": 110,
-          "toTeamId": 119,
-          "kind": "player"
-        },
-        {
           "personId": 821612,
           "name": "Axel Perez",
           "fromTeamId": 119,
           "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 694646,
+          "name": "Chayce McDermott",
+          "fromTeamId": 110,
+          "toTeamId": 119,
           "kind": "player"
         }
       ]
@@ -64560,6 +64560,13 @@
       ],
       "assets": [
         {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 114,
+          "toTeamId": 137,
+          "kind": "other"
+        },
+        {
           "personId": 672275,
           "name": "Patrick Bailey",
           "fromTeamId": 137,
@@ -64572,13 +64579,6 @@
           "fromTeamId": 114,
           "toTeamId": 137,
           "kind": "player"
-        },
-        {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 114,
-          "toTeamId": 137,
-          "kind": "other"
         }
       ]
     },
@@ -64667,17 +64667,17 @@
       ],
       "assets": [
         {
-          "personId": 675961,
-          "name": "Alika Williams",
-          "fromTeamId": 134,
-          "toTeamId": 133,
-          "kind": "player"
-        },
-        {
           "personId": 701836,
           "name": "Kyle Robinson",
           "fromTeamId": 133,
           "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 675961,
+          "name": "Alika Williams",
+          "fromTeamId": 134,
+          "toTeamId": 133,
           "kind": "player"
         }
       ]
@@ -64892,18 +64892,18 @@
       ],
       "assets": [
         {
-          "personId": 680573,
-          "name": "Simeon Woods Richardson",
-          "fromTeamId": 142,
-          "toTeamId": 141,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 141,
           "toTeamId": 142,
           "kind": "cash"
+        },
+        {
+          "personId": 680573,
+          "name": "Simeon Woods Richardson",
+          "fromTeamId": 142,
+          "toTeamId": 141,
+          "kind": "player"
         }
       ]
     },
@@ -65192,13 +65192,6 @@
       ],
       "assets": [
         {
-          "personId": 666134,
-          "name": "Nolan Jones",
-          "fromTeamId": 114,
-          "toTeamId": 145,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 114,
@@ -65211,6 +65204,13 @@
           "fromTeamId": 145,
           "toTeamId": 114,
           "kind": "cash"
+        },
+        {
+          "personId": 666134,
+          "name": "Nolan Jones",
+          "fromTeamId": 114,
+          "toTeamId": 145,
+          "kind": "player"
         }
       ]
     },
@@ -65524,18 +65524,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 136,
-          "toTeamId": 137,
-          "kind": "cash"
-        },
-        {
           "personId": 671083,
           "name": "Buddy Kennedy",
           "fromTeamId": 137,
           "toTeamId": 136,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 136,
+          "toTeamId": 137,
+          "kind": "cash"
         }
       ]
     },
@@ -65624,18 +65624,18 @@
       ],
       "assets": [
         {
-          "personId": 676680,
-          "name": "Tom Cosgrove",
-          "fromTeamId": 117,
-          "toTeamId": 120,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 120,
           "toTeamId": 117,
           "kind": "cash"
+        },
+        {
+          "personId": 676680,
+          "name": "Tom Cosgrove",
+          "fromTeamId": 117,
+          "toTeamId": 120,
+          "kind": "player"
         }
       ]
     },
@@ -65649,18 +65649,18 @@
       ],
       "assets": [
         {
-          "personId": 813869,
-          "name": "Ryan Degges",
-          "fromTeamId": 143,
-          "toTeamId": 114,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 114,
           "toTeamId": 143,
           "kind": "cash"
+        },
+        {
+          "personId": 813869,
+          "name": "Ryan Degges",
+          "fromTeamId": 143,
+          "toTeamId": 114,
+          "kind": "player"
         }
       ]
     },
@@ -65699,18 +65699,18 @@
       ],
       "assets": [
         {
-          "personId": null,
-          "name": null,
-          "fromTeamId": 121,
-          "toTeamId": 116,
-          "kind": "cash"
-        },
-        {
           "personId": 676910,
           "name": "Matt Seelinger",
           "fromTeamId": 116,
           "toTeamId": 121,
           "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 121,
+          "toTeamId": 116,
+          "kind": "cash"
         }
       ]
     },
@@ -66120,18 +66120,18 @@
       ],
       "assets": [
         {
-          "personId": 670224,
-          "name": "Kameron Misner",
-          "fromTeamId": 118,
-          "toTeamId": 143,
-          "kind": "player"
-        },
-        {
           "personId": null,
           "name": null,
           "fromTeamId": 143,
           "toTeamId": 118,
           "kind": "cash"
+        },
+        {
+          "personId": 670224,
+          "name": "Kameron Misner",
+          "fromTeamId": 118,
+          "toTeamId": 143,
+          "kind": "player"
         }
       ]
     },
@@ -66156,6 +66156,113 @@
           "name": "Connelly Early",
           "fromTeamId": 111,
           "toTeamId": 120,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 931462,
+      "date": "2026-07-26",
+      "description": "Pittsburgh Pirates traded RHP José Urquidy to Chicago White Sox for RHP Felix Doroteo.",
+      "teamIds": [
+        134,
+        145
+      ],
+      "assets": [
+        {
+          "personId": 664353,
+          "name": "José Urquidy",
+          "fromTeamId": 134,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 829956,
+          "name": "Felix Doroteo",
+          "fromTeamId": 145,
+          "toTeamId": 134,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 931466,
+      "date": "2026-07-26",
+      "description": "St. Louis Cardinals traded RHP Scott Blewett to Athletics for cash.",
+      "teamIds": [
+        133,
+        138
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 133,
+          "toTeamId": 138,
+          "kind": "cash"
+        },
+        {
+          "personId": 656240,
+          "name": "Scott Blewett",
+          "fromTeamId": 138,
+          "toTeamId": 133,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 931692,
+      "date": "2026-07-27",
+      "description": "Baltimore Orioles traded RF Johnathan Rodríguez to Pittsburgh Pirates for cash.",
+      "teamIds": [
+        110,
+        134
+      ],
+      "assets": [
+        {
+          "personId": 671286,
+          "name": "Johnathan Rodríguez",
+          "fromTeamId": 110,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 134,
+          "toTeamId": 110,
+          "kind": "cash"
+        }
+      ]
+    },
+    {
+      "id": 933275,
+      "date": "2026-07-29",
+      "description": "Los Angeles Angels traded C Logan O'Hoppe and RHP Chase Silseth to Texas Rangers for SS Angel Arredondo.",
+      "teamIds": [
+        108,
+        140
+      ],
+      "assets": [
+        {
+          "personId": 802397,
+          "name": "Angel Arredondo",
+          "fromTeamId": 140,
+          "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 681217,
+          "name": "Chase Silseth",
+          "fromTeamId": 108,
+          "toTeamId": 140,
+          "kind": "player"
+        },
+        {
+          "personId": 681351,
+          "name": "Logan O'Hoppe",
+          "fromTeamId": 108,
+          "toTeamId": 140,
           "kind": "player"
         }
       ]
