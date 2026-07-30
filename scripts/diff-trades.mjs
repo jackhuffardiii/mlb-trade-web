@@ -30,7 +30,10 @@ async function loadTrades(filePath) {
 }
 
 // Serializes a value to JSON with object keys sorted, so two objects that
-// differ only in key order compare equal. Array order is preserved as-is.
+// differ only in key order compare equal. Array order is preserved as-is,
+// except for a trade's `assets` array (see stableStringifyTrade), which is
+// treated as an unordered multiset so upstream reordering never masquerades
+// as a content change.
 function stableStringify(value) {
   if (Array.isArray(value)) {
     return `[${value.map(stableStringify).join(",")}]`;
@@ -40,6 +43,20 @@ function stableStringify(value) {
     return `{${keys.map((k) => `${JSON.stringify(k)}:${stableStringify(value[k])}`).join(",")}}`;
   }
   return JSON.stringify(value);
+}
+
+// Same as stableStringify, but a trade's `assets` array is sorted by its own
+// canonical-key serialization first, so two trades whose assets carry
+// identical content in a different order compare equal.
+function stableStringifyTrade(trade) {
+  const withSortedAssets = {
+    ...trade,
+    assets: [...(trade.assets ?? [])]
+      .map(stableStringify)
+      .sort()
+      .map((s) => JSON.parse(s)),
+  };
+  return stableStringify(withSortedAssets);
 }
 
 function truncate(str, max) {
@@ -71,7 +88,7 @@ function diffTrades(oldData, newData) {
   }
   for (const [id, oldTrade] of oldById) {
     const newTrade = newById.get(id);
-    if (newTrade && stableStringify(oldTrade) !== stableStringify(newTrade)) {
+    if (newTrade && stableStringifyTrade(oldTrade) !== stableStringifyTrade(newTrade)) {
       modified.push({ id, oldTrade, newTrade });
     }
   }

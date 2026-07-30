@@ -128,6 +128,37 @@ function classifyKind(row) {
   return "other";
 }
 
+// Locale-independent, deterministic string comparator (nulls sort last).
+function compareNullableStr(a, b) {
+  if (a === b) return 0;
+  if (a == null) return 1;
+  if (b == null) return -1;
+  return a < b ? -1 : a > b ? 1 : 0;
+}
+
+// Locale-independent, deterministic numeric comparator (nulls sort last).
+function compareNullableNum(a, b) {
+  if (a === b) return 0;
+  if (a == null) return 1;
+  if (b == null) return -1;
+  return a - b;
+}
+
+// Total order over a trade's assets so repeated runs of the MLB Stats API,
+// which returns transaction rows in a nondeterministic order, always
+// serialize identically. Key: fromTeamId, toTeamId, kind, personId (nulls
+// last), name (nulls last). Fully-identical rows (genuine duplicates)
+// legitimately compare equal.
+function compareAssets(a, b) {
+  return (
+    compareNullableNum(a.fromTeamId, b.fromTeamId) ||
+    compareNullableNum(a.toTeamId, b.toTeamId) ||
+    compareNullableStr(a.kind, b.kind) ||
+    compareNullableNum(a.personId, b.personId) ||
+    compareNullableStr(a.name, b.name)
+  );
+}
+
 async function main() {
   const teamMap = await fetchMlbTeamIds();
   const mlbTeamIds = new Set(teamMap.keys());
@@ -169,6 +200,8 @@ async function main() {
       toTeamId: row.toTeam.id,
       kind: classifyKind(row),
     }));
+
+    assets.sort(compareAssets);
 
     const teamIds = [...new Set(assets.flatMap((a) => [a.fromTeamId, a.toTeamId]))].sort((a, b) => a - b);
     const date = [...rows].map((r) => r.date).sort()[0];
