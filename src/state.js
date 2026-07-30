@@ -12,6 +12,9 @@ export const state = {
   chain: null, // {personId, tradeId}
   chainMode: 'trade', // 'trade' = this deal's forward chain | 'career' = every trade, chronological
   flowsTeam: null, // teamId shown in the ledger view
+  flowsMode: 'trees', // 'trees' | 'ledger'
+  flowsTree: null, // lineage key open full-canvas, or null for the grid
+  flowsSort: 'composite', // 'composite' | 'size' | 'depth'
   webMode: 'league', // 'league' | 'team' (the per-club player web)
   webTeam: null, // teamId whose player web is open
 };

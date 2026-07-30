@@ -6,7 +6,20 @@
 // (The club filter *is* recorded, because pinning a club is how you get into a
 // club's league web and it changes what the view shows.)
 
-const NAV_KEYS = ['view', 'team', 'flowsTeam', 'chain', 'chainMode', 'webMode', 'webTeam'];
+// flowsTree/flowsMode are destinations (which tree is open, trees vs ledger), so
+// they belong here. flowsSort is a ranking preference like the season slider --
+// a filter, not a place -- so it stays out.
+const NAV_KEYS = [
+  'view',
+  'team',
+  'flowsTeam',
+  'flowsTree',
+  'flowsMode',
+  'chain',
+  'chainMode',
+  'webMode',
+  'webTeam',
+];
 const LIMIT = 80;
 
 let stack = [];

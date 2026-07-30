@@ -91,18 +91,23 @@ export function createFlowsView(host, index) {
     return index.teams;
   }
 
+  // Resolved once and kept local. Writing the fallback back into state from
+  // inside a render would either recurse through setState or (as it did) skip
+  // the notify and leave history recording a club that isn't on screen.
+  let busiestTeam = null;
+
   function pickDefaultTeam() {
     if (state.flowsTeam != null) return state.flowsTeam;
     if (state.team != null) return state.team;
-    let best = null;
+    if (busiestTeam != null) return busiestTeam;
     let bestCount = -1;
     for (const [teamId, trades] of index.teamTrades) {
       if (trades.length > bestCount) {
         bestCount = trades.length;
-        best = teamId;
+        busiestTeam = teamId;
       }
     }
-    return best;
+    return busiestTeam;
   }
 
   function choose(nextId) {
@@ -146,7 +151,6 @@ export function createFlowsView(host, index) {
   function update() {
     const teamId = pickDefaultTeam();
     if (teamId == null) return;
-    if (state.flowsTeam !== teamId) state.flowsTeam = teamId;
 
     const trees = state.flowsMode !== 'ledger';
     const target =
@@ -679,26 +683,30 @@ export function createFlowsView(host, index) {
     return canvas;
   }
 
+  /**
+   * Take the canvas off the page entirely, not just its contents. It is
+   * position:absolute/inset:0 with touch-action:none and a d3-zoom binding, so
+   * an emptied-but-present canvas still sits on top of the grid and eats every
+   * tap and scroll. ensureCanvas() builds a fresh one on the next open.
+   */
   function closeCanvas() {
     if (!canvas) return;
-    if (openKey === null) return;
     openKey = null;
     if (sim) sim.stop();
     sim = null;
     nodes = [];
     links = [];
-    clear(canvas.linkLayer);
-    clear(canvas.nodeLayer);
-    clear(breadcrumb);
-    clear(note);
-    setFocus(canvas, {});
-    delete host.dataset.stage;
+    canvas.destroy();
+    canvas = null;
+    breadcrumb.remove();
+    note.remove();
+    breadcrumb = null;
+    note = null;
     hideTip();
   }
 
   function renderTree(teamId, component) {
     ensureCanvas();
-    host.dataset.stage = 'canvas';
     host.scrollTop = 0;
     shell.style.display = 'none';
 
@@ -743,7 +751,7 @@ export function createFlowsView(host, index) {
       node.y = node.ty;
     }
 
-    renderNodes(teamId);
+    renderNodes(teamId, component);
 
     sim = forceSimulation(nodes)
       .force('link', forceLink(links).id((d) => d.id).distance(COLUMN).strength(0.09))
@@ -759,7 +767,7 @@ export function createFlowsView(host, index) {
     renderTreeChrome(teamId, component);
   }
 
-  function renderNodes(teamId) {
+  function renderNodes(teamId, component) {
     for (const link of links) {
       link.el = linkGroup({ color: link.color, width: 1.2, hit: false });
       if (link.flow === 'out') {
