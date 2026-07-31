@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-30",
+  "generated": "2026-07-31",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-07-30"
+    "end": "2026-07-31"
   },
   "teams": [
     {
@@ -66263,6 +66263,31 @@
           "name": "Angel Arredondo",
           "fromTeamId": 140,
           "toTeamId": 108,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 933407,
+      "date": "2026-07-30",
+      "description": "Detroit Tigers traded C Jake Rogers to Baltimore Orioles for RHP Zane Barnhart.",
+      "teamIds": [
+        110,
+        116
+      ],
+      "assets": [
+        {
+          "personId": 813829,
+          "name": "Zane Barnhart",
+          "fromTeamId": 110,
+          "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 668670,
+          "name": "Jake Rogers",
+          "fromTeamId": 116,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
