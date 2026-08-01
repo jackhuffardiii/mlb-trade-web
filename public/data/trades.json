@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-31",
+  "generated": "2026-08-01",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-07-31"
+    "end": "2026-08-01"
   },
   "teams": [
     {
@@ -66287,6 +66287,63 @@
           "personId": 668670,
           "name": "Jake Rogers",
           "fromTeamId": 116,
+          "toTeamId": 110,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 933470,
+      "date": "2026-07-31",
+      "description": "New York Mets traded LHP A.J. Minter to Minnesota Twins for SS Bruin Agbayani and 3B Billy Amick.",
+      "teamIds": [
+        121,
+        142
+      ],
+      "assets": [
+        {
+          "personId": 621345,
+          "name": "A.J. Minter",
+          "fromTeamId": 121,
+          "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 701771,
+          "name": "Billy Amick",
+          "fromTeamId": 142,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 828202,
+          "name": "Bruin Agbayani",
+          "fromTeamId": 142,
+          "toTeamId": 121,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 933802,
+      "date": "2026-08-01",
+      "description": "Baltimore Orioles traded RHP Dean Kremer to Minnesota Twins for OF Jhomnardo Reyes.",
+      "teamIds": [
+        110,
+        142
+      ],
+      "assets": [
+        {
+          "personId": 665152,
+          "name": "Dean Kremer",
+          "fromTeamId": 110,
+          "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": 829076,
+          "name": "Jhomnardo Reyes",
+          "fromTeamId": 142,
           "toTeamId": 110,
           "kind": "player"
         }
