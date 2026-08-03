@@ -1,7 +1,7 @@
 // Shared UI primitives: DOM helpers, headshots, club chips, the detail panel,
 // the graph tooltip, trade rendering and the search index.
 
-import { assetLabel, formatDate, KIND_GLYPH } from './data.js';
+import { assetLabel, formatDate, KIND_GLYPH, loadPlayers } from './data.js';
 import { tradeSentence } from './chain.js';
 import { legible, rgba, teamColor } from './teams.js';
 
@@ -217,6 +217,124 @@ export function hideTip() {
   const tip = document.getElementById('tip');
   if (!tip) return;
   delete tip.dataset.open;
+}
+
+/* ---------------------------------------------------------------- dossier */
+
+const SAVANT = (personId) => `https://baseballsavant.mlb.com/savant-player/${personId}`;
+
+/** "RHP · B/T R/L · Debut 2020" -- whatever of it we actually know. */
+function bioLine(entry) {
+  const parts = [];
+  if (entry.position) parts.push(entry.position);
+  if (entry.bats && entry.throws) parts.push(`B/T ${entry.bats}/${entry.throws}`);
+  if (entry.debut) parts.push(`Debut ${entry.debut.slice(0, 4)}`);
+  return parts.join(' · ');
+}
+
+/**
+ * Season ledger for one player, newest last, with the trade cut in as a rule.
+ * Rows are per season AND team, so a mid-season deal shows both stints -- that
+ * split IS the before/after, without needing a value metric to summarise it.
+ */
+function ledger(index, entry, pivot) {
+  const pitcher = entry.position === 'P' && entry.pitching?.length;
+  const rows = (pitcher ? entry.pitching : entry.hitting) || [];
+  if (!rows.length) {
+    return el(
+      'p',
+      { class: 'dossier-empty' },
+      'No major-league record in this window. Traded as a prospect or before 2015.'
+    );
+  }
+
+  const cols = pitcher
+    ? [['IP', (r) => r.ip], ['ERA', (r) => r.era], ['SO', (r) => r.so]]
+    : [['PA', (r) => r.pa], ['OPS', (r) => (r.ops || '').replace(/^0/, '')], ['HR', (r) => r.hr]];
+
+  const table = el('div', { class: 'ledger-grid' });
+  table.append(
+    el('span', { class: 'lg-head' }, 'Yr'),
+    el('span', { class: 'lg-head' }, 'Club'),
+    ...cols.map(([label]) => el('span', { class: 'lg-head num' }, label))
+  );
+
+  // Where the trade falls: the first row at or after the deal on the new club.
+  const cutAt = pivot
+    ? rows.findIndex(
+        (r) => r.season > pivot.year || (r.season === pivot.year && r.teamId === pivot.toTeamId)
+      )
+    : -1;
+
+  rows.forEach((row, i) => {
+    if (i === cutAt) table.append(tradeRule(index, pivot));
+    const lit = legible(teamColor(row.teamId));
+    const team = index.teamsById.get(row.teamId);
+    table.append(
+      el('span', { class: 'lg-yr' }, String(row.season)),
+      el('span', { class: 'lg-club', style: { '--club-lit': lit } }, team ? team.abbreviation : '—'),
+      ...cols.map(([, get]) => el('span', { class: 'lg-num' }, String(get(row) ?? '—')))
+    );
+  });
+  if (cutAt === -1 && pivot) table.append(tradeRule(index, pivot));
+  return table;
+}
+
+function tradeRule(index, pivot) {
+  const to = index.teamsById.get(pivot.toTeamId);
+  return el('div', { class: 'lg-rule' }, [
+    el('span', {}, `Traded to ${to ? to.abbreviation : '?'} · ${formatDate(pivot.date)}`),
+  ]);
+}
+
+/**
+ * The player block that sits above the trade list in every player panel.
+ * Returns synchronously with a placeholder; the season data is a separate
+ * ~590 KB file, so it is fetched on first use and shared from then on.
+ */
+export function playerDossier(index, personId, tradeId = null) {
+  const host = el('div', { class: 'dossier' });
+  host.append(el('div', { class: 'dossier-wait' }, 'Loading season data…'));
+
+  loadPlayers()
+    .then((players) => {
+      const entry = players[String(personId)];
+      clear(host);
+      if (!entry) {
+        host.append(el('p', { class: 'dossier-empty' }, 'No season data on record.'));
+        return;
+      }
+
+      const trade = tradeId != null ? index.tradesById.get(tradeId) : null;
+      const moved = trade?.assets.find((a) => a.personId === personId);
+      const pivot = moved
+        ? { year: Number(trade.date.slice(0, 4)), date: trade.date, toTeamId: moved.toTeamId }
+        : null;
+
+      const bio = bioLine(entry);
+      host.append(
+        el('div', { class: 'dossier-head' }, [
+          bio ? el('span', { class: 'dossier-bio' }, bio) : null,
+          el(
+            'a',
+            {
+              class: 'savant-link',
+              href: SAVANT(personId),
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            },
+            ['Savant ↗']
+          ),
+        ]),
+        ledger(index, entry, pivot)
+      );
+    })
+    .catch(() => {
+      clear(host);
+      host.append(el('p', { class: 'dossier-empty' }, 'Season data unavailable.'));
+    });
+
+  return host;
 }
 
 /* -------------------------------------------------------------- navigation */

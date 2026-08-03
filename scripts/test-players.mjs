@@ -32,6 +32,11 @@ check('Isaac Paredes (670623) is present in players.json', !!paredes, paredes ? 
 if (paredes) {
   const rows2024 = (paredes.hitting || []).filter((r) => r.season === 2024);
   check('Paredes has exactly two 2024 hitting rows', rows2024.length === 2, `got ${rows2024.length}`);
+  check(
+    'Paredes 2024 rows are in stint order (TB 139 before CHC 112), not teamId order',
+    rows2024[0]?.teamId === 139 && rows2024[1]?.teamId === 112,
+    rows2024.map((r) => r.teamId).join(' then ')
+  );
 
   const byTeam = new Map(rows2024.map((r) => [r.teamId, r]));
   check('Paredes 2024 team 139 row has pa 429', byTeam.get(139)?.pa === 429, `got ${byTeam.get(139)?.pa}`);
@@ -76,7 +81,7 @@ for (const entry of Object.values(players)) {
     for (let i = 1; i < group.length; i++) {
       const a = group[i - 1];
       const b = group[i];
-      const ok = a.season < b.season || (a.season === b.season && a.teamId < b.teamId);
+      const ok = a.season < b.season || (a.season === b.season && a.seq < b.seq);
       if (!ok) {
         rowsSorted = false;
         break;
@@ -84,7 +89,7 @@ for (const entry of Object.values(players)) {
     }
   }
 }
-check('hitting/pitching rows sorted by (season, teamId) ascending', rowsSorted);
+check('hitting/pitching rows sorted by (season, seq) ascending', rowsSorted);
 
 /* -- 4. Idempotent serialization --------------------------------------------- */
 

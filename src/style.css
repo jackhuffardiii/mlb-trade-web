@@ -2003,3 +2003,134 @@ button.crumb:hover {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ------------------------------------------------------------------ dossier */
+/* The player block above the trade list. Same broadsheet vocabulary as the rest
+   of the panel: mono small-caps for apparatus, club color carrying identity, a
+   hairline rule doing the structural work instead of boxes. */
+
+.dossier {
+  margin: 2px 0 18px;
+}
+
+.dossier-wait,
+.dossier-empty {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ink-ghost);
+  margin: 0 0 4px;
+}
+
+.dossier-empty {
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dossier-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 9px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.dossier-bio {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.savant-link {
+  flex: 0 0 auto;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s var(--ease);
+}
+
+.savant-link:hover {
+  border-bottom-color: var(--accent-line);
+}
+
+/* Five columns: year, club, and three stat figures held right so the decimals
+   line up the way a box score does. */
+.ledger-grid {
+  display: grid;
+  grid-template-columns: auto auto 1fr 1fr 1fr;
+  gap: 0 12px;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.lg-head {
+  font-size: 8.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-ghost);
+  padding-bottom: 6px;
+}
+
+.lg-head.num,
+.lg-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.lg-yr {
+  color: var(--ink-faint);
+  padding: 3px 0;
+}
+
+.lg-club {
+  color: var(--club-lit, var(--ink-dim));
+  letter-spacing: 0.06em;
+}
+
+.lg-num {
+  color: var(--ink-dim);
+}
+
+/* The trade itself, cut across all five columns. This is the whole point of the
+   ledger: everything above is the club that gave him up, everything below is
+   what the acquiring club actually got. */
+.lg-rule {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 7px 0;
+  font-size: 8.5px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.lg-rule::before,
+.lg-rule::after {
+  content: "";
+  height: 1px;
+  background: var(--accent-line);
+}
+
+.lg-rule::before {
+  width: 10px;
+  flex: 0 0 auto;
+}
+
+.lg-rule::after {
+  flex: 1;
+}

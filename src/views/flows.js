@@ -46,6 +46,7 @@ import {
   jumpToChain,
   moveTip,
   openPanel,
+  playerDossier,
   renderTradeList,
   showTip,
   svgEl,
@@ -975,7 +976,8 @@ export function createFlowsView(host, index) {
               },
               ['View chain →']
             ),
-          ])
+          ]),
+          playerDossier(index, asset.personId, asset.tradeId)
         );
         const list = el('div');
         body.append(list);

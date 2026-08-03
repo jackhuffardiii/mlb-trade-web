@@ -35,6 +35,7 @@ import {
   jumpToFlows,
   moveTip,
   openPanel,
+  playerDossier,
   renderTradeList,
   showTip,
 } from '../ui.js';
@@ -559,7 +560,8 @@ export function createNetworkView(host, index) {
               },
               ['View chain →']
             ),
-          ])
+          ]),
+          playerDossier(index, node.personId, node.tradeId)
         );
         const list = el('div');
         body.append(list);

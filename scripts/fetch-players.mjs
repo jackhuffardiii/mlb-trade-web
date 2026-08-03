@@ -56,10 +56,14 @@ function todayStr() {
 
 const HYDRATE = "stats(group=[hitting,pitching],type=[yearByYear])";
 
-// Sort by (season, teamId) ascending so repeated runs serialize identically
-// regardless of the order the API returns splits in.
-function compareSeasonTeam(a, b) {
-  return a.season - b.season || a.teamId - b.teamId;
+// Sort by (season, seq) ascending. `seq` is the position the API returned the
+// split in, which is chronological -- Paredes 2024 comes back as TB then CHC,
+// the order he actually played them in. Sorting by teamId instead would put CHC
+// (112) before TB (139) and silently invert the before/after story a split
+// season is there to tell. Storing seq rather than trusting array order keeps
+// the file deterministic even if the API's ordering ever drifts.
+function compareSeasonSeq(a, b) {
+  return a.season - b.season || a.seq - b.seq;
 }
 
 function mapHittingSplit(split) {
@@ -112,8 +116,8 @@ function extractGroup(statsArray, groupName, mapFn) {
     .filter((split) => split.gameType === "R")
     .filter((split) => split.team != null)
     .filter((split) => Number(split.season) >= FIRST_SEASON)
-    .map(mapFn)
-    .sort(compareSeasonTeam);
+    .map((split, i) => ({ ...mapFn(split), seq: i }))
+    .sort(compareSeasonSeq);
 }
 
 async function fetchPlayer(id) {

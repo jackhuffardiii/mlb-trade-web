@@ -33,6 +33,7 @@ import {
   jumpToFlows,
   moveTip,
   openPanel,
+  playerDossier,
   renderTradeList,
   showTip,
   svgEl,
@@ -329,6 +330,7 @@ export function createChainView(host, index) {
                 ['Club flows'],
               ),
             ]),
+            playerDossier(index, c.personId, c.pivot ? c.pivot.tradeId : c.arrivalTradeId),
           );
         }
         const list = el('div');

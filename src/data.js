@@ -100,6 +100,28 @@ export async function loadData(url = 'data/trades.json') {
   return buildIndex(await res.json());
 }
 
+/**
+ * Season stat lines, fetched once on first use and shared thereafter. This file
+ * is ~590 KB over the wire, several times trades.json, so it is deliberately NOT
+ * part of the boot path -- only a panel that actually shows a player pays for it.
+ * 'no-cache' for the same reason as loadData: it is rewritten by the refresh job.
+ */
+let playersPromise = null;
+
+export function loadPlayers(url = 'data/players.json') {
+  playersPromise ??= fetch(url, { cache: 'no-cache' })
+    .then((res) => {
+      if (!res.ok) throw new Error(`Could not load ${url} (HTTP ${res.status})`);
+      return res.json();
+    })
+    .then((raw) => raw.players || {})
+    .catch((err) => {
+      playersPromise = null; // let a later panel retry rather than fail forever
+      throw err;
+    });
+  return playersPromise;
+}
+
 /* ------------------------------------------------------------------ helpers */
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
