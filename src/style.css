@@ -2134,3 +2134,94 @@ button.crumb:hover {
 .lg-rule::after {
   flex: 1;
 }
+
+/* --------------------------------------------------- statcast percentiles */
+/* Savant's card, restated for a near-black page. Their diverging blue-to-red
+   scale is kept because it is the convention readers already know; only the
+   hues are warmed so they sit on this background instead of a white one. */
+
+.pct-card {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+}
+
+.pct-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-ghost);
+  margin-bottom: 11px;
+}
+
+.pct-year {
+  color: var(--accent);
+}
+
+.pct-row {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.pct-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The track is inset by half a dot at each end so a 0 or a 100 sits fully on
+   the rail instead of hanging off it. */
+.pct-track {
+  position: relative;
+  height: 15px;
+  margin: 0 9px;
+}
+
+.pct-track::before {
+  content: "";
+  position: absolute;
+  inset: 50% -9px auto -9px;
+  height: 2px;
+  transform: translateY(-50%);
+  background: rgba(236, 232, 224, 0.08);
+  border-radius: 1px;
+}
+
+.pct-dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  font-weight: 600;
+  color: #0b0c0e;
+  box-shadow: 0 0 0 2px var(--surface-solid);
+}
+
+.pct-note {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-ghost);
+  margin: 10px 0 0;
+}

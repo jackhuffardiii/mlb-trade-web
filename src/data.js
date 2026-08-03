@@ -122,6 +122,22 @@ export function loadPlayers(url = 'data/players.json') {
   return playersPromise;
 }
 
+/** Savant percentile rankings, same lazy contract as loadPlayers(). */
+let savantPromise = null;
+
+export function loadSavant(url = 'data/savant.json') {
+  savantPromise ??= fetch(url, { cache: 'no-cache' })
+    .then((res) => {
+      if (!res.ok) throw new Error(`Could not load ${url} (HTTP ${res.status})`);
+      return res.json();
+    })
+    .catch((err) => {
+      savantPromise = null;
+      throw err;
+    });
+  return savantPromise;
+}
+
 /* ------------------------------------------------------------------ helpers */
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

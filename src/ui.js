@@ -1,7 +1,7 @@
 // Shared UI primitives: DOM helpers, headshots, club chips, the detail panel,
 // the graph tooltip, trade rendering and the search index.
 
-import { assetLabel, formatDate, KIND_GLYPH, loadPlayers } from './data.js';
+import { assetLabel, formatDate, KIND_GLYPH, loadPlayers, loadSavant } from './data.js';
 import { tradeSentence } from './chain.js';
 import { legible, rgba, teamColor } from './teams.js';
 
@@ -287,6 +287,77 @@ function tradeRule(index, pivot) {
   ]);
 }
 
+/* ------------------------------------------------------- percentile bars */
+
+/**
+ * Savant's diverging scale, warmed to sit on this page's near-black rather than
+ * their white card: steel blue at cold, neutral at the median, ember at hot.
+ * The convention is worth keeping -- anyone who reads Savant reads this instantly.
+ */
+function percentileColor(p) {
+  const stops = [
+    [0, [72, 118, 168]],
+    [50, [104, 110, 122]],
+    [100, [214, 78, 62]],
+  ];
+  const i = p <= 50 ? 0 : 1;
+  const [lo, a] = stops[i];
+  const [hi, b] = stops[i + 1];
+  const t = (p - lo) / (hi - lo);
+  return `rgb(${a.map((c, n) => Math.round(c + (b[n] - c) * t)).join(',')})`;
+}
+
+/**
+ * One season of percentiles as a bar card. Prefers the season of the trade;
+ * falls back to the most recent earlier season, because a July deal often has
+ * only a partial current year and the prior full season is the better read.
+ */
+function percentileCard(savant, personId, pivotYear) {
+  const seasons = savant.players?.[String(personId)];
+  if (!seasons) return null;
+
+  const years = Object.keys(seasons).map(Number).sort((a, b) => a - b);
+  if (!years.length) return null;
+  const year =
+    pivotYear && seasons[pivotYear]
+      ? pivotYear
+      : pivotYear
+        ? years.filter((y) => y < pivotYear).pop() ?? years[years.length - 1]
+        : years[years.length - 1];
+
+  const row = seasons[year];
+  const metrics = Object.entries(row).filter(([k]) => k !== 'type');
+  if (!metrics.length) return null;
+
+  const card = el('div', { class: 'pct-card' });
+  card.append(
+    el('div', { class: 'pct-head' }, [
+      el('span', {}, 'Statcast percentiles'),
+      el('span', { class: 'pct-year' }, String(year)),
+    ])
+  );
+
+  for (const [key, value] of metrics) {
+    card.append(
+      el('div', { class: 'pct-row' }, [
+        el('span', { class: 'pct-label' }, savant.labels?.[key] || key),
+        el('span', { class: 'pct-track' }, [
+          el('span', {
+            class: 'pct-dot',
+            style: { left: `${value}%`, background: percentileColor(value) },
+            text: String(value),
+          }),
+        ]),
+      ])
+    );
+  }
+
+  if (year !== pivotYear && pivotYear) {
+    card.append(el('p', { class: 'pct-note' }, `No Statcast season in ${pivotYear}; showing ${year}.`));
+  }
+  return card;
+}
+
 /**
  * The player block that sits above the trade list in every player panel.
  * Returns synchronously with a placeholder; the season data is a separate
@@ -328,6 +399,15 @@ export function playerDossier(index, personId, tradeId = null) {
         ]),
         ledger(index, entry, pivot)
       );
+
+      // Savant covers 99.9% of players who reached MLB but only ~56% of
+      // player-trade rows, so this is additive: absent card, not empty card.
+      loadSavant()
+        .then((savant) => {
+          const card = percentileCard(savant, personId, pivot?.year ?? null);
+          if (card) host.append(card);
+        })
+        .catch(() => {});
     })
     .catch(() => {
       clear(host);
