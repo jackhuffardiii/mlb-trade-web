@@ -33,15 +33,16 @@ import {
   hideTip,
   jumpToCompare,
   jumpToFlows,
+  notableTrades,
   moveTip,
   openPanel,
   playerDossier,
   renderTradeList,
   showTip,
   svgEl,
+  tradeCard,
 } from '../ui.js';
 import { setState, state } from '../state.js';
-import { renderTimeline } from './timeline.js';
 
 const COLUMN = 132; // half a generation: assets on even columns, trades on odd
 const ROW = 76;
@@ -61,7 +62,6 @@ export function createChainView(host, index) {
   let sim = null;
   const collapsed = new Set();
   const posCache = new Map(); // node id -> {x,y}: collapsing a branch shouldn't teleport the rest
-  let careerRefit = null; // re-frame the timeline without redrawing it
 
   canvas.svg.addEventListener('click', (event) => {
     if (event.target === canvas.svg) setFocus(canvas, {});
@@ -285,8 +285,20 @@ export function createChainView(host, index) {
     }
   }
 
+  function startSim() {
+    sim = forceSimulation(nodes)
+      .force('link', forceLink(links).id((d) => d.id).distance(COLUMN).strength(0.08))
+      .force('charge', forceManyBody().strength(-260).distanceMax(420))
+      .force('collide', forceCollide().radius((d) => d.r + 26).strength(1))
+      .force('x', forceX((d) => d.tx).strength(0.85))
+      .force('y', forceY((d) => d.ty).strength(0.28))
+      .alpha(1)
+      .alphaDecay(0.045)
+      .on('tick', tick)
+      .on('end', fit);
+  }
+
   function build() {
-    careerRefit = null;
     if (sim) sim.stop();
     for (const model of nodes) {
       if (Number.isFinite(model.x)) posCache.set(model.id, { x: model.x, y: model.y });
@@ -302,17 +314,7 @@ export function createChainView(host, index) {
 
     render();
 
-    sim = forceSimulation(nodes)
-      .force('link', forceLink(links).id((d) => d.id).distance(COLUMN).strength(0.08))
-      .force('charge', forceManyBody().strength(-260).distanceMax(420))
-      .force('collide', forceCollide().radius((d) => d.r + 26).strength(1))
-      .force('x', forceX((d) => d.tx).strength(0.85))
-      .force('y', forceY((d) => d.ty).strength(0.28))
-      .alpha(1)
-      .alphaDecay(0.045)
-      .on('tick', tick)
-      .on('end', fit);
-
+    startSim();
     renderChrome();
   }
 
@@ -582,70 +584,166 @@ export function createChainView(host, index) {
 
   /* ------------------------------------------------- career timeline mode */
 
-  function renderCareer(personId) {
+  /**
+   * "All trades": every deal this player was ever in, as one flow chart rather
+   * than a chronological spine. Same grammar as the single-trade view -- he sits
+   * on the left, each trade is a box, and what the club got back for him hangs
+   * off that box. Time is not an axis here; the shape is.
+   */
+  function buildCareer(personId) {
     if (sim) sim.stop();
-    sim = null;
     nodes = [];
     links = [];
     posCache.clear();
     clear(canvas.linkLayer);
     clear(canvas.nodeLayer);
-    clear(breadcrumb);
-    clear(note);
-    canvas.svg.classList.remove('dense');
     setFocus(canvas, {});
 
-    careerRefit = null;
     const player = index.playerIndex.get(personId);
-    if (!player) {
+    if (!player || !player.trades.length) {
       renderEmpty();
       return;
     }
     emptyState.style.display = 'none';
 
-    const summary = renderTimeline(canvas, index, personId, {
-      // Following someone else out of this timeline keeps you in timeline mode.
-      onPlayer: (nextId, tradeId) => {
-        if (nextId == null) return;
-        setState({ chain: { personId: nextId, tradeId }, chainMode: 'career' });
+    const first = index.tradesById.get(player.trades[0]);
+    const firstRow = first?.assets.find((a) => a.personId === personId);
+    const rootModel = {
+      id: `career:${personId}`,
+      type: 'asset',
+      col: 0,
+      r: 27,
+      chain: {
+        root: true,
+        kind: 'player',
+        personId,
+        name: player.name,
+        label: player.name,
+        fromTeamId: firstRow?.fromTeamId ?? null,
+        toTeamId: firstRow?.toTeamId ?? null,
+        arrivalTradeId: null,
+        pivot: null,
+        children: [],
+        terminal: null,
       },
-    });
-    careerRefit = summary.refit;
+    };
+    nodes.push(rootModel);
 
+    let leafRow = 0;
+    const hubRows = [];
+
+    for (const tradeId of player.trades) {
+      const trade = index.tradesById.get(tradeId);
+      if (!trade) continue;
+      const mine = trade.assets.find((a) => a.personId === personId);
+      if (!mine) continue;
+
+      const hub = {
+        id: `t:${tradeId}`,
+        type: 'trade',
+        trade,
+        pivot: {
+          tradeId,
+          date: trade.date,
+          fromTeamId: mine.fromTeamId,
+          toTeamId: mine.toTeamId,
+        },
+        col: 1,
+        r: 21,
+      };
+      nodes.push(hub);
+      links.push({
+        id: `${rootModel.id}->${hub.id}`,
+        source: rootModel,
+        target: hub,
+        color: legible(teamColor(mine.toTeamId ?? mine.fromTeamId)),
+        width: 1.2,
+        dashed: false,
+      });
+
+      // What the club that gave him up got back in the same deal.
+      const back = trade.assets.filter((a) => a !== mine && a.toTeamId === mine.fromTeamId);
+      const rows = [];
+      back.forEach((asset, i) => {
+        const model = {
+          id: `c:${tradeId}:${i}`,
+          type: 'asset',
+          col: 2,
+          r: asset.kind === 'player' ? 19 : 13,
+          chain: {
+            kind: asset.kind,
+            personId: asset.personId ?? null,
+            name: asset.name,
+            label: asset.name || KIND_LABEL[asset.kind] || asset.kind,
+            fromTeamId: asset.fromTeamId,
+            toTeamId: asset.toTeamId,
+            arrivalTradeId: tradeId,
+            arrivalDate: trade.date,
+            pivot: null,
+            children: [],
+            terminal: null,
+          },
+          row: leafRow++,
+        };
+        nodes.push(model);
+        links.push({
+          id: `${hub.id}->${model.id}`,
+          source: hub,
+          target: model,
+          color: legible(teamColor(asset.toTeamId ?? asset.fromTeamId)),
+          width: asset.kind === 'player' ? 1.2 : 0.8,
+          dashed: asset.kind !== 'player',
+        });
+        rows.push(model.row);
+      });
+
+      hub.row = rows.length ? rows.reduce((a, b) => a + b, 0) / rows.length : leafRow++;
+      hubRows.push(hub.row);
+    }
+
+    rootModel.row = hubRows.length ? hubRows.reduce((a, b) => a + b, 0) / hubRows.length : 0;
+
+    seatNodes();
+    for (const model of nodes) {
+      model.x = model.tx;
+      model.y = model.ty;
+    }
+    render();
+    startSim();
+    renderCareerChrome(player);
+  }
+
+  function renderCareerChrome(player) {
+    clear(breadcrumb);
+    clear(note);
     breadcrumb.append(
       modeToggle(),
       el('span', { class: 'crumb' }, [
         el('span', { class: 'crumb-label' }, player.name),
-        `${summary.trades} trade${summary.trades === 1 ? '' : 's'} · ${summary.clubs} clubs`,
+        `${player.trades.length} trade${player.trades.length === 1 ? '' : 's'}`,
       ])
     );
 
-    const filtered =
-      state.team != null || state.yearMin !== index.minYear || state.yearMax !== index.maxYear;
-    const lines = [
-      el('div', {}, [
-        el('b', {}, player.name),
-        ` · ${formatDate(summary.first)} → ${formatDate(summary.last)}`,
-      ]),
-      el('div', {}, 'Above the spine moved with him · below came back the other way'),
-      el(
-        'div',
-        {},
-        summary.scrolls
-          ? 'Drag to pan the timeline · tap a stop for the trade'
-          : 'Tap a stop for the trade'
-      ),
-    ];
-    if (filtered) {
-      lines.push(el('div', {}, 'Career view — season and club filters do not apply here'));
+    const clubs = new Set();
+    for (const tradeId of player.trades) {
+      const trade = index.tradesById.get(tradeId);
+      const row = trade?.assets.find((a) => a.personId === player.personId);
+      if (row) {
+        clubs.add(row.fromTeamId);
+        clubs.add(row.toTeamId);
+      }
     }
-    note.append(...lines);
+    const back = nodes.filter((n) => n.type === 'asset' && n.col === 2).length;
+    note.append(
+      el('div', {}, [el('b', {}, player.name), ` · traded ${player.trades.length}\u00d7 across ${clubs.size} clubs`]),
+      el('div', {}, `${back} asset${back === 1 ? '' : 's'} came back the other way`),
+      el('div', {}, 'Every deal at once, not to scale in time · tap a disc for the trade')
+    );
   }
 
   /* ------------------------------------------------------------ empty state */
 
   function renderEmpty() {
-    careerRefit = null;
     clear(breadcrumb);
     clear(note);
     clear(canvas.linkLayer);
@@ -655,7 +753,19 @@ export function createChainView(host, index) {
     if (sim) sim.stop();
 
     clear(emptyState);
-    const picks = suggestions();
+    const grid = el('div', { class: 'tree-grid' });
+    notableTrades(index, { limit: 12 }).forEach((trade, i) =>
+      grid.append(
+        tradeCard(index, trade, {
+          index: i,
+          onClick: () => {
+            const first = trade.assets.find((a) => a.kind === 'player' && a.personId != null);
+            if (first) rootOn(first.personId, trade.id);
+          },
+        })
+      )
+    );
+
     emptyState.append(
       el('div', { class: 'chain-empty-inner' }, [
         el('h2', {}, 'Follow a player forward'),
@@ -664,69 +774,10 @@ export function createChainView(host, index) {
           {},
           'Pick a trade and the graph follows the return package: who came back, who they later became, and where the thread finally goes cold.'
         ),
-        el(
-          'div',
-          { class: 'suggests' },
-          picks.map((pick) =>
-            el(
-              'button',
-              {
-                class: 'chip',
-                type: 'button',
-                style: { '--club-lit': legible(teamColor(pick.teamId)) },
-                onClick: () => rootOn(pick.personId, pick.tradeId),
-              },
-              [pick.name]
-            )
-          )
-        ),
+        grid,
       ])
     );
     emptyState.style.display = '';
-  }
-
-  const MARQUEE = [
-    'Juan Soto',
-    'Mookie Betts',
-    'Manny Machado',
-    'Chris Sale',
-    'Corbin Burnes',
-    'Sean Murphy',
-    'Luis Castillo',
-    'Josh Hader',
-  ];
-
-  function suggestions() {
-    const byName = new Map();
-    for (const player of index.playerIndex.values()) {
-      if (!byName.has(player.name)) byName.set(player.name, player);
-    }
-    const picks = [];
-    const seen = new Set();
-    const take = (player) => {
-      if (!player || seen.has(player.personId)) return;
-      const tradeId = player.trades[0];
-      const trade = index.tradesById.get(tradeId);
-      const row = trade.assets.find((a) => a.personId === player.personId);
-      seen.add(player.personId);
-      picks.push({
-        personId: player.personId,
-        tradeId,
-        name: player.name,
-        teamId: row ? row.fromTeamId : trade.teamIds[0],
-      });
-    };
-    for (const name of MARQUEE) take(byName.get(name));
-    if (picks.length < 6) {
-      const busiest = [...index.playerIndex.values()]
-        .sort((a, b) => b.trades.length - a.trades.length)
-        .slice(0, 10);
-      for (const player of busiest) {
-        if (picks.length >= 8) break;
-        take(player);
-      }
-    }
-    return picks.slice(0, 8);
   }
 
   /* ------------------------------------------------------------------- api */
@@ -734,13 +785,8 @@ export function createChainView(host, index) {
   // Resizing (docking the detail panel, mostly) re-frames the graph rather than
   // rebuilding it -- a rebuild would tear down every headshot and re-fetch it.
   canvas.onResize = () => {
-    if (!state.chain) return;
-    if (state.chainMode === 'career') {
-      if (careerRefit) careerRefit(320);
-      else renderCareer(state.chain.personId);
-    } else if (root) {
-      reflow();
-    }
+    if (!state.chain || !nodes.length) return;
+    reflow();
   };
 
   /** Recompute layout targets for the existing nodes and let the sim settle. */
@@ -762,7 +808,7 @@ export function createChainView(host, index) {
     }
     if (state.chainMode === 'career') {
       root = null;
-      renderCareer(target.personId);
+      buildCareer(target.personId);
       return;
     }
     if (target.tradeId == null) {

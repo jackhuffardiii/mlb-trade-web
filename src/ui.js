@@ -219,6 +219,152 @@ export function hideTip() {
   delete tip.dataset.open;
 }
 
+/* ------------------------------------------------------------- trade cards */
+
+/**
+ * One trade as a card figure, in the same visual language as the Team Flows
+ * grid: the deal is a club-coloured disc, each club's haul is a column of dots
+ * either side. Players are filled, considerations are hollow and dashed.
+ */
+export function tradeMiniature(index, trade) {
+  const W = 300;
+  const H = 118;
+  const svg = svgEl('svg', {
+    class: 'mini',
+    viewBox: `0 0 ${W} ${H}`,
+    preserveAspectRatio: 'xMidYMid meet',
+    'aria-hidden': 'true',
+  });
+
+  // Two sides: assets going to the first club, and everything else.
+  const [left, right] = [trade.teamIds[0], trade.teamIds[1] ?? trade.teamIds[0]];
+  const sides = [
+    { teamId: left, assets: trade.assets.filter((a) => a.toTeamId === left), x: 62 },
+    { teamId: right, assets: trade.assets.filter((a) => a.toTeamId !== left), x: W - 62 },
+  ];
+
+  const midX = W / 2;
+  const midY = H / 2;
+
+  for (const side of sides) {
+    const lit = legible(teamColor(side.teamId));
+    const n = side.assets.length;
+    const step = Math.min(24, (H - 30) / Math.max(n - 1, 1));
+    side.assets.forEach((asset, i) => {
+      const y = midY + (i - (n - 1) / 2) * step;
+      const bend = (side.x + midX) / 2;
+      svg.append(
+        svgEl('path', {
+          d: `M${midX},${midY}C${bend},${midY} ${bend},${y} ${side.x},${y}`,
+          fill: 'none',
+          stroke: rgba(lit, 0.4),
+          'stroke-width': 1,
+        })
+      );
+      const player = asset.kind === 'player';
+      svg.append(
+        svgEl('circle', {
+          cx: side.x,
+          cy: y,
+          r: player ? 3.4 : 2.4,
+          fill: player ? rgba(lit, 0.85) : 'none',
+          stroke: rgba(lit, player ? 0.9 : 0.55),
+          'stroke-width': 1,
+          'stroke-dasharray': player ? null : '2 2',
+        })
+      );
+    });
+  }
+
+  const discColor = legible(teamColor(left));
+  svg.append(
+    svgEl('circle', {
+      cx: midX,
+      cy: midY,
+      r: 7,
+      fill: rgba(discColor, 0.24),
+      stroke: discColor,
+      'stroke-width': 1.4,
+    })
+  );
+  return svg;
+}
+
+/** The 1-3 names worth putting faces on: the players, biggest package first. */
+function marqueeOf(trade) {
+  return trade.assets
+    .filter((a) => a.kind === 'player' && a.personId != null)
+    .slice(0, 3);
+}
+
+/**
+ * A trade as a grid card. Shares the Team Flows card markup and CSS wholesale,
+ * so the three landing surfaces read as one system.
+ */
+export function tradeCard(index, trade, { onClick, index: i = 0 } = {}) {
+  const lit = legible(teamColor(trade.teamIds[0]));
+  const marquee = marqueeOf(trade);
+  const players = trade.assets.filter((a) => a.kind === 'player').length;
+  const others = trade.assets.length - players;
+
+  const faces = el(
+    'div',
+    { class: 'tree-faces' },
+    marquee.map((m) =>
+      el('img', {
+        class: 'tree-face',
+        src: headshotURL(m.personId),
+        alt: '',
+        loading: 'lazy',
+        decoding: 'async',
+        referrerpolicy: 'no-referrer',
+      })
+    )
+  );
+
+  const names = marquee.map((m) => m.name).filter(Boolean);
+  const caption = names.length
+    ? names.length === 1
+      ? names[0]
+      : `${names.slice(0, -1).join(', ')} & ${names[names.length - 1]}`
+    : 'Considerations only';
+
+  return el(
+    'button',
+    {
+      class: 'tree-card',
+      type: 'button',
+      style: { '--club-lit': lit, animationDelay: `${Math.min(i, 11) * 30}ms` },
+      title: tradeSentence(index, trade),
+      onClick,
+    },
+    [
+      el('div', { class: 'tree-card-figure' }, [tradeMiniature(index, trade)]),
+      el('div', { class: 'tree-card-body' }, [
+        faces.children.length ? faces : null,
+        el('h3', { class: 'tree-card-title' }, caption),
+        el('div', { class: 'tree-card-meta' }, [
+          el('span', {}, trade.teamIds.map((id) => index.teamsById.get(id)?.abbreviation || id).join(' ⇄ ')),
+          el('span', {}, `${players} player${players === 1 ? '' : 's'}`),
+          others ? el('span', {}, `+${others}`) : null,
+          el('span', {}, formatDate(trade.date)),
+        ]),
+      ]),
+    ]
+  );
+}
+
+/** Big, multi-player deals, newest first. The shared picker for both landings. */
+export function notableTrades(index, { limit = 12, minPlayers = 4, before = null } = {}) {
+  return index.trades
+    .filter((t) => {
+      if (t.assets.filter((a) => a.kind === 'player').length < minPlayers) return false;
+      return before == null || Number(t.date.slice(0, 4)) <= before;
+    })
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
+    .slice(0, limit);
+}
+
 /* ---------------------------------------------------------------- dossier */
 
 const SAVANT = (personId) => `https://baseballsavant.mlb.com/savant-player/${personId}`;

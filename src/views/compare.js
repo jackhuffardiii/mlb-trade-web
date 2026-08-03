@@ -15,7 +15,7 @@
 import { formatDate, loadPlayers } from '../data.js';
 import { tradeSentence } from '../chain.js';
 import { legible, teamColor } from '../teams.js';
-import { clear, clubChip, el, jumpToChain, headshotURL } from '../ui.js';
+import { clear, el, jumpToChain, headshotURL, notableTrades, tradeCard } from '../ui.js';
 import { setState, state } from '../state.js';
 
 /** Sums exactly across seasons. Anything not here cannot be aggregated honestly. */
@@ -84,23 +84,14 @@ export function createCompareView(host, index) {
 
   function renderEmpty() {
     clear(shell);
-    // Big two-club deals with enough years behind them to have produced
-    // something. A deal from last week is a blank ledger, which makes a poor
-    // first impression however correct it is.
-    const ripe = index.maxYear - 3;
-    const picks = index.trades
-      .filter(
-        (t) =>
-          t.teamIds.length === 2 &&
-          Number(t.date.slice(0, 4)) <= ripe &&
-          t.assets.filter((a) => a.kind === 'player').length >= 4
+    const grid = el('div', { class: 'tree-grid' });
+    // Deals with enough years behind them to have produced something. A trade
+    // from last week is a correct but blank ledger, a poor way in.
+    notableTrades(index, { limit: 12, before: index.maxYear - 3 }).forEach((trade, i) =>
+      grid.append(
+        tradeCard(index, trade, { index: i, onClick: () => setState({ compareTrade: trade.id }) })
       )
-      .sort(
-        (a, b) =>
-          b.assets.filter((x) => x.kind === 'player').length -
-            a.assets.filter((x) => x.kind === 'player').length || (a.date < b.date ? 1 : -1)
-      )
-      .slice(0, 10);
+    );
 
     shell.append(
       el('div', { class: 'compare-empty' }, [
@@ -110,24 +101,8 @@ export function createCompareView(host, index) {
           {},
           'Pick a trade. Every player each club acquired is followed forward, and only what they did for that club after the deal is counted. Production, not a verdict: there is no value metric here, so the totals are the evidence and the judgement is yours.'
         ),
-        el(
-          'div',
-          { class: 'suggests' },
-          picks.map((t) =>
-            el(
-              'button',
-              {
-                class: 'chip',
-                type: 'button',
-                style: { '--club-lit': legible(teamColor(t.teamIds[0])) },
-                title: tradeSentence(index, t),
-                onClick: () => setState({ compareTrade: t.id }),
-              },
-              [`${t.teamIds.map((id) => index.teamsById.get(id)?.abbreviation || id).join(' ⇄ ')} · ${t.date.slice(0, 7)}`]
-            )
-          )
-        ),
-      ])
+      ]),
+      grid
     );
   }
 
