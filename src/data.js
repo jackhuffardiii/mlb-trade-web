@@ -89,7 +89,13 @@ export function buildIndex(raw) {
 }
 
 export async function loadData(url = 'data/trades.json') {
-  const res = await fetch(url, { cache: 'force-cache' });
+  // 'no-cache' means revalidate, not refetch. The dataset is rewritten daily by
+  // the refresh workflow, so a returning visitor must not be served a stale copy
+  // -- which is exactly what 'force-cache' did: it uses a stored response without
+  // revalidating, overriding the server's own max-age=0, must-revalidate. The
+  // conditional request costs one round trip and returns 304 with no body when
+  // the data hasn't moved.
+  const res = await fetch(url, { cache: 'no-cache' });
   if (!res.ok) throw new Error(`Could not load ${url} (HTTP ${res.status})`);
   return buildIndex(await res.json());
 }
