@@ -19,6 +19,16 @@ import { createCompareView } from './views/compare.js';
 
 const VIEWS = ['web', 'chain', 'flows', 'compare'];
 
+// Tapping the tab you are already on backs out to that view's landing, the way
+// a mobile tab bar does. Only the drill-down state resets; filters are chrome
+// and survive.
+const LANDING = {
+  web: { webMode: 'league', webTeam: null },
+  chain: { chain: null },
+  flows: { flowsTree: null, flowsMode: 'trees' },
+  compare: { compareTrade: null },
+};
+
 boot();
 
 async function boot() {
@@ -135,7 +145,8 @@ async function boot() {
     tab.addEventListener('click', () => {
       closePanel();
       hideTip();
-      setState({ view: tab.dataset.tab });
+      const name = tab.dataset.tab;
+      setState(state.view === name ? { view: name, ...LANDING[name] } : { view: name });
     });
   }
 

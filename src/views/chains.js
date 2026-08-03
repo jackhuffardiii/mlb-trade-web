@@ -774,9 +774,10 @@ export function createChainView(host, index) {
           {},
           'Pick a trade and the graph follows the return package: who came back, who they later became, and where the thread finally goes cold.'
         ),
-        grid,
-      ])
+      ]),
+      grid
     );
+    emptyState.scrollTop = 0;
     emptyState.style.display = '';
   }
 

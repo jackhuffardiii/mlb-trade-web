@@ -85,9 +85,9 @@ export function createCompareView(host, index) {
   function renderEmpty() {
     clear(shell);
     const grid = el('div', { class: 'tree-grid' });
-    // Deals with enough years behind them to have produced something. A trade
-    // from last week is a correct but blank ledger, a poor way in.
-    notableTrades(index, { limit: 12, before: index.maxYear - 3 }).forEach((trade, i) =>
+    // Deals with a couple of years behind them, so there is production to
+    // compare. A trade from last week is a correct but blank ledger.
+    notableTrades(index, { limit: 12, before: index.maxYear - 2 }).forEach((trade, i) =>
       grid.append(
         tradeCard(index, trade, { index: i, onClick: () => setState({ compareTrade: trade.id }) })
       )

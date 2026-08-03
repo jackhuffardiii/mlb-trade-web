@@ -1578,14 +1578,30 @@ button.chip:hover {
 .chain-empty {
   position: absolute;
   inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 30px;
-  text-align: center;
+  /* The landing is a full grid of cards, taller than the viewport, so it scrolls
+     on its own. It used to centre its content in a non-scrolling box, which
+     clipped it off both ends and left nothing reachable. */
+  overflow-y: auto;
+  padding: calc(var(--head-h) + 22px) clamp(16px, 3vw, 34px) 90px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule-strong) transparent;
+}
+
+.chain-empty::-webkit-scrollbar {
+  width: 9px;
+}
+
+.chain-empty::-webkit-scrollbar-thumb {
+  background: var(--rule-strong);
+  border-radius: 9px;
+  border: 3px solid transparent;
+  background-clip: content-box;
 }
 
 .chain-empty-inner {
-  max-width: 460px;
+  max-width: 62ch;
+  margin: 0 auto 26px;
+  text-align: center;
 }
 
 .chain-empty h2 {
