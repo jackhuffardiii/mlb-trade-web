@@ -2,7 +2,9 @@ name: Refresh trade data
 
 on:
   schedule:
-    - cron: "0 11 * * *"
+    # Deliberately off the top of the hour. GitHub's shared scheduler is most
+    # congested at :00, and every run under "0 11 * * *" fired 1-2h late.
+    - cron: "23 11 * * *"
   workflow_dispatch: {}
 
 permissions:
