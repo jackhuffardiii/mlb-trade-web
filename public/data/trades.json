@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-02",
+  "generated": "2026-08-03",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-08-02"
+    "end": "2026-08-03"
   },
   "teams": [
     {
@@ -66391,7 +66391,7 @@
     {
       "id": 933930,
       "date": "2026-08-01",
-      "description": "New York Yankees traded RHP Camilo Doval to Pittsburgh Pirates for C Omar Alfonzo and OF Luis Cruz.",
+      "description": "New York Yankees traded RHP Camilo Doval and cash to Pittsburgh Pirates for C Omar Alfonzo and OF Luis Cruz.",
       "teamIds": [
         134,
         147
@@ -66412,10 +66412,35 @@
           "kind": "player"
         },
         {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 147,
+          "toTeamId": 134,
+          "kind": "cash"
+        },
+        {
           "personId": 666808,
           "name": "Camilo Doval",
           "fromTeamId": 147,
           "toTeamId": 134,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934028,
+      "date": "2026-08-01",
+      "description": "Boston Red Sox traded LHP Jojo Ingrassia to Detroit Tigers.",
+      "teamIds": [
+        111,
+        116
+      ],
+      "assets": [
+        {
+          "personId": 695293,
+          "name": "Jojo Ingrassia",
+          "fromTeamId": 111,
+          "toTeamId": 116,
           "kind": "player"
         }
       ]
@@ -66501,6 +66526,219 @@
           "name": "Lucas Braun",
           "fromTeamId": 144,
           "toTeamId": 118,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934076,
+      "date": "2026-08-02",
+      "description": "Los Angeles Dodgers traded CF Zyhir Hope, RHP River Ryan and RHP Brady Smith to Detroit Tigers for LHP Tarik Skubal.",
+      "teamIds": [
+        116,
+        119
+      ],
+      "assets": [
+        {
+          "personId": 669373,
+          "name": "Tarik Skubal",
+          "fromTeamId": 116,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 689981,
+          "name": "River Ryan",
+          "fromTeamId": 119,
+          "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 806224,
+          "name": "Brady Smith",
+          "fromTeamId": 119,
+          "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 814307,
+          "name": "Zyhir Hope",
+          "fromTeamId": 119,
+          "toTeamId": 116,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934123,
+      "date": "2026-08-02",
+      "description": "Chicago Cubs traded RHP Jameson Taillon and cash to Toronto Blue Jays for Player To Be Named Later.",
+      "teamIds": [
+        112,
+        141
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 112,
+          "toTeamId": 141,
+          "kind": "cash"
+        },
+        {
+          "personId": 592791,
+          "name": "Jameson Taillon",
+          "fromTeamId": 112,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 141,
+          "toTeamId": 112,
+          "kind": "cash"
+        }
+      ]
+    },
+    {
+      "id": 934138,
+      "date": "2026-08-02",
+      "description": "New York Mets traded RHP Freddy Peralta to Tampa Bay Rays for RHP Gary Gill Hill, OF Aidan Smith and SS Émilien Pitre.",
+      "teamIds": [
+        121,
+        139
+      ],
+      "assets": [
+        {
+          "personId": 642547,
+          "name": "Freddy Peralta",
+          "fromTeamId": 121,
+          "toTeamId": 139,
+          "kind": "player"
+        },
+        {
+          "personId": 692150,
+          "name": "Émilien Pitre",
+          "fromTeamId": 139,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 804541,
+          "name": "Gary Gill Hill",
+          "fromTeamId": 139,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 806223,
+          "name": "Aidan Smith",
+          "fromTeamId": 139,
+          "toTeamId": 121,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934197,
+      "date": "2026-08-02",
+      "description": "Toronto Blue Jays traded RHP Kevin Gausman to Chicago Cubs for CF Brett Bateman and SS Ty Southisene.",
+      "teamIds": [
+        112,
+        141
+      ],
+      "assets": [
+        {
+          "personId": 703520,
+          "name": "Brett Bateman",
+          "fromTeamId": 112,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 807257,
+          "name": "Ty Southisene",
+          "fromTeamId": 112,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 592332,
+          "name": "Kevin Gausman",
+          "fromTeamId": 141,
+          "toTeamId": 112,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934200,
+      "date": "2026-08-02",
+      "description": "San Francisco Giants traded RHP Tyler Mahle to Atlanta Braves for RHP Anthony Molina.",
+      "teamIds": [
+        137,
+        144
+      ],
+      "assets": [
+        {
+          "personId": 641816,
+          "name": "Tyler Mahle",
+          "fromTeamId": 137,
+          "toTeamId": 144,
+          "kind": "player"
+        },
+        {
+          "personId": 683627,
+          "name": "Anthony Molina",
+          "fromTeamId": 144,
+          "toTeamId": 137,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934192,
+      "date": "2026-08-03",
+      "description": "Washington Nationals traded 1B Luis García Jr. to New York Yankees for RHP Ben Grable, RHP Yovanny Cruz, RHP Jack Cebert and RHP Jake Bird.",
+      "teamIds": [
+        120,
+        147
+      ],
+      "assets": [
+        {
+          "personId": 671277,
+          "name": "Luis García Jr.",
+          "fromTeamId": 120,
+          "toTeamId": 147,
+          "kind": "player"
+        },
+        {
+          "personId": 656234,
+          "name": "Jake Bird",
+          "fromTeamId": 147,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 672442,
+          "name": "Yovanny Cruz",
+          "fromTeamId": 147,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 695066,
+          "name": "Ben Grable",
+          "fromTeamId": 147,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 701411,
+          "name": "Jack Cebert",
+          "fromTeamId": 147,
+          "toTeamId": 120,
           "kind": "player"
         }
       ]
