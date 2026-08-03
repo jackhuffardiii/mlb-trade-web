@@ -423,6 +423,10 @@ export function jumpToChain(personId, tradeId) {
   document.dispatchEvent(new CustomEvent('jump:chain', { detail: { personId, tradeId } }));
 }
 
+export function jumpToCompare(tradeId) {
+  document.dispatchEvent(new CustomEvent('jump:compare', { detail: { tradeId } }));
+}
+
 export function jumpToFlows(teamId) {
   document.dispatchEvent(new CustomEvent('jump:flows', { detail: { teamId } }));
 }

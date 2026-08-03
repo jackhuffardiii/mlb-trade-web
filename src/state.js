@@ -5,7 +5,7 @@
 const listeners = new Set();
 
 export const state = {
-  view: 'web', // 'web' | 'chain' | 'flows'
+  view: 'web', // 'web' | 'chain' | 'flows' | 'compare'
   yearMin: 2015,
   yearMax: 2026,
   team: null, // teamId or null for "all clubs"
@@ -17,6 +17,7 @@ export const state = {
   flowsSort: 'composite', // 'composite' | 'size' | 'depth'
   webMode: 'league', // 'league' | 'team' (the per-club player web)
   webTeam: null, // teamId whose player web is open
+  compareTrade: null, // tradeId open in the Trade Returns view
 };
 
 export function subscribe(fn) {

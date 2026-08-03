@@ -15,8 +15,9 @@ import {
 import { createNetworkView } from './views/network.js';
 import { createChainView } from './views/chains.js';
 import { createFlowsView } from './views/flows.js';
+import { createCompareView } from './views/compare.js';
 
-const VIEWS = ['web', 'chain', 'flows'];
+const VIEWS = ['web', 'chain', 'flows', 'compare'];
 
 boot();
 
@@ -47,6 +48,7 @@ async function boot() {
     web: { host: document.getElementById('view-web'), api: null, dirty: true },
     chain: { host: document.getElementById('view-chain'), api: null, dirty: true },
     flows: { host: document.getElementById('view-flows'), api: null, dirty: true },
+    compare: { host: document.getElementById('view-compare'), api: null, dirty: true },
   };
 
   mountChrome(index);
@@ -81,6 +83,7 @@ async function boot() {
       views.flows.dirty = true;
     }
     if (changed.has('chain') || changed.has('chainMode')) views.chain.dirty = true;
+    if (changed.has('compareTrade')) views.compare.dirty = true;
     if (changed.has('team') || changed.has('yearMin') || changed.has('yearMax')) syncChrome(index);
     applyView(views);
   });
@@ -98,6 +101,11 @@ async function boot() {
       chainMode: mode || 'trade',
       view: 'chain',
     });
+  });
+
+  document.addEventListener('jump:compare', (event) => {
+    closePanel();
+    setState({ compareTrade: event.detail.tradeId, view: 'compare' });
   });
 
   document.addEventListener('jump:flows', (event) => {
@@ -189,7 +197,9 @@ async function boot() {
             ? createNetworkView(entry.host, index)
             : name === 'chain'
               ? createChainView(entry.host, index)
-              : createFlowsView(entry.host, index);
+              : name === 'flows'
+                ? createFlowsView(entry.host, index)
+                : createCompareView(entry.host, index);
         entry.dirty = true;
       }
       if (entry.dirty) {

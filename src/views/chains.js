@@ -18,6 +18,7 @@ import { legible, teamColor } from '../teams.js';
 import {
   assetNode,
   attachDrag,
+  clubNode,
   fitToNodes,
   headerInset,
   linkGroup,
@@ -30,6 +31,7 @@ import {
   clear,
   el,
   hideTip,
+  jumpToCompare,
   jumpToFlows,
   moveTip,
   openPanel,
@@ -41,7 +43,7 @@ import {
 import { setState, state } from '../state.js';
 import { renderTimeline } from './timeline.js';
 
-const COLUMN = 250;
+const COLUMN = 132; // half a generation: assets on even columns, trades on odd
 const ROW = 76;
 
 export function createChainView(host, index) {
@@ -67,37 +69,63 @@ export function createChainView(host, index) {
 
   /* ------------------------------------------------------------- traversal */
 
+  /**
+   * Flatten the chain into a layered graph, same shape as the Team Flows tree:
+   * assets sit on even columns and the trade that moved them on the odd column
+   * between. The trade is the thing that actually happened, so it gets a node
+   * rather than being implied by an edge.
+   */
   function flatten() {
     nodes = [];
     links = [];
     let leafRow = 0;
 
+    const join = (source, target, chainNode, dashed) =>
+      links.push({
+        id: `${source.id}->${target.id}`,
+        source,
+        target,
+        color: legible(teamColor(chainNode.toTeamId ?? chainNode.fromTeamId)),
+        width: dashed ? 0.8 : 1.2,
+        dashed,
+      });
+
     const walk = (chainNode, parent) => {
       const model = {
         id: chainNode.id,
+        type: 'asset',
         chain: chainNode,
-        depth: chainNode.depth,
-        r: chainNode.root ? 30 : chainNode.kind === 'player' ? 21 : 15,
+        col: chainNode.depth * 2,
+        r: chainNode.root ? 27 : chainNode.kind === 'player' ? 19 : 13,
       };
       nodes.push(model);
-      if (parent) {
-        links.push({
-          id: `${parent.id}->${model.id}`,
-          source: parent,
-          target: model,
-          color: legible(teamColor(chainNode.toTeamId ?? chainNode.fromTeamId)),
-          width: chainNode.kind === 'player' ? 1.2 : 0.8,
-          dashed: chainNode.kind !== 'player',
-        });
-      }
+      if (parent) join(parent, model, chainNode, chainNode.kind !== 'player');
 
       const kids = collapsed.has(chainNode.id) ? [] : chainNode.children || [];
       if (!kids.length) {
         model.row = leafRow++;
-      } else {
-        const rows = kids.map((kid) => walk(kid, model));
-        model.row = rows.reduce((a, b) => a + b, 0) / rows.length;
+        return model.row;
       }
+
+      // The deal that turned this asset into those children.
+      const trade = chainNode.pivot ? index.tradesById.get(chainNode.pivot.tradeId) : null;
+      let hub = model;
+      if (trade) {
+        hub = {
+          id: `t:${chainNode.id}`,
+          type: 'trade',
+          trade,
+          pivot: chainNode.pivot,
+          col: chainNode.depth * 2 + 1,
+          r: 21,
+        };
+        nodes.push(hub);
+        join(model, hub, chainNode, false);
+      }
+
+      const rows = kids.map((kid) => walk(kid, hub));
+      model.row = rows.reduce((a, b) => a + b, 0) / rows.length;
+      if (hub !== model) hub.row = model.row;
       return model.row;
     };
 
@@ -145,6 +173,40 @@ export function createChainView(host, index) {
     }
 
     for (const model of nodes) {
+      if (model.type === 'trade') {
+        // Same club-coloured disc the Team Flows tree uses for a trade event.
+        const other = index.teamsById.get(model.pivot.toTeamId);
+        model.el = clubNode({
+          teamId: model.pivot.toTeamId,
+          abbreviation: other ? other.abbreviation : '??',
+          r: model.r,
+        });
+        model.el.append(
+          Object.assign(svgEl('text', { class: 'caption', y: model.r + 16 }), {
+            textContent: formatDate(model.trade.date),
+          })
+        );
+        const extra = model.trade.teamIds.filter(
+          (id) => id !== model.pivot.toTeamId && id !== model.pivot.fromTeamId
+        );
+        if (extra.length) {
+          model.el.append(
+            Object.assign(svgEl('text', { class: 'caption dim', y: model.r + 28 }), {
+              textContent: `+ ${extra.map((id) => index.teamsById.get(id)?.abbreviation || id).join(' ')}`,
+            })
+          );
+        }
+        model.el.addEventListener('pointerenter', (event) => onEnter(model, event));
+        model.el.addEventListener('pointermove', (event) => moveTip(event.clientX, event.clientY));
+        model.el.addEventListener('pointerleave', onLeave);
+        model.el.addEventListener('click', (event) => {
+          event.stopPropagation();
+          onClick(model);
+        });
+        canvas.nodeLayer.append(model.el);
+        continue;
+      }
+
       const c = model.chain;
       const receiving = c.toTeamId ?? c.fromTeamId;
 
@@ -218,7 +280,7 @@ export function createChainView(host, index) {
     const originX = canvas.size.width * 0.22;
     const originY = inset + (canvas.size.height - inset) * 0.52;
     for (const model of nodes) {
-      model.tx = originX + model.depth * COLUMN;
+      model.tx = originX + model.col * COLUMN;
       model.ty = originY + (model.row - midRow) * ROW;
     }
   }
@@ -263,6 +325,30 @@ export function createChainView(host, index) {
 
   function onEnter(model, event) {
     const near = new Set([model.el]);
+    if (model.type === 'trade') {
+      const nearLinks = [];
+      for (const link of links) {
+        if (link.source.id === model.id || link.target.id === model.id) {
+          nearLinks.push(link.el);
+          near.add(link.source.el);
+          near.add(link.target.el);
+        }
+      }
+      setFocus(canvas, { hotNodes: [model.el], nearNodes: [...near], nearLinks });
+      const clubs = model.trade.teamIds
+        .map((id) => index.teamsById.get(id)?.name || `Team ${id}`)
+        .join(' · ');
+      showTip(
+        el('div', {}, [
+          el('div', { style: { color: '#e8b44c', marginBottom: '6px' } }, clubs),
+          el('div', {}, tradeSentence(index, model.trade)),
+        ]),
+        event.clientX,
+        event.clientY,
+        formatDate(model.trade.date)
+      );
+      return;
+    }
     const nearLinks = [];
     for (const link of links) {
       if (link.source.id === model.id || link.target.id === model.id) {
@@ -302,6 +388,36 @@ export function createChainView(host, index) {
   }
 
   function onClick(model) {
+    if (model.type === 'trade') {
+      openPanel({
+        kicker: 'Trade',
+        title: formatDate(model.trade.date),
+        sub: model.trade.teamIds
+          .map((id) => index.teamsById.get(id)?.abbreviation || id)
+          .join(' ⇄ '),
+        render: (body) => {
+          body.append(
+            el('div', { class: 'asset-row', style: { margin: '4px 0 14px' } }, [
+              el(
+                'button',
+                {
+                  class: 'ghost-btn accent',
+                  type: 'button',
+                  onClick: () => jumpToCompare(model.trade.id),
+                },
+                ['Compare returns →']
+              ),
+            ])
+          );
+          const list = el('div');
+          body.append(list);
+          renderTradeList(index, list, [model.trade], {
+            onPlayer: (asset) => rootOn(asset.personId, model.trade.id),
+          });
+        },
+      });
+      return;
+    }
     const c = model.chain;
     const trades = [];
     if (c.arrivalTradeId != null) trades.push(index.tradesById.get(c.arrivalTradeId));
@@ -446,7 +562,7 @@ export function createChainView(host, index) {
     let players = 0;
     let others = 0;
     for (const model of nodes) {
-      if (model.chain.root) continue;
+      if (model.type === 'trade' || model.chain.root) continue;
       if (model.chain.kind === 'player') players++;
       else others++;
     }

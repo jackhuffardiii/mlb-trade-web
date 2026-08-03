@@ -19,6 +19,7 @@ const NAV_KEYS = [
   'chainMode',
   'webMode',
   'webTeam',
+  'compareTrade',
 ];
 const LIMIT = 80;
 
