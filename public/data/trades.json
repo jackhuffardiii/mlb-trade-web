@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-03",
+  "generated": "2026-08-04",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-08-03"
+    "end": "2026-08-04"
   },
   "teams": [
     {
@@ -66739,6 +66739,1385 @@
           "name": "Jack Cebert",
           "fromTeamId": 147,
           "toTeamId": 120,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934219,
+      "date": "2026-08-03",
+      "description": "Los Angeles Angels traded RHP José Soriano to Toronto Blue Jays for SS Arjun Nimmala, RF Eddie Micheletti Jr. and RHP Angel Rivero.",
+      "teamIds": [
+        108,
+        141
+      ],
+      "assets": [
+        {
+          "personId": 667755,
+          "name": "José Soriano",
+          "fromTeamId": 108,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 804446,
+          "name": "Eddie Micheletti Jr.",
+          "fromTeamId": 141,
+          "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 805796,
+          "name": "Arjun Nimmala",
+          "fromTeamId": 141,
+          "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 821022,
+          "name": "Angel Rivero",
+          "fromTeamId": 141,
+          "toTeamId": 108,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934237,
+      "date": "2026-08-03",
+      "description": "New York Mets traded RHP Huascar Brazobán to Chicago White Sox for RHP Gabe Davis and RHP Zach Franklin.",
+      "teamIds": [
+        121,
+        145
+      ],
+      "assets": [
+        {
+          "personId": 623211,
+          "name": "Huascar Brazobán",
+          "fromTeamId": 121,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 702103,
+          "name": "Zach Franklin",
+          "fromTeamId": 145,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 805031,
+          "name": "Gabe Davis",
+          "fromTeamId": 145,
+          "toTeamId": 121,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934252,
+      "date": "2026-08-03",
+      "description": "Los Angeles Angels traded LHP Brent Suter to Atlanta Braves for SS Nacho Alvarez Jr..",
+      "teamIds": [
+        108,
+        144
+      ],
+      "assets": [
+        {
+          "personId": 608718,
+          "name": "Brent Suter",
+          "fromTeamId": 108,
+          "toTeamId": 144,
+          "kind": "player"
+        },
+        {
+          "personId": 805373,
+          "name": "Nacho Alvarez Jr.",
+          "fromTeamId": 144,
+          "toTeamId": 108,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934256,
+      "date": "2026-08-03",
+      "description": "San Francisco Giants traded 2B Luis Arraez and RHP Caleb Kilian to Philadelphia Phillies for RHP Marty Gair and RHP Ramon Marquez.",
+      "teamIds": [
+        137,
+        143
+      ],
+      "assets": [
+        {
+          "personId": 650333,
+          "name": "Luis Arraez",
+          "fromTeamId": 137,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 668873,
+          "name": "Caleb Kilian",
+          "fromTeamId": 137,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 700248,
+          "name": "Marty Gair",
+          "fromTeamId": 143,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 827408,
+          "name": "Ramon Marquez",
+          "fromTeamId": 143,
+          "toTeamId": 137,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934259,
+      "date": "2026-08-03",
+      "description": "New York Mets traded LHP Brooks Raley to Philadelphia Phillies for OF John Spikerman and RHP Luke Gabrysh.",
+      "teamIds": [
+        121,
+        143
+      ],
+      "assets": [
+        {
+          "personId": 548384,
+          "name": "Brooks Raley",
+          "fromTeamId": 121,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 701811,
+          "name": "John Spikerman",
+          "fromTeamId": 143,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 826939,
+          "name": "Luke Gabrysh",
+          "fromTeamId": 143,
+          "toTeamId": 121,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934271,
+      "date": "2026-08-03",
+      "description": "New York Mets traded C Ben Rortvedt to Los Angeles Dodgers for RHP Chayce McDermott.",
+      "teamIds": [
+        119,
+        121
+      ],
+      "assets": [
+        {
+          "personId": 694646,
+          "name": "Chayce McDermott",
+          "fromTeamId": 119,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 666163,
+          "name": "Ben Rortvedt",
+          "fromTeamId": 121,
+          "toTeamId": 119,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934277,
+      "date": "2026-08-03",
+      "description": "Los Angeles Angels traded RF Jo Adell to Cleveland Guardians for C Jacob Cozart.",
+      "teamIds": [
+        108,
+        114
+      ],
+      "assets": [
+        {
+          "personId": 666176,
+          "name": "Jo Adell",
+          "fromTeamId": 108,
+          "toTeamId": 114,
+          "kind": "player"
+        },
+        {
+          "personId": 695524,
+          "name": "Jacob Cozart",
+          "fromTeamId": 114,
+          "toTeamId": 108,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934279,
+      "date": "2026-08-03",
+      "description": "Baltimore Orioles traded LF Taylor Ward to Seattle Mariners for RHP Alex Hoppe, RHP Brock Moore and RHP Harrison Kreiling.",
+      "teamIds": [
+        110,
+        136
+      ],
+      "assets": [
+        {
+          "personId": 621493,
+          "name": "Taylor Ward",
+          "fromTeamId": 110,
+          "toTeamId": 136,
+          "kind": "player"
+        },
+        {
+          "personId": 695380,
+          "name": "Alex Hoppe",
+          "fromTeamId": 136,
+          "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 801653,
+          "name": "Harrison Kreiling",
+          "fromTeamId": 136,
+          "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 822160,
+          "name": "Brock Moore",
+          "fromTeamId": 136,
+          "toTeamId": 110,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934286,
+      "date": "2026-08-03",
+      "description": "Texas Rangers traded 2B Josh Smith and RHP Josh Stephan to Toronto Blue Jays for LHP Adam Macko.",
+      "teamIds": [
+        140,
+        141
+      ],
+      "assets": [
+        {
+          "personId": 669701,
+          "name": "Josh Smith",
+          "fromTeamId": 140,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 695776,
+          "name": "Josh Stephan",
+          "fromTeamId": 140,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 671936,
+          "name": "Adam Macko",
+          "fromTeamId": 141,
+          "toTeamId": 140,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934290,
+      "date": "2026-08-03",
+      "description": "Colorado Rockies traded CF Brenton Doyle to Chicago White Sox for RHP Mason Adams and SS Carlos Vielma.",
+      "teamIds": [
+        115,
+        145
+      ],
+      "assets": [
+        {
+          "personId": 686668,
+          "name": "Brenton Doyle",
+          "fromTeamId": 115,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 690279,
+          "name": "Mason Adams",
+          "fromTeamId": 145,
+          "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 837886,
+          "name": "Carlos Vielma",
+          "fromTeamId": 145,
+          "toTeamId": 115,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934306,
+      "date": "2026-08-03",
+      "description": "San Francisco Giants traded LHP Robbie Ray to San Diego Padres for RHP Miguel Mendez and SS Joniel Hernandez.",
+      "teamIds": [
+        135,
+        137
+      ],
+      "assets": [
+        {
+          "personId": 700280,
+          "name": "Miguel Mendez",
+          "fromTeamId": 135,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 836592,
+          "name": "Joniel Hernandez",
+          "fromTeamId": 135,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 592662,
+          "name": "Robbie Ray",
+          "fromTeamId": 137,
+          "toTeamId": 135,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934309,
+      "date": "2026-08-03",
+      "description": "New York Mets traded RHP Luke Weaver and cash to Pittsburgh Pirates for SS Sammy Stafura.",
+      "teamIds": [
+        121,
+        134
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 121,
+          "toTeamId": 134,
+          "kind": "cash"
+        },
+        {
+          "personId": 596133,
+          "name": "Luke Weaver",
+          "fromTeamId": 121,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 806230,
+          "name": "Sammy Stafura",
+          "fromTeamId": 134,
+          "toTeamId": 121,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934310,
+      "date": "2026-08-03",
+      "description": "Miami Marlins traded C Liam Hicks to Tampa Bay Rays for 3B Brayden Taylor, SS Adrian Santana and RHP Jacob Kisting.",
+      "teamIds": [
+        139,
+        146
+      ],
+      "assets": [
+        {
+          "personId": 694966,
+          "name": "Brayden Taylor",
+          "fromTeamId": 139,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 803745,
+          "name": "Adrian Santana",
+          "fromTeamId": 139,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 827526,
+          "name": "Jacob Kisting",
+          "fromTeamId": 139,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 689414,
+          "name": "Liam Hicks",
+          "fromTeamId": 146,
+          "toTeamId": 139,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934315,
+      "date": "2026-08-03",
+      "description": "Philadelphia Phillies traded RHP Nolan Hoffman to Kansas City Royals for RHP Manuel Colon.",
+      "teamIds": [
+        118,
+        143
+      ],
+      "assets": [
+        {
+          "personId": 823841,
+          "name": "Manuel Colon",
+          "fromTeamId": 118,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 676510,
+          "name": "Nolan Hoffman",
+          "fromTeamId": 143,
+          "toTeamId": 118,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934330,
+      "date": "2026-08-03",
+      "description": "Baltimore Orioles traded C Adley Rutschman, C Jake Rogers and cash to Boston Red Sox for RHP Kyson Witherspoon, CF Enddy Azocar, C Carlos Narváez, RHP Anthony Eyanson and Player To Be Named Later.",
+      "teamIds": [
+        110,
+        111
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 110,
+          "toTeamId": 111,
+          "kind": "cash"
+        },
+        {
+          "personId": 668670,
+          "name": "Jake Rogers",
+          "fromTeamId": 110,
+          "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": 668939,
+          "name": "Adley Rutschman",
+          "fromTeamId": 110,
+          "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 111,
+          "toTeamId": 110,
+          "kind": "cash"
+        },
+        {
+          "personId": 665966,
+          "name": "Carlos Narváez",
+          "fromTeamId": 111,
+          "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 804817,
+          "name": "Kyson Witherspoon",
+          "fromTeamId": 111,
+          "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 809254,
+          "name": "Anthony Eyanson",
+          "fromTeamId": 111,
+          "toTeamId": 110,
+          "kind": "player"
+        },
+        {
+          "personId": 821150,
+          "name": "Enddy Azocar",
+          "fromTeamId": 111,
+          "toTeamId": 110,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934338,
+      "date": "2026-08-03",
+      "description": "Miami Marlins traded LHP Braxton Garrett to Chicago Cubs for 3B Jonathon Long and RHP Jace Beck.",
+      "teamIds": [
+        112,
+        146
+      ],
+      "assets": [
+        {
+          "personId": 675085,
+          "name": "Jonathon Long",
+          "fromTeamId": 112,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 689476,
+          "name": "Jace Beck",
+          "fromTeamId": 112,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 666129,
+          "name": "Braxton Garrett",
+          "fromTeamId": 146,
+          "toTeamId": 112,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934344,
+      "date": "2026-08-03",
+      "description": "Toronto Blue Jays traded CF Daulton Varsho and cash to Houston Astros for RHP Spencer Arrighetti.",
+      "teamIds": [
+        117,
+        141
+      ],
+      "assets": [
+        {
+          "personId": 681293,
+          "name": "Spencer Arrighetti",
+          "fromTeamId": 117,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 141,
+          "toTeamId": 117,
+          "kind": "cash"
+        },
+        {
+          "personId": 662139,
+          "name": "Daulton Varsho",
+          "fromTeamId": 141,
+          "toTeamId": 117,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934346,
+      "date": "2026-08-03",
+      "description": "Los Angeles Angels traded RHP Ryan Zeferjahn to Chicago Cubs for C Moisés Ballesteros and RHP Mason McGwire.",
+      "teamIds": [
+        108,
+        112
+      ],
+      "assets": [
+        {
+          "personId": 666171,
+          "name": "Ryan Zeferjahn",
+          "fromTeamId": 108,
+          "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 694208,
+          "name": "Moisés Ballesteros",
+          "fromTeamId": 112,
+          "toTeamId": 108,
+          "kind": "player"
+        },
+        {
+          "personId": 702576,
+          "name": "Mason McGwire",
+          "fromTeamId": 112,
+          "toTeamId": 108,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934349,
+      "date": "2026-08-03",
+      "description": "Atlanta Braves traded RF Eli White to Boston Red Sox for RHP Tyler Uberstine.",
+      "teamIds": [
+        111,
+        144
+      ],
+      "assets": [
+        {
+          "personId": 700413,
+          "name": "Tyler Uberstine",
+          "fromTeamId": 111,
+          "toTeamId": 144,
+          "kind": "player"
+        },
+        {
+          "personId": 642201,
+          "name": "Eli White",
+          "fromTeamId": 144,
+          "toTeamId": 111,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934350,
+      "date": "2026-08-03",
+      "description": "Atlanta Braves traded C Joey Bart to Chicago White Sox for RHP Duncan Davitt.",
+      "teamIds": [
+        144,
+        145
+      ],
+      "assets": [
+        {
+          "personId": 663698,
+          "name": "Joey Bart",
+          "fromTeamId": 144,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": 701474,
+          "name": "Duncan Davitt",
+          "fromTeamId": 145,
+          "toTeamId": 144,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934353,
+      "date": "2026-08-03",
+      "description": "St. Louis Cardinals traded RHP Dustin May and LHP JoJo Romero to Milwaukee Brewers for OF Alexander Frias and OF Josiah Ragsdale.",
+      "teamIds": [
+        138,
+        158
+      ],
+      "assets": [
+        {
+          "personId": 668941,
+          "name": "JoJo Romero",
+          "fromTeamId": 138,
+          "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 669160,
+          "name": "Dustin May",
+          "fromTeamId": 138,
+          "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 825484,
+          "name": "Alexander Frias",
+          "fromTeamId": 158,
+          "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 828824,
+          "name": "Josiah Ragsdale",
+          "fromTeamId": 158,
+          "toTeamId": 138,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934358,
+      "date": "2026-08-03",
+      "description": "Tampa Bay Rays traded RHP Michael Forret to Baltimore Orioles for RHP Tyler Wells.",
+      "teamIds": [
+        110,
+        139
+      ],
+      "assets": [
+        {
+          "personId": 669330,
+          "name": "Tyler Wells",
+          "fromTeamId": 110,
+          "toTeamId": 139,
+          "kind": "player"
+        },
+        {
+          "personId": 702650,
+          "name": "Michael Forret",
+          "fromTeamId": 139,
+          "toTeamId": 110,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934359,
+      "date": "2026-08-03",
+      "description": "Colorado Rockies traded RHP Antonio Senzatela to Milwaukee Brewers for LHP Mark Manfredi and SS Juan Martinez.",
+      "teamIds": [
+        115,
+        158
+      ],
+      "assets": [
+        {
+          "personId": 622608,
+          "name": "Antonio Senzatela",
+          "fromTeamId": 115,
+          "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": 815081,
+          "name": "Mark Manfredi",
+          "fromTeamId": 158,
+          "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 821197,
+          "name": "Juan Martinez",
+          "fromTeamId": 158,
+          "toTeamId": 115,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934362,
+      "date": "2026-08-03",
+      "description": "Toronto Blue Jays traded RHP Jeff Hoffman and Other Considerations to Minnesota Twins for LHP Dasan Hill, 2B Dameury Pena, RHP John Klein and Other Considerations.",
+      "teamIds": [
+        141,
+        142
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 141,
+          "toTeamId": 142,
+          "kind": "other"
+        },
+        {
+          "personId": 656546,
+          "name": "Jeff Hoffman",
+          "fromTeamId": 141,
+          "toTeamId": 142,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 142,
+          "toTeamId": 141,
+          "kind": "other"
+        },
+        {
+          "personId": 804619,
+          "name": "John Klein",
+          "fromTeamId": 142,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 808365,
+          "name": "Dameury Pena",
+          "fromTeamId": 142,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 815598,
+          "name": "Dasan Hill",
+          "fromTeamId": 142,
+          "toTeamId": 141,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934368,
+      "date": "2026-08-03",
+      "description": "Washington Nationals traded LHP Foster Griffin to Cleveland Guardians for LHP Will Dion, LHP Josh Hartle, OF Nick Mitchell and RHP Kendeglys Virguez.",
+      "teamIds": [
+        114,
+        120
+      ],
+      "assets": [
+        {
+          "personId": 691776,
+          "name": "Josh Hartle",
+          "fromTeamId": 114,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 702021,
+          "name": "Will Dion",
+          "fromTeamId": 114,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 802068,
+          "name": "Kendeglys Virguez",
+          "fromTeamId": 114,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 814455,
+          "name": "Nick Mitchell",
+          "fromTeamId": 114,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 656492,
+          "name": "Foster Griffin",
+          "fromTeamId": 120,
+          "toTeamId": 114,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934374,
+      "date": "2026-08-03",
+      "description": "San Francisco Giants traded LF Heliot Ramos to New York Yankees for LHP Henry Lalane and SS Kaeden Kent.",
+      "teamIds": [
+        137,
+        147
+      ],
+      "assets": [
+        {
+          "personId": 671218,
+          "name": "Heliot Ramos",
+          "fromTeamId": 137,
+          "toTeamId": 147,
+          "kind": "player"
+        },
+        {
+          "personId": 700649,
+          "name": "Henry Lalane",
+          "fromTeamId": 147,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 809763,
+          "name": "Kaeden Kent",
+          "fromTeamId": 147,
+          "toTeamId": 137,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934377,
+      "date": "2026-08-03",
+      "description": "Kansas City Royals traded LHP Kris Bubic to Los Angeles Dodgers for RHP Carlos Duran.",
+      "teamIds": [
+        118,
+        119
+      ],
+      "assets": [
+        {
+          "personId": 663460,
+          "name": "Kris Bubic",
+          "fromTeamId": 118,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 679922,
+          "name": "Carlos Duran",
+          "fromTeamId": 119,
+          "toTeamId": 118,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934383,
+      "date": "2026-08-03",
+      "description": "Chicago Cubs traded SS Jefferson Rojas to New York Mets for RHP Clay Holmes and LF Tyrone Taylor.",
+      "teamIds": [
+        112,
+        121
+      ],
+      "assets": [
+        {
+          "personId": 800473,
+          "name": "Jefferson Rojas",
+          "fromTeamId": 112,
+          "toTeamId": 121,
+          "kind": "player"
+        },
+        {
+          "personId": 605280,
+          "name": "Clay Holmes",
+          "fromTeamId": 121,
+          "toTeamId": 112,
+          "kind": "player"
+        },
+        {
+          "personId": 621438,
+          "name": "Tyrone Taylor",
+          "fromTeamId": 121,
+          "toTeamId": 112,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934386,
+      "date": "2026-08-03",
+      "description": "Cincinnati Reds traded DH Nathaniel Lowe and cash to Cleveland Guardians for RHP Alejandro Rivera and 2B Juan Brito.",
+      "teamIds": [
+        113,
+        114
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 113,
+          "toTeamId": 114,
+          "kind": "cash"
+        },
+        {
+          "personId": 663993,
+          "name": "Nathaniel Lowe",
+          "fromTeamId": 113,
+          "toTeamId": 114,
+          "kind": "player"
+        },
+        {
+          "personId": 682877,
+          "name": "Juan Brito",
+          "fromTeamId": 114,
+          "toTeamId": 113,
+          "kind": "player"
+        },
+        {
+          "personId": 821122,
+          "name": "Alejandro Rivera",
+          "fromTeamId": 114,
+          "toTeamId": 113,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934391,
+      "date": "2026-08-03",
+      "description": "Washington Nationals traded LF Christian Franklin to Baltimore Orioles for RHP Joe Glassey.",
+      "teamIds": [
+        110,
+        120
+      ],
+      "assets": [
+        {
+          "personId": 812521,
+          "name": "Joe Glassey",
+          "fromTeamId": 110,
+          "toTeamId": 120,
+          "kind": "player"
+        },
+        {
+          "personId": 681047,
+          "name": "Christian Franklin",
+          "fromTeamId": 120,
+          "toTeamId": 110,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934393,
+      "date": "2026-08-03",
+      "description": "Pittsburgh Pirates traded RHP Kyle Robinson to Los Angeles Angels for RHP Kirby Yates.",
+      "teamIds": [
+        108,
+        134
+      ],
+      "assets": [
+        {
+          "personId": 489446,
+          "name": "Kirby Yates",
+          "fromTeamId": 108,
+          "toTeamId": 134,
+          "kind": "player"
+        },
+        {
+          "personId": 701836,
+          "name": "Kyle Robinson",
+          "fromTeamId": 134,
+          "toTeamId": 108,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934397,
+      "date": "2026-08-03",
+      "description": "Cincinnati Reds traded LHP Caleb Ferguson to St. Louis Cardinals for Other Considerations.",
+      "teamIds": [
+        113,
+        138
+      ],
+      "assets": [
+        {
+          "personId": 657571,
+          "name": "Caleb Ferguson",
+          "fromTeamId": 113,
+          "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 138,
+          "toTeamId": 113,
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "id": 934398,
+      "date": "2026-08-03",
+      "description": "Milwaukee Brewers traded RHP Codi Heuer to Baltimore Orioles for cash.",
+      "teamIds": [
+        110,
+        158
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 110,
+          "toTeamId": 158,
+          "kind": "cash"
+        },
+        {
+          "personId": 676051,
+          "name": "Codi Heuer",
+          "fromTeamId": 158,
+          "toTeamId": 110,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934399,
+      "date": "2026-08-03",
+      "description": "Miami Marlins traded RF Rece Hinds to Baltimore Orioles for cash.",
+      "teamIds": [
+        110,
+        146
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 110,
+          "toTeamId": 146,
+          "kind": "cash"
+        },
+        {
+          "personId": 677956,
+          "name": "Rece Hinds",
+          "fromTeamId": 146,
+          "toTeamId": 110,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934400,
+      "date": "2026-08-03",
+      "description": "Boston Red Sox traded 2B Marcelo Mayer to San Francisco Giants for LHP Erik Miller and CF Carlos Gutierrez.",
+      "teamIds": [
+        111,
+        137
+      ],
+      "assets": [
+        {
+          "personId": 691785,
+          "name": "Marcelo Mayer",
+          "fromTeamId": 111,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 669062,
+          "name": "Erik Miller",
+          "fromTeamId": 137,
+          "toTeamId": 111,
+          "kind": "player"
+        },
+        {
+          "personId": 806872,
+          "name": "Carlos Gutierrez",
+          "fromTeamId": 137,
+          "toTeamId": 111,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934402,
+      "date": "2026-08-03",
+      "description": "Detroit Tigers traded RHP Casey Mize and 3B Gage Workman to San Diego Padres for LHP Kash Mayfield and LHP Jackson Wolf.",
+      "teamIds": [
+        116,
+        135
+      ],
+      "assets": [
+        {
+          "personId": 663554,
+          "name": "Casey Mize",
+          "fromTeamId": 116,
+          "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 669398,
+          "name": "Gage Workman",
+          "fromTeamId": 116,
+          "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 680232,
+          "name": "Jackson Wolf",
+          "fromTeamId": 135,
+          "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": 824026,
+          "name": "Kash Mayfield",
+          "fromTeamId": 135,
+          "toTeamId": 116,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934408,
+      "date": "2026-08-03",
+      "description": "St. Louis Cardinals traded LF Lars Nootbaar to Arizona Diamondbacks for RHP Daniel Eagen, LHP Sandro Santana and Player To Be Named Later.",
+      "teamIds": [
+        109,
+        138
+      ],
+      "assets": [
+        {
+          "personId": 811139,
+          "name": "Sandro Santana",
+          "fromTeamId": 109,
+          "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 811666,
+          "name": "Daniel Eagen",
+          "fromTeamId": 109,
+          "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 109,
+          "toTeamId": 138,
+          "kind": "ptbnl"
+        },
+        {
+          "personId": 663457,
+          "name": "Lars Nootbaar",
+          "fromTeamId": 138,
+          "toTeamId": 109,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934414,
+      "date": "2026-08-03",
+      "description": "Tampa Bay Rays traded C Hunter Feduccia and RHP Jacob Kmatz to Los Angeles Dodgers for CF Jack Suwinski and Other Considerations.",
+      "teamIds": [
+        119,
+        139
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 119,
+          "toTeamId": 139,
+          "kind": "other"
+        },
+        {
+          "personId": 669261,
+          "name": "Jack Suwinski",
+          "fromTeamId": 119,
+          "toTeamId": 139,
+          "kind": "player"
+        },
+        {
+          "personId": 676439,
+          "name": "Hunter Feduccia",
+          "fromTeamId": 139,
+          "toTeamId": 119,
+          "kind": "player"
+        },
+        {
+          "personId": 695771,
+          "name": "Jacob Kmatz",
+          "fromTeamId": 139,
+          "toTeamId": 119,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934417,
+      "date": "2026-08-03",
+      "description": "Pittsburgh Pirates traded RHP Hunter Stratton to San Diego Padres for RHP Andrew Moore.",
+      "teamIds": [
+        134,
+        135
+      ],
+      "assets": [
+        {
+          "personId": 676702,
+          "name": "Hunter Stratton",
+          "fromTeamId": 134,
+          "toTeamId": 135,
+          "kind": "player"
+        },
+        {
+          "personId": 681097,
+          "name": "Andrew Moore",
+          "fromTeamId": 135,
+          "toTeamId": 134,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934420,
+      "date": "2026-08-03",
+      "description": "Colorado Rockies traded RHP Victor Vodnik to Miami Marlins for 1B Connor Norby and RHP Aiden May.",
+      "teamIds": [
+        115,
+        146
+      ],
+      "assets": [
+        {
+          "personId": 680767,
+          "name": "Victor Vodnik",
+          "fromTeamId": 115,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 681393,
+          "name": "Connor Norby",
+          "fromTeamId": 146,
+          "toTeamId": 115,
+          "kind": "player"
+        },
+        {
+          "personId": 801995,
+          "name": "Aiden May",
+          "fromTeamId": 146,
+          "toTeamId": 115,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934431,
+      "date": "2026-08-03",
+      "description": "Miami Marlins traded RHP Lake Bachar to Pittsburgh Pirates for RHP Brandan Bidois, LF Brian Sanchez and IF Hyun Seung Lee.",
+      "teamIds": [
+        134,
+        146
+      ],
+      "assets": [
+        {
+          "personId": 684049,
+          "name": "Brandan Bidois",
+          "fromTeamId": 134,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 809331,
+          "name": "Brian Sanchez",
+          "fromTeamId": 134,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 829748,
+          "name": "Hyun Seung Lee",
+          "fromTeamId": 134,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": 669199,
+          "name": "Lake Bachar",
+          "fromTeamId": 146,
+          "toTeamId": 134,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 934435,
+      "date": "2026-08-03",
+      "description": "Philadelphia Phillies traded RHP Seth Johnson to Athletics for RF Colby Thomas.",
+      "teamIds": [
+        133,
+        143
+      ],
+      "assets": [
+        {
+          "personId": 687515,
+          "name": "Colby Thomas",
+          "fromTeamId": 133,
+          "toTeamId": 143,
+          "kind": "player"
+        },
+        {
+          "personId": 686751,
+          "name": "Seth Johnson",
+          "fromTeamId": 143,
+          "toTeamId": 133,
           "kind": "player"
         }
       ]
