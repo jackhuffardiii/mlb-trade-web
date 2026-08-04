@@ -17,7 +17,9 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Trades ~90s + players ~2min incremental + savant ~15s. Headroom is for a
+    # deadline day when a lot of players are new to the dataset.
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -48,11 +50,48 @@ jobs:
         if: steps.diff.outputs.changed != 'true'
         run: git checkout -- public/data/trades.json
 
+      # Reads the (now current) trades.json for its candidate list, so it has to
+      # follow the trade fetch. Incremental: only players whose latest season is
+      # the current one are refetched, so this is a few hundred requests, not
+      # 3,174. A first run on a machine without players.json would do the full
+      # pull, but the file is committed, so that only happens by design.
+      - name: Refresh player season data
+        run: node scripts/fetch-players.mjs
+
+      # 24 bulk CSVs, one per season per player type. Cheap regardless.
+      - name: Refresh Savant percentiles
+        run: node scripts/fetch-savant.mjs
+
+      # Both files stamp `generated` with today's date whether or not any data
+      # moved, so committing them blind would push a multi-megabyte diff every
+      # single day for nothing. Same trap trades.json hit in d049da7; the diff
+      # here is line-based rather than a bespoke script because these files are
+      # pretty-printed and one grep is enough.
+      - name: Discard timestamp-only churn in derived data
+        run: |
+          for f in public/data/players.json public/data/savant.json; do
+            real=$(git diff --unified=0 -- "$f" \
+              | grep -E '^[+-]' \
+              | grep -vE '^(\+\+\+|---)' \
+              | grep -v '"generated"' \
+              | head -1)
+            if [ -z "$real" ]; then
+              echo "$f: timestamp only, discarding"
+              git checkout -- "$f"
+            else
+              echo "$f: real changes, keeping"
+            fi
+          done
+
       - name: Commit and push updated dataset
-        if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/trades.json
-          git commit -m "Refresh trade data: ${{ steps.diff.outputs.summary }}"
+          git add public/data/trades.json public/data/players.json public/data/savant.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed in any dataset."
+            exit 0
+          fi
+          git diff --cached --stat
+          git commit -m "Refresh data: ${{ steps.diff.outputs.summary }}"
           git push origin main
