@@ -18,6 +18,10 @@
   --raised: #161a23;
 
   --ink: #ece8e0;
+  /* Stat figures only. Everything else in the type scale is deliberately
+     muted; the numbers are the thing people came to read, so they get full
+     contrast (18.7:1 on the panel) while labels stay quiet. */
+  --figure: #ffffff;
   --ink-dim: #a3a8b2;
   --ink-faint: #6b7280;
   --ink-ghost: #454b56;
@@ -1396,6 +1400,7 @@ button.chip:hover {
   line-height: 1;
   letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
+  color: var(--figure);
 }
 
 .stat dd small {
@@ -2116,7 +2121,7 @@ button.crumb:hover {
 }
 
 .lg-num {
-  color: var(--ink-dim);
+  color: var(--figure);
 }
 
 /* The trade itself, cut across all five columns. This is the whole point of the
@@ -2289,7 +2294,7 @@ button.crumb:hover {
 }
 .compare-stats dd {
   margin: 0; font-family: var(--display); font-size: 24px; line-height: 1;
-  font-variant-numeric: tabular-nums; color: var(--ink);
+  font-variant-numeric: tabular-nums; color: var(--figure);
 }
 
 .compare-player {
