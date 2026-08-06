@@ -91,5 +91,13 @@ jobs:
             exit 0
           fi
           git diff --cached --stat
-          git commit -m "Refresh data: ${{ steps.diff.outputs.summary }}"
+          # The trades summary describes trades only. Reusing it verbatim
+          # produced commits reading "Refresh data: no changes" that carried
+          # 5,000 lines of moved player stats, which is worse than no message.
+          if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
+            msg="${{ steps.diff.outputs.summary }}"
+          else
+            msg="player and Savant data only, no trades"
+          fi
+          git commit -m "Refresh data: $msg"
           git push origin main
