@@ -17,9 +17,8 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    # Trades ~90s + players ~2min incremental + savant ~15s. Headroom is for a
-    # deadline day when a lot of players are new to the dataset.
-    timeout-minutes: 30
+    # Trades ~90s + players ~10s (batched) + savant ~7s.
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -50,11 +49,10 @@ jobs:
         if: steps.diff.outputs.changed != 'true'
         run: git checkout -- public/data/trades.json
 
-      # Reads the (now current) trades.json for its candidate list, so it has to
-      # follow the trade fetch. Incremental: only players whose latest season is
-      # the current one are refetched, so this is a few hundred requests, not
-      # 3,174. A first run on a machine without players.json would do the full
-      # pull, but the file is committed, so that only happens by design.
+      # Runs every day regardless of whether any trade happened -- player stats
+      # move on days the transaction wire is silent. Not gated on the trades
+      # diff for exactly that reason. Reads the (now current) trades.json for its
+      # candidate list, so it has to follow the trade fetch.
       - name: Refresh player season data
         run: node scripts/fetch-players.mjs
 

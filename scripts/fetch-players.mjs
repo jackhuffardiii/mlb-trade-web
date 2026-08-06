@@ -56,6 +56,11 @@ function todayStr() {
 
 const HYDRATE = "stats(group=[hitting,pitching],type=[yearByYear])";
 
+// The /people endpoint takes many ids at once with the same hydrate, so the
+// whole roster is a couple of dozen requests rather than one per player. 200
+// works; 100 keeps each response ~2.5 MB and the URL comfortably short.
+const BATCH = 100;
+
 // Sort by (season, seq) ascending. `seq` is the position the API returned the
 // split in, which is chronological -- Paredes 2024 comes back as TB then CHC,
 // the order he actually played them in. Sorting by teamId instead would put CHC
@@ -120,12 +125,7 @@ function extractGroup(statsArray, groupName, mapFn) {
     .sort(compareSeasonSeq);
 }
 
-async function fetchPlayer(id) {
-  const url = `https://statsapi.mlb.com/api/v1/people/${id}?hydrate=${encodeURIComponent(HYDRATE)}`;
-  const data = await fetchJson(url);
-  const person = data.people?.[0];
-  if (!person) throw new Error(`no person data for id ${id}`);
-
+function entryFor(person) {
   const hitting = extractGroup(person.stats, "hitting", mapHittingSplit);
   const pitching = extractGroup(person.stats, "pitching", mapPitchingSplit);
 
@@ -141,11 +141,43 @@ async function fetchPlayer(id) {
   return entry;
 }
 
-// Latest season on file across both stat groups, or -Infinity if the player
-// has no season rows at all (shouldn't happen, but don't crash on it).
+/** One request for up to BATCH players. Returns id -> entry. */
+async function fetchBatch(ids) {
+  const url =
+    `https://statsapi.mlb.com/api/v1/people?personIds=${ids.join(",")}` +
+    `&hydrate=${encodeURIComponent(HYDRATE)}`;
+  const data = await fetchJson(url);
+  const out = new Map();
+  for (const person of data.people || []) {
+    if (person?.id != null) out.set(person.id, entryFor(person));
+  }
+  return out;
+}
+
+// Latest season on file across both stat groups, or -Infinity if the player has
+// no season rows at all.
 function latestSeasonOnFile(entry) {
   const seasons = [...(entry.hitting || []), ...(entry.pitching || [])].map((r) => r.season);
   return seasons.length ? Math.max(...seasons) : -Infinity;
+}
+
+/**
+ * Who to refetch. Anyone who could still add a line this season:
+ *
+ *   - never fetched;
+ *   - no major-league record at all -- a prospect can debut any day, and under
+ *     the old "latest === currentYear" rule those 1,069 players were frozen
+ *     blank forever;
+ *   - last played this season or last season -- catches a return from injury or
+ *     the minors, which the old rule also missed for 236 players.
+ *
+ * Anyone whose last game is two or more seasons back is done; leave them alone.
+ */
+function needsRefresh(entry, currentYear) {
+  if (!entry) return true;
+  const latest = latestSeasonOnFile(entry);
+  if (latest === -Infinity) return true;
+  return latest >= currentYear - 1;
 }
 
 async function loadExistingPlayers() {
@@ -195,6 +227,9 @@ async function main() {
   // through completely unchanged.
   const players = {};
 
+  // Decide first, then fetch in batches, then reassemble in id order so the
+  // output stays canonical regardless of how the batches came back.
+  const toFetch = [];
   for (const id of allCandidateIds) {
     const key = String(id);
     const existing = existingPlayers[key];
@@ -204,25 +239,50 @@ async function main() {
       if (existing) players[key] = existing;
       continue;
     }
-
-    const needsFetch = !existing || latestSeasonOnFile(existing) === currentYear;
-
-    if (!needsFetch) {
+    if (!needsRefresh(existing, currentYear)) {
       players[key] = existing;
       skipped.push(id);
       continue;
     }
+    toFetch.push(id);
+  }
 
+  console.log(`Refreshing ${toFetch.length}, skipping ${skipped.length}.`);
+
+  const fresh = new Map();
+  for (let i = 0; i < toFetch.length; i += BATCH) {
+    const slice = toFetch.slice(i, i + BATCH);
     try {
-      players[key] = await fetchPlayer(id);
-      fetched.push(id);
+      for (const [id, entry] of await fetchBatch(slice)) fresh.set(id, entry);
     } catch (err) {
-      failed.push({ id, error: err.message });
-      console.warn(`  WARN: failed to fetch player ${id}: ${err.message}`);
-      if (existing) players[key] = existing;
+      // A whole batch failing is survivable: keep whatever was already on file
+      // for those ids and carry on.
+      for (const id of slice) failed.push({ id, error: err.message });
+      console.warn(`  WARN: batch ${i / BATCH + 1} failed: ${err.message}`);
     }
     await sleep(REQUEST_DELAY_MS);
   }
+
+  for (const id of toFetch) {
+    const key = String(id);
+    if (fresh.has(id)) {
+      players[key] = fresh.get(id);
+      fetched.push(id);
+    } else if (existingPlayers[key]) {
+      // Asked for but not returned (or the batch failed): keep what we had.
+      players[key] = existingPlayers[key];
+    }
+  }
+
+  // Re-sort: batch reassembly appended in toFetch order, but skipped players
+  // were inserted earlier. Rebuild strictly ascending by id.
+  const ordered = {};
+  for (const id of allCandidateIds) {
+    const key = String(id);
+    if (players[key]) ordered[key] = players[key];
+  }
+  Object.keys(players).forEach((k) => delete players[k]);
+  Object.assign(players, ordered);
 
   const output = {
     generated: todayStr(),

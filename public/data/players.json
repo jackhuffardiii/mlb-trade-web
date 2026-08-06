@@ -214614,7 +214614,7 @@
     },
     "650859": {
       "name": "Luis Rengifo",
-      "position": "3B",
+      "position": "LF",
       "bats": "S",
       "throws": "R",
       "debut": "2019-04-25",
@@ -253360,6 +253360,23 @@
           "ops": ".636",
           "sb": 0,
           "seq": 4
+        },
+        {
+          "season": 2026,
+          "teamId": 119,
+          "g": 2,
+          "pa": 2,
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "bb": 0,
+          "so": 0,
+          "avg": ".000",
+          "obp": ".000",
+          "slg": ".000",
+          "ops": ".000",
+          "sb": 0,
+          "seq": 5
         }
       ],
       "pitching": [
@@ -263164,7 +263181,7 @@
     },
     "669261": {
       "name": "Jack Suwinski",
-      "position": "RF",
+      "position": "CF",
       "bats": "L",
       "throws": "L",
       "debut": "2022-04-26",
@@ -265855,7 +265872,7 @@
     },
     "669471": {
       "name": "Devin Mann",
-      "position": "3B",
+      "position": "2B",
       "bats": "R",
       "throws": "R",
       "debut": null
@@ -282938,7 +282955,26 @@
       "position": "SS",
       "bats": "R",
       "throws": "R",
-      "debut": null
+      "debut": "2026-08-04",
+      "hitting": [
+        {
+          "season": 2026,
+          "teamId": 137,
+          "g": 2,
+          "pa": 5,
+          "ab": 5,
+          "h": 1,
+          "hr": 0,
+          "bb": 0,
+          "so": 1,
+          "avg": ".200",
+          "obp": ".200",
+          "slg": ".400",
+          "ops": ".600",
+          "sb": 0,
+          "seq": 0
+        }
+      ]
     },
     "678821": {
       "name": "Luis Peralta",
@@ -285646,7 +285682,26 @@
       "position": "LF",
       "bats": "R",
       "throws": "R",
-      "debut": null
+      "debut": "2026-08-04",
+      "hitting": [
+        {
+          "season": 2026,
+          "teamId": 110,
+          "g": 2,
+          "pa": 6,
+          "ab": 5,
+          "h": 0,
+          "hr": 0,
+          "bb": 1,
+          "so": 2,
+          "avg": ".000",
+          "obp": ".167",
+          "slg": ".000",
+          "ops": ".167",
+          "sb": 1,
+          "seq": 0
+        }
+      ]
     },
     "681066": {
       "name": "Ky Bush",
@@ -289192,6 +289247,23 @@
           "ops": ".517",
           "sb": 1,
           "seq": 1
+        },
+        {
+          "season": 2026,
+          "teamId": 134,
+          "g": 1,
+          "pa": 2,
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "bb": 1,
+          "so": 0,
+          "avg": ".000",
+          "obp": ".500",
+          "slg": ".000",
+          "ops": ".500",
+          "sb": 0,
+          "seq": 2
         }
       ]
     },
@@ -292621,7 +292693,7 @@
     },
     "686765": {
       "name": "Nick Sogard",
-      "position": "3B",
+      "position": "2B",
       "bats": "S",
       "throws": "R",
       "debut": "2024-08-02",
@@ -296906,7 +296978,27 @@
       "position": "P",
       "bats": "R",
       "throws": "R",
-      "debut": null
+      "debut": "2026-08-04",
+      "pitching": [
+        {
+          "season": 2026,
+          "teamId": 115,
+          "g": 1,
+          "gs": 0,
+          "ip": "1.0",
+          "er": 1,
+          "era": "9.00",
+          "so": 0,
+          "bb": 0,
+          "h": 2,
+          "hr": 0,
+          "whip": "2.00",
+          "w": 0,
+          "l": 1,
+          "sv": 0,
+          "seq": 0
+        }
+      ]
     },
     "693312": {
       "name": "Kyle Nicolas",
@@ -299462,7 +299554,26 @@
       "position": "LF",
       "bats": "L",
       "throws": "R",
-      "debut": null
+      "debut": "2026-08-04",
+      "hitting": [
+        {
+          "season": 2026,
+          "teamId": 113,
+          "g": 1,
+          "pa": 3,
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "bb": 1,
+          "so": 0,
+          "avg": ".000",
+          "obp": ".333",
+          "slg": ".000",
+          "ops": ".333",
+          "sb": 0,
+          "seq": 0
+        }
+      ]
     },
     "699316": {
       "name": "Pedro Quintana",
