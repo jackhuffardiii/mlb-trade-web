@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: refresh-trades
@@ -101,3 +102,46 @@ jobs:
           fi
           git commit -m "Refresh data: $msg"
           git push origin main
+
+      # GitHub only emails about a failed run if the ACCOUNT-level Actions
+      # notification preference is on, and that preference is not reachable from
+      # the API. An issue is. Repo owners are notified about issues in their own
+      # repo by default, so this delivers the mail without depending on a
+      # setting this workflow cannot see or change.
+      #
+      # Note the residual gap: this only fires when the job RUNS and fails. A run
+      # that never happens -- a GitHub Actions outage, or the 60-day inactivity
+      # disable -- is still silent. Catching that needs a check that lives
+      # somewhere other than this workflow.
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          open=$(gh issue list --label refresh-failure --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$open" ]; then
+            # One issue per outage, not one per day.
+            gh issue comment "$open" --body "Failed again on $(date -u '+%Y-%m-%d %H:%M UTC'): $RUN_URL"
+          else
+            gh issue create \
+              --title "Daily data refresh is failing" \
+              --label refresh-failure \
+              --body "The refresh workflow failed on $(date -u '+%Y-%m-%d %H:%M UTC').
+
+          Run: $RUN_URL
+
+          This issue closes itself on the next successful run, and collects a comment per
+          failure until then. If the failing step is \`Set up job\`, it is usually a GitHub
+          Actions outage rather than anything in this repo."
+          fi
+
+      - name: Clear failure report
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          for n in $(gh issue list --label refresh-failure --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Green again: $RUN_URL"
+          done
