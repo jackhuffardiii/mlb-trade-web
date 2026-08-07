@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-04",
+  "generated": "2026-08-07",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-08-04"
+    "end": "2026-08-07"
   },
   "teams": [
     {
@@ -68118,6 +68118,24 @@
           "name": "Seth Johnson",
           "fromTeamId": 143,
           "toTeamId": 133,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 935740,
+      "date": "2026-08-05",
+      "description": "Miami Marlins traded 1B Jacob Berry to Kansas City Royals.",
+      "teamIds": [
+        118,
+        146
+      ],
+      "assets": [
+        {
+          "personId": 694351,
+          "name": "Jacob Berry",
+          "fromTeamId": 146,
+          "toTeamId": 118,
           "kind": "player"
         }
       ]
