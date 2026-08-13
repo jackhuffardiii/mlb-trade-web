@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-07",
+  "generated": "2026-08-13",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-08-07"
+    "end": "2026-08-13"
   },
   "teams": [
     {
@@ -68136,6 +68136,24 @@
           "name": "Jacob Berry",
           "fromTeamId": 146,
           "toTeamId": 118,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 937160,
+      "date": "2026-08-12",
+      "description": "Boston Red Sox traded CF Harold Rivas to Baltimore Orioles. Player to be named later from the 8/3 Adley Rutschman trade.",
+      "teamIds": [
+        110,
+        111
+      ],
+      "assets": [
+        {
+          "personId": 829093,
+          "name": "Harold Rivas",
+          "fromTeamId": 111,
+          "toTeamId": 110,
           "kind": "player"
         }
       ]
