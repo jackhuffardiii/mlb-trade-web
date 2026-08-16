@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-13",
+  "generated": "2026-08-16",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-08-13"
+    "end": "2026-08-16"
   },
   "teams": [
     {
@@ -68155,6 +68155,31 @@
           "fromTeamId": 111,
           "toTeamId": 110,
           "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 937716,
+      "date": "2026-08-15",
+      "description": "Athletics traded SS Jonathan Ornelas to Milwaukee Brewers for cash.",
+      "teamIds": [
+        133,
+        158
+      ],
+      "assets": [
+        {
+          "personId": 680716,
+          "name": "Jonathan Ornelas",
+          "fromTeamId": 133,
+          "toTeamId": 158,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 158,
+          "toTeamId": 133,
+          "kind": "cash"
         }
       ]
     }
