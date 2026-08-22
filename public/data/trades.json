@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-20",
+  "generated": "2026-08-22",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-08-20"
+    "end": "2026-08-22"
   },
   "teams": [
     {
@@ -68205,6 +68205,31 @@
           "fromTeamId": 147,
           "toTeamId": 134,
           "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 938772,
+      "date": "2026-08-20",
+      "description": "Tampa Bay Rays traded C Logan Driscoll to Miami Marlins for cash.",
+      "teamIds": [
+        139,
+        146
+      ],
+      "assets": [
+        {
+          "personId": 686482,
+          "name": "Logan Driscoll",
+          "fromTeamId": 139,
+          "toTeamId": 146,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 146,
+          "toTeamId": 139,
+          "kind": "cash"
         }
       ]
     }
