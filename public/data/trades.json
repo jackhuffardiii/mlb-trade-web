@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-22",
+  "generated": "2026-09-01",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-08-22"
+    "end": "2026-09-01"
   },
   "teams": [
     {
@@ -68229,6 +68229,56 @@
           "name": null,
           "fromTeamId": 146,
           "toTeamId": 139,
+          "kind": "cash"
+        }
+      ]
+    },
+    {
+      "id": 940275,
+      "date": "2026-08-31",
+      "description": "Tampa Bay Rays traded RF Jake Cave to Chicago White Sox for cash.",
+      "teamIds": [
+        139,
+        145
+      ],
+      "assets": [
+        {
+          "personId": 595909,
+          "name": "Jake Cave",
+          "fromTeamId": 139,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 145,
+          "toTeamId": 139,
+          "kind": "cash"
+        }
+      ]
+    },
+    {
+      "id": 940279,
+      "date": "2026-08-31",
+      "description": "Philadelphia Phillies traded LF Tommy Pham to Chicago White Sox for cash.",
+      "teamIds": [
+        143,
+        145
+      ],
+      "assets": [
+        {
+          "personId": 502054,
+          "name": "Tommy Pham",
+          "fromTeamId": 143,
+          "toTeamId": 145,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 145,
+          "toTeamId": 143,
           "kind": "cash"
         }
       ]
