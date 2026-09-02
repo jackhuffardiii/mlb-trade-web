@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-01",
+  "generated": "2026-09-02",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-09-01"
+    "end": "2026-09-02"
   },
   "teams": [
     {
@@ -68280,6 +68280,31 @@
           "fromTeamId": 145,
           "toTeamId": 143,
           "kind": "cash"
+        }
+      ]
+    },
+    {
+      "id": 940411,
+      "date": "2026-09-01",
+      "description": "Toronto Blue Jays traded RHP Sebastian Rodriguez to Los Angeles Dodgers for RHP José Rodríguez.",
+      "teamIds": [
+        119,
+        141
+      ],
+      "assets": [
+        {
+          "personId": 692064,
+          "name": "José Rodríguez",
+          "fromTeamId": 119,
+          "toTeamId": 141,
+          "kind": "player"
+        },
+        {
+          "personId": 842594,
+          "name": "Sebastian Rodriguez",
+          "fromTeamId": 141,
+          "toTeamId": 119,
+          "kind": "player"
         }
       ]
     }
