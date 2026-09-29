@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28",
+  "generated": "2026-09-29",
   "source": "Baseball Savant percentile-rankings leaderboard",
   "range": {
     "start": 2015,
@@ -82,7 +82,7 @@
         "xba": 68,
         "xslg": 59,
         "xobp": 38,
-        "xiso": 48,
+        "xiso": 47,
         "brl_percent": 48,
         "exit_velocity": 68,
         "max_ev": 80,
@@ -2704,7 +2704,7 @@
         "whiff_percent": 10,
         "chase_percent": 76,
         "sprint_speed": 16,
-        "oaa": 36
+        "oaa": 37
       },
       "2017": {
         "type": "batter",
@@ -2722,7 +2722,7 @@
         "whiff_percent": 4,
         "chase_percent": 62,
         "sprint_speed": 18,
-        "oaa": 79
+        "oaa": 80
       }
     },
     "435064": {
@@ -3035,7 +3035,7 @@
         "whiff_percent": 35,
         "chase_percent": 39,
         "sprint_speed": 24,
-        "oaa": 52
+        "oaa": 53
       },
       "2020": {
         "type": "batter",
@@ -3357,7 +3357,7 @@
         "whiff_percent": 58,
         "chase_percent": 41,
         "sprint_speed": 60,
-        "oaa": 46
+        "oaa": 45
       },
       "2018": {
         "type": "batter",
@@ -3393,7 +3393,7 @@
         "whiff_percent": 52,
         "chase_percent": 14,
         "sprint_speed": 51,
-        "oaa": 68
+        "oaa": 69
       },
       "2020": {
         "type": "batter",
@@ -3626,7 +3626,7 @@
         "whiff_percent": 61,
         "chase_percent": 5,
         "sprint_speed": 64,
-        "oaa": 89
+        "oaa": 90
       },
       "2017": {
         "type": "batter",
@@ -4388,7 +4388,7 @@
         "whiff_percent": 29,
         "chase_percent": 26,
         "sprint_speed": 62,
-        "oaa": 38
+        "oaa": 37
       },
       "2017": {
         "type": "batter",
@@ -6408,7 +6408,7 @@
         "whiff_percent": 33,
         "chase_percent": 70,
         "sprint_speed": 20,
-        "oaa": 48
+        "oaa": 49
       },
       "2018": {
         "type": "batter",
@@ -6893,7 +6893,7 @@
         "chase_percent": 47,
         "arm_strength": 32,
         "sprint_speed": 16,
-        "oaa": 25
+        "oaa": 26
       }
     },
     "453064": {
@@ -6930,7 +6930,7 @@
         "whiff_percent": 58,
         "chase_percent": 64,
         "sprint_speed": 26,
-        "oaa": 24
+        "oaa": 23
       },
       "2017": {
         "type": "batter",
@@ -7279,7 +7279,7 @@
         "xba": 27,
         "xslg": 30,
         "xobp": 47,
-        "xiso": 37,
+        "xiso": 36,
         "xera": 37,
         "brl_percent": 61,
         "exit_velocity": 79,
@@ -7918,7 +7918,7 @@
         "whiff_percent": 29,
         "chase_percent": 43,
         "fb_velocity": 26,
-        "fb_spin": 23,
+        "fb_spin": 22,
         "curve_spin": 19
       },
       "2017": {
@@ -9968,7 +9968,7 @@
         "whiff_percent": 88,
         "chase_percent": 87,
         "sprint_speed": 23,
-        "oaa": 84
+        "oaa": 85
       },
       "2018": {
         "type": "batter",
@@ -11837,7 +11837,7 @@
         "whiff_percent": 85,
         "chase_percent": 75,
         "sprint_speed": 64,
-        "oaa": 10
+        "oaa": 9
       },
       "2017": {
         "type": "batter",
@@ -11873,7 +11873,7 @@
         "whiff_percent": 71,
         "chase_percent": 21,
         "sprint_speed": 52,
-        "oaa": 77
+        "oaa": 78
       },
       "2019": {
         "type": "batter",
@@ -11936,7 +11936,7 @@
         "chase_percent": 49,
         "arm_strength": 25,
         "sprint_speed": 23,
-        "oaa": 83
+        "oaa": 82
       },
       "2023": {
         "type": "batter",
@@ -11955,7 +11955,7 @@
         "chase_percent": 52,
         "arm_strength": 15,
         "sprint_speed": 30,
-        "oaa": 90
+        "oaa": 89
       }
     },
     "462382": {
@@ -12679,7 +12679,7 @@
         "whiff_percent": 76,
         "chase_percent": 97,
         "sprint_speed": 26,
-        "oaa": 71
+        "oaa": 65
       },
       "2020": {
         "type": "batter",
@@ -13730,7 +13730,7 @@
         "whiff_percent": 1,
         "chase_percent": 75,
         "sprint_speed": 46,
-        "oaa": 90
+        "oaa": 89
       },
       "2017": {
         "type": "batter",
@@ -13847,7 +13847,7 @@
         "whiff_percent": 77,
         "chase_percent": 68,
         "sprint_speed": 14,
-        "oaa": 79
+        "oaa": 80
       },
       "2017": {
         "type": "batter",
@@ -15902,7 +15902,7 @@
         "whiff_percent": 80,
         "chase_percent": 29,
         "sprint_speed": 49,
-        "oaa": 31
+        "oaa": 32
       },
       "2018": {
         "type": "batter",
@@ -15956,7 +15956,7 @@
         "whiff_percent": 95,
         "chase_percent": 15,
         "sprint_speed": 59,
-        "oaa": 92
+        "oaa": 93
       },
       "2021": {
         "type": "batter",
@@ -15975,7 +15975,7 @@
         "chase_percent": 60,
         "arm_strength": 6,
         "sprint_speed": 51,
-        "oaa": 28
+        "oaa": 19
       },
       "2022": {
         "type": "batter",
@@ -16460,7 +16460,7 @@
         "max_ev": 56,
         "arm_strength": 22,
         "sprint_speed": 18,
-        "oaa": 85
+        "oaa": 86
       }
     },
     "500779": {
@@ -17340,7 +17340,7 @@
         "type": "batter",
         "max_ev": 79,
         "sprint_speed": 41,
-        "oaa": 20
+        "oaa": 21
       },
       "2019": {
         "type": "batter",
@@ -17437,7 +17437,7 @@
         "xwoba": 77,
         "xba": 11,
         "xslg": 88,
-        "xobp": 35,
+        "xobp": 37,
         "xiso": 97,
         "brl_percent": 98,
         "exit_velocity": 71,
@@ -19605,7 +19605,7 @@
         "whiff_percent": 94,
         "chase_percent": 39,
         "sprint_speed": 47,
-        "oaa": 68
+        "oaa": 69
       },
       "2020": {
         "type": "batter",
@@ -20506,7 +20506,7 @@
         "whiff_percent": 50,
         "chase_percent": 95,
         "sprint_speed": 61,
-        "oaa": 62
+        "oaa": 63
       },
       "2017": {
         "type": "batter",
@@ -20542,7 +20542,7 @@
         "whiff_percent": 35,
         "chase_percent": 62,
         "sprint_speed": 50,
-        "oaa": 15
+        "oaa": 16
       },
       "2019": {
         "type": "batter",
@@ -21457,7 +21457,7 @@
         "whiff_percent": 88,
         "chase_percent": 56,
         "sprint_speed": 88,
-        "oaa": 41
+        "oaa": 42
       },
       "2020": {
         "type": "batter",
@@ -24827,7 +24827,7 @@
         "type": "batter",
         "max_ev": 93,
         "sprint_speed": 17,
-        "oaa": 25
+        "oaa": 26
       },
       "2020": {
         "type": "batter",
@@ -24845,7 +24845,7 @@
         "whiff_percent": 23,
         "chase_percent": 60,
         "sprint_speed": 6,
-        "oaa": 72
+        "oaa": 73
       },
       "2021": {
         "type": "batter",
@@ -25577,7 +25577,7 @@
         "whiff_percent": 65,
         "chase_percent": 43,
         "sprint_speed": 32,
-        "oaa": 56
+        "oaa": 59
       },
       "2017": {
         "type": "batter",
@@ -25631,7 +25631,7 @@
         "whiff_percent": 80,
         "chase_percent": 28,
         "sprint_speed": 20,
-        "oaa": 70
+        "oaa": 71
       },
       "2020": {
         "type": "batter",
@@ -27726,12 +27726,12 @@
       },
       "2026": {
         "type": "pitcher",
-        "xwoba": 28,
+        "xwoba": 29,
         "xba": 18,
         "xslg": 49,
         "xobp": 14,
         "xiso": 73,
-        "xera": 28,
+        "xera": 29,
         "brl_percent": 90,
         "exit_velocity": 69,
         "max_ev": 1,
@@ -28779,7 +28779,7 @@
         "whiff_percent": 22,
         "chase_percent": 17,
         "sprint_speed": 14,
-        "oaa": 60
+        "oaa": 62
       },
       "2019": {
         "type": "batter",
@@ -30352,7 +30352,7 @@
         "whiff_percent": 46,
         "chase_percent": 12,
         "sprint_speed": 35,
-        "oaa": 29
+        "oaa": 30
       },
       "2017": {
         "type": "batter",
@@ -30429,7 +30429,7 @@
         "chase_percent": 23,
         "arm_strength": 24,
         "sprint_speed": 30,
-        "oaa": 47
+        "oaa": 52
       },
       "2022": {
         "type": "batter",
@@ -32128,7 +32128,7 @@
         "max_ev": 25,
         "arm_strength": 95,
         "sprint_speed": 49,
-        "oaa": 21
+        "oaa": 22
       },
       "2024": {
         "type": "batter",
@@ -32320,7 +32320,7 @@
         "chase_percent": 18,
         "arm_strength": 14,
         "sprint_speed": 30,
-        "oaa": 72
+        "oaa": 73
       },
       "2022": {
         "type": "batter",
@@ -32621,7 +32621,7 @@
         "type": "pitcher",
         "max_ev": 39,
         "fb_velocity": 17,
-        "fb_spin": 24,
+        "fb_spin": 23,
         "curve_spin": 23
       },
       "2018": {
@@ -34454,7 +34454,7 @@
         "type": "batter",
         "max_ev": 89,
         "sprint_speed": 25,
-        "oaa": 23
+        "oaa": 24
       },
       "2020": {
         "type": "batter",
@@ -34473,7 +34473,7 @@
         "chase_percent": 64,
         "arm_strength": 29,
         "sprint_speed": 14,
-        "oaa": 55
+        "oaa": 56
       },
       "2021": {
         "type": "batter",
@@ -37304,7 +37304,7 @@
         "whiff_percent": 19,
         "chase_percent": 79,
         "sprint_speed": 30,
-        "oaa": 63
+        "oaa": 64
       },
       "2020": {
         "type": "batter",
@@ -37427,7 +37427,7 @@
         "chase_percent": 28,
         "arm_strength": 39,
         "sprint_speed": 25,
-        "oaa": 9
+        "oaa": 8
       },
       "2026": {
         "type": "batter",
@@ -37955,7 +37955,7 @@
         "whiff_percent": 69,
         "chase_percent": 4,
         "sprint_speed": 37,
-        "oaa": 16
+        "oaa": 17
       },
       "2020": {
         "type": "batter",
@@ -38395,7 +38395,7 @@
         "whiff_percent": 25,
         "chase_percent": 4,
         "sprint_speed": 62,
-        "oaa": 91
+        "oaa": 92
       },
       "2019": {
         "type": "batter",
@@ -38750,7 +38750,7 @@
         "chase_percent": 16,
         "arm_strength": 43,
         "sprint_speed": 10,
-        "oaa": 82
+        "oaa": 81
       },
       "2026": {
         "type": "batter",
@@ -38772,7 +38772,7 @@
         "chase_percent": 35,
         "arm_strength": 37,
         "sprint_speed": 7,
-        "oaa": 81
+        "oaa": 80
       }
     },
     "571466": {
@@ -38926,7 +38926,7 @@
         "whiff_percent": 22,
         "chase_percent": 34,
         "sprint_speed": 10,
-        "oaa": 80
+        "oaa": 77
       },
       "2018": {
         "type": "batter",
@@ -39406,7 +39406,7 @@
         "max_ev": 16,
         "arm_strength": 10,
         "sprint_speed": 22,
-        "oaa": 11
+        "oaa": 12
       },
       "2026": {
         "type": "batter",
@@ -40595,7 +40595,7 @@
         "whiff_percent": 67,
         "chase_percent": 79,
         "sprint_speed": 68,
-        "oaa": 81
+        "oaa": 82
       },
       "2019": {
         "type": "batter",
@@ -42092,7 +42092,7 @@
         "whiff_percent": 39,
         "chase_percent": 14,
         "sprint_speed": 46,
-        "oaa": 29
+        "oaa": 28
       },
       "2019": {
         "type": "batter",
@@ -42110,7 +42110,7 @@
         "whiff_percent": 18,
         "chase_percent": 24,
         "sprint_speed": 32,
-        "oaa": 44
+        "oaa": 43
       },
       "2020": {
         "type": "batter",
@@ -42183,7 +42183,7 @@
         "whiff_percent": 77,
         "chase_percent": 62,
         "sprint_speed": 86,
-        "oaa": 40
+        "oaa": 41
       },
       "2018": {
         "type": "batter",
@@ -43160,7 +43160,7 @@
         "whiff_percent": 73,
         "chase_percent": 99,
         "sprint_speed": 42,
-        "oaa": 14
+        "oaa": 15
       },
       "2018": {
         "type": "batter",
@@ -43528,7 +43528,7 @@
         "xwoba": 52,
         "xba": 72,
         "xslg": 68,
-        "xobp": 35,
+        "xobp": 34,
         "xiso": 64,
         "xera": 52,
         "brl_percent": 54,
@@ -44937,7 +44937,7 @@
         "chase_percent": 78,
         "arm_strength": 60,
         "sprint_speed": 59,
-        "oaa": 85
+        "oaa": 84
       },
       "2022": {
         "type": "batter",
@@ -45218,7 +45218,7 @@
         "chase_percent": 36,
         "arm_strength": 76,
         "sprint_speed": 49,
-        "oaa": 91
+        "oaa": 92
       },
       "2026": {
         "type": "batter",
@@ -45636,7 +45636,7 @@
         "xwoba": 26,
         "xba": 30,
         "xslg": 27,
-        "xobp": 31,
+        "xobp": 30,
         "xiso": 28,
         "xera": 26,
         "brl_percent": 30,
@@ -46285,7 +46285,7 @@
         "whiff_percent": 45,
         "chase_percent": 69,
         "sprint_speed": 91,
-        "oaa": 84
+        "oaa": 85
       },
       "2018": {
         "type": "batter",
@@ -47289,7 +47289,7 @@
         "chase_percent": 15,
         "arm_strength": 11,
         "sprint_speed": 39,
-        "oaa": 88
+        "oaa": 89
       },
       "2024": {
         "type": "batter",
@@ -48276,7 +48276,7 @@
         "max_ev": 89,
         "arm_strength": 28,
         "sprint_speed": 56,
-        "oaa": 73
+        "oaa": 72
       },
       "2021": {
         "type": "batter",
@@ -48702,7 +48702,7 @@
       },
       "2026": {
         "type": "batter",
-        "xwoba": 59,
+        "xwoba": 60,
         "xba": 40,
         "xslg": 61,
         "xobp": 55,
@@ -49793,7 +49793,7 @@
         "whiff_percent": 6,
         "chase_percent": 23,
         "sprint_speed": 55,
-        "oaa": 41
+        "oaa": 42
       },
       "2018": {
         "type": "batter",
@@ -50011,7 +50011,7 @@
         "whiff_percent": 43,
         "chase_percent": 7,
         "sprint_speed": 64,
-        "oaa": 23
+        "oaa": 22
       },
       "2018": {
         "type": "batter",
@@ -52170,7 +52170,7 @@
         "xwoba": 22,
         "xba": 7,
         "xslg": 24,
-        "xobp": 31,
+        "xobp": 30,
         "xiso": 53,
         "xera": 22,
         "brl_percent": 48,
@@ -52243,7 +52243,7 @@
         "whiff_percent": 57,
         "chase_percent": 80,
         "sprint_speed": 83,
-        "oaa": 47
+        "oaa": 46
       },
       "2018": {
         "type": "batter",
@@ -52605,7 +52605,7 @@
         "whiff_percent": 82,
         "chase_percent": 20,
         "sprint_speed": 95,
-        "oaa": 78
+        "oaa": 79
       },
       "2018": {
         "type": "batter",
@@ -52727,7 +52727,7 @@
         "max_ev": 13,
         "arm_strength": 39,
         "sprint_speed": 90,
-        "oaa": 28
+        "oaa": 27
       }
     },
     "593423": {
@@ -53013,7 +53013,7 @@
         "whiff_percent": 93,
         "chase_percent": 70,
         "sprint_speed": 83,
-        "oaa": 60
+        "oaa": 61
       },
       "2018": {
         "type": "batter",
@@ -53056,7 +53056,7 @@
         "chase_percent": 75,
         "arm_strength": 25,
         "sprint_speed": 73,
-        "oaa": 53
+        "oaa": 52
       },
       "2021": {
         "type": "batter",
@@ -53286,12 +53286,12 @@
       },
       "2023": {
         "type": "pitcher",
-        "xwoba": 32,
+        "xwoba": 31,
         "xba": 60,
         "xslg": 73,
         "xobp": 6,
         "xiso": 77,
-        "xera": 32,
+        "xera": 31,
         "brl_percent": 63,
         "exit_velocity": 88,
         "max_ev": 58,
@@ -53314,7 +53314,7 @@
         "xwoba": 47,
         "xba": 27,
         "xslg": 59,
-        "xobp": 31,
+        "xobp": 30,
         "xiso": 77,
         "xera": 47,
         "brl_percent": 74,
@@ -53892,7 +53892,7 @@
         "whiff_percent": 33,
         "chase_percent": 25,
         "sprint_speed": 68,
-        "oaa": 92
+        "oaa": 91
       },
       "2018": {
         "type": "batter",
@@ -53989,7 +53989,7 @@
         "max_ev": 87,
         "arm_strength": 68,
         "sprint_speed": 72,
-        "oaa": 71
+        "oaa": 70
       }
     },
     "594809": {
@@ -54049,7 +54049,7 @@
         "whiff_percent": 80,
         "chase_percent": 59,
         "sprint_speed": 61,
-        "oaa": 16
+        "oaa": 15
       },
       "2019": {
         "type": "batter",
@@ -55173,7 +55173,7 @@
         "type": "batter",
         "max_ev": 57,
         "sprint_speed": 76,
-        "oaa": 79
+        "oaa": 80
       },
       "2018": {
         "type": "batter",
@@ -55549,7 +55549,7 @@
         "whiff_percent": 2,
         "chase_percent": 1,
         "sprint_speed": 85,
-        "oaa": 95
+        "oaa": 96
       },
       "2018": {
         "type": "batter",
@@ -55642,7 +55642,7 @@
         "chase_percent": 1,
         "arm_strength": 75,
         "sprint_speed": 67,
-        "oaa": 71
+        "oaa": 70
       },
       "2023": {
         "type": "batter",
@@ -55700,7 +55700,7 @@
         "max_ev": 41,
         "arm_strength": 67,
         "sprint_speed": 39,
-        "oaa": 30
+        "oaa": 29
       }
     },
     "595897": {
@@ -56224,12 +56224,12 @@
       },
       "2026": {
         "type": "pitcher",
-        "xwoba": 31,
-        "xba": 8,
+        "xwoba": 33,
+        "xba": 10,
         "xslg": 46,
         "xobp": 20,
         "xiso": 78,
-        "xera": 31,
+        "xera": 33,
         "brl_percent": 97,
         "exit_velocity": 73,
         "max_ev": 30,
@@ -56539,7 +56539,7 @@
         "whiff_percent": 32,
         "chase_percent": 7,
         "sprint_speed": 77,
-        "oaa": 85
+        "oaa": 86
       },
       "2018": {
         "type": "batter",
@@ -56575,7 +56575,7 @@
         "whiff_percent": 17,
         "chase_percent": 39,
         "sprint_speed": 74,
-        "oaa": 80
+        "oaa": 81
       },
       "2020": {
         "type": "batter",
@@ -57584,7 +57584,7 @@
         "max_ev": 87,
         "arm_strength": 12,
         "sprint_speed": 21,
-        "oaa": 40
+        "oaa": 41
       },
       "2022": {
         "type": "batter",
@@ -57603,7 +57603,7 @@
         "chase_percent": 96,
         "arm_strength": 3,
         "sprint_speed": 8,
-        "oaa": 78
+        "oaa": 77
       },
       "2023": {
         "type": "batter",
@@ -57909,7 +57909,7 @@
         "chase_percent": 55,
         "arm_strength": 92,
         "sprint_speed": 44,
-        "oaa": 94
+        "oaa": 93
       },
       "2023": {
         "type": "batter",
@@ -59174,7 +59174,7 @@
         "whiff_percent": 48,
         "chase_percent": 79,
         "sprint_speed": 54,
-        "oaa": 39
+        "oaa": 34
       },
       "2019": {
         "type": "batter",
@@ -59192,7 +59192,7 @@
         "whiff_percent": 45,
         "chase_percent": 58,
         "sprint_speed": 48,
-        "oaa": 17
+        "oaa": 16
       },
       "2020": {
         "type": "batter",
@@ -59229,7 +59229,7 @@
         "chase_percent": 76,
         "arm_strength": 1,
         "sprint_speed": 35,
-        "oaa": 84
+        "oaa": 83
       },
       "2022": {
         "type": "batter",
@@ -59423,7 +59423,7 @@
         "whiff_percent": 96,
         "chase_percent": 96,
         "sprint_speed": 73,
-        "oaa": 86
+        "oaa": 85
       },
       "2020": {
         "type": "batter",
@@ -59502,7 +59502,7 @@
         "chase_percent": 99,
         "arm_strength": 73,
         "sprint_speed": 47,
-        "oaa": 18
+        "oaa": 17
       },
       "2024": {
         "type": "batter",
@@ -63877,7 +63877,7 @@
         "chase_percent": 41,
         "arm_strength": 85,
         "sprint_speed": 84,
-        "oaa": 21
+        "oaa": 20
       },
       "2023": {
         "type": "batter",
@@ -63921,7 +63921,7 @@
         "chase_percent": 48,
         "arm_strength": 70,
         "sprint_speed": 83,
-        "oaa": 2
+        "oaa": 3
       },
       "2025": {
         "type": "batter",
@@ -64327,7 +64327,7 @@
         "chase_percent": 59,
         "arm_strength": 40,
         "sprint_speed": 41,
-        "oaa": 20
+        "oaa": 19
       },
       "2023": {
         "type": "batter",
@@ -64349,7 +64349,7 @@
         "chase_percent": 76,
         "arm_strength": 29,
         "sprint_speed": 58,
-        "oaa": 66
+        "oaa": 65
       },
       "2024": {
         "type": "batter",
@@ -64705,7 +64705,7 @@
         "chase_percent": 100,
         "arm_strength": 60,
         "sprint_speed": 92,
-        "oaa": 86
+        "oaa": 85
       },
       "2022": {
         "type": "batter",
@@ -64746,7 +64746,7 @@
         "chase_percent": 91,
         "arm_strength": 38,
         "sprint_speed": 66,
-        "oaa": 61
+        "oaa": 62
       },
       "2024": {
         "type": "batter",
@@ -64812,7 +64812,7 @@
         "chase_percent": 54,
         "arm_strength": 49,
         "sprint_speed": 65,
-        "oaa": 11
+        "oaa": 12
       }
     },
     "607054": {
@@ -65610,7 +65610,7 @@
         "chase_percent": 16,
         "arm_strength": 32,
         "sprint_speed": 96,
-        "oaa": 27
+        "oaa": 26
       },
       "2025": {
         "type": "batter",
@@ -66542,7 +66542,7 @@
         "whiff_percent": 63,
         "chase_percent": 2,
         "sprint_speed": 70,
-        "oaa": 51
+        "oaa": 50
       },
       "2019": {
         "type": "batter",
@@ -66616,7 +66616,7 @@
         "max_ev": 44,
         "arm_strength": 65,
         "sprint_speed": 78,
-        "oaa": 49
+        "oaa": 50
       },
       "2025": {
         "type": "batter",
@@ -67292,12 +67292,12 @@
       },
       "2023": {
         "type": "pitcher",
-        "xwoba": 32,
+        "xwoba": 31,
         "xba": 57,
         "xslg": 23,
         "xobp": 51,
         "xiso": 12,
-        "xera": 32,
+        "xera": 31,
         "brl_percent": 8,
         "exit_velocity": 43,
         "max_ev": 8,
@@ -67938,7 +67938,7 @@
         "type": "batter",
         "max_ev": 69,
         "sprint_speed": 65,
-        "oaa": 66
+        "oaa": 67
       },
       "2020": {
         "type": "batter",
@@ -70387,7 +70387,7 @@
         "chase_percent": 72,
         "arm_strength": 13,
         "sprint_speed": 82,
-        "oaa": 75
+        "oaa": 74
       },
       "2022": {
         "type": "batter",
@@ -70900,7 +70900,7 @@
         "chase_percent": 61,
         "arm_strength": 74,
         "sprint_speed": 33,
-        "oaa": 64
+        "oaa": 63
       },
       "2024": {
         "type": "batter",
@@ -70941,7 +70941,7 @@
         "chase_percent": 44,
         "arm_strength": 56,
         "sprint_speed": 26,
-        "oaa": 60
+        "oaa": 59
       },
       "2026": {
         "type": "batter",
@@ -72493,7 +72493,7 @@
         "xwoba": 16,
         "xba": 24,
         "xslg": 16,
-        "xobp": 31,
+        "xobp": 30,
         "xiso": 14,
         "xera": 16,
         "brl_percent": 9,
@@ -73486,7 +73486,7 @@
         "chase_percent": 23,
         "arm_strength": 90,
         "sprint_speed": 90,
-        "oaa": 84
+        "oaa": 83
       },
       "2025": {
         "type": "batter",
@@ -73549,7 +73549,7 @@
         "max_ev": 87,
         "arm_strength": 83,
         "sprint_speed": 90,
-        "oaa": 34
+        "oaa": 33
       },
       "2021": {
         "type": "batter",
@@ -74010,7 +74010,7 @@
         "chase_percent": 85,
         "arm_strength": 31,
         "sprint_speed": 29,
-        "oaa": 52
+        "oaa": 53
       },
       "2021": {
         "type": "batter",
@@ -74029,7 +74029,7 @@
         "chase_percent": 75,
         "arm_strength": 24,
         "sprint_speed": 28,
-        "oaa": 63
+        "oaa": 61
       },
       "2022": {
         "type": "batter",
@@ -74070,7 +74070,7 @@
         "chase_percent": 68,
         "arm_strength": 17,
         "sprint_speed": 23,
-        "oaa": 11
+        "oaa": 13
       },
       "2024": {
         "type": "batter",
@@ -74092,7 +74092,7 @@
         "chase_percent": 48,
         "arm_strength": 21,
         "sprint_speed": 10,
-        "oaa": 85
+        "oaa": 88
       },
       "2025": {
         "type": "batter",
@@ -74136,7 +74136,7 @@
         "chase_percent": 63,
         "arm_strength": 24,
         "sprint_speed": 9,
-        "oaa": 96
+        "oaa": 97
       }
     },
     "621573": {
@@ -74962,7 +74962,7 @@
         "max_ev": 17,
         "arm_strength": 22,
         "sprint_speed": 24,
-        "oaa": 5
+        "oaa": 3
       }
     },
     "622379": {
@@ -75464,12 +75464,12 @@
       },
       "2023": {
         "type": "pitcher",
-        "xwoba": 32,
+        "xwoba": 31,
         "xba": 45,
         "xslg": 54,
         "xobp": 18,
         "xiso": 62,
-        "xera": 32,
+        "xera": 31,
         "brl_percent": 46,
         "exit_velocity": 96,
         "max_ev": 52,
@@ -77297,7 +77297,7 @@
         "max_ev": 35,
         "arm_strength": 17,
         "sprint_speed": 81,
-        "oaa": 93
+        "oaa": 94
       },
       "2023": {
         "type": "batter",
@@ -77954,14 +77954,14 @@
         "max_ev": 61,
         "arm_strength": 30,
         "sprint_speed": 96,
-        "oaa": 89
+        "oaa": 90
       },
       "2026": {
         "type": "batter",
         "max_ev": 77,
         "arm_strength": 18,
         "sprint_speed": 85,
-        "oaa": 84
+        "oaa": 85
       }
     },
     "624647": {
@@ -78836,7 +78836,7 @@
         "chase_percent": 86,
         "arm_strength": 19,
         "sprint_speed": 74,
-        "oaa": 78
+        "oaa": 79
       },
       "2023": {
         "type": "batter",
@@ -78877,7 +78877,7 @@
         "chase_percent": 86,
         "arm_strength": 15,
         "sprint_speed": 59,
-        "oaa": 52
+        "oaa": 54
       },
       "2025": {
         "type": "batter",
@@ -78921,7 +78921,7 @@
         "chase_percent": 54,
         "arm_strength": 6,
         "sprint_speed": 67,
-        "oaa": 20
+        "oaa": 22
       }
     },
     "639373": {
@@ -79046,12 +79046,12 @@
       },
       "2023": {
         "type": "pitcher",
-        "xwoba": 32,
+        "xwoba": 31,
         "xba": 23,
         "xslg": 27,
         "xobp": 40,
         "xiso": 35,
-        "xera": 32,
+        "xera": 31,
         "brl_percent": 37,
         "exit_velocity": 1,
         "max_ev": 1,
@@ -79480,7 +79480,7 @@
         "whiff_percent": 60,
         "chase_percent": 76,
         "sprint_speed": 78,
-        "oaa": 43
+        "oaa": 42
       },
       "2020": {
         "type": "batter",
@@ -80138,7 +80138,7 @@
         "chase_percent": 93,
         "arm_strength": 61,
         "sprint_speed": 34,
-        "oaa": 6
+        "oaa": 5
       }
     },
     "641355": {
@@ -80158,7 +80158,7 @@
         "whiff_percent": 7,
         "chase_percent": 76,
         "sprint_speed": 90,
-        "oaa": 59
+        "oaa": 50
       },
       "2018": {
         "type": "batter",
@@ -80834,7 +80834,7 @@
         "chase_percent": 87,
         "arm_strength": 42,
         "sprint_speed": 63,
-        "oaa": 49
+        "oaa": 48
       },
       "2022": {
         "type": "batter",
@@ -81036,7 +81036,7 @@
         "whiff_percent": 3,
         "chase_percent": 20,
         "sprint_speed": 84,
-        "oaa": 64
+        "oaa": 65
       },
       "2020": {
         "type": "batter",
@@ -82356,7 +82356,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 12,
-        "xba": 26,
+        "xba": 27,
         "xslg": 5,
         "xobp": 43,
         "xiso": 1,
@@ -82802,7 +82802,7 @@
         "chase_percent": 26,
         "arm_strength": 10,
         "sprint_speed": 40,
-        "oaa": 62
+        "oaa": 63
       },
       "2022": {
         "type": "batter",
@@ -83100,7 +83100,7 @@
         "chase_percent": 60,
         "arm_strength": 48,
         "sprint_speed": 14,
-        "oaa": 71
+        "oaa": 70
       }
     },
     "641871": {
@@ -83945,7 +83945,7 @@
         "max_ev": 84,
         "arm_strength": 4,
         "sprint_speed": 1,
-        "oaa": 16
+        "oaa": 17
       }
     },
     "642136": {
@@ -86335,7 +86335,7 @@
         "whiff_percent": 62,
         "chase_percent": 17,
         "sprint_speed": 57,
-        "oaa": 84
+        "oaa": 85
       },
       "2020": {
         "type": "batter",
@@ -87026,7 +87026,7 @@
         "type": "batter",
         "max_ev": 26,
         "sprint_speed": 63,
-        "oaa": 47
+        "oaa": 46
       },
       "2019": {
         "type": "batter",
@@ -87077,7 +87077,7 @@
         "chase_percent": 47,
         "arm_strength": 30,
         "sprint_speed": 26,
-        "oaa": 77
+        "oaa": 78
       },
       "2023": {
         "type": "batter",
@@ -87197,7 +87197,7 @@
         "chase_percent": 65,
         "arm_strength": 56,
         "sprint_speed": 58,
-        "oaa": 75
+        "oaa": 74
       },
       "2024": {
         "type": "batter",
@@ -87241,7 +87241,7 @@
         "chase_percent": 22,
         "arm_strength": 22,
         "sprint_speed": 47,
-        "oaa": 44
+        "oaa": 43
       },
       "2026": {
         "type": "batter",
@@ -87517,7 +87517,7 @@
         "chase_percent": 39,
         "arm_strength": 70,
         "sprint_speed": 51,
-        "oaa": 83
+        "oaa": 82
       },
       "2024": {
         "type": "batter",
@@ -88430,7 +88430,7 @@
         "chase_percent": 47,
         "arm_strength": 19,
         "sprint_speed": 19,
-        "oaa": 24
+        "oaa": 26
       }
     },
     "647304": {
@@ -88509,7 +88509,7 @@
         "chase_percent": 25,
         "arm_strength": 25,
         "sprint_speed": 7,
-        "oaa": 68
+        "oaa": 69
       },
       "2025": {
         "type": "batter",
@@ -88553,7 +88553,7 @@
         "chase_percent": 11,
         "arm_strength": 25,
         "sprint_speed": 1,
-        "oaa": 76
+        "oaa": 65
       }
     },
     "647315": {
@@ -88864,7 +88864,7 @@
         "max_ev": 81,
         "arm_strength": 84,
         "sprint_speed": 59,
-        "oaa": 82
+        "oaa": 83
       },
       "2023": {
         "type": "batter",
@@ -88901,14 +88901,14 @@
         "type": "batter",
         "max_ev": 40,
         "sprint_speed": 59,
-        "oaa": 11
+        "oaa": 12
       },
       "2020": {
         "type": "batter",
         "max_ev": 43,
         "arm_strength": 33,
         "sprint_speed": 53,
-        "oaa": 91
+        "oaa": 92
       },
       "2021": {
         "type": "batter",
@@ -89417,7 +89417,7 @@
         "chase_percent": 92,
         "arm_strength": 7,
         "sprint_speed": 29,
-        "oaa": 14
+        "oaa": 13
       },
       "2025": {
         "type": "batter",
@@ -89506,7 +89506,7 @@
         "chase_percent": 2,
         "arm_strength": 41,
         "sprint_speed": 89,
-        "oaa": 53
+        "oaa": 54
       },
       "2022": {
         "type": "batter",
@@ -89742,7 +89742,7 @@
         "chase_percent": 87,
         "arm_strength": 3,
         "sprint_speed": 10,
-        "oaa": 24
+        "oaa": 25
       },
       "2025": {
         "type": "batter",
@@ -90635,12 +90635,12 @@
       },
       "2026": {
         "type": "pitcher",
-        "xwoba": 79,
+        "xwoba": 78,
         "xba": 55,
         "xslg": 65,
         "xobp": 82,
         "xiso": 70,
-        "xera": 79,
+        "xera": 78,
         "brl_percent": 48,
         "exit_velocity": 29,
         "max_ev": 27,
@@ -91677,7 +91677,7 @@
         "whiff_percent": 54,
         "chase_percent": 85,
         "sprint_speed": 82,
-        "oaa": 92
+        "oaa": 91
       },
       "2019": {
         "type": "batter",
@@ -91837,7 +91837,7 @@
         "chase_percent": 70,
         "arm_strength": 64,
         "sprint_speed": 68,
-        "oaa": 86
+        "oaa": 85
       }
     },
     "656308": {
@@ -92440,7 +92440,7 @@
         "max_ev": 74,
         "arm_strength": 44,
         "sprint_speed": 22,
-        "oaa": 13
+        "oaa": 14
       }
     },
     "656492": {
@@ -92936,7 +92936,7 @@
         "chase_percent": 92,
         "arm_strength": 84,
         "sprint_speed": 42,
-        "oaa": 72
+        "oaa": 73
       },
       "2024": {
         "type": "batter",
@@ -93299,7 +93299,7 @@
         "chase_percent": 59,
         "arm_strength": 90,
         "sprint_speed": 75,
-        "oaa": 58
+        "oaa": 57
       },
       "2026": {
         "type": "batter",
@@ -93662,7 +93662,7 @@
         "exit_velocity": 32,
         "max_ev": 65,
         "hard_hit_percent": 19,
-        "squared_up_rate": 53,
+        "squared_up_rate": 52,
         "bat_speed": 32,
         "swing_length": 50,
         "k_percent": 63,
@@ -93671,7 +93671,7 @@
         "chase_percent": 39,
         "arm_strength": 40,
         "sprint_speed": 63,
-        "oaa": 97
+        "oaa": 96
       }
     },
     "656793": {
@@ -93969,7 +93969,7 @@
         "chase_percent": 34,
         "arm_strength": 6,
         "sprint_speed": 60,
-        "oaa": 84
+        "oaa": 85
       },
       "2024": {
         "type": "batter",
@@ -94012,7 +94012,7 @@
         "chase_percent": 54,
         "arm_strength": 4,
         "sprint_speed": 53,
-        "oaa": 90
+        "oaa": 89
       },
       "2026": {
         "type": "batter",
@@ -96213,7 +96213,7 @@
         "max_ev": 61,
         "arm_strength": 25,
         "sprint_speed": 25,
-        "oaa": 42
+        "oaa": 41
       }
     },
     "657571": {
@@ -97041,7 +97041,7 @@
         "type": "batter",
         "max_ev": 78,
         "sprint_speed": 91,
-        "oaa": 22
+        "oaa": 23
       },
       "2018": {
         "type": "batter",
@@ -98421,7 +98421,7 @@
         "chase_percent": 84,
         "fb_velocity": 99,
         "fb_spin": 10,
-        "curve_spin": 59
+        "curve_spin": 62
       }
     },
     "661403": {
@@ -99880,7 +99880,7 @@
         "xwoba": 34,
         "xba": 19,
         "xslg": 43,
-        "xobp": 31,
+        "xobp": 30,
         "xiso": 66,
         "xera": 34,
         "brl_percent": 82,
@@ -100128,7 +100128,7 @@
         "chase_percent": 56,
         "arm_strength": 59,
         "sprint_speed": 69,
-        "oaa": 94
+        "oaa": 95
       },
       "2021": {
         "type": "batter",
@@ -100238,7 +100238,7 @@
         "chase_percent": 85,
         "arm_strength": 59,
         "sprint_speed": 28,
-        "oaa": 4
+        "oaa": 5
       }
     },
     "663662": {
@@ -100331,7 +100331,7 @@
         "chase_percent": 93,
         "arm_strength": 14,
         "sprint_speed": 62,
-        "oaa": 9
+        "oaa": 8
       },
       "2024": {
         "type": "batter",
@@ -100616,7 +100616,7 @@
         "chase_percent": 99,
         "arm_strength": 54,
         "sprint_speed": 32,
-        "oaa": 32
+        "oaa": 31
       },
       "2026": {
         "type": "batter",
@@ -101026,7 +101026,7 @@
         "chase_percent": 44,
         "arm_strength": 76,
         "sprint_speed": 91,
-        "oaa": 56
+        "oaa": 55
       },
       "2024": {
         "type": "batter",
@@ -101048,7 +101048,7 @@
         "chase_percent": 89,
         "arm_strength": 50,
         "sprint_speed": 87,
-        "oaa": 62
+        "oaa": 61
       },
       "2025": {
         "type": "batter",
@@ -101575,7 +101575,7 @@
         "chase_percent": 1,
         "arm_strength": 68,
         "sprint_speed": 96,
-        "oaa": 36
+        "oaa": 35
       }
     },
     "663969": {
@@ -101609,7 +101609,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 23,
-        "xba": 26,
+        "xba": 27,
         "xslg": 28,
         "xobp": 17,
         "xiso": 35,
@@ -101864,7 +101864,7 @@
         "chase_percent": 89,
         "arm_strength": 29,
         "sprint_speed": 48,
-        "oaa": 89
+        "oaa": 87
       },
       "2024": {
         "type": "batter",
@@ -101990,7 +101990,7 @@
         "chase_percent": 31,
         "arm_strength": 12,
         "sprint_speed": 20,
-        "oaa": 19
+        "oaa": 20
       },
       "2022": {
         "type": "batter",
@@ -102031,7 +102031,7 @@
         "chase_percent": 21,
         "arm_strength": 4,
         "sprint_speed": 7,
-        "oaa": 38
+        "oaa": 39
       },
       "2024": {
         "type": "batter",
@@ -104030,7 +104030,7 @@
         "chase_percent": 24,
         "arm_strength": 88,
         "sprint_speed": 38,
-        "oaa": 80
+        "oaa": 81
       }
     },
     "664774": {
@@ -104509,7 +104509,7 @@
         "chase_percent": 11,
         "arm_strength": 18,
         "sprint_speed": 98,
-        "oaa": 68
+        "oaa": 67
       }
     },
     "664991": {
@@ -104601,7 +104601,7 @@
         "chase_percent": 31,
         "arm_strength": 50,
         "sprint_speed": 66,
-        "oaa": 61
+        "oaa": 65
       }
     },
     "665052": {
@@ -104822,7 +104822,7 @@
         "chase_percent": 86,
         "arm_strength": 93,
         "sprint_speed": 66,
-        "oaa": 73
+        "oaa": 74
       }
     },
     "665487": {
@@ -104880,7 +104880,7 @@
         "chase_percent": 41,
         "arm_strength": 100,
         "sprint_speed": 96,
-        "oaa": 62
+        "oaa": 63
       },
       "2023": {
         "type": "batter",
@@ -105194,7 +105194,7 @@
         "whiff_percent": 63,
         "chase_percent": 95,
         "sprint_speed": 56,
-        "oaa": 13
+        "oaa": 12
       },
       "2019": {
         "type": "batter",
@@ -105250,7 +105250,7 @@
         "chase_percent": 100,
         "arm_strength": 44,
         "sprint_speed": 52,
-        "oaa": 89
+        "oaa": 88
       },
       "2022": {
         "type": "batter",
@@ -105557,7 +105557,7 @@
         "chase_percent": 47,
         "arm_strength": 99,
         "sprint_speed": 81,
-        "oaa": 33
+        "oaa": 32
       }
     },
     "665839": {
@@ -106317,7 +106317,7 @@
         "chase_percent": 7,
         "arm_strength": 61,
         "sprint_speed": 67,
-        "oaa": 15
+        "oaa": 16
       },
       "2026": {
         "type": "batter",
@@ -106432,7 +106432,7 @@
         "chase_percent": 51,
         "arm_strength": 58,
         "sprint_speed": 95,
-        "oaa": 1
+        "oaa": 2
       }
     },
     "666158": {
@@ -106483,7 +106483,7 @@
         "chase_percent": 79,
         "arm_strength": 8,
         "sprint_speed": 88,
-        "oaa": 80
+        "oaa": 81
       },
       "2024": {
         "type": "batter",
@@ -106683,7 +106683,7 @@
         "chase_percent": 2,
         "arm_strength": 29,
         "sprint_speed": 70,
-        "oaa": 56
+        "oaa": 55
       }
     },
     "666163": {
@@ -107319,7 +107319,7 @@
         "max_ev": 90,
         "arm_strength": 21,
         "sprint_speed": 50,
-        "oaa": 56
+        "oaa": 55
       }
     },
     "666214": {
@@ -107943,7 +107943,7 @@
         "chase_percent": 9,
         "arm_strength": 98,
         "sprint_speed": 67,
-        "oaa": 69
+        "oaa": 70
       },
       "2023": {
         "type": "batter",
@@ -108220,7 +108220,7 @@
       "2025": {
         "type": "pitcher",
         "xwoba": 66,
-        "xba": 60,
+        "xba": 59,
         "xslg": 79,
         "xobp": 43,
         "xiso": 89,
@@ -108288,7 +108288,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 26,
+        "xba": 27,
         "xslg": 29,
         "xobp": 38,
         "xiso": 37,
@@ -108454,7 +108454,7 @@
         "max_ev": 60,
         "arm_strength": 97,
         "sprint_speed": 64,
-        "oaa": 67
+        "oaa": 66
       }
     },
     "667498": {
@@ -108603,7 +108603,7 @@
         "type": "pitcher",
         "xwoba": 45,
         "xba": 45,
-        "xslg": 70,
+        "xslg": 69,
         "xobp": 18,
         "xiso": 82,
         "xera": 45,
@@ -108775,7 +108775,7 @@
         "chase_percent": 42,
         "arm_strength": 32,
         "sprint_speed": 41,
-        "oaa": 12
+        "oaa": 13
       }
     },
     "668338": {
@@ -109277,7 +109277,7 @@
         "chase_percent": 75,
         "arm_strength": 78,
         "sprint_speed": 73,
-        "oaa": 24
+        "oaa": 30
       },
       "2025": {
         "type": "batter",
@@ -109631,7 +109631,7 @@
         "chase_percent": 100,
         "arm_strength": 72,
         "sprint_speed": 60,
-        "oaa": 78
+        "oaa": 79
       }
     },
     "668939": {
@@ -109793,7 +109793,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 26,
+        "xba": 27,
         "xslg": 26,
         "xobp": 40,
         "xiso": 30,
@@ -110144,7 +110144,7 @@
         "exit_velocity": 47,
         "max_ev": 60,
         "hard_hit_percent": 61,
-        "squared_up_rate": 53,
+        "squared_up_rate": 52,
         "bat_speed": 42,
         "swing_length": 40,
         "k_percent": 26,
@@ -110153,7 +110153,7 @@
         "chase_percent": 16,
         "arm_strength": 77,
         "sprint_speed": 68,
-        "oaa": 37
+        "oaa": 38
       }
     },
     "669020": {
@@ -110535,7 +110535,7 @@
         "chase_percent": 26,
         "arm_strength": 68,
         "sprint_speed": 23,
-        "oaa": 14
+        "oaa": 15
       }
     },
     "669084": {
@@ -110567,12 +110567,12 @@
       },
       "2026": {
         "type": "pitcher",
-        "xwoba": 77,
+        "xwoba": 78,
         "xba": 93,
         "xslg": 93,
         "xobp": 44,
         "xiso": 88,
-        "xera": 77,
+        "xera": 78,
         "brl_percent": 67,
         "exit_velocity": 53,
         "max_ev": 62,
@@ -110892,12 +110892,12 @@
       },
       "2026": {
         "type": "pitcher",
-        "xwoba": 79,
+        "xwoba": 78,
         "xba": 90,
         "xslg": 77,
         "xobp": 78,
         "xiso": 50,
-        "xera": 79,
+        "xera": 78,
         "brl_percent": 46,
         "exit_velocity": 45,
         "max_ev": 49,
@@ -111407,7 +111407,7 @@
         "max_ev": 40,
         "arm_strength": 58,
         "sprint_speed": 66,
-        "oaa": 87
+        "oaa": 88
       }
     },
     "669256": {
@@ -111505,7 +111505,7 @@
         "chase_percent": 96,
         "arm_strength": 54,
         "sprint_speed": 81,
-        "oaa": 69
+        "oaa": 70
       },
       "2024": {
         "type": "batter",
@@ -112233,7 +112233,7 @@
         "chase_percent": 19,
         "arm_strength": 25,
         "sprint_speed": 48,
-        "oaa": 73
+        "oaa": 74
       }
     },
     "669395": {
@@ -112285,7 +112285,7 @@
         "swing_length": 1,
         "arm_strength": 57,
         "sprint_speed": 64,
-        "oaa": 63
+        "oaa": 62
       },
       "2024": {
         "type": "batter",
@@ -112317,7 +112317,7 @@
         "max_ev": 23,
         "arm_strength": 43,
         "sprint_speed": 36,
-        "oaa": 34
+        "oaa": 36
       }
     },
     "669398": {
@@ -112722,7 +112722,7 @@
         "xwoba": 15,
         "xba": 9,
         "xslg": 13,
-        "xobp": 28,
+        "xobp": 30,
         "xiso": 18,
         "xera": 15,
         "brl_percent": 15,
@@ -113387,7 +113387,7 @@
         "whiff_percent": 93,
         "chase_percent": 61,
         "sprint_speed": 84,
-        "oaa": 66
+        "oaa": 67
       },
       "2020": {
         "type": "batter",
@@ -113473,7 +113473,7 @@
         "chase_percent": 53,
         "arm_strength": 39,
         "sprint_speed": 42,
-        "oaa": 88
+        "oaa": 89
       },
       "2025": {
         "type": "batter",
@@ -113485,7 +113485,7 @@
         "max_ev": 15,
         "arm_strength": 41,
         "sprint_speed": 53,
-        "oaa": 79
+        "oaa": 80
       }
     },
     "670036": {
@@ -114570,7 +114570,7 @@
         "chase_percent": 90,
         "arm_strength": 20,
         "sprint_speed": 12,
-        "oaa": 16
+        "oaa": 15
       },
       "2026": {
         "type": "batter",
@@ -114592,7 +114592,7 @@
         "chase_percent": 67,
         "arm_strength": 13,
         "sprint_speed": 6,
-        "oaa": 32
+        "oaa": 29
       }
     },
     "670712": {
@@ -114723,12 +114723,12 @@
       },
       "2023": {
         "type": "pitcher",
-        "xwoba": 32,
+        "xwoba": 31,
         "xba": 42,
         "xslg": 50,
         "xobp": 19,
         "xiso": 56,
-        "xera": 32,
+        "xera": 31,
         "brl_percent": 55,
         "exit_velocity": 58,
         "max_ev": 10,
@@ -115256,7 +115256,7 @@
         "chase_percent": 33,
         "arm_strength": 9,
         "sprint_speed": 47,
-        "oaa": 13
+        "oaa": 12
       },
       "2024": {
         "type": "batter",
@@ -115322,7 +115322,7 @@
         "chase_percent": 9,
         "arm_strength": 19,
         "sprint_speed": 24,
-        "oaa": 85
+        "oaa": 84
       }
     },
     "671286": {
@@ -115851,7 +115851,7 @@
         "chase_percent": 5,
         "arm_strength": 94,
         "sprint_speed": 40,
-        "oaa": 84
+        "oaa": 83
       },
       "2026": {
         "type": "batter",
@@ -116392,7 +116392,7 @@
         "max_ev": 31,
         "arm_strength": 23,
         "sprint_speed": 58,
-        "oaa": 41
+        "oaa": 40
       },
       "2024": {
         "type": "batter",
@@ -117117,7 +117117,7 @@
         "chase_percent": 94,
         "arm_strength": 1,
         "sprint_speed": 48,
-        "oaa": 23
+        "oaa": 20
       },
       "2024": {
         "type": "batter",
@@ -117166,7 +117166,7 @@
       "2025": {
         "type": "pitcher",
         "xwoba": 24,
-        "xba": 33,
+        "xba": 35,
         "xslg": 34,
         "xobp": 15,
         "xiso": 39,
@@ -117727,7 +117727,7 @@
         "chase_percent": 14,
         "arm_strength": 31,
         "sprint_speed": 67,
-        "oaa": 78
+        "oaa": 77
       }
     },
     "676617": {
@@ -117746,7 +117746,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 15,
-        "xba": 26,
+        "xba": 25,
         "xslg": 35,
         "xobp": 7,
         "xiso": 44,
@@ -118498,7 +118498,7 @@
         "chase_percent": 49,
         "arm_strength": 98,
         "sprint_speed": 67,
-        "oaa": 80
+        "oaa": 79
       }
     },
     "677865": {
@@ -118776,12 +118776,12 @@
       },
       "2023": {
         "type": "pitcher",
-        "xwoba": 32,
+        "xwoba": 31,
         "xba": 43,
         "xslg": 36,
         "xobp": 24,
         "xiso": 38,
-        "xera": 32,
+        "xera": 31,
         "brl_percent": 53,
         "exit_velocity": 43,
         "max_ev": 21,
@@ -118955,7 +118955,7 @@
         "type": "pitcher",
         "xwoba": 45,
         "xba": 70,
-        "xslg": 70,
+        "xslg": 69,
         "xobp": 20,
         "xiso": 70,
         "xera": 45,
@@ -119130,7 +119130,7 @@
       },
       "2026": {
         "type": "batter",
-        "xwoba": 13,
+        "xwoba": 14,
         "xba": 28,
         "xslg": 2,
         "xobp": 59,
@@ -119315,7 +119315,7 @@
         "swing_length": 39,
         "arm_strength": 70,
         "sprint_speed": 95,
-        "oaa": 33
+        "oaa": 32
       },
       "2025": {
         "type": "batter",
@@ -119800,7 +119800,7 @@
         "chase_percent": 31,
         "arm_strength": 3,
         "sprint_speed": 27,
-        "oaa": 5
+        "oaa": 6
       }
     },
     "680702": {
@@ -120007,7 +120007,7 @@
         "xwoba": 38,
         "xba": 60,
         "xslg": 55,
-        "xobp": 31,
+        "xobp": 30,
         "xiso": 49,
         "xera": 38,
         "brl_percent": 46,
@@ -120023,12 +120023,12 @@
       },
       "2026": {
         "type": "pitcher",
-        "xwoba": 45,
+        "xwoba": 47,
         "xba": 52,
         "xslg": 72,
         "xobp": 16,
         "xiso": 80,
-        "xera": 45,
+        "xera": 47,
         "brl_percent": 93,
         "exit_velocity": 7,
         "max_ev": 54,
@@ -120331,12 +120331,12 @@
       },
       "2026": {
         "type": "pitcher",
-        "xwoba": 6,
+        "xwoba": 5,
         "xba": 3,
         "xslg": 3,
         "xobp": 19,
         "xiso": 6,
-        "xera": 6,
+        "xera": 5,
         "brl_percent": 14,
         "exit_velocity": 1,
         "max_ev": 14,
@@ -120371,7 +120371,7 @@
         "chase_percent": 45,
         "arm_strength": 1,
         "sprint_speed": 5,
-        "oaa": 81
+        "oaa": 82
       }
     },
     "681217": {
@@ -120727,7 +120727,7 @@
         "exit_velocity": 86,
         "max_ev": 74,
         "hard_hit_percent": 87,
-        "squared_up_rate": 51,
+        "squared_up_rate": 52,
         "bat_speed": 74,
         "swing_length": 80,
         "k_percent": 18,
@@ -121208,7 +121208,7 @@
         "chase_percent": 1,
         "fb_velocity": 25,
         "fb_spin": 28,
-        "curve_spin": 61
+        "curve_spin": 60
       }
     },
     "682254": {
@@ -121418,7 +121418,7 @@
         "max_ev": 56,
         "arm_strength": 66,
         "sprint_speed": 98,
-        "oaa": 44
+        "oaa": 46
       }
     },
     "682729": {
@@ -122096,7 +122096,7 @@
         "chase_percent": 29,
         "arm_strength": 12,
         "sprint_speed": 11,
-        "oaa": 6
+        "oaa": 9
       },
       "2024": {
         "type": "batter",
@@ -122248,7 +122248,7 @@
         "max_ev": 43,
         "arm_strength": 36,
         "sprint_speed": 90,
-        "oaa": 77
+        "oaa": 78
       }
     },
     "683770": {
@@ -122524,7 +122524,7 @@
         "chase_percent": 98,
         "arm_strength": 55,
         "sprint_speed": 58,
-        "oaa": 85
+        "oaa": 86
       },
       "2026": {
         "type": "batter",
@@ -122690,14 +122690,14 @@
         "chase_percent": 35,
         "arm_strength": 97,
         "sprint_speed": 96,
-        "oaa": 92
+        "oaa": 91
       },
       "2026": {
         "type": "batter",
         "max_ev": 56,
         "arm_strength": 95,
         "sprint_speed": 92,
-        "oaa": 51
+        "oaa": 50
       }
     },
     "686676": {
@@ -122891,7 +122891,7 @@
         "chase_percent": 42,
         "arm_strength": 81,
         "sprint_speed": 89,
-        "oaa": 89
+        "oaa": 90
       },
       "2024": {
         "type": "batter",
@@ -123361,7 +123361,7 @@
         "chase_percent": 68,
         "arm_strength": 6,
         "sprint_speed": 7,
-        "oaa": 77
+        "oaa": 78
       },
       "2025": {
         "type": "batter",
@@ -123768,7 +123768,7 @@
         "max_ev": 67,
         "arm_strength": 32,
         "sprint_speed": 28,
-        "oaa": 93
+        "oaa": 94
       },
       "2026": {
         "type": "batter",
@@ -124310,7 +124310,7 @@
         "max_ev": 48,
         "arm_strength": 13,
         "sprint_speed": 48,
-        "oaa": 49
+        "oaa": 59
       }
     },
     "691858": {
@@ -124661,7 +124661,7 @@
         "max_ev": 53,
         "arm_strength": 44,
         "sprint_speed": 27,
-        "oaa": 26
+        "oaa": 27
       }
     },
     "694388": {
@@ -124926,7 +124926,7 @@
         "max_ev": 52,
         "arm_strength": 33,
         "sprint_speed": 78,
-        "oaa": 45
+        "oaa": 44
       },
       "2026": {
         "type": "batter",
@@ -125046,7 +125046,7 @@
         "chase_percent": 94,
         "arm_strength": 57,
         "sprint_speed": 43,
-        "oaa": 8
+        "oaa": 9
       }
     },
     "695670": {
@@ -125152,14 +125152,14 @@
         "max_ev": 47,
         "arm_strength": 27,
         "sprint_speed": 73,
-        "oaa": 78
+        "oaa": 77
       },
       "2025": {
         "type": "batter",
         "max_ev": 63,
         "arm_strength": 15,
         "sprint_speed": 78,
-        "oaa": 10
+        "oaa": 9
       }
     },
     "700249": {
@@ -125328,7 +125328,7 @@
         "chase_percent": 47,
         "arm_strength": 80,
         "sprint_speed": 92,
-        "oaa": 92
+        "oaa": 91
       }
     },
     "701474": {
@@ -125434,7 +125434,7 @@
         "chase_percent": 72,
         "arm_strength": 29,
         "sprint_speed": 70,
-        "oaa": 54
+        "oaa": 53
       },
       "2026": {
         "type": "batter",
@@ -125661,14 +125661,14 @@
         "max_ev": 59,
         "arm_strength": 44,
         "sprint_speed": 69,
-        "oaa": 64
+        "oaa": 63
       },
       "2026": {
         "type": "batter",
         "max_ev": 49,
         "arm_strength": 30,
         "sprint_speed": 69,
-        "oaa": 14
+        "oaa": 15
       }
     },
     "811315": {

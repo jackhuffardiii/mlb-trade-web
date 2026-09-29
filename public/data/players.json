@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28",
+  "generated": "2026-09-29",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -295981,7 +295981,7 @@
     },
     "687628": {
       "name": "Justin Boyd",
-      "position": "RF",
+      "position": "OF",
       "bats": "R",
       "throws": "R",
       "debut": null
