@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01",
+  "generated": "2026-10-03",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -220945,7 +220945,7 @@
     },
     "656541": {
       "name": "Sam Hilliard",
-      "position": "LF",
+      "position": "RF",
       "bats": "L",
       "throws": "L",
       "debut": "2019-08-27",
