@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03",
+  "generated": "2026-10-29",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -304905,6 +304905,13 @@
       "name": "Alexander Frias",
       "position": "OF",
       "bats": "L",
+      "throws": "R",
+      "debut": null
+    },
+    "826536": {
+      "name": "Brian Curley",
+      "position": "P",
+      "bats": "R",
       "throws": "R",
       "debut": null
     },

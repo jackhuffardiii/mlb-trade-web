@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-02",
+  "generated": "2026-10-29",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-09-02"
+    "end": "2026-10-29"
   },
   "teams": [
     {
@@ -68304,6 +68304,24 @@
           "name": "Sebastian Rodriguez",
           "fromTeamId": 141,
           "toTeamId": 119,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 947254,
+      "date": "2026-10-01",
+      "description": "Arizona Diamondbacks traded RHP Brian Curley to St. Louis Cardinals. Player named later in the Lars Nootbaar trade.",
+      "teamIds": [
+        109,
+        138
+      ],
+      "assets": [
+        {
+          "personId": 826536,
+          "name": "Brian Curley",
+          "fromTeamId": 109,
+          "toTeamId": 138,
           "kind": "player"
         }
       ]
