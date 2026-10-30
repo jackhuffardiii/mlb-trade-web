@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-29",
+  "generated": "2026-10-30",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-10-29"
+    "end": "2026-10-30"
   },
   "teams": [
     {
@@ -68323,6 +68323,56 @@
           "fromTeamId": 109,
           "toTeamId": 138,
           "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 947273,
+      "date": "2026-10-29",
+      "description": "Athletics traded RHP Jareth Rayo to Boston Red Sox for LF Nate Eaton.",
+      "teamIds": [
+        111,
+        133
+      ],
+      "assets": [
+        {
+          "personId": 681987,
+          "name": "Nate Eaton",
+          "fromTeamId": 111,
+          "toTeamId": 133,
+          "kind": "player"
+        },
+        {
+          "personId": 837078,
+          "name": "Jareth Rayo",
+          "fromTeamId": 133,
+          "toTeamId": 111,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 947461,
+      "date": "2026-10-29",
+      "description": "Boston Red Sox traded SS Tsung-Che Cheng to Detroit Tigers for cash.",
+      "teamIds": [
+        111,
+        116
+      ],
+      "assets": [
+        {
+          "personId": 691907,
+          "name": "Tsung-Che Cheng",
+          "fromTeamId": 111,
+          "toTeamId": 116,
+          "kind": "player"
+        },
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 116,
+          "toTeamId": 111,
+          "kind": "cash"
         }
       ]
     }

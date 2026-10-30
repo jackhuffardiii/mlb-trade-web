@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29",
+  "generated": "2026-10-30",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -38989,7 +38989,7 @@
     },
     "500743": {
       "name": "Miguel Rojas",
-      "position": "2B",
+      "position": "SS",
       "bats": "R",
       "throws": "R",
       "debut": "2014-06-06",
@@ -44120,7 +44120,7 @@
     },
     "502054": {
       "name": "Tommy Pham",
-      "position": "DH",
+      "position": "LF",
       "bats": "R",
       "throws": "R",
       "debut": "2014-09-09",
@@ -83947,7 +83947,7 @@
     },
     "545121": {
       "name": "Ildemaro Vargas",
-      "position": "1B",
+      "position": "2B",
       "bats": "S",
       "throws": "R",
       "debut": "2017-06-29",
@@ -84814,7 +84814,7 @@
     },
     "545341": {
       "name": "Randal Grichuk",
-      "position": "DH",
+      "position": "RF",
       "bats": "R",
       "throws": "R",
       "debut": "2014-04-28",
@@ -93090,7 +93090,7 @@
     },
     "571657": {
       "name": "Kyle Farmer",
-      "position": "DH",
+      "position": "SS",
       "bats": "R",
       "throws": "R",
       "debut": "2017-07-30",
@@ -95771,7 +95771,7 @@
     },
     "571771": {
       "name": "Enrique Hernández",
-      "position": "3B",
+      "position": "CF",
       "bats": "R",
       "throws": "R",
       "debut": "2014-07-01",
@@ -174903,7 +174903,7 @@
     },
     "621438": {
       "name": "Tyrone Taylor",
-      "position": "LF",
+      "position": "CF",
       "bats": "R",
       "throws": "R",
       "debut": "2019-09-07",
@@ -175320,7 +175320,7 @@
     },
     "621493": {
       "name": "Taylor Ward",
-      "position": "DH",
+      "position": "LF",
       "bats": "R",
       "throws": "R",
       "debut": "2018-08-14",
@@ -187188,7 +187188,7 @@
     },
     "624641": {
       "name": "Edmundo Sosa",
-      "position": "LF",
+      "position": "SS",
       "bats": "R",
       "throws": "R",
       "debut": "2018-09-23",
@@ -205336,7 +205336,7 @@
     },
     "642708": {
       "name": "Amed Rosario",
-      "position": "3B",
+      "position": "SS",
       "bats": "R",
       "throws": "R",
       "debut": "2017-08-01",
@@ -207575,7 +207575,7 @@
     },
     "643289": {
       "name": "Mauricio Dubón",
-      "position": "LF",
+      "position": "2B",
       "bats": "R",
       "throws": "R",
       "debut": "2019-07-07",
@@ -209028,7 +209028,7 @@
     },
     "643396": {
       "name": "Isiah Kiner-Falefa",
-      "position": "2B",
+      "position": "SS",
       "bats": "R",
       "throws": "R",
       "debut": "2018-04-10",
@@ -226671,7 +226671,7 @@
     },
     "657041": {
       "name": "Lane Thomas",
-      "position": "LF",
+      "position": "RF",
       "bats": "R",
       "throws": "R",
       "debut": "2019-04-17",
@@ -248721,7 +248721,7 @@
     },
     "664774": {
       "name": "LaMonte Wade Jr.",
-      "position": "LF",
+      "position": "1B",
       "bats": "L",
       "throws": "L",
       "debut": "2019-06-28",
@@ -267759,7 +267759,7 @@
     },
     "669720": {
       "name": "Austin Hays",
-      "position": "DH",
+      "position": "LF",
       "bats": "R",
       "throws": "R",
       "debut": "2017-09-07",
@@ -289535,6 +289535,121 @@
         }
       ]
     },
+    "681987": {
+      "name": "Nate Eaton",
+      "position": "LF",
+      "bats": "R",
+      "throws": "R",
+      "debut": "2022-07-14",
+      "hitting": [
+        {
+          "season": 2022,
+          "teamId": 118,
+          "g": 44,
+          "pa": 122,
+          "ab": 106,
+          "h": 28,
+          "hr": 1,
+          "bb": 10,
+          "so": 30,
+          "avg": ".264",
+          "obp": ".331",
+          "slg": ".387",
+          "ops": ".718",
+          "sb": 11,
+          "seq": 0
+        },
+        {
+          "season": 2023,
+          "teamId": 118,
+          "g": 28,
+          "pa": 56,
+          "ab": 53,
+          "h": 4,
+          "hr": 0,
+          "bb": 2,
+          "so": 21,
+          "avg": ".075",
+          "obp": ".125",
+          "slg": ".075",
+          "ops": ".200",
+          "sb": 3,
+          "seq": 1
+        },
+        {
+          "season": 2025,
+          "teamId": 111,
+          "g": 41,
+          "pa": 90,
+          "ab": 81,
+          "h": 24,
+          "hr": 1,
+          "bb": 6,
+          "so": 19,
+          "avg": ".296",
+          "obp": ".348",
+          "slg": ".383",
+          "ops": ".731",
+          "sb": 9,
+          "seq": 2
+        },
+        {
+          "season": 2026,
+          "teamId": 111,
+          "g": 24,
+          "pa": 60,
+          "ab": 50,
+          "h": 8,
+          "hr": 1,
+          "bb": 8,
+          "so": 16,
+          "avg": ".160",
+          "obp": ".300",
+          "slg": ".260",
+          "ops": ".560",
+          "sb": 2,
+          "seq": 3
+        }
+      ],
+      "pitching": [
+        {
+          "season": 2023,
+          "teamId": 118,
+          "g": 1,
+          "gs": 0,
+          "ip": "1.0",
+          "er": 0,
+          "era": "0.00",
+          "so": 1,
+          "bb": 0,
+          "h": 2,
+          "hr": 0,
+          "whip": "2.00",
+          "w": 0,
+          "l": 0,
+          "sv": 0,
+          "seq": 0
+        },
+        {
+          "season": 2025,
+          "teamId": 111,
+          "g": 1,
+          "gs": 0,
+          "ip": "1.0",
+          "er": 0,
+          "era": "0.00",
+          "so": 0,
+          "bb": 0,
+          "h": 2,
+          "hr": 0,
+          "whip": "2.00",
+          "w": 0,
+          "l": 0,
+          "sv": 0,
+          "seq": 1
+        }
+      ]
+    },
     "682015": {
       "name": "Saul Gonzalez",
       "position": "P",
@@ -298514,6 +298629,49 @@
         }
       ]
     },
+    "691907": {
+      "name": "Tsung-Che Cheng",
+      "position": "SS",
+      "bats": "L",
+      "throws": "R",
+      "debut": "2025-04-09",
+      "hitting": [
+        {
+          "season": 2025,
+          "teamId": 134,
+          "g": 3,
+          "pa": 7,
+          "ab": 7,
+          "h": 0,
+          "hr": 0,
+          "bb": 0,
+          "so": 3,
+          "avg": ".000",
+          "obp": ".000",
+          "slg": ".000",
+          "ops": ".000",
+          "sb": 0,
+          "seq": 0
+        },
+        {
+          "season": 2026,
+          "teamId": 111,
+          "g": 14,
+          "pa": 44,
+          "ab": 39,
+          "h": 10,
+          "hr": 0,
+          "bb": 4,
+          "so": 14,
+          "avg": ".256",
+          "obp": ".318",
+          "slg": ".282",
+          "ops": ".600",
+          "sb": 0,
+          "seq": 1
+        }
+      ]
+    },
     "691945": {
       "name": "Carter Baumler",
       "position": "P",
@@ -305128,6 +305286,13 @@
     "836592": {
       "name": "Joniel Hernandez",
       "position": "SS",
+      "bats": "R",
+      "throws": "R",
+      "debut": null
+    },
+    "837078": {
+      "name": "Jareth Rayo",
+      "position": "P",
       "bats": "R",
       "throws": "R",
       "debut": null
