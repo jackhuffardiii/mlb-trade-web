@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30",
+  "generated": "2026-10-31",
   "source": "Baseball Savant percentile-rankings leaderboard",
   "range": {
     "start": 2015,
@@ -82,7 +82,7 @@
         "xba": 68,
         "xslg": 59,
         "xobp": 38,
-        "xiso": 48,
+        "xiso": 47,
         "brl_percent": 48,
         "exit_velocity": 68,
         "max_ev": 80,
@@ -7279,7 +7279,7 @@
         "xba": 27,
         "xslg": 30,
         "xobp": 47,
-        "xiso": 36,
+        "xiso": 37,
         "xera": 37,
         "brl_percent": 61,
         "exit_velocity": 79,
@@ -10939,7 +10939,7 @@
         "whiff_percent": 40,
         "chase_percent": 95,
         "sprint_speed": 40,
-        "oaa": 70
+        "oaa": 71
       },
       "2018": {
         "type": "batter",
@@ -17437,7 +17437,7 @@
         "xwoba": 77,
         "xba": 11,
         "xslg": 88,
-        "xobp": 37,
+        "xobp": 35,
         "xiso": 97,
         "brl_percent": 98,
         "exit_velocity": 71,
@@ -74986,7 +74986,7 @@
         "type": "two-way",
         "xwoba": 16,
         "xba": 62,
-        "xslg": 31,
+        "xslg": 32,
         "xobp": 7,
         "xiso": 16,
         "xera": 16,
@@ -82356,7 +82356,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 12,
-        "xba": 27,
+        "xba": 26,
         "xslg": 5,
         "xobp": 43,
         "xiso": 1,
@@ -99567,7 +99567,7 @@
         "type": "pitcher",
         "xwoba": 84,
         "xba": 58,
-        "xslg": 85,
+        "xslg": 84,
         "xobp": 78,
         "xiso": 93,
         "xera": 84,
@@ -101609,7 +101609,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 23,
-        "xba": 27,
+        "xba": 26,
         "xslg": 28,
         "xobp": 17,
         "xiso": 35,
@@ -108288,7 +108288,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 27,
+        "xba": 26,
         "xslg": 29,
         "xobp": 38,
         "xiso": 37,
@@ -109793,7 +109793,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 27,
+        "xba": 26,
         "xslg": 26,
         "xobp": 40,
         "xiso": 30,
@@ -117627,7 +117627,7 @@
         "type": "pitcher",
         "xwoba": 18,
         "xba": 72,
-        "xslg": 44,
+        "xslg": 43,
         "xobp": 6,
         "xiso": 25,
         "xera": 18,
@@ -117749,7 +117749,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 15,
-        "xba": 25,
+        "xba": 26,
         "xslg": 35,
         "xobp": 7,
         "xiso": 44,
