@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31",
+  "generated": "2026-11-01",
   "source": "Baseball Savant percentile-rankings leaderboard",
   "range": {
     "start": 2015,
@@ -7279,7 +7279,7 @@
         "xba": 27,
         "xslg": 30,
         "xobp": 47,
-        "xiso": 37,
+        "xiso": 36,
         "xera": 37,
         "brl_percent": 61,
         "exit_velocity": 79,
@@ -10042,7 +10042,7 @@
         "chase_percent": 83,
         "arm_strength": 17,
         "sprint_speed": 26,
-        "oaa": 46
+        "oaa": 45
       },
       "2022": {
         "type": "batter",
@@ -16819,7 +16819,7 @@
         "chase_percent": 42,
         "arm_strength": 41,
         "sprint_speed": 61,
-        "oaa": 53
+        "oaa": 51
       },
       "2022": {
         "type": "batter",
@@ -30429,7 +30429,7 @@
         "chase_percent": 23,
         "arm_strength": 24,
         "sprint_speed": 30,
-        "oaa": 48
+        "oaa": 47
       },
       "2022": {
         "type": "batter",
@@ -35763,7 +35763,7 @@
         "chase_percent": 16,
         "arm_strength": 76,
         "sprint_speed": 76,
-        "oaa": 81
+        "oaa": 82
       },
       "2022": {
         "type": "batter",
@@ -38451,7 +38451,7 @@
         "chase_percent": 9,
         "arm_strength": 47,
         "sprint_speed": 52,
-        "oaa": 93
+        "oaa": 92
       },
       "2022": {
         "type": "batter",
@@ -40651,7 +40651,7 @@
         "chase_percent": 67,
         "arm_strength": 93,
         "sprint_speed": 60,
-        "oaa": 92
+        "oaa": 93
       },
       "2022": {
         "type": "batter",
@@ -43528,7 +43528,7 @@
         "xwoba": 52,
         "xba": 72,
         "xslg": 68,
-        "xobp": 35,
+        "xobp": 34,
         "xiso": 64,
         "xera": 52,
         "brl_percent": 54,
@@ -45041,7 +45041,7 @@
         "chase_percent": 70,
         "arm_strength": 51,
         "sprint_speed": 40,
-        "oaa": 28
+        "oaa": 27
       }
     },
     "574847": {
@@ -45240,7 +45240,7 @@
         "chase_percent": 23,
         "arm_strength": 51,
         "sprint_speed": 47,
-        "oaa": 63
+        "oaa": 64
       }
     },
     "576397": {
@@ -45911,7 +45911,7 @@
         "chase_percent": 17,
         "arm_strength": 12,
         "sprint_speed": 47,
-        "oaa": 89
+        "oaa": 88
       }
     },
     "591971": {
@@ -46524,7 +46524,7 @@
         "chase_percent": 79,
         "arm_strength": 39,
         "sprint_speed": 63,
-        "oaa": 44
+        "oaa": 45
       },
       "2024": {
         "type": "batter",
@@ -55623,7 +55623,7 @@
         "chase_percent": 1,
         "arm_strength": 85,
         "sprint_speed": 86,
-        "oaa": 82
+        "oaa": 81
       },
       "2022": {
         "type": "batter",
@@ -57584,7 +57584,7 @@
         "max_ev": 87,
         "arm_strength": 12,
         "sprint_speed": 21,
-        "oaa": 41
+        "oaa": 40
       },
       "2022": {
         "type": "batter",
@@ -62086,7 +62086,7 @@
         "chase_percent": 92,
         "arm_strength": 10,
         "sprint_speed": 38,
-        "oaa": 35
+        "oaa": 36
       },
       "2021": {
         "type": "batter",
@@ -65547,7 +65547,7 @@
         "chase_percent": 55,
         "arm_strength": 37,
         "sprint_speed": 100,
-        "oaa": 77
+        "oaa": 76
       },
       "2022": {
         "type": "batter",
@@ -65610,7 +65610,7 @@
         "chase_percent": 16,
         "arm_strength": 32,
         "sprint_speed": 96,
-        "oaa": 26
+        "oaa": 27
       },
       "2025": {
         "type": "batter",
@@ -70387,7 +70387,7 @@
         "chase_percent": 72,
         "arm_strength": 13,
         "sprint_speed": 82,
-        "oaa": 75
+        "oaa": 74
       },
       "2022": {
         "type": "batter",
@@ -80834,7 +80834,7 @@
         "chase_percent": 87,
         "arm_strength": 42,
         "sprint_speed": 63,
-        "oaa": 49
+        "oaa": 48
       },
       "2022": {
         "type": "batter",
@@ -82356,7 +82356,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 12,
-        "xba": 26,
+        "xba": 27,
         "xslg": 5,
         "xobp": 43,
         "xiso": 1,
@@ -82802,7 +82802,7 @@
         "chase_percent": 26,
         "arm_strength": 10,
         "sprint_speed": 40,
-        "oaa": 63
+        "oaa": 62
       },
       "2022": {
         "type": "batter",
@@ -86237,7 +86237,7 @@
         "xwoba": 52,
         "xba": 36,
         "xslg": 60,
-        "xobp": 42,
+        "xobp": 41,
         "xiso": 80,
         "xera": 52,
         "brl_percent": 76,
@@ -88553,7 +88553,7 @@
         "chase_percent": 11,
         "arm_strength": 25,
         "sprint_speed": 1,
-        "oaa": 65
+        "oaa": 66
       }
     },
     "647315": {
@@ -89373,7 +89373,7 @@
         "chase_percent": 60,
         "arm_strength": 17,
         "sprint_speed": 40,
-        "oaa": 30
+        "oaa": 31
       },
       "2023": {
         "type": "batter",
@@ -89506,7 +89506,7 @@
         "chase_percent": 2,
         "arm_strength": 41,
         "sprint_speed": 89,
-        "oaa": 54
+        "oaa": 53
       },
       "2022": {
         "type": "batter",
@@ -99567,7 +99567,7 @@
         "type": "pitcher",
         "xwoba": 84,
         "xba": 58,
-        "xslg": 84,
+        "xslg": 85,
         "xobp": 78,
         "xiso": 93,
         "xera": 84,
@@ -100238,7 +100238,7 @@
         "chase_percent": 85,
         "arm_strength": 59,
         "sprint_speed": 29,
-        "oaa": 6
+        "oaa": 5
       }
     },
     "663662": {
@@ -101609,7 +101609,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 23,
-        "xba": 26,
+        "xba": 27,
         "xslg": 28,
         "xobp": 17,
         "xiso": 35,
@@ -105250,7 +105250,7 @@
         "chase_percent": 100,
         "arm_strength": 44,
         "sprint_speed": 52,
-        "oaa": 88
+        "oaa": 89
       },
       "2022": {
         "type": "batter",
@@ -105613,7 +105613,7 @@
         "chase_percent": 24,
         "arm_strength": 29,
         "sprint_speed": 95,
-        "oaa": 18
+        "oaa": 17
       },
       "2022": {
         "type": "batter",
@@ -105841,7 +105841,7 @@
         "max_ev": 72,
         "arm_strength": 57,
         "sprint_speed": 94,
-        "oaa": 81
+        "oaa": 80
       },
       "2022": {
         "type": "batter",
@@ -106683,7 +106683,7 @@
         "chase_percent": 2,
         "arm_strength": 29,
         "sprint_speed": 70,
-        "oaa": 55
+        "oaa": 54
       }
     },
     "666163": {
@@ -108288,7 +108288,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 26,
+        "xba": 27,
         "xslg": 29,
         "xobp": 38,
         "xiso": 37,
@@ -108687,7 +108687,7 @@
         "chase_percent": 35,
         "arm_strength": 42,
         "sprint_speed": 87,
-        "oaa": 31
+        "oaa": 30
       },
       "2023": {
         "type": "batter",
@@ -109226,7 +109226,7 @@
         "chase_percent": 88,
         "arm_strength": 81,
         "sprint_speed": 49,
-        "oaa": 27
+        "oaa": 26
       }
     },
     "668715": {
@@ -109793,7 +109793,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 26,
+        "xba": 27,
         "xslg": 26,
         "xobp": 40,
         "xiso": 30,
@@ -110153,7 +110153,7 @@
         "chase_percent": 16,
         "arm_strength": 77,
         "sprint_speed": 69,
-        "oaa": 38
+        "oaa": 37
       }
     },
     "669020": {
@@ -111407,7 +111407,7 @@
         "max_ev": 40,
         "arm_strength": 58,
         "sprint_speed": 66,
-        "oaa": 89
+        "oaa": 90
       }
     },
     "669256": {
@@ -112909,7 +112909,7 @@
         "max_ev": 34,
         "arm_strength": 9,
         "sprint_speed": 62,
-        "oaa": 27
+        "oaa": 28
       }
     },
     "669704": {
@@ -115322,7 +115322,7 @@
         "chase_percent": 9,
         "arm_strength": 19,
         "sprint_speed": 24,
-        "oaa": 85
+        "oaa": 86
       }
     },
     "671286": {
@@ -117749,7 +117749,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 15,
-        "xba": 26,
+        "xba": 25,
         "xslg": 35,
         "xobp": 7,
         "xiso": 44,
@@ -118501,7 +118501,7 @@
         "chase_percent": 49,
         "arm_strength": 98,
         "sprint_speed": 67,
-        "oaa": 81
+        "oaa": 80
       }
     },
     "677865": {
@@ -119066,7 +119066,7 @@
         "chase_percent": 95,
         "arm_strength": 47,
         "sprint_speed": 82,
-        "oaa": 5
+        "oaa": 6
       }
     },
     "678316": {
@@ -122249,7 +122249,7 @@
         "chase_percent": 80,
         "arm_strength": 1,
         "sprint_speed": 16,
-        "oaa": 80
+        "oaa": 81
       }
     },
     "683748": {
@@ -122728,7 +122728,7 @@
         "max_ev": 56,
         "arm_strength": 95,
         "sprint_speed": 93,
-        "oaa": 66
+        "oaa": 65
       }
     },
     "686676": {
@@ -124344,7 +124344,7 @@
         "max_ev": 48,
         "arm_strength": 13,
         "sprint_speed": 48,
-        "oaa": 58
+        "oaa": 59
       }
     },
     "691858": {
@@ -125087,7 +125087,7 @@
         "chase_percent": 94,
         "arm_strength": 57,
         "sprint_speed": 42,
-        "oaa": 7
+        "oaa": 6
       }
     },
     "695670": {
@@ -125127,7 +125127,7 @@
         "chase_percent": 64,
         "arm_strength": 85,
         "sprint_speed": 79,
-        "oaa": 47
+        "oaa": 46
       }
     },
     "696070": {
@@ -125674,7 +125674,7 @@
         "chase_percent": 56,
         "arm_strength": 9,
         "sprint_speed": 48,
-        "oaa": 94
+        "oaa": 95
       }
     },
     "805373": {
