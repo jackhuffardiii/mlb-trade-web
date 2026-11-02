@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-30",
+  "generated": "2026-11-02",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-10-30"
+    "end": "2026-11-02"
   },
   "teams": [
     {
@@ -68373,6 +68373,31 @@
           "fromTeamId": 116,
           "toTeamId": 111,
           "kind": "cash"
+        }
+      ]
+    },
+    {
+      "id": 947637,
+      "date": "2026-11-01",
+      "description": "San Francisco Giants traded 2B Nate Furman to Washington Nationals for LHP Tony Neubeck.",
+      "teamIds": [
+        120,
+        137
+      ],
+      "assets": [
+        {
+          "personId": 801967,
+          "name": "Tony Neubeck",
+          "fromTeamId": 120,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 801501,
+          "name": "Nate Furman",
+          "fromTeamId": 137,
+          "toTeamId": 120,
+          "kind": "player"
         }
       ]
     }

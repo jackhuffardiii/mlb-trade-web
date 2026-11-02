@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30",
+  "generated": "2026-11-02",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -303329,6 +303329,13 @@
       "position": "SS",
       "bats": "R",
       "throws": "R",
+      "debut": null
+    },
+    "801967": {
+      "name": "Tony Neubeck",
+      "position": "P",
+      "bats": "L",
+      "throws": "L",
       "debut": null
     },
     "801978": {
