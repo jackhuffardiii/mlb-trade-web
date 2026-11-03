@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02",
+  "generated": "2026-11-03",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -264318,7 +264318,7 @@
     },
     "669261": {
       "name": "Jack Suwinski",
-      "position": "CF",
+      "position": "RF",
       "bats": "L",
       "throws": "L",
       "debut": "2022-04-26",
@@ -302030,6 +302030,33 @@
       "throws": "R",
       "debut": null
     },
+    "700842": {
+      "name": "Eduardo Rivera",
+      "position": "P",
+      "bats": "L",
+      "throws": "L",
+      "debut": "2026-04-22",
+      "pitching": [
+        {
+          "season": 2026,
+          "teamId": 111,
+          "g": 4,
+          "gs": 3,
+          "ip": "10.0",
+          "er": 7,
+          "era": "6.30",
+          "so": 10,
+          "bb": 6,
+          "h": 8,
+          "hr": 1,
+          "whip": "1.40",
+          "w": 0,
+          "l": 1,
+          "sv": 0,
+          "seq": 0
+        }
+      ]
+    },
     "700932": {
       "name": "Kyle Manzardo",
       "position": "1B",
@@ -305257,6 +305284,13 @@
     },
     "830433": {
       "name": "Denis Samudio",
+      "position": "P",
+      "bats": "R",
+      "throws": "R",
+      "debut": null
+    },
+    "830467": {
+      "name": "Juan García",
       "position": "P",
       "bats": "R",
       "throws": "R",

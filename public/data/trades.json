@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-02",
+  "generated": "2026-11-03",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-11-02"
+    "end": "2026-11-03"
   },
   "teams": [
     {
@@ -68397,6 +68397,56 @@
           "name": "Nate Furman",
           "fromTeamId": 137,
           "toTeamId": 120,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 947670,
+      "date": "2026-11-02",
+      "description": "Tampa Bay Rays traded RHP Evan Reifert to Houston Astros for cash.",
+      "teamIds": [
+        117,
+        139
+      ],
+      "assets": [
+        {
+          "personId": null,
+          "name": null,
+          "fromTeamId": 117,
+          "toTeamId": 139,
+          "kind": "cash"
+        },
+        {
+          "personId": 682126,
+          "name": "Evan Reifert",
+          "fromTeamId": 139,
+          "toTeamId": 117,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 947930,
+      "date": "2026-11-03",
+      "description": "Boston Red Sox traded LHP Eduardo Rivera to St. Louis Cardinals for RHP Juan García.",
+      "teamIds": [
+        111,
+        138
+      ],
+      "assets": [
+        {
+          "personId": 700842,
+          "name": "Eduardo Rivera",
+          "fromTeamId": 111,
+          "toTeamId": 138,
+          "kind": "player"
+        },
+        {
+          "personId": 830467,
+          "name": "Juan García",
+          "fromTeamId": 138,
+          "toTeamId": 111,
           "kind": "player"
         }
       ]
