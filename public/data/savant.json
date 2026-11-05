@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "source": "Baseball Savant percentile-rankings leaderboard",
   "range": {
     "start": 2015,
@@ -10939,7 +10939,7 @@
         "whiff_percent": 40,
         "chase_percent": 95,
         "sprint_speed": 40,
-        "oaa": 71
+        "oaa": 70
       },
       "2018": {
         "type": "batter",
@@ -23870,7 +23870,7 @@
         "xwoba": 90,
         "xba": 85,
         "xslg": 79,
-        "xobp": 94,
+        "xobp": 95,
         "xiso": 71,
         "xera": 90,
         "brl_percent": 63,
@@ -27913,7 +27913,7 @@
         "type": "pitcher",
         "xwoba": 49,
         "xba": 26,
-        "xslg": 66,
+        "xslg": 67,
         "xobp": 30,
         "xiso": 88,
         "xera": 49,
@@ -43528,7 +43528,7 @@
         "xwoba": 52,
         "xba": 72,
         "xslg": 68,
-        "xobp": 35,
+        "xobp": 34,
         "xiso": 64,
         "xera": 52,
         "brl_percent": 54,
@@ -74986,7 +74986,7 @@
         "type": "two-way",
         "xwoba": 16,
         "xba": 62,
-        "xslg": 31,
+        "xslg": 32,
         "xobp": 7,
         "xiso": 16,
         "xera": 16,
@@ -82356,7 +82356,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 12,
-        "xba": 26,
+        "xba": 27,
         "xslg": 5,
         "xobp": 43,
         "xiso": 1,
@@ -101609,7 +101609,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 23,
-        "xba": 26,
+        "xba": 27,
         "xslg": 28,
         "xobp": 17,
         "xiso": 35,
@@ -108288,7 +108288,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 26,
+        "xba": 27,
         "xslg": 29,
         "xobp": 38,
         "xiso": 37,
@@ -109793,7 +109793,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 31,
-        "xba": 26,
+        "xba": 27,
         "xslg": 26,
         "xobp": 40,
         "xiso": 30,
@@ -117749,7 +117749,7 @@
       "2026": {
         "type": "pitcher",
         "xwoba": 15,
-        "xba": 26,
+        "xba": 25,
         "xslg": 35,
         "xobp": 7,
         "xiso": 44,

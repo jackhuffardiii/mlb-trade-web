@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03",
+  "generated": "2026-11-05",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -101040,7 +101040,7 @@
     },
     "572191": {
       "name": "Michael A. Taylor",
-      "position": "RF",
+      "position": "CF",
       "bats": "R",
       "throws": "R",
       "debut": "2014-08-12",
@@ -107594,7 +107594,7 @@
     },
     "578428": {
       "name": "Jose Iglesias",
-      "position": "2B",
+      "position": "SS",
       "bats": "R",
       "throws": "R",
       "debut": "2011-05-08",
