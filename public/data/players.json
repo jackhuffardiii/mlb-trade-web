@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05",
+  "generated": "2026-11-06",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -198826,7 +198826,7 @@
     },
     "641856": {
       "name": "Billy McKinney",
-      "position": "LF",
+      "position": "RF",
       "bats": "L",
       "throws": "L",
       "debut": "2018-03-30",
@@ -266564,7 +266564,7 @@
     },
     "669450": {
       "name": "Cooper Hummel",
-      "position": "LF",
+      "position": "C",
       "bats": "S",
       "throws": "R",
       "debut": "2022-04-07",
@@ -281500,7 +281500,7 @@
     },
     "676939": {
       "name": "Jimmy Herron",
-      "position": "LF",
+      "position": "OF",
       "bats": "R",
       "throws": "L",
       "debut": null
@@ -286195,7 +286195,7 @@
     },
     "680709": {
       "name": "Nick Dunn",
-      "position": "3B",
+      "position": "2B",
       "bats": "L",
       "throws": "R",
       "debut": null
@@ -290400,7 +290400,7 @@
     },
     "682650": {
       "name": "Malcom Nuñez",
-      "position": "1B",
+      "position": "3B",
       "bats": "R",
       "throws": "R",
       "debut": null
@@ -291142,7 +291142,7 @@
     },
     "682942": {
       "name": "Alex De Jesus",
-      "position": "3B",
+      "position": "2B",
       "bats": "R",
       "throws": "R",
       "debut": null
