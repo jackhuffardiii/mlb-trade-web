@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-03",
+  "generated": "2026-11-07",
   "range": {
     "start": "2015-01-01",
-    "end": "2026-11-03"
+    "end": "2026-11-07"
   },
   "teams": [
     {
@@ -68447,6 +68447,31 @@
           "name": "Juan García",
           "fromTeamId": 138,
           "toTeamId": 111,
+          "kind": "player"
+        }
+      ]
+    },
+    {
+      "id": 949789,
+      "date": "2026-11-06",
+      "description": "Washington Nationals traded RHP Robert Cranz to San Francisco Giants for LHP Reiver Sanmartin.",
+      "teamIds": [
+        120,
+        137
+      ],
+      "assets": [
+        {
+          "personId": 801128,
+          "name": "Robert Cranz",
+          "fromTeamId": 120,
+          "toTeamId": 137,
+          "kind": "player"
+        },
+        {
+          "personId": 665665,
+          "name": "Reiver Sanmartin",
+          "fromTeamId": 137,
+          "toTeamId": 120,
           "kind": "player"
         }
       ]

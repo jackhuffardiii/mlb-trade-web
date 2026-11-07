@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06",
+  "generated": "2026-11-07",
   "source": "MLB Stats API yearByYear (hydrated)",
   "players": {
     "115629": {
@@ -303190,6 +303190,13 @@
       "position": "CF",
       "bats": "L",
       "throws": "L",
+      "debut": null
+    },
+    "801128": {
+      "name": "Robert Cranz",
+      "position": "P",
+      "bats": "R",
+      "throws": "R",
       "debut": null
     },
     "801276": {
